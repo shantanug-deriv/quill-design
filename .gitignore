@@ -2,3 +2,5 @@ storybook-static
 dist
 node_modules
 coverage
+
+build-storybook.log

@@ -24,7 +24,8 @@
     "prepare": "husky install",
     "semantic-release": "semantic-release",
     "commitlint": "commitlint --edit",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "repository": {
     "type": "git",
@@ -63,6 +64,7 @@
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "autoprefixer": "^10.4.15",
+    "chromatic": "^7.1.0",
     "clsx": "^2.0.0",
     "cssnano": "^6.0.1",
     "eslint": "^8.48.0",
