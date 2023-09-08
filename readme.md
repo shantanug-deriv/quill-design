@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/binary-com/quill-design/badge.svg?branch=main)](https://coveralls.io/github/binary-com/quill-design?branch=main) [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+[![Coverage Status](https://coveralls.io/repos/github/deriv-com/quill-design/badge.svg?branch=main)](https://coveralls.io/github/deriv-com/quill-design?branch=main)
 
 ## Quill Design
 
