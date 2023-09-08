@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FixContainer should render correctly 1`] = `
+<div>
+  <div
+    class="w-full"
+  />
+</div>
+`;
+
+exports[`FluidContainer should render correctly 1`] = `
+<div>
+  <div
+    class="mx-auto w-full max-w-screen-lg"
+  />
+</div>
+`;
