@@ -5,12 +5,14 @@ const config: StorybookConfig = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
-    'storybook-tailwind-dark-mode',
     {
       name: '@storybook/addon-styling',
-      options: {},
+      options: {
+        postCss: {
+          implementation: require.resolve('postcss'),
+        },
+      },
     },
   ],
   framework: {

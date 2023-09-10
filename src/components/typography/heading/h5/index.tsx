@@ -13,11 +13,11 @@ const H5 = forwardRef(
         ref={ref}
         className={clsx(
           'font-ubuntu',
-          'text-core-300',
+          'text-semantic-heading-h5',
           'font-core-bold',
-          'leading-core-auto',
-          'space-y-core-paragraphSpacing-300',
-          'text-core-solid-slate-1400', // TODO: this should be updated with semantic color tokens
+          'leading-semantic-heading-h5',
+          'space-y-semantic-paragraphSpacing-heading-h5',
+          'text-semantic-typography-prominent',
           className,
         )}
         {...rest}

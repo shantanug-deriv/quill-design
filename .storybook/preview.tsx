@@ -1,10 +1,10 @@
+import React, { useEffect } from 'react'
 import type { Preview } from '@storybook/react'
-
 import { withThemeByClassName } from '@storybook/addon-styling'
 
-/* TODO: update import to your tailwind styles file. If you're using Angular, inject this through your angular.json config instead */
 import '../src/styles.scss'
 import '../quill-tailwind/styles.css'
+import '../quill-tailwind/fonts.css'
 
 const preview: Preview = {
   parameters: {
@@ -27,6 +27,26 @@ const preview: Preview = {
       },
       defaultTheme: 'light',
     }),
+    (Story, context) => {
+      const { theme } = context.globals
+
+      useEffect(() => {
+        const htmlTag = document.documentElement
+
+        // Set the "data-mode" attribute on the iFrame html tag
+        if (theme === 'dark') {
+          htmlTag.classList.add('dark')
+        } else {
+          htmlTag.classList.remove('dark')
+        }
+      }, [theme])
+
+      return (
+        <div className="dark:bg-slate-800 ">
+          <Story />
+        </div>
+      )
+    },
   ],
 }
 

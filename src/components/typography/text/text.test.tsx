@@ -9,45 +9,22 @@ describe('Text', () => {
     expect(text).toBeInTheDocument()
   })
   it('Should display content with default classnames', () => {
-    render(<Text>Text content</Text>)
+    const { container } = render(<Text>Text content</Text>)
 
-    const text = screen.getByText(/Text content/)
-    expect(text).toHaveExactClasses([
-      'font-ibmPlex-sans',
-      'text-core-100',
-      'space-y-100',
-      'leading-core-300',
-      'font-core-regular',
-    ])
+    expect(container).toMatchSnapshot()
   })
 
   it('Should have correct classnames with size xl', () => {
-    render(<Text size="xl">Text content</Text>)
+    const { container } = render(<Text size="xl">Text content</Text>)
 
-    const text = screen.getByText(/Text content/)
-    expect(text).toHaveExactClasses([
-      'font-ibmPlex-sans',
-      'text-core-400',
-      'space-y-400',
-      'leading-core-700',
-      'font-core-regular',
-    ])
+    expect(container).toMatchSnapshot()
   })
   it('Should have correct classnames with size xl and type underline', () => {
-    render(
+    const { container } = render(
       <Text size="xl" type="underline">
         Text content
       </Text>,
     )
-
-    const text = screen.getByText(/Text content/)
-    expect(text).toHaveExactClasses([
-      'font-ibmPlex-sans',
-      'text-core-400',
-      'space-y-400',
-      'leading-core-700',
-      'font-core-regular',
-      'underline',
-    ])
+    expect(container).toMatchSnapshot()
   })
 })

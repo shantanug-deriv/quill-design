@@ -25,23 +25,24 @@ export const Text = forwardRef(
     const componentClassnames = clsx(
       className,
       'font-ibmPlex-sans',
+      'text-semantic-typography-prominent',
       {
-        'text-core-400': size === 'xl', // font-size classes
-        'text-core-300': size === 'lg',
-        'text-core-100': size === 'md',
-        'text-core-75': size === 'sm',
+        'text-semantic-body-xl': size === 'xl', // font-size classes
+        'text-semantic-body-lg': size === 'lg',
+        'text-semantic-body-md': size === 'md',
+        'text-semantic-body-sm': size === 'sm',
       },
       {
-        'space-y-400': size === 'xl', // paragraph spacing classes
-        'space-y-300': size === 'lg',
-        'space-y-100': size === 'md',
-        'space-y-75': size === 'sm',
+        'space-y-semantic-paragraphSpacing-body-xl': size === 'xl', // paragraph spacing classes
+        'space-y-semantic-paragraphSpacing-body-lg': size === 'lg',
+        'space-y-semantic-paragraphSpacing-body-md': size === 'md',
+        'space-y-semantic-paragraphSpacing-body-sm': size === 'sm',
       },
       {
-        'leading-core-700': size === 'xl', // line height classes
-        'leading-core-500': size === 'lg',
-        'leading-core-300': size === 'md',
-        'leading-core-200': size === 'sm',
+        'leading-semantic-body-xl': size === 'xl', // line height classes
+        'leading-semantic-body-lg': size === 'lg',
+        'leading-semantic-body-md': size === 'md',
+        'leading-semantic-body-sm': size === 'sm',
       },
       {
         'font-core-regular': variant === 'regular',
