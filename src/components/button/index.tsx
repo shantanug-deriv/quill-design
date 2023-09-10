@@ -35,6 +35,7 @@ export const Button = forwardRef(
           'disabled:opacity-core-300',
           'leading-core-100',
           'font-core-bold',
+          'font-heading',
           'flex flex-row items-center justify-center gap-semantic-general-md',
           {
             'w-full': fullWidth,

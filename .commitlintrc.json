@@ -8,19 +8,17 @@
       2,
       "always",
       [
-        "build",
-        "chore",
-        "ci",
-        "docs",
         "feat",
         "fix",
-        "perf",
-        "refactor",
+        "docs",
         "style",
-        "test",
-        "revert",
+        "refactor",
         "perf",
-        "release"
+        "test",
+        "build",
+        "ci",
+        "chore",
+        "revert"
       ]
     ]
   }

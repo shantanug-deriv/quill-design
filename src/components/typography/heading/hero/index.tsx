@@ -12,7 +12,7 @@ const HeroHeading = forwardRef(
       <h1
         ref={ref}
         className={clsx(
-          'font-ubuntu',
+          'font-heading',
           'text-semantic-heading-hero',
           'font-core-bold',
           'leading-semantic-heading-hero',

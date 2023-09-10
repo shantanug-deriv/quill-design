@@ -24,7 +24,7 @@ export const Text = forwardRef(
   ) => {
     const componentClassnames = clsx(
       className,
-      'font-ibmPlex-sans',
+      'font-sans',
       'text-semantic-typography-prominent',
       {
         'text-semantic-body-xl': size === 'xl', // font-size classes
