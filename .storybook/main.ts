@@ -1,4 +1,4 @@
-import type { StorybookConfig } from '@storybook/react-vite'
+import type { StorybookConfig } from '@storybook/react-webpack5'
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -9,14 +9,20 @@ const config: StorybookConfig = {
     {
       name: '@storybook/addon-styling',
       options: {
+        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md
+        // For more details on this addon's options.
         postCss: {
           implementation: require.resolve('postcss'),
+        },
+        sass: {
+          // Require your Sass preprocessor here
+          implementation: require('sass'),
         },
       },
     },
   ],
   framework: {
-    name: '@storybook/react-vite',
+    name: '@storybook/react-webpack5',
     options: {},
   },
   docs: {
