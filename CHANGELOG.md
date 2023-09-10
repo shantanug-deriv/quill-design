@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/deriv-com/quill-design/compare/v1.0.0...v1.0.1) (2023-09-10)
+
+
+### ⚙️ 	 Continuous Integrations
+
+* updated storybook builder from vite to webpack5 to use json-stat … ([54ddc02](https://github.com/deriv-com/quill-design/commit/54ddc0298fe94e84ffeeaa5c71c144aeb830f184))
+* updated storybook builder from vite to webpack5 to use json-stat cli option ([6b6543d](https://github.com/deriv-com/quill-design/commit/6b6543d303df87e2c702eadce48b17bf523d92d1))
+
 # 1.0.0 (2023-09-10)
 
 
