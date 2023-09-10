@@ -14,7 +14,7 @@
     "rollup": "rollup --config rollup.config.ts --configPlugin typescript",
     "build": "npm-run-all clean rollup",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "storybook build --webpack-stats-json",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test": "jest",
