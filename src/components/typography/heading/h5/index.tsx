@@ -12,7 +12,7 @@ const H5 = forwardRef(
       <h5
         ref={ref}
         className={clsx(
-          'font-ubuntu',
+          'font-heading',
           'text-semantic-heading-h5',
           'font-core-bold',
           'leading-semantic-heading-h5',

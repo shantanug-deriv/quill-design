@@ -24,13 +24,13 @@ To create the token please follow these steps:
 
 ```
 //npm.pkg.github.com/:_authToken=YOUR_PERSONAL_READ_TOKEN
-@binary-com:registry=https://npm.pkg.github.com/
+@deriv-com:registry=https://npm.pkg.github.com/
 ```
 
 - Install the package with:
 
 ```
-npm install @binary-com/quill-design
+npm install @deriv-com/quill-design
 ```
 
 NOTE: Please don't forget to enable SSO SAML configuration in your token
