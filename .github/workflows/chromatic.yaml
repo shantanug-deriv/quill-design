@@ -23,3 +23,5 @@ jobs:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           onlyChanged: true
           exitOnceUploaded: true
+          externals: |
+            - 'quill-tailwind/**'
