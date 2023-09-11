@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/deriv-com/quill-design/compare/v1.0.2...v1.0.3) (2023-09-11)
+
+
+### ⚙️ 	 Continuous Integrations
+
+* added quill-tailwind folder as externals in chromatic ([426d9b3](https://github.com/deriv-com/quill-design/commit/426d9b348ac3b1f93a7b096be86a7a0fbe409ba0))
+
 ## [1.0.2](https://github.com/deriv-com/quill-design/compare/v1.0.1...v1.0.2) (2023-09-11)
 
 
