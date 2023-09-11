@@ -23,7 +23,7 @@
     "semantic-release": "semantic-release",
     "commitlint": "commitlint --edit",
     "prepublish": "npm run build",
-    "chromatic": "chromatic --exit-zero-on-changes --only-changed --exit-once-uploaded",
+    "chromatic": "chromatic --exit-zero-on-changes --only-changed --exit-once-uploaded --externals 'quill-tailwind/**' ",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build --webpack-stats-json"
   },
