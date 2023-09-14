@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/deriv-com/quill-design/compare/v1.0.6...v1.0.7) (2023-09-14)
+
+
+### ⚙️ 	 Continuous Integrations
+
+* make package public ([151bdea](https://github.com/deriv-com/quill-design/commit/151bdeaf68a6765b28005b54e07e25120d02052a))
+
 ## [1.0.6](https://github.com/deriv-com/quill-design/compare/v1.0.5...v1.0.6) (2023-09-14)
 
 
