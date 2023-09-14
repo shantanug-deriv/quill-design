@@ -4,7 +4,7 @@
   "description": "Deriv Quill Design UI library",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "private": "false",
+  "private": false,
   "files": [
     "dist/**",
     "quill-tailwind/**"
@@ -36,6 +36,10 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/deriv-com/quill-design/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
   },
   "homepage": "https://github.com/deriv-com/quill-design#readme",
   "devDependencies": {
