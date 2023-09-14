@@ -1,3 +1,11 @@
+## [1.0.8](https://github.com/deriv-com/quill-design/compare/v1.0.7...v1.0.8) (2023-09-14)
+
+
+### ⚙️ 	 Continuous Integrations
+
+* update package.json [skip ci] ([a762f05](https://github.com/deriv-com/quill-design/commit/a762f05b6bbcec5ff77a453ac81da64856ef647a))
+* updated release configs ([a222a9b](https://github.com/deriv-com/quill-design/commit/a222a9be6bd61047e33ea035e3e7de5818ff101f))
+
 ## [1.0.7](https://github.com/deriv-com/quill-design/compare/v1.0.6...v1.0.7) (2023-09-14)
 
 
