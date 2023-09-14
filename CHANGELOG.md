@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/deriv-com/quill-design/compare/v1.0.4...v1.0.5) (2023-09-14)
+
+
+### 🛠 	 Builds
+
+* enabled rollup terser plugin ([833e4f3](https://github.com/deriv-com/quill-design/commit/833e4f3bf7dba4ca837ed16d60bb75be34b4d538))
+
 ## [1.0.4](https://github.com/deriv-com/quill-design/compare/v1.0.3...v1.0.4) (2023-09-14)
 
 
