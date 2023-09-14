@@ -25,30 +25,30 @@ export const Text = forwardRef(
     const componentClassnames = clsx(
       className,
       'font-sans',
-      'text-semantic-typography-prominent',
+      'text-typography-prominent',
       {
-        'text-semantic-body-xl': size === 'xl', // font-size classes
-        'text-semantic-body-lg': size === 'lg',
-        'text-semantic-body-md': size === 'md',
-        'text-semantic-body-sm': size === 'sm',
+        'text-body-xl': size === 'xl', // font-size classes
+        'text-body-lg': size === 'lg',
+        'text-body-md': size === 'md',
+        'text-body-sm': size === 'sm',
       },
       {
-        'space-y-semantic-paragraphSpacing-body-xl': size === 'xl', // paragraph spacing classes
-        'space-y-semantic-paragraphSpacing-body-lg': size === 'lg',
-        'space-y-semantic-paragraphSpacing-body-md': size === 'md',
-        'space-y-semantic-paragraphSpacing-body-sm': size === 'sm',
+        'space-y-paragraphSpacing-body-xl': size === 'xl', // paragraph spacing classes
+        'space-y-paragraphSpacing-body-lg': size === 'lg',
+        'space-y-paragraphSpacing-body-md': size === 'md',
+        'space-y-paragraphSpacing-body-sm': size === 'sm',
       },
       {
-        'leading-semantic-body-xl': size === 'xl', // line height classes
-        'leading-semantic-body-lg': size === 'lg',
-        'leading-semantic-body-md': size === 'md',
-        'leading-semantic-body-sm': size === 'sm',
+        'leading-body-xl': size === 'xl', // line height classes
+        'leading-body-lg': size === 'lg',
+        'leading-body-md': size === 'md',
+        'leading-body-sm': size === 'sm',
       },
       {
-        'font-core-regular': variant === 'regular',
+        'font-regular': variant === 'regular',
         italic: variant === 'italic',
-        'font-core-bold': variant === 'bold',
-        'font-core-bold italic': variant === 'bold-italic',
+        'font-bold': variant === 'bold',
+        'font-bold italic': variant === 'bold-italic',
       },
       { underline: type === 'underline' },
     )

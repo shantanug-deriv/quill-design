@@ -3,7 +3,7 @@
 exports[`Text Should display content with default classnames 1`] = `
 <div>
   <p
-    class="font-sans text-semantic-typography-prominent text-semantic-body-md space-y-semantic-paragraphSpacing-body-md leading-semantic-body-md font-core-regular"
+    class="font-sans text-typography-prominent text-body-md space-y-paragraphSpacing-body-md leading-body-md font-regular"
   >
     Text content
   </p>
@@ -13,7 +13,7 @@ exports[`Text Should display content with default classnames 1`] = `
 exports[`Text Should have correct classnames with size xl 1`] = `
 <div>
   <p
-    class="font-sans text-semantic-typography-prominent text-semantic-body-xl space-y-semantic-paragraphSpacing-body-xl leading-semantic-body-xl font-core-regular"
+    class="font-sans text-typography-prominent text-body-xl space-y-paragraphSpacing-body-xl leading-body-xl font-regular"
   >
     Text content
   </p>
@@ -23,7 +23,7 @@ exports[`Text Should have correct classnames with size xl 1`] = `
 exports[`Text Should have correct classnames with size xl and type underline 1`] = `
 <div>
   <p
-    class="font-sans text-semantic-typography-prominent text-semantic-body-xl space-y-semantic-paragraphSpacing-body-xl leading-semantic-body-xl font-core-regular underline"
+    class="font-sans text-typography-prominent text-body-xl space-y-paragraphSpacing-body-xl leading-body-xl font-regular underline"
   >
     Text content
   </p>

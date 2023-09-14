@@ -13,11 +13,11 @@ const H6 = forwardRef(
         ref={ref}
         className={clsx(
           'font-heading',
-          'text-semantic-heading-h6',
-          'font-core-bold',
-          'leading-semantic-heading-h6',
-          'space-y-semantic-paragraphSpacing-heading-h6',
-          'text-semantic-typography-prominent',
+          'text-heading-h6',
+          'font-bold',
+          'leading-heading-h6',
+          'space-y-paragraphSpacing-heading-h6',
+          'text-typography-prominent',
           className,
         )}
         {...rest}

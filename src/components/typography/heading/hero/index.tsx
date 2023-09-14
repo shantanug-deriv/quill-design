@@ -13,11 +13,11 @@ const HeroHeading = forwardRef(
         ref={ref}
         className={clsx(
           'font-heading',
-          'text-semantic-heading-hero',
-          'font-core-bold',
-          'leading-semantic-heading-hero',
-          'space-y-semantic-paragraphSpacing-heading-hero',
-          'text-semantic-typography-prominent',
+          'text-heading-hero',
+          'font-bold',
+          'leading-heading-hero',
+          'space-y-paragraphSpacing-heading-hero',
+          'text-typography-prominent',
           className,
         )}
         {...rest}

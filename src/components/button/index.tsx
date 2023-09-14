@@ -32,77 +32,77 @@ export const Button = forwardRef(
     return (
       <button
         className={clsx(
-          'disabled:opacity-core-300',
-          'leading-core-100',
-          'font-core-bold',
+          'disabled:opacity-300',
+          'leading-100',
+          'font-bold',
           'font-heading',
-          'flex flex-row items-center justify-center gap-semantic-general-md',
+          'flex flex-row items-center justify-center gap-general-md',
           {
             'w-full': fullWidth,
           },
           {
-            'border-core-75': variant === 'secondary' && colorStyle !== 'white',
+            'border-75': variant === 'secondary' && colorStyle !== 'white',
           },
           {
-            ['border-core-solid-coral-700']:
+            ['border-solid-coral-700']:
               variant === 'secondary' && colorStyle === 'coral',
           },
           {
-            ['border-core-solid-slate-1400']:
+            ['border-solid-slate-1400']:
               variant === 'secondary' && colorStyle === 'black',
           },
           {
-            ['border-core-solid-slate-50']:
+            ['border-solid-slate-50']:
               variant === 'secondary' && colorStyle === 'white',
           },
           {
-            'rounded-core-400 p-core-400 text-core-50': size === 'sm',
+            'rounded-400 p-400 text-50': size === 'sm',
           },
           {
-            'rounded-core-600 p-core-600 text-core-75': size === 'md',
+            'rounded-600 p-600 text-75': size === 'md',
           },
           {
-            'rounded-core-800 p-core-800 text-core-100': size === 'lg',
+            'rounded-800 p-800 text-100': size === 'lg',
           },
           {
-            'rounded-core-1200 p-core-1200 text-core-300': size === 'xl',
+            'rounded-1200 p-1200 text-300': size === 'xl',
           },
           {
-            ['bg-core-solid-coral-700 text-core-solid-slate-50 hover:bg-core-solid-coral-800 active:bg-core-solid-coral-900']:
+            ['bg-solid-coral-700 text-solid-slate-50 hover:bg-solid-coral-800 active:bg-solid-coral-900']:
               variant === 'primary' && colorStyle === 'coral',
           },
           {
-            ['bg-core-solid-slate-1400 text-core-solid-slate-50 hover:bg-core-solid-slate-800 active:bg-core-solid-slate-700']:
+            ['bg-solid-slate-1400 text-solid-slate-50 hover:bg-solid-slate-800 active:bg-solid-slate-700']:
               variant === 'primary' && colorStyle === 'black',
           },
           {
-            ['bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-white-800 active:bg-core-opacity-white-700']:
+            ['bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-white-800 active:bg-opacity-white-700']:
               variant === 'primary' && colorStyle === 'white',
           },
 
           {
-            ['bg-core-solid-red-100 text-core-solid-coral-700 hover:bg-core-solid-red-200 active:bg-core-solid-red-300']:
+            ['bg-solid-red-100 text-solid-coral-700 hover:bg-solid-red-200 active:bg-solid-red-300']:
               variant === 'secondary' && colorStyle === 'coral',
           },
           {
-            ['bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-black-100 active:bg-core-opacity-black-200']:
+            ['bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-black-100 active:bg-opacity-black-200']:
               variant === 'secondary' && colorStyle === 'black',
           },
           {
-            ['bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-white-800 active:bg-core-opacity-white-700']:
+            ['bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-white-800 active:bg-opacity-white-700']:
               variant === 'secondary' && colorStyle === 'white',
           },
 
           {
-            ['text-core-solid-coral-700']:
+            ['text-solid-coral-700']:
               variant === 'tertiary' && colorStyle === 'coral',
           },
           {
-            ['text-core-solid-slate-1400']:
+            ['text-solid-slate-1400']:
               variant === 'tertiary' && colorStyle === 'black',
           },
           {
-            ['text-core-solid-slate-50']:
+            ['text-solid-slate-50']:
               variant === 'tertiary' && colorStyle === 'white',
           },
           className,

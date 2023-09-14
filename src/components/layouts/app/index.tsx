@@ -7,7 +7,7 @@ export const AppLayout = ({
 }: React.HTMLAttributes<HTMLDivElement>) => {
   return (
     <div
-      className={clsx('bg-semantic-background-primary-container', className)}
+      className={clsx('bg-background-primary-container', className)}
       {...rest}
     >
       {children}

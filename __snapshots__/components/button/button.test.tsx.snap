@@ -2,7 +2,7 @@
 
 exports[`Button should render correctly with primary variant, lg size, black colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-800 p-core-800 text-core-100 bg-core-solid-slate-1400 text-core-solid-slate-50 hover:bg-core-solid-slate-800 active:bg-core-solid-slate-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-800 p-800 text-100 bg-solid-slate-1400 text-solid-slate-50 hover:bg-solid-slate-800 active:bg-solid-slate-700"
 >
   Click me
 </button>
@@ -10,7 +10,7 @@ exports[`Button should render correctly with primary variant, lg size, black col
 
 exports[`Button should render correctly with primary variant, lg size, coral colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-800 p-core-800 text-core-100 bg-core-solid-coral-700 text-core-solid-slate-50 hover:bg-core-solid-coral-800 active:bg-core-solid-coral-900"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-800 p-800 text-100 bg-solid-coral-700 text-solid-slate-50 hover:bg-solid-coral-800 active:bg-solid-coral-900"
 >
   Click me
 </button>
@@ -18,7 +18,7 @@ exports[`Button should render correctly with primary variant, lg size, coral col
 
 exports[`Button should render correctly with primary variant, lg size, white colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-800 p-core-800 text-core-100 bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-white-800 active:bg-core-opacity-white-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-800 p-800 text-100 bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-white-800 active:bg-opacity-white-700"
 >
   Click me
 </button>
@@ -26,7 +26,7 @@ exports[`Button should render correctly with primary variant, lg size, white col
 
 exports[`Button should render correctly with primary variant, md size, black colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-600 p-core-600 text-core-75 bg-core-solid-slate-1400 text-core-solid-slate-50 hover:bg-core-solid-slate-800 active:bg-core-solid-slate-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-600 p-600 text-75 bg-solid-slate-1400 text-solid-slate-50 hover:bg-solid-slate-800 active:bg-solid-slate-700"
 >
   Click me
 </button>
@@ -34,7 +34,7 @@ exports[`Button should render correctly with primary variant, md size, black col
 
 exports[`Button should render correctly with primary variant, md size, coral colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-600 p-core-600 text-core-75 bg-core-solid-coral-700 text-core-solid-slate-50 hover:bg-core-solid-coral-800 active:bg-core-solid-coral-900"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-600 p-600 text-75 bg-solid-coral-700 text-solid-slate-50 hover:bg-solid-coral-800 active:bg-solid-coral-900"
 >
   Click me
 </button>
@@ -42,7 +42,7 @@ exports[`Button should render correctly with primary variant, md size, coral col
 
 exports[`Button should render correctly with primary variant, md size, white colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-600 p-core-600 text-core-75 bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-white-800 active:bg-core-opacity-white-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-600 p-600 text-75 bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-white-800 active:bg-opacity-white-700"
 >
   Click me
 </button>
@@ -50,7 +50,7 @@ exports[`Button should render correctly with primary variant, md size, white col
 
 exports[`Button should render correctly with primary variant, sm size, black colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-400 p-core-400 text-core-50 bg-core-solid-slate-1400 text-core-solid-slate-50 hover:bg-core-solid-slate-800 active:bg-core-solid-slate-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-400 p-400 text-50 bg-solid-slate-1400 text-solid-slate-50 hover:bg-solid-slate-800 active:bg-solid-slate-700"
 >
   Click me
 </button>
@@ -58,7 +58,7 @@ exports[`Button should render correctly with primary variant, sm size, black col
 
 exports[`Button should render correctly with primary variant, sm size, coral colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-400 p-core-400 text-core-50 bg-core-solid-coral-700 text-core-solid-slate-50 hover:bg-core-solid-coral-800 active:bg-core-solid-coral-900"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-400 p-400 text-50 bg-solid-coral-700 text-solid-slate-50 hover:bg-solid-coral-800 active:bg-solid-coral-900"
 >
   Click me
 </button>
@@ -66,7 +66,7 @@ exports[`Button should render correctly with primary variant, sm size, coral col
 
 exports[`Button should render correctly with primary variant, sm size, white colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-400 p-core-400 text-core-50 bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-white-800 active:bg-core-opacity-white-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-400 p-400 text-50 bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-white-800 active:bg-opacity-white-700"
 >
   Click me
 </button>
@@ -74,7 +74,7 @@ exports[`Button should render correctly with primary variant, sm size, white col
 
 exports[`Button should render correctly with primary variant, xl size, black colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-1200 p-core-1200 text-core-300 bg-core-solid-slate-1400 text-core-solid-slate-50 hover:bg-core-solid-slate-800 active:bg-core-solid-slate-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-1200 p-1200 text-300 bg-solid-slate-1400 text-solid-slate-50 hover:bg-solid-slate-800 active:bg-solid-slate-700"
 >
   Click me
 </button>
@@ -82,7 +82,7 @@ exports[`Button should render correctly with primary variant, xl size, black col
 
 exports[`Button should render correctly with primary variant, xl size, coral colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-1200 p-core-1200 text-core-300 bg-core-solid-coral-700 text-core-solid-slate-50 hover:bg-core-solid-coral-800 active:bg-core-solid-coral-900"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-1200 p-1200 text-300 bg-solid-coral-700 text-solid-slate-50 hover:bg-solid-coral-800 active:bg-solid-coral-900"
 >
   Click me
 </button>
@@ -90,7 +90,7 @@ exports[`Button should render correctly with primary variant, xl size, coral col
 
 exports[`Button should render correctly with primary variant, xl size, white colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-1200 p-core-1200 text-core-300 bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-white-800 active:bg-core-opacity-white-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-1200 p-1200 text-300 bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-white-800 active:bg-opacity-white-700"
 >
   Click me
 </button>
@@ -98,7 +98,7 @@ exports[`Button should render correctly with primary variant, xl size, white col
 
 exports[`Button should render correctly with secondary variant, lg size, black colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md border-core-75 border-core-solid-slate-1400 rounded-core-800 p-core-800 text-core-100 bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-black-100 active:bg-core-opacity-black-200"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md border-75 border-solid-slate-1400 rounded-800 p-800 text-100 bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-black-100 active:bg-opacity-black-200"
 >
   Click me
 </button>
@@ -106,7 +106,7 @@ exports[`Button should render correctly with secondary variant, lg size, black c
 
 exports[`Button should render correctly with secondary variant, lg size, coral colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md border-core-75 border-core-solid-coral-700 rounded-core-800 p-core-800 text-core-100 bg-core-solid-red-100 text-core-solid-coral-700 hover:bg-core-solid-red-200 active:bg-core-solid-red-300"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md border-75 border-solid-coral-700 rounded-800 p-800 text-100 bg-solid-red-100 text-solid-coral-700 hover:bg-solid-red-200 active:bg-solid-red-300"
 >
   Click me
 </button>
@@ -114,7 +114,7 @@ exports[`Button should render correctly with secondary variant, lg size, coral c
 
 exports[`Button should render correctly with secondary variant, lg size, white colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md border-core-solid-slate-50 rounded-core-800 p-core-800 text-core-100 bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-white-800 active:bg-core-opacity-white-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md border-solid-slate-50 rounded-800 p-800 text-100 bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-white-800 active:bg-opacity-white-700"
 >
   Click me
 </button>
@@ -122,7 +122,7 @@ exports[`Button should render correctly with secondary variant, lg size, white c
 
 exports[`Button should render correctly with secondary variant, md size, black colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md border-core-75 border-core-solid-slate-1400 rounded-core-600 p-core-600 text-core-75 bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-black-100 active:bg-core-opacity-black-200"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md border-75 border-solid-slate-1400 rounded-600 p-600 text-75 bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-black-100 active:bg-opacity-black-200"
 >
   Click me
 </button>
@@ -130,7 +130,7 @@ exports[`Button should render correctly with secondary variant, md size, black c
 
 exports[`Button should render correctly with secondary variant, md size, coral colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md border-core-75 border-core-solid-coral-700 rounded-core-600 p-core-600 text-core-75 bg-core-solid-red-100 text-core-solid-coral-700 hover:bg-core-solid-red-200 active:bg-core-solid-red-300"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md border-75 border-solid-coral-700 rounded-600 p-600 text-75 bg-solid-red-100 text-solid-coral-700 hover:bg-solid-red-200 active:bg-solid-red-300"
 >
   Click me
 </button>
@@ -138,7 +138,7 @@ exports[`Button should render correctly with secondary variant, md size, coral c
 
 exports[`Button should render correctly with secondary variant, md size, white colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md border-core-solid-slate-50 rounded-core-600 p-core-600 text-core-75 bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-white-800 active:bg-core-opacity-white-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md border-solid-slate-50 rounded-600 p-600 text-75 bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-white-800 active:bg-opacity-white-700"
 >
   Click me
 </button>
@@ -146,7 +146,7 @@ exports[`Button should render correctly with secondary variant, md size, white c
 
 exports[`Button should render correctly with secondary variant, sm size, black colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md border-core-75 border-core-solid-slate-1400 rounded-core-400 p-core-400 text-core-50 bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-black-100 active:bg-core-opacity-black-200"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md border-75 border-solid-slate-1400 rounded-400 p-400 text-50 bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-black-100 active:bg-opacity-black-200"
 >
   Click me
 </button>
@@ -154,7 +154,7 @@ exports[`Button should render correctly with secondary variant, sm size, black c
 
 exports[`Button should render correctly with secondary variant, sm size, coral colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md border-core-75 border-core-solid-coral-700 rounded-core-400 p-core-400 text-core-50 bg-core-solid-red-100 text-core-solid-coral-700 hover:bg-core-solid-red-200 active:bg-core-solid-red-300"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md border-75 border-solid-coral-700 rounded-400 p-400 text-50 bg-solid-red-100 text-solid-coral-700 hover:bg-solid-red-200 active:bg-solid-red-300"
 >
   Click me
 </button>
@@ -162,7 +162,7 @@ exports[`Button should render correctly with secondary variant, sm size, coral c
 
 exports[`Button should render correctly with secondary variant, sm size, white colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md border-core-solid-slate-50 rounded-core-400 p-core-400 text-core-50 bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-white-800 active:bg-core-opacity-white-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md border-solid-slate-50 rounded-400 p-400 text-50 bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-white-800 active:bg-opacity-white-700"
 >
   Click me
 </button>
@@ -170,7 +170,7 @@ exports[`Button should render correctly with secondary variant, sm size, white c
 
 exports[`Button should render correctly with secondary variant, xl size, black colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md border-core-75 border-core-solid-slate-1400 rounded-core-1200 p-core-1200 text-core-300 bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-black-100 active:bg-core-opacity-black-200"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md border-75 border-solid-slate-1400 rounded-1200 p-1200 text-300 bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-black-100 active:bg-opacity-black-200"
 >
   Click me
 </button>
@@ -178,7 +178,7 @@ exports[`Button should render correctly with secondary variant, xl size, black c
 
 exports[`Button should render correctly with secondary variant, xl size, coral colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md border-core-75 border-core-solid-coral-700 rounded-core-1200 p-core-1200 text-core-300 bg-core-solid-red-100 text-core-solid-coral-700 hover:bg-core-solid-red-200 active:bg-core-solid-red-300"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md border-75 border-solid-coral-700 rounded-1200 p-1200 text-300 bg-solid-red-100 text-solid-coral-700 hover:bg-solid-red-200 active:bg-solid-red-300"
 >
   Click me
 </button>
@@ -186,7 +186,7 @@ exports[`Button should render correctly with secondary variant, xl size, coral c
 
 exports[`Button should render correctly with secondary variant, xl size, white colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md border-core-solid-slate-50 rounded-core-1200 p-core-1200 text-core-300 bg-core-solid-slate-50 text-core-solid-slate-1400 hover:bg-core-opacity-white-800 active:bg-core-opacity-white-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md border-solid-slate-50 rounded-1200 p-1200 text-300 bg-solid-slate-50 text-solid-slate-1400 hover:bg-opacity-white-800 active:bg-opacity-white-700"
 >
   Click me
 </button>
@@ -194,7 +194,7 @@ exports[`Button should render correctly with secondary variant, xl size, white c
 
 exports[`Button should render correctly with tertiary variant, lg size, black colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-800 p-core-800 text-core-100 text-core-solid-slate-1400"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-800 p-800 text-100 text-solid-slate-1400"
 >
   Click me
 </button>
@@ -202,7 +202,7 @@ exports[`Button should render correctly with tertiary variant, lg size, black co
 
 exports[`Button should render correctly with tertiary variant, lg size, coral colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-800 p-core-800 text-core-100 text-core-solid-coral-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-800 p-800 text-100 text-solid-coral-700"
 >
   Click me
 </button>
@@ -210,7 +210,7 @@ exports[`Button should render correctly with tertiary variant, lg size, coral co
 
 exports[`Button should render correctly with tertiary variant, lg size, white colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-800 p-core-800 text-core-100 text-core-solid-slate-50"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-800 p-800 text-100 text-solid-slate-50"
 >
   Click me
 </button>
@@ -218,7 +218,7 @@ exports[`Button should render correctly with tertiary variant, lg size, white co
 
 exports[`Button should render correctly with tertiary variant, md size, black colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-600 p-core-600 text-core-75 text-core-solid-slate-1400"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-600 p-600 text-75 text-solid-slate-1400"
 >
   Click me
 </button>
@@ -226,7 +226,7 @@ exports[`Button should render correctly with tertiary variant, md size, black co
 
 exports[`Button should render correctly with tertiary variant, md size, coral colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-600 p-core-600 text-core-75 text-core-solid-coral-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-600 p-600 text-75 text-solid-coral-700"
 >
   Click me
 </button>
@@ -234,7 +234,7 @@ exports[`Button should render correctly with tertiary variant, md size, coral co
 
 exports[`Button should render correctly with tertiary variant, md size, white colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-600 p-core-600 text-core-75 text-core-solid-slate-50"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-600 p-600 text-75 text-solid-slate-50"
 >
   Click me
 </button>
@@ -242,7 +242,7 @@ exports[`Button should render correctly with tertiary variant, md size, white co
 
 exports[`Button should render correctly with tertiary variant, sm size, black colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-400 p-core-400 text-core-50 text-core-solid-slate-1400"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-400 p-400 text-50 text-solid-slate-1400"
 >
   Click me
 </button>
@@ -250,7 +250,7 @@ exports[`Button should render correctly with tertiary variant, sm size, black co
 
 exports[`Button should render correctly with tertiary variant, sm size, coral colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-400 p-core-400 text-core-50 text-core-solid-coral-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-400 p-400 text-50 text-solid-coral-700"
 >
   Click me
 </button>
@@ -258,7 +258,7 @@ exports[`Button should render correctly with tertiary variant, sm size, coral co
 
 exports[`Button should render correctly with tertiary variant, sm size, white colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-400 p-core-400 text-core-50 text-core-solid-slate-50"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-400 p-400 text-50 text-solid-slate-50"
 >
   Click me
 </button>
@@ -266,7 +266,7 @@ exports[`Button should render correctly with tertiary variant, sm size, white co
 
 exports[`Button should render correctly with tertiary variant, xl size, black colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-1200 p-core-1200 text-core-300 text-core-solid-slate-1400"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-1200 p-1200 text-300 text-solid-slate-1400"
 >
   Click me
 </button>
@@ -274,7 +274,7 @@ exports[`Button should render correctly with tertiary variant, xl size, black co
 
 exports[`Button should render correctly with tertiary variant, xl size, coral colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-1200 p-core-1200 text-core-300 text-core-solid-coral-700"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-1200 p-1200 text-300 text-solid-coral-700"
 >
   Click me
 </button>
@@ -282,7 +282,7 @@ exports[`Button should render correctly with tertiary variant, xl size, coral co
 
 exports[`Button should render correctly with tertiary variant, xl size, white colorStyle 1`] = `
 <button
-  class="disabled:opacity-core-300 leading-core-100 font-core-bold font-heading flex flex-row items-center justify-center gap-semantic-general-md rounded-core-1200 p-core-1200 text-core-300 text-core-solid-slate-50"
+  class="disabled:opacity-300 leading-100 font-bold font-heading flex flex-row items-center justify-center gap-general-md rounded-1200 p-1200 text-300 text-solid-slate-50"
 >
   Click me
 </button>
