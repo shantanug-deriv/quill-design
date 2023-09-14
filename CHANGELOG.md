@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/deriv-com/quill-design/compare/v1.0.9...v1.0.10) (2023-09-14)
+
+
+### 📚 	 Documentation
+
+* updated readme file for installation instruction ([82a1b6d](https://github.com/deriv-com/quill-design/commit/82a1b6dbc40834a3838f5d38a30915ce3f2d6152))
+
 ## [1.0.9](https://github.com/deriv-com/quill-design/compare/v1.0.8...v1.0.9) (2023-09-14)
 
 
