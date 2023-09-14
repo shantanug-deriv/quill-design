@@ -1,5 +1,5 @@
 {
-  "name": "@deriv-com/quill-design",
+  "name": "@deriv/quill-design",
   "version": "1.0.5",
   "description": "Deriv Quill Design UI library",
   "main": "dist/cjs/index.js",
@@ -37,9 +37,6 @@
     "url": "https://github.com/deriv-com/quill-design/issues"
   },
   "homepage": "https://github.com/deriv-com/quill-design#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/deriv-com"
-  },
   "devDependencies": {
     "@babel/preset-env": "^7.22.15",
     "@babel/preset-react": "^7.22.15",
