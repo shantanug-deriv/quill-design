@@ -3,7 +3,7 @@
 exports[`Heading Should render Hero Heading with h1 1`] = `
 <div>
   <h1
-    class="font-heading text-semantic-heading-hero font-core-bold leading-semantic-heading-hero space-y-semantic-paragraphSpacing-heading-hero text-semantic-typography-prominent"
+    class="font-heading text-heading-hero font-bold leading-heading-hero space-y-paragraphSpacing-heading-hero text-typography-prominent"
   >
     Hero heading
   </h1>
@@ -13,7 +13,7 @@ exports[`Heading Should render Hero Heading with h1 1`] = `
 exports[`Heading Should render h1 Heading with h1 1`] = `
 <div>
   <h1
-    class="font-heading text-semantic-heading-h1 font-core-bold leading-semantic-heading-h1 space-y-semantic-paragraphSpacing-heading-h1 text-semantic-typography-prominent"
+    class="font-heading text-heading-h1 font-bold leading-heading-h1 space-y-paragraphSpacing-heading-h1 text-typography-prominent"
   >
     h1 heading
   </h1>
@@ -23,7 +23,7 @@ exports[`Heading Should render h1 Heading with h1 1`] = `
 exports[`Heading Should render h2 Heading with h2 1`] = `
 <div>
   <h2
-    class="font-heading text-semantic-heading-h2 font-core-bold leading-semantic-heading-h2 space-y-semantic-paragraphSpacing-heading-h2 text-semantic-typography-prominent"
+    class="font-heading text-heading-h2 font-bold leading-heading-h2 space-y-paragraphSpacing-heading-h2 text-typography-prominent"
   >
     h2 heading
   </h2>
@@ -33,7 +33,7 @@ exports[`Heading Should render h2 Heading with h2 1`] = `
 exports[`Heading Should render h3 Heading with h3 1`] = `
 <div>
   <h3
-    class="font-heading text-semantic-heading-h3 font-core-bold leading-semantic-heading-h3 space-y-semantic-paragraphSpacing-heading-h3 text-semantic-typography-prominent"
+    class="font-heading text-heading-h3 font-bold leading-heading-h3 space-y-paragraphSpacing-heading-h3 text-typography-prominent"
   >
     h3 heading
   </h3>
@@ -43,7 +43,7 @@ exports[`Heading Should render h3 Heading with h3 1`] = `
 exports[`Heading Should render h4 Heading with h4 1`] = `
 <div>
   <h4
-    class="font-heading text-semantic-heading-h4 font-core-bold leading-semantic-heading-h4 space-y-semantic-paragraphSpacing-heading-h4 text-semantic-typography-prominent"
+    class="font-heading text-heading-h4 font-bold leading-heading-h4 space-y-paragraphSpacing-heading-h4 text-typography-prominent"
   >
     h4 heading
   </h4>
@@ -53,7 +53,7 @@ exports[`Heading Should render h4 Heading with h4 1`] = `
 exports[`Heading Should render h5 Heading with h5 1`] = `
 <div>
   <h5
-    class="font-heading text-semantic-heading-h5 font-core-bold leading-semantic-heading-h5 space-y-semantic-paragraphSpacing-heading-h5 text-semantic-typography-prominent"
+    class="font-heading text-heading-h5 font-bold leading-heading-h5 space-y-paragraphSpacing-heading-h5 text-typography-prominent"
   >
     h5 heading
   </h5>
@@ -63,7 +63,7 @@ exports[`Heading Should render h5 Heading with h5 1`] = `
 exports[`Heading Should render h6 Heading with h6 1`] = `
 <div>
   <h6
-    class="font-heading text-semantic-heading-h6 font-core-bold leading-semantic-heading-h6 space-y-semantic-paragraphSpacing-heading-h6 text-semantic-typography-prominent"
+    class="font-heading text-heading-h6 font-bold leading-heading-h6 space-y-paragraphSpacing-heading-h6 text-typography-prominent"
   >
     h6 heading
   </h6>
@@ -73,7 +73,7 @@ exports[`Heading Should render h6 Heading with h6 1`] = `
 exports[`Heading Should render h7 Heading with h7 1`] = `
 <div>
   <h6
-    class="font-heading text-semantic-heading-h7 font-core-bold leading-semantic-heading-h7 space-y-semantic-paragraphSpacing-heading-h7 text-semantic-typography-prominent"
+    class="font-heading text-heading-h7 font-bold leading-heading-h7 space-y-paragraphSpacing-heading-h7 text-typography-prominent"
   >
     h7 heading
   </h6>
@@ -83,7 +83,7 @@ exports[`Heading Should render h7 Heading with h7 1`] = `
 exports[`Text Should display correct content 1`] = `
 <div>
   <p
-    class="font-sans text-semantic-typography-prominent text-semantic-body-md space-y-semantic-paragraphSpacing-body-md leading-semantic-body-md font-core-regular"
+    class="font-sans text-typography-prominent text-body-md space-y-paragraphSpacing-body-md leading-body-md font-regular"
   >
     Text content
   </p>

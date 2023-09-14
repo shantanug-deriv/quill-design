@@ -3,7 +3,7 @@
 exports[`AppLayout should render with proper classes 1`] = `
 <div>
   <div
-    class="bg-semantic-background-primary-container"
+    class="bg-background-primary-container"
   />
 </div>
 `;

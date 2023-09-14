@@ -27,7 +27,7 @@ describe('Button', () => {
   it('should render correct disabled classname when it is disabled', () => {
     render(<Button>Click me</Button>)
     const button = screen.getByRole('button', { name: /click me/i })
-    expect(button).toHaveClass('disabled:opacity-core-300')
+    expect(button).toHaveClass('disabled:opacity-300')
   })
 
   const variants: ButtonVariant[] = ['primary', 'secondary', 'tertiary']

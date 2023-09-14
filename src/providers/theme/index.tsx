@@ -1,5 +1,5 @@
 import ThemeContext from 'contexts/theme'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Theme } from 'types'
 import { useMediaQuery } from 'usehooks-ts'
 
@@ -10,6 +10,7 @@ export interface ThemeProviderProps {
 
 export const ThemeProvider = ({ children, theme }: ThemeProviderProps) => {
   const [selectedTheme, setSelectedTheme] = useState<Theme | undefined>(theme)
+  const [currentTheme, setCurrentTheme] = useState<Theme>(theme ?? 'light')
 
   const systemPrefersDark = useMediaQuery('(prefers-color-scheme: dark)')
 
@@ -17,12 +18,13 @@ export const ThemeProvider = ({ children, theme }: ThemeProviderProps) => {
     setSelectedTheme(updatedTheme)
   }
 
-  const currentTheme: Theme = useMemo(() => {
+  useEffect(() => {
     if (!selectedTheme) {
-      return systemPrefersDark ? 'dark' : 'light'
+      setCurrentTheme(systemPrefersDark ? 'dark' : 'light')
+    } else {
+      setCurrentTheme(selectedTheme)
     }
-    return selectedTheme
-  }, [systemPrefersDark, selectedTheme])
+  }, [selectedTheme, systemPrefersDark])
 
   useEffect(() => {
     const root = document.documentElement
