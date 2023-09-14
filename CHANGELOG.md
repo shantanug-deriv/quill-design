@@ -1,3 +1,17 @@
+## [1.0.4](https://github.com/deriv-com/quill-design/compare/v1.0.3...v1.0.4) (2023-09-14)
+
+
+### ♻️ 	 Chores
+
+* adopted new quill token names in component classnames ([c172821](https://github.com/deriv-com/quill-design/commit/c1728215a8d08babf18580cb9e6f8b4d58fd9358))
+* updated package.json file chromatic script [skip ci] ([323fd04](https://github.com/deriv-com/quill-design/commit/323fd04f959034239b26ae03c3cf69b08fb3f7cb))
+
+
+### ⚙️ 	 Continuous Integrations
+
+* Update release.yaml ([8d9c198](https://github.com/deriv-com/quill-design/commit/8d9c1981777b63148073cb48d930be13775acd42))
+* updated chromatic github action externals [skip ci] ([819bab1](https://github.com/deriv-com/quill-design/commit/819bab1f0e664dec021e6d92c5ad34d4d192dd71))
+
 ## [1.0.3](https://github.com/deriv-com/quill-design/compare/v1.0.2...v1.0.3) (2023-09-11)
 
 
