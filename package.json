@@ -38,7 +38,8 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
-    "tag": "latest"
+    "tag": "latest",
+    "access": "public"
   },
   "homepage": "https://github.com/deriv-com/quill-design#readme",
   "devDependencies": {
