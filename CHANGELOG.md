@@ -1,3 +1,11 @@
+## [1.0.6](https://github.com/deriv-com/quill-design/compare/v1.0.5...v1.0.6) (2023-09-14)
+
+
+### ⚙️ 	 Continuous Integrations
+
+* fixed semantic github releasea ([029c5b4](https://github.com/deriv-com/quill-design/commit/029c5b4125c398af94fe0973e70a4a8fb2bc1905))
+* release to npm registry ([d353f12](https://github.com/deriv-com/quill-design/commit/d353f12d3a0a4355aa2b81da388120d4491e429c))
+
 ## [1.0.5](https://github.com/deriv-com/quill-design/compare/v1.0.4...v1.0.5) (2023-09-14)
 
 
