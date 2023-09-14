@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/deriv-com/quill-design/compare/v1.0.8...v1.0.9) (2023-09-14)
+
+
+### ⚙️ 	 Continuous Integrations
+
+* make npm package public ([6c4dacc](https://github.com/deriv-com/quill-design/commit/6c4dacc7aa3787709989ba68ad5c996029107643))
+
 ## [1.0.8](https://github.com/deriv-com/quill-design/compare/v1.0.7...v1.0.8) (2023-09-14)
 
 
