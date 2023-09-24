@@ -2,8 +2,8 @@ import { ComponentPropsWithRef, Ref, forwardRef } from 'react'
 import clsx from 'clsx'
 
 export type TextSize = 'xl' | 'lg' | 'md' | 'sm'
-export type TextVariant = 'regular' | 'italic' | 'bold' | 'bold-italic'
-export type TextType = 'regular' | 'underline'
+export type TextVariant = 'regular' | 'bold'
+export type TextType = 'regular' | 'underline' | 'italic'
 
 export type TextProps = {
   size?: TextSize
@@ -46,13 +46,10 @@ export const Text = forwardRef(
       },
       {
         'font-regular': variant === 'regular',
-        italic: variant === 'italic',
         'font-bold': variant === 'bold',
-        'font-bold italic': variant === 'bold-italic',
       },
-      { underline: type === 'underline' },
+      { underline: type === 'underline', italic: type === 'italic' },
     )
-
     return (
       <p ref={ref} className={clsx(componentClassnames, className)} {...rest} />
     )
