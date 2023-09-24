@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/deriv-com/quill-design/compare/v1.0.10...v1.0.11) (2023-09-24)
+
+
+### ♻️ 	 Chores
+
+* added tailwind eslint config and prettier plugin ([5f67963](https://github.com/deriv-com/quill-design/commit/5f67963066e091d1d4be2082897761f17fa40807))
+
 ## [1.0.10](https://github.com/deriv-com/quill-design/compare/v1.0.9...v1.0.10) (2023-09-14)
 
 
