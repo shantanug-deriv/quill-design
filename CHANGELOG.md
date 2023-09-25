@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/deriv-com/quill-design/compare/v1.0.11...v1.0.12) (2023-09-25)
+
+
+### ♻️ 	 Chores
+
+* update quill tokens ([d7734df](https://github.com/deriv-com/quill-design/commit/d7734df0fd23949bc83d97343626cd0decb497f9))
+
 ## [1.0.11](https://github.com/deriv-com/quill-design/compare/v1.0.10...v1.0.11) (2023-09-24)
 
 
