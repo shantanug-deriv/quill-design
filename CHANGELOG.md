@@ -1,3 +1,11 @@
+## [1.0.13](https://github.com/deriv-com/quill-design/compare/v1.0.12...v1.0.13) (2023-09-26)
+
+
+### ♻️ 	 Chores
+
+* added qt merge and it's config ([8371b79](https://github.com/deriv-com/quill-design/commit/8371b7998f5c1db30b98d4978546afba41bc88bf))
+* update media queires to use quill-tailwind screens ([55b2511](https://github.com/deriv-com/quill-design/commit/55b251138b375f55fe4c84406d47ab444579d483))
+
 ## [1.0.12](https://github.com/deriv-com/quill-design/compare/v1.0.11...v1.0.12) (2023-09-25)
 
 
