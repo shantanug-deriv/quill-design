@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-webpack5'
+import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin'
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -25,6 +26,13 @@ const config: StorybookConfig = {
     name: '@storybook/react-webpack5',
     options: {},
   },
+  webpackFinal: async (config, { configType }) => {
+    if (config.resolve) {
+      config.resolve.plugins = [new TsconfigPathsPlugin()]
+    }
+    return config
+  },
+
   docs: {
     autodocs: 'tag',
   },
