@@ -1,9 +1,11 @@
-import type { JestConfigWithTsJest } from 'ts-jest'
+import { JestConfigWithTsJest, pathsToModuleNameMapper } from 'ts-jest'
+import { compilerOptions } from './tsconfig.json'
 
 const config: JestConfigWithTsJest = {
   collectCoverageFrom: [
     './src/**/*.{js,jsx,ts,tsx}',
     '!./src/**/*.stories.{js,jsx,ts,tsx}',
+    '!./src/qt-merge/**/*.{js,jsx,ts,tsx}',
     '!**/node_modules/**',
   ],
   coverageReporters: ['lcov'],
@@ -13,6 +15,9 @@ const config: JestConfigWithTsJest = {
   resolver: 'ts-jest-resolver',
   moduleNameMapper: {
     '.(css|less|scss)$': 'identity-obj-proxy',
+    ...pathsToModuleNameMapper(compilerOptions.paths, {
+      prefix: '<rootDir>/src',
+    }),
   },
   moduleDirectories: ['node_modules', './test-utils', __dirname, './src'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],

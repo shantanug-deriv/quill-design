@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+import { twMerge } from 'tailwind-merge'
 
 export const AppLayout = ({
   children,
@@ -7,7 +7,7 @@ export const AppLayout = ({
 }: React.HTMLAttributes<HTMLDivElement>) => {
   return (
     <div
-      className={clsx('bg-background-primary-container', className)}
+      className={twMerge('bg-background-primary-container', className)}
       {...rest}
     >
       {children}

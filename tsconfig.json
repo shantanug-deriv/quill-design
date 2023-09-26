@@ -15,6 +15,7 @@
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
     "resolveJsonModule": true,
+    "allowJs": true,
     "baseUrl": "src",
     "paths": {
       "components/*": ["components/*"],
@@ -24,13 +25,9 @@
       "types/*": ["types/*"],
       "layouts/*": ["layouts/*"],
       "containers/*": ["containers/*"],
-      "test-utils": ["../test-utils"]
+      "test-utils": ["../test-utils"],
+      "qtMerge": ["qt-merge"]
     }
   },
-  "exclude": [
-    "dist",
-    "node_modules",
-    "./rollup.config.ts",
-    "./jest.config.ts"
-  ]
+  "exclude": ["dist", "node_modules", "./rollup.config.ts", "./jest.config.ts"]
 }

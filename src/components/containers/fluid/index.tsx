@@ -1,20 +1,18 @@
-import clsx from 'clsx'
-import { ComponentPropsWithRef, forwardRef } from 'react'
+import qtMerge from 'qtMerge'
+import { HtmlHTMLAttributes } from 'react'
 
-export const FluidContainer = forwardRef<
-  HTMLDivElement,
-  ComponentPropsWithRef<'div'>
->(({ children, className, ...rest }, ref) => {
+export const FluidContainer = ({
+  className,
+  ...rest
+}: HtmlHTMLAttributes<HTMLDivElement>) => {
   return (
     <div
-      ref={ref}
-      className={clsx('mx-auto w-full max-w-screen-lg', className)}
+      className={qtMerge(
+        'xl:px-0 max-w-screen-xl mx-auto w-full bg-solid-red-900 px-general-lg md:px-general-xl',
+        className,
+      )}
       {...rest}
-    >
-      {children}
-    </div>
+    />
   )
-})
-FluidContainer.displayName = 'FluidContainer'
-
+}
 export default FluidContainer

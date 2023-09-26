@@ -1,6 +1,5 @@
+import qtMerge from 'qtMerge'
 import { ComponentPropsWithRef, Ref, forwardRef } from 'react'
-import clsx from 'clsx'
-
 export type HeadingOneProps = ComponentPropsWithRef<'h1'>
 
 const H1 = forwardRef(
@@ -11,7 +10,7 @@ const H1 = forwardRef(
     return (
       <h1
         ref={ref}
-        className={clsx(
+        className={qtMerge(
           'font-heading',
           'text-heading-h1',
           'font-bold',

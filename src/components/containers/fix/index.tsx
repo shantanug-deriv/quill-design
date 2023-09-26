@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+import qtMerge from 'qtMerge'
 import { HtmlHTMLAttributes } from 'react'
 
 export const FixContainer = ({
@@ -7,7 +7,7 @@ export const FixContainer = ({
   ...rest
 }: HtmlHTMLAttributes<HTMLDivElement>) => {
   return (
-    <div className={clsx('w-full', className)} {...rest}>
+    <div className={qtMerge('w-full', className)} {...rest}>
       {children}
     </div>
   )
