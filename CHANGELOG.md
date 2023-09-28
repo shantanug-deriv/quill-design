@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/deriv-com/quill-design/compare/v1.0.14...v1.0.15) (2023-09-28)
+
+
+### ♻️ 	 Chores
+
+* update paddings on fluid contaienr ([60106e0](https://github.com/deriv-com/quill-design/commit/60106e0f23383df20435a8368e7b0bd6efe79792)), closes [#19](https://github.com/deriv-com/quill-design/issues/19)
+
 ## [1.0.14](https://github.com/deriv-com/quill-design/compare/v1.0.13...v1.0.14) (2023-09-28)
 
 
