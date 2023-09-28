@@ -1,5 +1,5 @@
 import qtMerge from 'qtMerge'
-import { HtmlHTMLAttributes } from 'react'
+import { type HtmlHTMLAttributes } from 'react'
 
 export const FluidContainer = ({
   className,
@@ -8,7 +8,7 @@ export const FluidContainer = ({
   return (
     <div
       className={qtMerge(
-        'xl:px-0 mx-auto w-full max-w-screen-xl bg-background-primary-container px-general-lg md:px-general-xl',
+        'mx-auto w-full max-w-[1232px] bg-background-primary-container px-general-md 2xl:px-general-none',
         className,
       )}
       {...rest}
