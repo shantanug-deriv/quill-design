@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/deriv-com/quill-design/compare/v1.0.13...v1.0.14) (2023-09-28)
+
+
+### ♻️ 	 Chores
+
+* updated build exports ([2e4241f](https://github.com/deriv-com/quill-design/commit/2e4241f46c3da63d028c0d15d0cbc66c305e4503))
+
 ## [1.0.13](https://github.com/deriv-com/quill-design/compare/v1.0.12...v1.0.13) (2023-09-26)
 
 
