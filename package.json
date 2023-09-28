@@ -2,8 +2,7 @@
   "name": "@deriv/quill-design",
   "version": "1.0.13",
   "description": "Deriv Quill Design UI library",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "module": "dist/index.js",
   "files": [
     "dist/**",
     "quill-tailwind/**"
