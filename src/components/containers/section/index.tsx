@@ -5,10 +5,10 @@ export type SectionElements = GenericElements<'section' | 'div' | 'article'>
 
 export type SectionAsProp<T> = AsProp<T, SectionElements>
 
-export type SectionProps<T extends keyof SectionElements = 'section'> =
-  SectionAsProp<T> & UnionToIntersection<SectionElements[T]>
+export type SectionProps<T extends keyof SectionElements> = SectionAsProp<T> &
+  UnionToIntersection<SectionElements[T]>
 
-export const Section = <T extends keyof SectionElements = 'section'>({
+export const Section = <T extends keyof SectionElements>({
   as,
   className,
   ...rest
