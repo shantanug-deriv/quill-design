@@ -14,17 +14,10 @@ import tailwindConfig from './tailwind.config'
 import cssnano from 'cssnano'
 import postcssImport from 'postcss-import'
 
-console.log(process.env.NODE_END)
-
 export default defineConfig([
   {
     input: 'src/index.ts',
     output: [
-      {
-        file: packageJson.main,
-        format: 'cjs',
-        sourcemap: true,
-      },
       {
         file: packageJson.module,
         format: 'esm',
@@ -42,6 +35,8 @@ export default defineConfig([
       }),
       postcss({
         extensions: ['.scss', '.module.scss', '.css', '.module.css'],
+        extract: 'quill-design.css',
+        minimize: true,
         plugins: [
           postcssImport(),
           autoprefixer(),

@@ -1,10 +1,11 @@
 import clsx from 'clsx'
+import { AsProp, GenericElements, UnionToIntersection } from 'types'
 
-type SectionElements = GenericElements<'section' | 'div' | 'article'>
+export type SectionElements = GenericElements<'section' | 'div' | 'article'>
 
-type SectionAsProp<T> = AsProp<T, SectionElements>
+export type SectionAsProp<T> = AsProp<T, SectionElements>
 
-type SectionProps<T extends keyof SectionElements = 'section'> =
+export type SectionProps<T extends keyof SectionElements = 'section'> =
   SectionAsProp<T> & UnionToIntersection<SectionElements[T]>
 
 export const Section = <T extends keyof SectionElements = 'section'>({
