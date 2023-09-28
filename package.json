@@ -2,6 +2,7 @@
   "name": "@deriv/quill-design",
   "version": "1.0.14",
   "description": "Deriv Quill Design UI library",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
     "dist/**",
@@ -64,7 +65,7 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.5.4",
     "@types/node": "^20.5.7",
-    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.5.0",
     "autoprefixer": "^10.4.15",
     "chromatic": "^7.1.0",
