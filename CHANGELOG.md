@@ -1,3 +1,10 @@
+## [1.0.16](https://github.com/deriv-com/quill-design/compare/v1.0.15...v1.0.16) (2023-09-28)
+
+
+### ♻️ 	 Chores
+
+* updated section component and removed bg-color from fluid container ([3eb8cd8](https://github.com/deriv-com/quill-design/commit/3eb8cd8d7617db3b47993eb9748da2bbe14591c3))
+
 ## [1.0.15](https://github.com/deriv-com/quill-design/compare/v1.0.14...v1.0.15) (2023-09-28)
 
 
