@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CaptionText should have correct classnames with bold enabled 1`] = `
+<div>
+  <code
+    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-bold not-italic"
+  >
+    CaptionText content
+  </code>
+</div>
+`;
+
+exports[`CaptionText should have correct classnames with default values 1`] = `
+<div>
+  <code
+    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-regular not-italic"
+  >
+    CodeText content
+  </code>
+</div>
+`;
+
+exports[`CaptionText should have correct classnames with italic enabled 1`] = `
+<div>
+  <code
+    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-regular italic"
+  >
+    CaptionText content
+  </code>
+</div>
+`;
+
+exports[`CaptionText should have correct classnames with size lg 1`] = `
+<div>
+  <code
+    class="font-mono text-code-lg space-y-paragraphSpacing-code-lg leading-code-lg font-regular not-italic"
+  >
+    CodeText content
+  </code>
+</div>
+`;
+
+exports[`CaptionText should have correct classnames with size md 1`] = `
+<div>
+  <code
+    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-regular not-italic"
+  >
+    CodeText content
+  </code>
+</div>
+`;
+
+exports[`CaptionText should have correct classnames with size sm 1`] = `
+<div>
+  <code
+    class="font-mono text-code-sm space-y-paragraphSpacing-code-sm leading-code-sm font-regular not-italic"
+  >
+    CodeText content
+  </code>
+</div>
+`;
+
+exports[`CaptionText should have correct classnames with size xl 1`] = `
+<div>
+  <code
+    class="font-mono text-code-xl space-y-paragraphSpacing-code-xl leading-code-xl font-regular not-italic"
+  >
+    CodeText content
+  </code>
+</div>
+`;
+
+exports[`CaptionText should have correct classnames with underline enabled 1`] = `
+<div>
+  <code
+    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-regular not-italic underline"
+  >
+    CaptionText content
+  </code>
+</div>
+`;

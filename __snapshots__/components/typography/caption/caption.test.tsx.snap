@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CaptionText should have correct classnames with bold enabled 1`] = `
+<div>
+  <p
+    class="text-caption text-typography-prominent font-bold not-italic"
+  >
+    CaptionText content
+  </p>
+</div>
+`;
+
+exports[`CaptionText should have correct classnames with default values 1`] = `
+<div>
+  <p
+    class="text-caption text-typography-prominent font-regular not-italic"
+  >
+    CaptionText content
+  </p>
+</div>
+`;
+
+exports[`CaptionText should have correct classnames with italic enabled 1`] = `
+<div>
+  <p
+    class="text-caption text-typography-prominent font-regular italic"
+  >
+    CaptionText content
+  </p>
+</div>
+`;
+
+exports[`CaptionText should have correct classnames with underline enabled 1`] = `
+<div>
+  <p
+    class="text-caption text-typography-prominent font-regular not-italic underline"
+  >
+    CaptionText content
+  </p>
+</div>
+`;

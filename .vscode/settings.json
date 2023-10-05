@@ -18,7 +18,9 @@
   "tailwindCSS.experimental.classRegex": [
     ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
     [".toHaveClass\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
-    [".toHaveExactClasses\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+    [".toHaveExactClasses\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["(?:qtMerge|qtJoin)\\(([^\\);]*)[\\);]", "[`'\"`]([^'\"`,;]*)[`'\"`]"],
+    [":\\s*?[\"'`]([^\"'`]*).*?,"]
   ],
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true

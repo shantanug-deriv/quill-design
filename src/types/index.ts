@@ -1,3 +1,5 @@
+import { type HTMLAttributes } from 'react'
+
 export type Theme = 'dark' | 'light'
 
 export type UnionToIntersection<U> = (
@@ -13,3 +15,13 @@ export type GenericElements<T extends keyof JSX.IntrinsicElements> = Pick<
   JSX.IntrinsicElements,
   T
 >
+
+export type TextSize = 'sm' | 'md' | 'lg' | 'xl'
+
+export interface BodyTypographyProps
+  extends HTMLAttributes<HTMLParagraphElement> {
+  size?: TextSize
+  bold?: boolean
+  italic?: boolean
+  underline?: boolean
+}
