@@ -22,7 +22,7 @@
       "contexts/*": ["contexts/*"],
       "hooks/*": ["hooks/*"],
       "providers/*": ["providers/*"],
-      "types/*": ["types/*"],
+      "types": ["types"],
       "layouts/*": ["layouts/*"],
       "containers/*": ["containers/*"],
       "test-utils": ["../test-utils"],

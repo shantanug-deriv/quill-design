@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Text } from '.'
+import { CodeText } from '.'
 
 const meta = {
-  title: 'Typography/Text/Body',
-  component: Text,
+  title: 'Typography/Text/Code',
+  component: CodeText,
   parameters: {
     layout: 'centered',
   },
@@ -19,7 +19,7 @@ const meta = {
     children:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, repellendus, porro est veniam, sunt enim inventore minima ratione commodi architecto dignissimos tempora debitis minus facilis molestias optio eligendi consequuntur nisi?',
   },
-} satisfies Meta<typeof Text>
+} satisfies Meta<typeof CodeText>
 
 export default meta
 type Story = StoryObj<typeof meta>

@@ -1,52 +1,37 @@
-import { qtMerge, qtJoin } from 'qtMerge'
-import { ComponentPropsWithRef, Ref, forwardRef } from 'react'
+import { qtMerge } from 'qtMerge'
+import { forwardRef } from 'react'
+import { BodyTypographyProps, TextSize } from 'types'
 
-export type TextSize = 'xl' | 'lg' | 'md' | 'sm'
-export type TextVariant = 'regular' | 'bold'
-export type TextType = 'regular' | 'underline' | 'italic'
+export const bodyTextSizeClassnames: Record<TextSize, string> = {
+  sm: 'text-body-sm space-y-paragraphSpacing-body-sm leading-body-sm',
+  md: 'text-body-md space-y-paragraphSpacing-body-md leading-body-md',
+  lg: 'text-body-lg space-y-paragraphSpacing-body-lg leading-body-lg',
+  xl: 'text-body-xl space-y-paragraphSpacing-body-xl leading-body-xl',
+}
 
-export type TextProps = {
-  size?: TextSize
-  variant?: TextVariant
-  type?: TextType
-} & ComponentPropsWithRef<'p'>
-
-export const Text = forwardRef(
+export const Text = forwardRef<HTMLParagraphElement, BodyTypographyProps>(
   (
     {
-      className,
       size = 'md',
-      variant = 'regular',
-      type = 'regular',
+      className,
+      bold = false,
+      italic = false,
+      underline = false,
       ...rest
-    }: TextProps,
-    ref: Ref<HTMLParagraphElement>,
+    },
+    ref,
   ) => {
-    const componentClassnames = qtJoin(
-      'font-sans',
-      'text-typography-prominent',
-      size === 'xl' && 'text-body-xl',
-      size === 'lg' && 'text-body-lg',
-      size === 'md' && 'text-body-md',
-      size === 'sm' && 'text-body-sm',
-      size === 'xl' && 'space-y-paragraphSpacing-body-xl',
-      size === 'lg' && 'space-y-paragraphSpacing-body-lg',
-      size === 'md' && 'space-y-paragraphSpacing-body-md',
-      size === 'sm' && 'space-y-paragraphSpacing-body-sm',
-      size === 'xl' && 'space-y-paragraphSpacing-body-xl',
-      size === 'xl' && 'leading-body-xl',
-      size === 'lg' && 'leading-body-lg',
-      size === 'md' && 'leading-body-md',
-      size === 'sm' && 'leading-body-sm',
-      variant === 'regular' && 'font-regular',
-      variant === 'bold' && 'font-bold',
-      type === 'italic' && 'italic',
-      type === 'underline' && 'underline',
-    )
     return (
       <p
         ref={ref}
-        className={qtMerge(componentClassnames, className)}
+        className={qtMerge(
+          bodyTextSizeClassnames[size],
+          bold ? 'font-bold' : 'font-regular',
+          italic ? 'italic' : 'not-italic',
+          underline && 'underline',
+          'text-typography-prominent',
+          className,
+        )}
         {...rest}
       />
     )
