@@ -1,3 +1,10 @@
+## [1.0.17](https://github.com/deriv-com/quill-design/compare/v1.0.16...v1.0.17) (2023-10-05)
+
+
+### ♻️ 	 Chores
+
+* added code, caption components ([c5b93f3](https://github.com/deriv-com/quill-design/commit/c5b93f367639dde333f1b4d492ec4a018f470918))
+
 ## [1.0.16](https://github.com/deriv-com/quill-design/compare/v1.0.15...v1.0.16) (2023-09-28)
 
 
