@@ -6,14 +6,15 @@ import {
   TagIcons,
   TagIconColors,
   TagColors,
-} from './constants'
+  tagBaseClassnames,
+} from './tag.classnames'
+import { HTMLAttributes, forwardRef } from 'react'
 
 export type TagType = 'error' | 'warning' | 'success' | 'info'
 export type TagSize = 'xs' | 'sm' | 'md' | 'lg'
 export type TagVariant = 'fill' | 'outline'
 
-export interface TagProps {
-  caption: string
+export interface TagProps extends HTMLAttributes<HTMLDivElement> {
   type?: TagType
   size?: TagSize
   variant?: TagVariant
@@ -22,33 +23,41 @@ export interface TagProps {
   bold?: boolean
 }
 
-export const Tag = ({
-  bold = false,
-  caption = 'Label',
-  className = '',
-  size = 'md',
-  type = 'info',
-  variant = 'fill',
-  icon: Icon = TagIcons[type],
-}: TagProps) => {
-  return (
-    <div
-      className={qtMerge(
-        'min-w-full',
-        'rounded-200',
-        'inline-flex items-center justify-center',
-        TagSizes[size],
-        variant === 'outline' && 'border-75 bg-none',
-        TagColors[type][variant],
-        bold && 'font-bold',
-        className,
-      )}
-    >
-      {Icon && <Icon {...TagIconSizes[size]} className={TagIconColors[type]} />}
-      {caption}
-    </div>
-  )
-}
+const Tag = forwardRef<HTMLDivElement, TagProps>(
+  (
+    {
+      bold = false,
+      children,
+      className = '',
+      size = 'md',
+      type = 'info',
+      variant = 'fill',
+      icon: Icon = TagIcons[type],
+      ...rest
+    },
+    ref,
+  ) => {
+    return (
+      <div
+        className={qtMerge(
+          tagBaseClassnames,
+          TagSizes[size],
+          TagColors[type][variant],
+          bold && 'font-bold',
+          className,
+        )}
+        {...rest}
+        ref={ref}
+      >
+        {Icon && (
+          <Icon {...TagIconSizes[size]} className={TagIconColors[type]} />
+        )}
+        {children}
+      </div>
+    )
+  },
+)
 
 Tag.displayName = 'Tag'
+
 export default Tag

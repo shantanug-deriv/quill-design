@@ -16,19 +16,19 @@ type TypeTagColor = {
 export const TagColors: TypeTagColor = {
   error: {
     fill: 'bg-solid-red-100 text-solid-red-800',
-    outline: 'border-solid-red-700 text-solid-red-800',
+    outline: 'border-75 border-solid-red-700 text-solid-red-800',
   },
   warning: {
     fill: 'bg-solid-orange-100 text-solid-orange-800',
-    outline: 'border-solid-orange-700 text-solid-orange-800',
+    outline: 'border-75 border-solid-orange-700 text-solid-orange-800',
   },
   info: {
     fill: 'bg-solid-blue-100 text-solid-blue-800',
-    outline: 'border-solid-blue-700 text-solid-blue-800',
+    outline: 'border-75 border-solid-blue-700 text-solid-blue-800',
   },
   success: {
     fill: 'bg-solid-green-100 text-solid-green-800',
-    outline: 'border-solid-green-700 text-solid-green-800',
+    outline: 'border-75 border-solid-green-700 text-solid-green-800',
   },
 }
 
@@ -75,3 +75,6 @@ export const TagIconColors: Record<TagType, string> = {
   success: 'fill-solid-green-800',
   info: 'fill-solid-blue-800',
 }
+
+export const tagBaseClassnames =
+  'min-w-full rounded-200 inline-flex items-center justify-center'

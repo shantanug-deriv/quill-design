@@ -7,8 +7,14 @@ const meta = {
     layout: 'centered',
   },
   args: {
-    caption: 'Label',
+    children: 'Label',
     size: 'md',
+  },
+  argTypes: {
+    children: {
+      name: 'Caption',
+      control: 'text',
+    },
   },
   tags: ['autodocs'],
 } satisfies Meta<typeof Tag>

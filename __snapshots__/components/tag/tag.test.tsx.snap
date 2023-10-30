@@ -39,7 +39,7 @@ exports[`Tag Should render Error Tag Fill 1`] = `
 exports[`Tag Should render Error Tag Outline 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-solid-red-700 text-solid-red-800"
+    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 border-solid-red-700 text-solid-red-800"
   >
     <svg
       class="fill-solid-red-800"
@@ -111,7 +111,7 @@ exports[`Tag Should render Info Tag Fill 1`] = `
 exports[`Tag Should render Info Tag Outline 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-solid-blue-700 text-solid-blue-800"
+    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 border-solid-blue-700 text-solid-blue-800"
   >
     <svg
       class="fill-solid-blue-800"
@@ -183,7 +183,7 @@ exports[`Tag Should render Success Tag Fill 1`] = `
 exports[`Tag Should render Success Tag Outline 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-solid-green-700 text-solid-green-800"
+    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 border-solid-green-700 text-solid-green-800"
   >
     <svg
       class="fill-solid-green-800"
@@ -291,7 +291,7 @@ exports[`Tag Should render Warning Tag Fill 1`] = `
 exports[`Tag Should render Warning Tag Outline 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-solid-orange-700 text-solid-orange-800"
+    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 border-solid-orange-700 text-solid-orange-800"
   >
     <svg
       class="fill-solid-orange-800"
