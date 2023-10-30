@@ -9,11 +9,23 @@ const meta = {
   args: {
     children: 'Label',
     size: 'md',
+    bold: false,
+    type: 'error',
   },
   argTypes: {
     children: {
       name: 'Caption',
       control: 'text',
+    },
+    icon: {
+      table: {
+        disable: true,
+      },
+    },
+    className: {
+      table: {
+        disable: true,
+      },
     },
   },
   tags: ['autodocs'],
