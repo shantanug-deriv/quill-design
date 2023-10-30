@@ -1,3 +1,18 @@
+## [1.0.20](https://github.com/deriv-com/quill-design/compare/v1.0.19...v1.0.20) (2023-10-30)
+
+
+### ♻️ 	 Chores
+
+* added args inside of storybook ([c861af1](https://github.com/deriv-com/quill-design/commit/c861af1c209da9a70b806113e902fc86b52de2e3))
+* added Tag component ([0ca3ed9](https://github.com/deriv-com/quill-design/commit/0ca3ed9f7e03634a4b22ddc84792f2d708aab932))
+* Updated the tag component ([0cbb556](https://github.com/deriv-com/quill-design/commit/0cbb556cc2c38eef7e3f49a482ec2720b334d021)), closes [#34](https://github.com/deriv-com/quill-design/issues/34)
+
+
+### 🐛 	 Bug Fixes
+
+* added quill icons ([2e0bf47](https://github.com/deriv-com/quill-design/commit/2e0bf477115472eabc7aa3e6e7eb11e9da96c52b))
+* small improvements ([f181247](https://github.com/deriv-com/quill-design/commit/f181247d240d72c61538457ba6dde565bfd91240))
+
 ## [1.0.19](https://github.com/deriv-com/quill-design/compare/v1.0.18...v1.0.19) (2023-10-28)
 
 
