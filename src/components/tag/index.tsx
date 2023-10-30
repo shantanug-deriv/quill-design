@@ -34,7 +34,7 @@ export const Tag = ({
   return (
     <div
       className={qtMerge(
-        'w-min',
+        'min-w-full',
         'rounded-200',
         'inline-flex items-center justify-center',
         TagSizes[size],
