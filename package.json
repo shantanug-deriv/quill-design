@@ -107,6 +107,7 @@
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
+    "@deriv/quill-icons": "^1.0.5",
     "@types/react": "^18.x",
     "react": "^18.x",
     "react-dom": "^18.x",
