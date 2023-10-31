@@ -1,4 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { StandalonePlaceholderRegularIcon } from '@deriv/quill-icons'
+
 import Tag from '.'
 const meta = {
   title: 'Tags/Tag',
@@ -10,11 +12,10 @@ const meta = {
     children: 'Label',
     size: 'md',
     bold: false,
-    type: 'error',
   },
   argTypes: {
     children: {
-      name: 'Caption',
+      name: 'Label',
       control: 'text',
     },
     icon: {
@@ -33,6 +34,40 @@ const meta = {
 
 export default meta
 type Story = StoryObj<typeof meta>
+
+export const CustomTagFillWithIcon: Story = {
+  args: {
+    type: 'custom',
+    variant: 'fill',
+    color: 'slate',
+    icon: StandalonePlaceholderRegularIcon,
+  },
+}
+
+export const CustomTagOutlineWithIcon: Story = {
+  args: {
+    type: 'custom',
+    variant: 'outline',
+    color: 'slate',
+    icon: StandalonePlaceholderRegularIcon,
+  },
+}
+
+export const CustomTagFillWithoutIcon: Story = {
+  args: {
+    type: 'custom',
+    variant: 'fill',
+    color: 'slate',
+  },
+}
+
+export const CustomTagOutlineWithoutIcon: Story = {
+  args: {
+    type: 'custom',
+    variant: 'outline',
+    color: 'slate',
+  },
+}
 
 export const ErrorTagFill: Story = {
   args: {
