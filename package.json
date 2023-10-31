@@ -109,6 +109,7 @@
   "peerDependencies": {
     "@deriv/quill-icons": "^1.0.5",
     "@types/react": "^18.x",
+    "class-variance-authority": "^0.7.0",
     "react": "^18.x",
     "react-dom": "^18.x",
     "tailwind-merge": "^1.14.0",
