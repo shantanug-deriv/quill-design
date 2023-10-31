@@ -4,6 +4,10 @@ import {
   LabelPairedCircleExclamationBoldIcon,
   LabelPairedCircleCheckBoldIcon,
   LabelPairedCircleInfoBoldIcon,
+  LabelPairedTriangleExclamationRegularIcon,
+  LabelPairedCircleExclamationRegularIcon,
+  LabelPairedCircleCheckRegularIcon,
+  LabelPairedCircleInfoRegularIcon,
   QuillSvgProps,
 } from '@deriv/quill-icons'
 
@@ -15,20 +19,20 @@ type TypeTagColor = {
 
 export const TagColors: TypeTagColor = {
   error: {
-    fill: 'bg-solid-red-100 text-solid-red-800',
-    outline: 'border-75 border-solid-red-700 text-solid-red-800',
+    fill: 'bg-solid-red-100 text-status-danger',
+    outline: 'border-75 border-status-danger text-status-danger',
   },
   warning: {
-    fill: 'bg-solid-orange-100 text-solid-orange-800',
-    outline: 'border-75 border-solid-orange-700 text-solid-orange-800',
+    fill: 'bg-solid-orange-100 text-status-warning',
+    outline: 'border-75 border-status-warning text-status-warning',
   },
   info: {
-    fill: 'bg-solid-blue-100 text-solid-blue-800',
-    outline: 'border-75 border-solid-blue-700 text-solid-blue-800',
+    fill: 'bg-solid-blue-100 text-status-info',
+    outline: 'border-75 border-status-info text-status-info',
   },
   success: {
-    fill: 'bg-solid-green-100 text-solid-green-800',
-    outline: 'border-75 border-solid-green-700 text-solid-green-800',
+    fill: 'bg-solid-green-100 text-status-success',
+    outline: 'border-75 border-status-success text-status-success',
   },
 }
 
@@ -39,14 +43,31 @@ export const TagSizes: Record<TagSize, string> = {
   lg: 'px-800 py-600 text-100 gap-x-800',
 }
 
-export const TagIcons: Record<
-  TagType,
-  React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
-> = {
-  error: LabelPairedTriangleExclamationBoldIcon,
-  warning: LabelPairedCircleExclamationBoldIcon,
-  success: LabelPairedCircleCheckBoldIcon,
-  info: LabelPairedCircleInfoBoldIcon,
+type TagIcons = {
+  [key in TagType]: {
+    [key in 'true' | 'false']: React.ForwardRefExoticComponent<
+      Omit<QuillSvgProps, 'ref'>
+    >
+  }
+}
+
+export const TagIcons: TagIcons = {
+  error: {
+    true: LabelPairedTriangleExclamationBoldIcon,
+    false: LabelPairedTriangleExclamationRegularIcon,
+  },
+  warning: {
+    true: LabelPairedCircleExclamationBoldIcon,
+    false: LabelPairedCircleExclamationRegularIcon,
+  },
+  success: {
+    true: LabelPairedCircleCheckBoldIcon,
+    false: LabelPairedCircleCheckRegularIcon,
+  },
+  info: {
+    true: LabelPairedCircleInfoBoldIcon,
+    false: LabelPairedCircleInfoRegularIcon,
+  },
 }
 
 export const TagIconSizes: Record<TagSize, { width: number; height: number }> =
@@ -70,11 +91,11 @@ export const TagIconSizes: Record<TagSize, { width: number; height: number }> =
   }
 
 export const TagIconColors: Record<TagType, string> = {
-  error: 'fill-solid-red-800',
-  warning: 'fill-solid-orange-800',
-  success: 'fill-solid-green-800',
-  info: 'fill-solid-blue-800',
+  error: 'fill-status-danger',
+  warning: 'fill-status-warning',
+  success: 'fill-status-success',
+  info: 'fill-status-info',
 }
 
-export const tagBaseClassnames =
+export const TagBaseClassnames =
   'min-w-full rounded-200 inline-flex items-center justify-center'

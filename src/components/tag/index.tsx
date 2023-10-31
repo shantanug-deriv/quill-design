@@ -6,7 +6,7 @@ import {
   TagIcons,
   TagIconColors,
   TagColors,
-  tagBaseClassnames,
+  TagBaseClassnames,
 } from './tag.classnames'
 import { HTMLAttributes, forwardRef } from 'react'
 
@@ -32,7 +32,7 @@ const Tag = forwardRef<HTMLDivElement, TagProps>(
       size = 'md',
       type = 'info',
       variant = 'fill',
-      icon: Icon = TagIcons[type],
+      icon: Icon = TagIcons[type][bold ? 'true' : 'false'],
       ...rest
     },
     ref,
@@ -40,7 +40,7 @@ const Tag = forwardRef<HTMLDivElement, TagProps>(
     return (
       <div
         className={qtMerge(
-          tagBaseClassnames,
+          TagBaseClassnames,
           TagSizes[size],
           TagColors[type][variant],
           bold && 'font-bold',
