@@ -1,3 +1,10 @@
+## [1.0.21](https://github.com/deriv-com/quill-design/compare/v1.0.20...v1.0.21) (2023-10-31)
+
+
+### ♻️ 	 Chores
+
+* added class variance authority package ([9431c31](https://github.com/deriv-com/quill-design/commit/9431c3125533deccbae30d90b379614f135f381d))
+
 ## [1.0.20](https://github.com/deriv-com/quill-design/compare/v1.0.19...v1.0.20) (2023-10-30)
 
 
