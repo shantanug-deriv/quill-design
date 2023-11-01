@@ -22,6 +22,7 @@ const config: JestConfigWithTsJest = {
   moduleDirectories: ['node_modules', './test-utils', __dirname, './src'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   snapshotResolver: '<rootDir>/snapshot.resolver.js',
+  passWithNoTests: true,
 }
 
 export default config
