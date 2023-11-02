@@ -3,7 +3,7 @@
 exports[`Tag Does not override colors with pre-existent types 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 bg-solid-green-100 text-status-success"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-yellow-1200 text-status-success px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-green-100"
   >
     <svg
       class="fill-status-success"
@@ -39,7 +39,7 @@ exports[`Tag Does not override colors with pre-existent types 1`] = `
 exports[`Tag Does not override icon with pre-existent types 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 bg-solid-red-100 text-status-danger"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-danger px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-red-100"
   >
     <svg
       class="fill-status-danger"
@@ -62,7 +62,7 @@ exports[`Tag Does not override icon with pre-existent types 1`] = `
 exports[`Tag Should render Custom Tag Fill in other different colors 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 bg-solid-blueberry-100 text-solid-blueberry-1200"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-blueberry-1200 px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-blueberry-100"
   >
     Label
   </div>
@@ -72,7 +72,7 @@ exports[`Tag Should render Custom Tag Fill in other different colors 1`] = `
 exports[`Tag Should render Custom Tag Fill with Icon 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 bg-solid-slate-100 text-solid-slate-1200"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-slate-100 bg-solid-slate-100"
   >
     <svg
       class="fill-solid-slate-1200"
@@ -95,7 +95,7 @@ exports[`Tag Should render Custom Tag Fill with Icon 1`] = `
 exports[`Tag Should render Custom Tag Fill without Icon 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 bg-solid-blue-100 text-solid-blue-1200"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-blue-1200 px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-blue-100"
   >
     Label
   </div>
@@ -105,7 +105,7 @@ exports[`Tag Should render Custom Tag Fill without Icon 1`] = `
 exports[`Tag Should render Custom Tag Outline in other different colors 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 border-solid-blueberry-800 text-solid-blueberry-1200"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-blueberry-1200 px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-solid-blueberry-800"
   >
     Label
   </div>
@@ -115,7 +115,7 @@ exports[`Tag Should render Custom Tag Outline in other different colors 1`] = `
 exports[`Tag Should render Custom Tag Outline with Icon 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 border-solid-slate-800 text-solid-slate-1200"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-solid-slate-800"
   >
     <svg
       class="fill-solid-slate-1200"
@@ -138,7 +138,7 @@ exports[`Tag Should render Custom Tag Outline with Icon 1`] = `
 exports[`Tag Should render Custom Tag Outline without Icon 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 border-solid-blue-800 text-solid-blue-1200"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-blue-1200 px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-solid-blue-800"
   >
     Label
   </div>
@@ -148,7 +148,7 @@ exports[`Tag Should render Custom Tag Outline without Icon 1`] = `
 exports[`Tag Should render Error Tag Fill 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 bg-solid-red-100 text-status-danger"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-danger px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-red-100"
   >
     <svg
       class="fill-status-danger"
@@ -184,7 +184,7 @@ exports[`Tag Should render Error Tag Fill 1`] = `
 exports[`Tag Should render Error Tag Outline 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 border-status-danger text-status-danger"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-danger px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-status-danger"
   >
     <svg
       class="fill-status-danger"
@@ -220,7 +220,7 @@ exports[`Tag Should render Error Tag Outline 1`] = `
 exports[`Tag Should render Info Tag Fill 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 bg-solid-blue-100 text-status-info"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-info px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-blue-100"
   >
     <svg
       class="fill-status-info"
@@ -256,7 +256,7 @@ exports[`Tag Should render Info Tag Fill 1`] = `
 exports[`Tag Should render Info Tag Outline 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 border-status-info text-status-info"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-info px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-status-info"
   >
     <svg
       class="fill-status-info"
@@ -292,7 +292,7 @@ exports[`Tag Should render Info Tag Outline 1`] = `
 exports[`Tag Should render Success Tag Fill 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 bg-solid-green-100 text-status-success"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-success px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-green-100"
   >
     <svg
       class="fill-status-success"
@@ -328,7 +328,7 @@ exports[`Tag Should render Success Tag Fill 1`] = `
 exports[`Tag Should render Success Tag Outline 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 border-status-success text-status-success"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-success px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-status-success"
   >
     <svg
       class="fill-status-success"
@@ -364,7 +364,7 @@ exports[`Tag Should render Success Tag Outline 1`] = `
 exports[`Tag Should render Tag Default 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 bg-solid-slate-100 text-solid-slate-1200"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-slate-100 bg-solid-slate-100"
   >
     Label
   </div>
@@ -374,7 +374,7 @@ exports[`Tag Should render Tag Default 1`] = `
 exports[`Tag Should render Warning Tag Fill 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 bg-solid-orange-100 text-status-warning"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-warning px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-orange-100"
   >
     <svg
       class="fill-status-warning"
@@ -410,7 +410,7 @@ exports[`Tag Should render Warning Tag Fill 1`] = `
 exports[`Tag Should render Warning Tag Outline 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 border-75 border-status-warning text-status-warning"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-warning px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-status-warning"
   >
     <svg
       class="fill-status-warning"

@@ -25,13 +25,13 @@ describe('Tag', () => {
   })
 
   it('Should render Custom Tag Fill without Icon', () => {
-    const { container } = render(<Tag color="blue">Label</Tag>)
+    const { container } = render(<Tag colorStyle="blue">Label</Tag>)
     expect(container).toMatchSnapshot()
   })
 
   it('Should render Custom Tag Outline without Icon', () => {
     const { container } = render(
-      <Tag color="blue" variant="outline">
+      <Tag colorStyle="blue" variant="outline">
         Label
       </Tag>,
     )
@@ -39,13 +39,13 @@ describe('Tag', () => {
   })
 
   it('Should render Custom Tag Fill in other different colors', () => {
-    const { container } = render(<Tag color="blueberry">Label</Tag>)
+    const { container } = render(<Tag colorStyle="blueberry">Label</Tag>)
     expect(container).toMatchSnapshot()
   })
 
   it('Should render Custom Tag Outline in other different colors', () => {
     const { container } = render(
-      <Tag color="blueberry" variant="outline">
+      <Tag colorStyle="blueberry" variant="outline">
         Label
       </Tag>,
     )
@@ -53,28 +53,28 @@ describe('Tag', () => {
   })
 
   it('Should render Error Tag Fill', () => {
-    const { container } = render(<Tag type="error">Label</Tag>)
+    const { container } = render(<Tag preset="error">Label</Tag>)
     expect(container).toMatchSnapshot()
   })
 
   it('Should render Warning Tag Fill', () => {
-    const { container } = render(<Tag type="warning">Label</Tag>)
+    const { container } = render(<Tag preset="warning">Label</Tag>)
     expect(container).toMatchSnapshot()
   })
 
   it('Should render Success Tag Fill', () => {
-    const { container } = render(<Tag type="success">Label</Tag>)
+    const { container } = render(<Tag preset="success">Label</Tag>)
     expect(container).toMatchSnapshot()
   })
 
   it('Should render Info Tag Fill', () => {
-    const { container } = render(<Tag type="info">Label</Tag>)
+    const { container } = render(<Tag preset="info">Label</Tag>)
     expect(container).toMatchSnapshot()
   })
 
   it('Should render Error Tag Outline', () => {
     const { container } = render(
-      <Tag type="error" variant="outline">
+      <Tag preset="error" variant="outline">
         Label
       </Tag>,
     )
@@ -83,7 +83,7 @@ describe('Tag', () => {
 
   it('Should render Warning Tag Outline', () => {
     const { container } = render(
-      <Tag type="warning" variant="outline">
+      <Tag preset="warning" variant="outline">
         Label
       </Tag>,
     )
@@ -92,7 +92,7 @@ describe('Tag', () => {
 
   it('Should render Success Tag Outline', () => {
     const { container } = render(
-      <Tag type="success" variant="outline">
+      <Tag preset="success" variant="outline">
         Label
       </Tag>,
     )
@@ -101,7 +101,7 @@ describe('Tag', () => {
 
   it('Should render Info Tag Outline', () => {
     const { container } = render(
-      <Tag type="info" variant="outline">
+      <Tag preset="info" variant="outline">
         Label
       </Tag>,
     )
@@ -110,7 +110,7 @@ describe('Tag', () => {
 
   it('Does not override icon with pre-existent types', () => {
     const { container } = render(
-      <Tag type="error" icon={StandalonePlaceholderRegularIcon}>
+      <Tag preset="error" icon={StandalonePlaceholderRegularIcon}>
         Label
       </Tag>,
     )
@@ -119,7 +119,7 @@ describe('Tag', () => {
 
   it('Does not override colors with pre-existent types', () => {
     const { container } = render(
-      <Tag type="success" color="yellow">
+      <Tag preset="success" colorStyle="yellow">
         Label
       </Tag>,
     )

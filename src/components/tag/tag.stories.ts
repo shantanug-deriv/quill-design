@@ -28,6 +28,9 @@ const meta = {
         disable: true,
       },
     },
+    bold: {
+      control: 'boolean',
+    },
   },
   tags: ['autodocs'],
 } satisfies Meta<typeof Tag>
@@ -37,90 +40,90 @@ type Story = StoryObj<typeof meta>
 
 export const CustomTagFillWithIcon: Story = {
   args: {
-    type: 'custom',
+    preset: 'custom',
     variant: 'fill',
-    color: 'slate',
+    colorStyle: 'slate',
     icon: StandalonePlaceholderRegularIcon,
   },
 }
 
 export const CustomTagOutlineWithIcon: Story = {
   args: {
-    type: 'custom',
+    preset: 'custom',
     variant: 'outline',
-    color: 'slate',
+    colorStyle: 'slate',
     icon: StandalonePlaceholderRegularIcon,
   },
 }
 
 export const CustomTagFillWithoutIcon: Story = {
   args: {
-    type: 'custom',
+    preset: 'custom',
     variant: 'fill',
-    color: 'slate',
+    colorStyle: 'slate',
   },
 }
 
 export const CustomTagOutlineWithoutIcon: Story = {
   args: {
-    type: 'custom',
+    preset: 'custom',
     variant: 'outline',
-    color: 'slate',
+    colorStyle: 'slate',
   },
 }
 
 export const ErrorTagFill: Story = {
   args: {
-    type: 'error',
+    preset: 'error',
     variant: 'fill',
   },
 }
 
 export const WarningTagFill: Story = {
   args: {
-    type: 'warning',
+    preset: 'warning',
     variant: 'fill',
   },
 }
 
 export const SuccessTagFill: Story = {
   args: {
-    type: 'success',
+    preset: 'success',
     variant: 'fill',
   },
 }
 
 export const InfoTagFill: Story = {
   args: {
-    type: 'info',
+    preset: 'info',
     variant: 'fill',
   },
 }
 
 export const ErrorTagOutline: Story = {
   args: {
-    type: 'error',
+    preset: 'error',
     variant: 'outline',
   },
 }
 
 export const WarningTagOutline: Story = {
   args: {
-    type: 'warning',
+    preset: 'warning',
     variant: 'outline',
   },
 }
 
 export const SuccessTagOutline: Story = {
   args: {
-    type: 'success',
+    preset: 'success',
     variant: 'outline',
   },
 }
 
 export const InfoTagOutline: Story = {
   args: {
-    type: 'info',
+    preset: 'info',
     variant: 'outline',
   },
 }
