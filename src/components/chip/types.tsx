@@ -1,12 +1,15 @@
 import { QuillSvgProps } from '@deriv/quill-icons'
 import { ButtonHTMLAttributes } from 'react'
+import { chipBaseVariant } from './chip.classnames'
+import { type VariantProps } from 'class-variance-authority'
 
 export type ChipSize = 'sm' | 'md' | 'lg'
 
-export interface BaseChipProps {
+export interface BaseChipProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    Required<Pick<VariantProps<typeof chipBaseVariant>, 'size'>> {
   icon?: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
   labelTag?: string
-  size?: ChipSize
   disabled?: boolean
 }
 
@@ -40,11 +43,11 @@ export type TSingleSelectItem = {
 export interface SingleSelectChipProps extends BaseChipProps {
   options: TSingleSelectItem[]
   defaultOption: TSingleSelectItem
-  onChange: (item: TSingleSelectItem) => void
+  onSelectionChange: (item: TSingleSelectItem) => void
 }
 
 export interface MultiSelectChipProps extends BaseChipProps {
   options: TSingleSelectItem[]
   label: string
-  onChange: (item: TSingleSelectItem[]) => void
+  onSelectionChange: (item: TSingleSelectItem[]) => void
 }

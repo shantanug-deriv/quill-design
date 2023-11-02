@@ -2,16 +2,16 @@ import {
   StandaloneChevronDownRegularIcon,
   StandaloneCircleXmarkRegularIcon,
 } from '@deriv/quill-icons'
-import qtMerge from 'qt-merge'
 import { forwardRef } from 'react'
 import {
-  ChipSizes,
   ChipIconSizes,
   chipBaseClassnames,
-  chipSelectedClassnames,
   ChipStandaloneIconSizes,
-} from './selectable-chip.classnames'
+  chipBaseVariant,
+  chipSelectionClassnames,
+} from '../chip.classnames'
 import { SelectableChipProps } from '../types'
+import qtMerge from 'qtMerge'
 
 export const SelectableChip = forwardRef<
   HTMLButtonElement,
@@ -28,7 +28,7 @@ export const SelectableChip = forwardRef<
       labelTag,
       onChipSelect,
       onDismiss,
-      size = 'sm',
+      size,
       ...rest
     },
     ref,
@@ -50,23 +50,25 @@ export const SelectableChip = forwardRef<
 
     return (
       <button
-        className={qtMerge(
-          chipBaseClassnames,
-          chipSelectedClassnames,
-          ChipSizes[size],
-          className,
-        )}
+        className={chipBaseVariant({
+          size,
+          className: qtMerge(
+            chipBaseClassnames,
+            chipSelectionClassnames,
+            className,
+          ),
+        })}
         data-state=""
         ref={ref}
         onClick={handleClick}
         {...rest}
       >
-        {Icon && <Icon {...ChipIconSizes[size]} />}
+        {Icon && <Icon {...ChipIconSizes[size ?? 'md']} />}
         {children}
         {labelTag && <span className="font-bold">{labelTag}</span>}
         {dismissible && (
           <StandaloneCircleXmarkRegularIcon
-            {...ChipStandaloneIconSizes[size]}
+            {...ChipStandaloneIconSizes[size ?? 'md']}
             onClick={handleDismiss}
             data-testid="dt-chip-dismissable-btn"
           />
@@ -77,7 +79,7 @@ export const SelectableChip = forwardRef<
               data-state={isDropdownOpen ? 'open' : 'close'}
               id="selectable_chip_chevron"
               className="transition-transform duration-300 data-[state=open]:rotate-180"
-              {...ChipStandaloneIconSizes[size]}
+              {...ChipStandaloneIconSizes[size ?? 'md']}
             />
           </>
         )}

@@ -3,17 +3,23 @@ import { useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import SelectableChip from '../selectable-chip'
 import { SingleSelectChipProps, TSingleSelectItem } from '../types'
+import qtMerge from 'qtMerge'
+import {
+  chipDropdownClassnames,
+  chipDropdownSingleClassnames,
+} from '../chip.classnames'
 
 const Options = ({ item }: { item: TSingleSelectItem }) => {
   return (
     <Listbox.Option value={item} as={Fragment} disabled={item.disabled}>
       {({ disabled, selected }) => (
         <li
-          className={`cursor-pointer rounded-600 p-600 ${
-            selected
-              ? 'bg-solid-slate-1400 text-solid-slate-50'
-              : 'hover:bg-opacity-black-100 hover:text-opacity-black-600'
-          } ${disabled && 'opacity-600'}`}
+          className={qtMerge(
+            chipDropdownSingleClassnames,
+            disabled && 'opacity-600',
+            selected &&
+              'bg-solid-slate-1400 text-solid-slate-50 hover:bg-solid-slate-1400 hover:text-solid-slate-50',
+          )}
         >
           {item.label}
         </li>
@@ -31,7 +37,8 @@ export const DropdownChipSingleSelect = forwardRef(
       labelTag,
       disabled,
       options,
-      onChange,
+      onSelectionChange,
+      className,
       ...rest
     }: SingleSelectChipProps,
     ref: Ref<HTMLButtonElement>,
@@ -41,7 +48,7 @@ export const DropdownChipSingleSelect = forwardRef(
 
     const handleItemSelect = (item: TSingleSelectItem) => {
       setSelectedItem(item)
-      onChange?.(item)
+      onSelectionChange?.(item)
     }
 
     return (
@@ -71,7 +78,9 @@ export const DropdownChipSingleSelect = forwardRef(
                 leaveFrom="scale-y-0 translate-y-0"
                 leaveTo="scale-y-0 -translate-y-2/4"
               >
-                <Listbox.Options className="m-200 max-w-md border-75 border-solid-slate-75 bg-solid-slate-50 p-200 shadow-530">
+                <Listbox.Options
+                  className={qtMerge(className, chipDropdownClassnames)}
+                >
                   <Options item={defaultOption} />
                   {options.map((item) => (
                     <Options

@@ -4,11 +4,13 @@ import SelectableChip from '.'
 import { LabelPairedAndroidIcon } from '@deriv/quill-icons'
 import { ChipSize } from '../types'
 
-describe('SelectableChip', () => {
+describe('Selectable Chip', () => {
   it('should handle onClick event', async () => {
     const onClickButton = jest.fn()
     render(
-      <SelectableChip onClick={onClickButton}>Selectbale Chip</SelectableChip>,
+      <SelectableChip size={'sm'} onClick={onClickButton}>
+        Selectbale Chip
+      </SelectableChip>,
     )
     const button = screen.getByRole('button', { name: /Selectbale Chip/i })
     await userEvent.click(button)
@@ -17,7 +19,11 @@ describe('SelectableChip', () => {
 
   it('should not handle onClick event when it is disabled', async () => {
     const onClickButton = jest.fn()
-    render(<SelectableChip disabled>Selectbale Chip</SelectableChip>)
+    render(
+      <SelectableChip size={'sm'} disabled>
+        Selectbale Chip
+      </SelectableChip>,
+    )
     const button = screen.getByRole('button', { name: /Selectbale Chip/i })
     await userEvent.click(button)
     expect(button).toBeDisabled()
@@ -25,7 +31,7 @@ describe('SelectableChip', () => {
   })
 
   it('should toggle selected state on clicking the chip', async () => {
-    render(<SelectableChip>Selectbale Chip</SelectableChip>)
+    render(<SelectableChip size={'sm'}>Selectbale Chip</SelectableChip>)
     const button = screen.getByRole('button', { name: /Selectbale Chip/i })
     await userEvent.click(button)
     expect(button).toHaveAttribute('data-state', 'selected')
@@ -34,20 +40,24 @@ describe('SelectableChip', () => {
   })
 
   it('should render correct disabled classname when it is disabled', () => {
-    render(<SelectableChip>Selectbale Chip</SelectableChip>)
+    render(<SelectableChip size={'sm'}>Selectbale Chip</SelectableChip>)
     const button = screen.getByRole('button', { name: /Selectbale Chip/i })
     expect(button).toHaveClass('disabled:opacity-600')
   })
 
   it('should render correct labelTag', () => {
-    render(<SelectableChip labelTag="labelTag">Selectbale Chip</SelectableChip>)
+    render(
+      <SelectableChip size={'sm'} labelTag="labelTag">
+        Selectbale Chip
+      </SelectableChip>,
+    )
     const labelTag = screen.getByText('labelTag')
     expect(labelTag).toBeInTheDocument()
   })
 
   it('should render icon properly', () => {
     render(
-      <SelectableChip icon={LabelPairedAndroidIcon}>
+      <SelectableChip icon={LabelPairedAndroidIcon} size={'sm'}>
         Selectbale Chip
       </SelectableChip>,
     )
@@ -55,10 +65,22 @@ describe('SelectableChip', () => {
     expect(icon).toBeInTheDocument()
   })
 
+  it('should handle onChipSelect for selectable chip', async () => {
+    const onSelect = jest.fn()
+    render(
+      <SelectableChip size={'sm'} onChipSelect={onSelect}>
+        Selectbale Chip
+      </SelectableChip>,
+    )
+    const button = screen.getByText('Selectbale Chip')
+    await userEvent.click(button)
+    expect(onSelect).toBeCalled()
+  })
+
   it('should handle onDismiss for dissmisable chip', async () => {
     const onDismiss = jest.fn()
     render(
-      <SelectableChip dismissible onDismiss={onDismiss}>
+      <SelectableChip size={'sm'} dismissible onDismiss={onDismiss}>
         Selectbale Chip
       </SelectableChip>,
     )
@@ -68,7 +90,11 @@ describe('SelectableChip', () => {
   })
 
   it('should not toggle data-state if chip is dissmisable', async () => {
-    render(<SelectableChip dismissible>Selectbale Chip</SelectableChip>)
+    render(
+      <SelectableChip size={'sm'} dismissible>
+        Selectbale Chip
+      </SelectableChip>,
+    )
     const dismissButton = screen.getByTestId('dt-chip-dismissable-btn')
     const chipButton = screen.getByRole('button', { name: /Selectbale Chip/i })
     await userEvent.click(dismissButton)

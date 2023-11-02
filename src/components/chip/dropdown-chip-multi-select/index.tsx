@@ -7,6 +7,11 @@ import {
   LabelPairedSquareCheckFillIcon,
   LabelPairedSquareRegularIcon,
 } from '@deriv/quill-icons'
+import {
+  chipDropdownClassnames,
+  chipDropdownMultiClassnames,
+} from '../chip.classnames'
+import qtMerge from 'qtMerge'
 
 const Options = ({
   position,
@@ -20,9 +25,10 @@ const Options = ({
     <Listbox.Option value={position} as={Fragment} disabled={item.disabled}>
       {({ disabled, selected }) => (
         <li
-          className={`flex cursor-pointer items-center rounded-600 p-600 hover:bg-opacity-black-100 hover:text-opacity-black-600${
-            disabled && 'opacity-600'
-          }`}
+          className={qtMerge(
+            disabled && 'opacity-600',
+            chipDropdownMultiClassnames,
+          )}
         >
           <span>
             {selected ? (
@@ -43,7 +49,17 @@ export const DropdownChipMultiSelect = forwardRef<
   MultiSelectChipProps
 >(
   (
-    { label, size, icon, labelTag, disabled, options, onChange, ...rest },
+    {
+      label,
+      size,
+      icon,
+      labelTag,
+      disabled,
+      options,
+      onSelectionChange,
+      className,
+      ...rest
+    },
     ref,
   ) => {
     const [selectedItems, setSelectedItems] = useState<Array<number>>([])
@@ -51,7 +67,7 @@ export const DropdownChipMultiSelect = forwardRef<
     const handleItemSelect = (items: Array<number>) => {
       setSelectedItems(items)
       const updatedSelectionList = items.map((item) => options[item])
-      onChange?.(updatedSelectionList)
+      onSelectionChange?.(updatedSelectionList)
     }
 
     return (
@@ -84,7 +100,9 @@ export const DropdownChipMultiSelect = forwardRef<
                 leaveFrom="scale-y-0 translate-y-0"
                 leaveTo="scale-y-0 -translate-y-2/4"
               >
-                <Listbox.Options className="m-200 max-w-md border-75 border-solid-slate-75 bg-solid-slate-50 p-200 shadow-530">
+                <Listbox.Options
+                  className={qtMerge(className, chipDropdownClassnames)}
+                >
                   {options.map((item, index) => (
                     <Options
                       position={index}

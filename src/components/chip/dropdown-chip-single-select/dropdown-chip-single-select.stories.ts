@@ -35,7 +35,7 @@ const meta = {
         type: 'select',
       },
     },
-    onChange: { action: 'onChange' },
+    onSelectionChange: { action: 'onChange' },
   },
   tags: ['autodocs'],
 } satisfies Meta<typeof Chip>
@@ -47,8 +47,13 @@ export const DropdownChipSingleSelect: Story = {
   args: {
     options: [
       { value: '1', label: 'Sample Item 1' },
-      { value: '2', label: 'Sample Item 2' },
+      {
+        value: '2',
+        label: 'Sample Item 2 - which is disabled',
+        disabled: true,
+      },
       { value: '3', label: 'Sample Item 3' },
+      { value: '4', label: 'Sample Item 4' },
     ],
   },
 }
