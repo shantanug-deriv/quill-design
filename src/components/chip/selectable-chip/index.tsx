@@ -81,7 +81,7 @@ export const SelectableChip = forwardRef<
               data-state={isDropdownOpen ? 'open' : 'close'}
               id="selectable_chip_chevron"
               className="transition-transform duration-300 data-[state=open]:rotate-180"
-              {...ChipStandaloneIconSizes[size ?? 'md']}
+              {...ChipStandaloneIconSizes[size]}
             />
           </>
         )}
