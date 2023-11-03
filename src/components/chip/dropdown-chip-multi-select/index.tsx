@@ -2,7 +2,7 @@ import { Fragment, forwardRef } from 'react'
 import { useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import SelectableChip from '../selectable-chip'
-import { MultiSelectChipProps, TSingleSelectItem } from '../types'
+import type { MultiSelectChipProps, TSingleSelectItem } from '../types'
 import {
   LabelPairedSquareCheckFillIcon,
   LabelPairedSquareRegularIcon,

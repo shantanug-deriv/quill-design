@@ -2,7 +2,7 @@ import { Fragment, forwardRef } from 'react'
 import { useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import SelectableChip from '../selectable-chip'
-import { SingleSelectChipProps, TSingleSelectItem } from '../types'
+import type { SingleSelectChipProps, TSingleSelectItem } from '../types'
 import qtMerge from 'qtMerge'
 import {
   chipDropdownClassnames,

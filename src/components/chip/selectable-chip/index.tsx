@@ -10,7 +10,7 @@ import {
   chipBaseVariant,
   chipSelectionClassnames,
 } from '../chip.classnames'
-import { SelectableChipProps } from '../types'
+import type { SelectableChipProps } from '../types'
 import qtMerge from 'qtMerge'
 
 export const SelectableChip = forwardRef<

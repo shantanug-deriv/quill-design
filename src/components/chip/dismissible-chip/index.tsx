@@ -1,6 +1,6 @@
 import { forwardRef } from 'react'
 import SelectableChip from '../selectable-chip'
-import { DismissibleChipProps } from '../types'
+import type { DismissibleChipProps } from '../types'
 
 export const DismissibleChip = forwardRef<
   HTMLButtonElement,
