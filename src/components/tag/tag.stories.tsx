@@ -1,9 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { StandalonePlaceholderRegularIcon } from '@deriv/quill-icons'
 
 import Tag from '.'
 const meta = {
-  title: 'Tags/Tag',
+  title: 'Tags/Preset',
   component: Tag,
   parameters: {
     layout: 'centered',
@@ -11,7 +10,7 @@ const meta = {
   args: {
     children: 'Label',
     size: 'md',
-    bold: false,
+    isBold: false,
   },
   argTypes: {
     children: {
@@ -28,7 +27,12 @@ const meta = {
         disable: true,
       },
     },
-    bold: {
+    iconClassName: {
+      table: {
+        disable: true,
+      },
+    },
+    isBold: {
       control: 'boolean',
     },
   },
@@ -38,92 +42,65 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const CustomTagFillWithIcon: Story = {
-  args: {
-    preset: 'custom',
-    variant: 'fill',
-    colorStyle: 'slate',
-    icon: StandalonePlaceholderRegularIcon,
-  },
-}
-
-export const CustomTagOutlineWithIcon: Story = {
-  args: {
-    preset: 'custom',
-    variant: 'outline',
-    colorStyle: 'slate',
-    icon: StandalonePlaceholderRegularIcon,
-  },
-}
-
-export const CustomTagFillWithoutIcon: Story = {
-  args: {
-    preset: 'custom',
-    variant: 'fill',
-    colorStyle: 'slate',
-  },
-}
-
-export const CustomTagOutlineWithoutIcon: Story = {
-  args: {
-    preset: 'custom',
-    variant: 'outline',
-    colorStyle: 'slate',
-  },
-}
-
 export const ErrorTagFill: Story = {
   args: {
-    preset: 'error',
+    colorStyle: 'error',
     variant: 'fill',
   },
 }
 
 export const WarningTagFill: Story = {
   args: {
-    preset: 'warning',
+    colorStyle: 'warning',
     variant: 'fill',
+    children: 'Warning',
   },
 }
 
 export const SuccessTagFill: Story = {
   args: {
-    preset: 'success',
+    colorStyle: 'success',
     variant: 'fill',
+    children: 'Success',
   },
 }
 
 export const InfoTagFill: Story = {
   args: {
-    preset: 'info',
+    colorStyle: 'info',
     variant: 'fill',
+    children: 'Info',
   },
 }
 
 export const ErrorTagOutline: Story = {
   args: {
-    preset: 'error',
+    colorStyle: 'error',
     variant: 'outline',
+    children: 'Error',
   },
 }
 
 export const WarningTagOutline: Story = {
   args: {
-    preset: 'warning',
+    colorStyle: 'warning',
     variant: 'outline',
+    children: 'Warning',
   },
 }
 
 export const SuccessTagOutline: Story = {
   args: {
-    preset: 'success',
+    colorStyle: 'success',
     variant: 'outline',
+    children: 'Success',
   },
 }
 
 export const InfoTagOutline: Story = {
   args: {
-    preset: 'info',
+    colorStyle: 'info',
     variant: 'outline',
+    children: 'Info',
   },
 }

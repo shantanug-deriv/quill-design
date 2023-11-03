@@ -1,9 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tag Does not override colors with pre-existent types 1`] = `
+exports[`Tag Should render Custom Tag Fill without Icon 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-yellow-1200 text-status-success px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-green-100"
+    class="min-w-full rounded-200 inline-flex items-center justify-center border-collapse px-600 py-[5px] text-75 gap-x-600 bg-solid-red-100 text-solid-red-1200"
+  >
+    Label
+  </div>
+</div>
+`;
+
+exports[`Tag Should render Custom Tag Outline with Icon 1`] = `
+<div>
+  <div
+    class="min-w-full rounded-200 inline-flex items-center justify-center border-75 bg-none px-600 py-[5px] text-75 gap-x-600 border-solid-mustard-1200 text-solid-mustard-1200"
+  >
+    <svg
+      class="fill-solid-mustard-1200"
+      height="22"
+      role="img"
+      viewBox="0 0 32 32"
+      width="13"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.688 7.75h.937c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-.938c-.624.026-1.145.234-1.562.625-.39.417-.599.938-.625 1.563v.937c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-.938c.026-.963.365-1.77 1.016-2.421.65-.651 1.458-.99 2.421-1.016ZM7.874 14c.39.026.599.234.625.625v3.75c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-3.75c.026-.39.234-.599.625-.625Zm16.25 0c.39.026.599.234.625.625v3.75c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-3.75c.026-.39.234-.599.625-.625Zm0-1.25c-.39-.026-.599-.234-.625-.625v-.938c-.026-.624-.234-1.145-.625-1.562-.417-.39-.938-.599-1.563-.625h-.937c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h.938c.963.026 1.77.365 2.421 1.016.651.65.99 1.458 1.016 2.421v.938c-.026.39-.234.599-.625.625Zm.625 8.125v.938c-.026.963-.365 1.77-1.016 2.421-.65.651-1.458.99-2.422 1.016h-.937c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h.938c.625-.026 1.145-.234 1.562-.625.39-.417.599-.938.625-1.563v-.937c.026-.39.234-.599.625-.625.39.026.599.234.625.625Zm-16.25 0v.938c.026.625.234 1.145.625 1.562.417.39.938.599 1.563.625h.937c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-.938c-.963-.026-1.77-.365-2.421-1.016-.651-.65-.99-1.458-1.016-2.422v-.937c.026-.39.234-.599.625-.625.39.026.599.234.625.625Zm5.625 4.375c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h3.75c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-3.75ZM13.5 8.375c.026-.39.234-.599.625-.625h3.75c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-3.75c-.39-.026-.599-.234-.625-.625Z"
+        fill-opacity="0.72"
+      />
+    </svg>
+    Label
+  </div>
+</div>
+`;
+
+exports[`Tag Should render Custom Tag Outline without Icon 1`] = `
+<div>
+  <div
+    class="min-w-full rounded-200 inline-flex items-center justify-center border-75 bg-none px-600 py-[5px] text-75 gap-x-600 border-solid-mustard-1200 text-solid-mustard-1200"
+  >
+    Label
+  </div>
+</div>
+`;
+
+exports[`Tag Should render Custom Tag with Icon 1`] = `
+<div>
+  <div
+    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 bg-gradient-to-r from-solid-blue-100 via-solid-blue-300 to-solid-blue-500 text-solid-blue-1200"
+  >
+    <svg
+      class="fill-solid-blue-1200"
+      height="22"
+      role="img"
+      viewBox="0 0 32 32"
+      width="13"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.688 7.75h.937c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-.938c-.624.026-1.145.234-1.562.625-.39.417-.599.938-.625 1.563v.937c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-.938c.026-.963.365-1.77 1.016-2.421.65-.651 1.458-.99 2.421-1.016ZM7.874 14c.39.026.599.234.625.625v3.75c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-3.75c.026-.39.234-.599.625-.625Zm16.25 0c.39.026.599.234.625.625v3.75c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-3.75c.026-.39.234-.599.625-.625Zm0-1.25c-.39-.026-.599-.234-.625-.625v-.938c-.026-.624-.234-1.145-.625-1.562-.417-.39-.938-.599-1.563-.625h-.937c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h.938c.963.026 1.77.365 2.421 1.016.651.65.99 1.458 1.016 2.421v.938c-.026.39-.234.599-.625.625Zm.625 8.125v.938c-.026.963-.365 1.77-1.016 2.421-.65.651-1.458.99-2.422 1.016h-.937c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h.938c.625-.026 1.145-.234 1.562-.625.39-.417.599-.938.625-1.563v-.937c.026-.39.234-.599.625-.625.39.026.599.234.625.625Zm-16.25 0v.938c.026.625.234 1.145.625 1.562.417.39.938.599 1.563.625h.937c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-.938c-.963-.026-1.77-.365-2.421-1.016-.651-.65-.99-1.458-1.016-2.422v-.937c.026-.39.234-.599.625-.625.39.026.599.234.625.625Zm5.625 4.375c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h3.75c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-3.75ZM13.5 8.375c.026-.39.234-.599.625-.625h3.75c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-3.75c-.39-.026-.599-.234-.625-.625Z"
+        fill-opacity="0.72"
+      />
+    </svg>
+    Label
+  </div>
+</div>
+`;
+
+exports[`Tag Should render Custom Tag without Icon 1`] = `
+<div>
+  <div
+    class="min-w-full rounded-200 inline-flex items-center justify-center px-600 py-[5px] text-75 gap-x-600 bg-gradient-to-r from-solid-blue-100 via-solid-blue-300 to-solid-blue-500 text-solid-blue-1200"
+  >
+    Label
+  </div>
+</div>
+`;
+
+exports[`Tag Should render Custom with Icon 1`] = `
+<div>
+  <div
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-status-success px-600 py-[5px] text-75 gap-x-600"
   >
     <svg
       class="fill-status-success"
@@ -36,119 +112,10 @@ exports[`Tag Does not override colors with pre-existent types 1`] = `
 </div>
 `;
 
-exports[`Tag Does not override icon with pre-existent types 1`] = `
-<div>
-  <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-danger px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-red-100"
-  >
-    <svg
-      class="fill-status-danger"
-      height="22"
-      role="img"
-      viewBox="0 0 32 32"
-      width="13"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M10.688 7.75h.937c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-.938c-.624.026-1.145.234-1.562.625-.39.417-.599.938-.625 1.563v.937c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-.938c.026-.963.365-1.77 1.016-2.421.65-.651 1.458-.99 2.421-1.016ZM7.874 14c.39.026.599.234.625.625v3.75c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-3.75c.026-.39.234-.599.625-.625Zm16.25 0c.39.026.599.234.625.625v3.75c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-3.75c.026-.39.234-.599.625-.625Zm0-1.25c-.39-.026-.599-.234-.625-.625v-.938c-.026-.624-.234-1.145-.625-1.562-.417-.39-.938-.599-1.563-.625h-.937c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h.938c.963.026 1.77.365 2.421 1.016.651.65.99 1.458 1.016 2.421v.938c-.026.39-.234.599-.625.625Zm.625 8.125v.938c-.026.963-.365 1.77-1.016 2.421-.65.651-1.458.99-2.422 1.016h-.937c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h.938c.625-.026 1.145-.234 1.562-.625.39-.417.599-.938.625-1.563v-.937c.026-.39.234-.599.625-.625.39.026.599.234.625.625Zm-16.25 0v.938c.026.625.234 1.145.625 1.562.417.39.938.599 1.563.625h.937c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-.938c-.963-.026-1.77-.365-2.421-1.016-.651-.65-.99-1.458-1.016-2.422v-.937c.026-.39.234-.599.625-.625.39.026.599.234.625.625Zm5.625 4.375c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h3.75c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-3.75ZM13.5 8.375c.026-.39.234-.599.625-.625h3.75c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-3.75c-.39-.026-.599-.234-.625-.625Z"
-        fill-opacity="0.72"
-      />
-    </svg>
-    Label
-  </div>
-</div>
-`;
-
-exports[`Tag Should render Custom Tag Fill in other different colors 1`] = `
-<div>
-  <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-blueberry-1200 px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-blueberry-100"
-  >
-    Label
-  </div>
-</div>
-`;
-
-exports[`Tag Should render Custom Tag Fill with Icon 1`] = `
-<div>
-  <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-slate-100 bg-solid-slate-100"
-  >
-    <svg
-      class="fill-solid-slate-1200"
-      height="22"
-      role="img"
-      viewBox="0 0 32 32"
-      width="13"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M10.688 7.75h.937c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-.938c-.624.026-1.145.234-1.562.625-.39.417-.599.938-.625 1.563v.937c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-.938c.026-.963.365-1.77 1.016-2.421.65-.651 1.458-.99 2.421-1.016ZM7.874 14c.39.026.599.234.625.625v3.75c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-3.75c.026-.39.234-.599.625-.625Zm16.25 0c.39.026.599.234.625.625v3.75c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-3.75c.026-.39.234-.599.625-.625Zm0-1.25c-.39-.026-.599-.234-.625-.625v-.938c-.026-.624-.234-1.145-.625-1.562-.417-.39-.938-.599-1.563-.625h-.937c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h.938c.963.026 1.77.365 2.421 1.016.651.65.99 1.458 1.016 2.421v.938c-.026.39-.234.599-.625.625Zm.625 8.125v.938c-.026.963-.365 1.77-1.016 2.421-.65.651-1.458.99-2.422 1.016h-.937c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h.938c.625-.026 1.145-.234 1.562-.625.39-.417.599-.938.625-1.563v-.937c.026-.39.234-.599.625-.625.39.026.599.234.625.625Zm-16.25 0v.938c.026.625.234 1.145.625 1.562.417.39.938.599 1.563.625h.937c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-.938c-.963-.026-1.77-.365-2.421-1.016-.651-.65-.99-1.458-1.016-2.422v-.937c.026-.39.234-.599.625-.625.39.026.599.234.625.625Zm5.625 4.375c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h3.75c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-3.75ZM13.5 8.375c.026-.39.234-.599.625-.625h3.75c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-3.75c-.39-.026-.599-.234-.625-.625Z"
-        fill-opacity="0.72"
-      />
-    </svg>
-    Label
-  </div>
-</div>
-`;
-
-exports[`Tag Should render Custom Tag Fill without Icon 1`] = `
-<div>
-  <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-blue-1200 px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-blue-100"
-  >
-    Label
-  </div>
-</div>
-`;
-
-exports[`Tag Should render Custom Tag Outline in other different colors 1`] = `
-<div>
-  <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-blueberry-1200 px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-solid-blueberry-800"
-  >
-    Label
-  </div>
-</div>
-`;
-
-exports[`Tag Should render Custom Tag Outline with Icon 1`] = `
-<div>
-  <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-solid-slate-800"
-  >
-    <svg
-      class="fill-solid-slate-1200"
-      height="22"
-      role="img"
-      viewBox="0 0 32 32"
-      width="13"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M10.688 7.75h.937c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-.938c-.624.026-1.145.234-1.562.625-.39.417-.599.938-.625 1.563v.937c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-.938c.026-.963.365-1.77 1.016-2.421.65-.651 1.458-.99 2.421-1.016ZM7.874 14c.39.026.599.234.625.625v3.75c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-3.75c.026-.39.234-.599.625-.625Zm16.25 0c.39.026.599.234.625.625v3.75c-.026.39-.234.599-.625.625-.39-.026-.599-.234-.625-.625v-3.75c.026-.39.234-.599.625-.625Zm0-1.25c-.39-.026-.599-.234-.625-.625v-.938c-.026-.624-.234-1.145-.625-1.562-.417-.39-.938-.599-1.563-.625h-.937c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h.938c.963.026 1.77.365 2.421 1.016.651.65.99 1.458 1.016 2.421v.938c-.026.39-.234.599-.625.625Zm.625 8.125v.938c-.026.963-.365 1.77-1.016 2.421-.65.651-1.458.99-2.422 1.016h-.937c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h.938c.625-.026 1.145-.234 1.562-.625.39-.417.599-.938.625-1.563v-.937c.026-.39.234-.599.625-.625.39.026.599.234.625.625Zm-16.25 0v.938c.026.625.234 1.145.625 1.562.417.39.938.599 1.563.625h.937c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-.938c-.963-.026-1.77-.365-2.421-1.016-.651-.65-.99-1.458-1.016-2.422v-.937c.026-.39.234-.599.625-.625.39.026.599.234.625.625Zm5.625 4.375c-.39-.026-.599-.234-.625-.625.026-.39.234-.599.625-.625h3.75c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-3.75ZM13.5 8.375c.026-.39.234-.599.625-.625h3.75c.39.026.599.234.625.625-.026.39-.234.599-.625.625h-3.75c-.39-.026-.599-.234-.625-.625Z"
-        fill-opacity="0.72"
-      />
-    </svg>
-    Label
-  </div>
-</div>
-`;
-
-exports[`Tag Should render Custom Tag Outline without Icon 1`] = `
-<div>
-  <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-blue-1200 px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-solid-blue-800"
-  >
-    Label
-  </div>
-</div>
-`;
-
 exports[`Tag Should render Error Tag Fill 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-danger px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-red-100"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-status-danger px-600 py-[5px] text-75 gap-x-600"
   >
     <svg
       class="fill-status-danger"
@@ -184,7 +151,7 @@ exports[`Tag Should render Error Tag Fill 1`] = `
 exports[`Tag Should render Error Tag Outline 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-danger px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-status-danger"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-status-danger border-75 bg-none border-status-danger px-600 py-[5px] text-75 gap-x-600"
   >
     <svg
       class="fill-status-danger"
@@ -220,7 +187,7 @@ exports[`Tag Should render Error Tag Outline 1`] = `
 exports[`Tag Should render Info Tag Fill 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-info px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-blue-100"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-status-info px-600 py-[5px] text-75 gap-x-600"
   >
     <svg
       class="fill-status-info"
@@ -256,7 +223,7 @@ exports[`Tag Should render Info Tag Fill 1`] = `
 exports[`Tag Should render Info Tag Outline 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-info px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-status-info"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-status-info border-75 bg-none border-status-info px-600 py-[5px] text-75 gap-x-600"
   >
     <svg
       class="fill-status-info"
@@ -292,7 +259,7 @@ exports[`Tag Should render Info Tag Outline 1`] = `
 exports[`Tag Should render Success Tag Fill 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-success px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-green-100"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-status-success px-600 py-[5px] text-75 gap-x-600"
   >
     <svg
       class="fill-status-success"
@@ -328,7 +295,7 @@ exports[`Tag Should render Success Tag Fill 1`] = `
 exports[`Tag Should render Success Tag Outline 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-success px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-status-success"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-status-success border-75 bg-none border-status-success px-600 py-[5px] text-75 gap-x-600"
   >
     <svg
       class="fill-status-success"
@@ -364,8 +331,34 @@ exports[`Tag Should render Success Tag Outline 1`] = `
 exports[`Tag Should render Tag Default 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-slate-100 bg-solid-slate-100"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-status-success px-600 py-[5px] text-75 gap-x-600"
   >
+    <svg
+      class="fill-status-success"
+      height="22"
+      role="img"
+      viewBox="0 0 16 24"
+      width="13"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        clip-path="url(#a)"
+      >
+        <path
+          d="M8 5a7.204 7.204 0 0 0-3.5.938A7.191 7.191 0 0 0 1.937 8.5a6.999 6.999 0 0 0 0 7A7.191 7.191 0 0 0 4.5 18.063 7.203 7.203 0 0 0 8 19a7.203 7.203 0 0 0 3.5-.938 7.191 7.191 0 0 0 2.563-2.562 7 7 0 0 0 0-7A7.19 7.19 0 0 0 11.5 5.937 7.204 7.204 0 0 0 8 5Zm0 15c-1.458-.02-2.792-.375-4-1.063C2.792 18.23 1.812 17.25 1.062 16 .355 14.73 0 13.396 0 12s.354-2.73 1.063-4C1.813 6.75 2.792 5.77 4 5.062 5.208 4.375 6.542 4.021 8 4c1.458.02 2.792.375 4 1.063C13.208 5.77 14.188 6.75 14.938 8 15.646 9.27 16 10.604 16 12s-.354 2.73-1.063 4c-.75 1.25-1.729 2.23-2.937 2.938-1.208.687-2.542 1.041-4 1.062Zm3.344-9.656-4 4c-.23.208-.459.208-.688 0l-2-2c-.208-.23-.208-.459 0-.688.23-.208.459-.208.688 0L7 13.281l3.656-3.625c.23-.208.459-.208.688 0 .208.23.208.459 0 .688Z"
+          fill-opacity="0.72"
+        />
+      </g>
+      <defs>
+        <clippath
+          id="a"
+        >
+          <path
+            d="M0 0h16v24H0z"
+          />
+        </clippath>
+      </defs>
+    </svg>
     Label
   </div>
 </div>
@@ -374,7 +367,7 @@ exports[`Tag Should render Tag Default 1`] = `
 exports[`Tag Should render Warning Tag Fill 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-warning px-600 py-[5px] text-75 gap-x-600 border-collapse bg-solid-orange-100"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-status-warning px-600 py-[5px] text-75 gap-x-600"
   >
     <svg
       class="fill-status-warning"
@@ -410,7 +403,7 @@ exports[`Tag Should render Warning Tag Fill 1`] = `
 exports[`Tag Should render Warning Tag Outline 1`] = `
 <div>
   <div
-    class="min-w-full rounded-200 inline-flex items-center justify-center text-solid-slate-1200 text-status-warning px-600 py-[5px] text-75 gap-x-600 border-75 bg-none border-status-warning"
+    class="min-w-full rounded-200 inline-flex items-center justify-center text-status-warning border-75 bg-none border-status-warning px-600 py-[5px] text-75 gap-x-600"
   >
     <svg
       class="fill-status-warning"

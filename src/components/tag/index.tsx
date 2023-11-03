@@ -1,82 +1,57 @@
 import React, { forwardRef, HTMLAttributes } from 'react'
 import { QuillSvgProps } from '@deriv/quill-icons'
-import {
-  TagClassNames,
-  TagCustomIconColors,
-  TagIconColors,
-  TagIcons,
-  TagIconSizes,
-} from './tag.classnames'
+import { TagClassNamesCVA, TagProps, TagSizeCVA } from './tag.classnames'
+import qtMerge from 'qtMerge'
+import TagIcon from './tag.icon'
 
-export type TPreset = 'custom' | 'success' | 'error' | 'warning' | 'info'
-export type TSize = 'xs' | 'sm' | 'md' | 'lg'
-export type TColorStyle =
-  | 'red'
-  | 'orange'
-  | 'yellow'
-  | 'mustard'
-  | 'olive'
-  | 'green'
-  | 'tiffany'
-  | 'teal'
-  | 'seawater'
-  | 'blue'
-  | 'sapphire'
-  | 'blueberry'
-  | 'grape'
-  | 'magenta'
-  | 'slate'
-
-export interface TagProps extends HTMLAttributes<HTMLDivElement> {
+export interface TagComponentProps
+  extends HTMLAttributes<HTMLDivElement>,
+    TagProps {
   icon?: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
-  variant?: 'fill' | 'outline'
-  size?: TSize
-  preset?: TPreset
-  colorStyle?: TColorStyle
-  bold?: boolean
+  iconClassName?: string
 }
 
-const Tag = forwardRef<HTMLDivElement, TagProps>(
+const Tag = forwardRef<HTMLDivElement, TagComponentProps>(
   (
     {
       children,
       className,
       variant,
       size = 'md',
-      preset = 'custom',
-      colorStyle = 'slate',
-      bold = false,
-      icon: Icon = preset !== 'custom' &&
-        TagIcons[preset][bold ? 'true' : 'false'],
+      colorStyle = 'success',
+      isBold = false,
+      icon,
+      iconClassName,
       ...rest
     },
     ref,
-  ) => (
-    <div
-      className={TagClassNames({
-        variant,
-        size,
-        preset,
-        className,
-        colorStyle,
-        bold,
-      })}
-      {...rest}
-      ref={ref}
-    >
-      {Icon && (
-        <Icon
-          {...TagIconSizes[size]}
-          className={
-            preset !== 'custom'
-              ? TagIconColors[preset]
-              : TagCustomIconColors[colorStyle]
-          }
+  ) => {
+    return (
+      <div
+        className={qtMerge(
+          TagClassNamesCVA({
+            variant,
+            className,
+            colorStyle,
+            isBold,
+          }),
+          TagSizeCVA({ size }),
+          className,
+        )}
+        {...rest}
+        ref={ref}
+      >
+        <TagIcon
+          isBold={isBold}
+          className={iconClassName}
+          icon={icon}
+          colorStyle={colorStyle}
+          size={size}
         />
-      )}
-      {children}
-    </div>
-  ),
+        {children}
+      </div>
+    )
+  },
 )
 
 Tag.displayName = 'Tag'
