@@ -2,7 +2,7 @@
 
 exports[`Selectable Chip should render correctly with lg size 1`] = `
 <button
-  class="button px-1200 py-[7px] text-100 gap-x-400 rounded-4800 hover:bg-opacity-black-100 hover:text-opacity-black-600 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 disabled:opacity-600 data-[state=selected]:bg-solid-slate-1200 data-[state=selected]:fill-solid-slate-50 data-[state=selected]:text-solid-slate-50"
+  class="chipBaseClassnames px-1200 py-[7px] text-100 gap-x-400 rounded-4800 hover:bg-opacity-black-100 hover:text-opacity-black-600 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 disabled:opacity-600 data-[state=selected]:bg-solid-slate-1200 data-[state=selected]:fill-solid-slate-50 data-[state=selected]:text-solid-slate-50"
   data-state=""
 >
   Chip - lg
@@ -11,7 +11,7 @@ exports[`Selectable Chip should render correctly with lg size 1`] = `
 
 exports[`Selectable Chip should render correctly with md size 1`] = `
 <button
-  class="button px-800 py-[5px] text-75 gap-x-400 rounded-4800 hover:bg-opacity-black-100 hover:text-opacity-black-600 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 disabled:opacity-600 data-[state=selected]:bg-solid-slate-1200 data-[state=selected]:fill-solid-slate-50 data-[state=selected]:text-solid-slate-50"
+  class="chipBaseClassnames px-800 py-[5px] text-75 gap-x-400 rounded-4800 hover:bg-opacity-black-100 hover:text-opacity-black-600 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 disabled:opacity-600 data-[state=selected]:bg-solid-slate-1200 data-[state=selected]:fill-solid-slate-50 data-[state=selected]:text-solid-slate-50"
   data-state=""
 >
   Chip - md
@@ -20,7 +20,7 @@ exports[`Selectable Chip should render correctly with md size 1`] = `
 
 exports[`Selectable Chip should render correctly with sm size 1`] = `
 <button
-  class="button px-600 py-[3px] text-50 gap-x-400 rounded-4800 hover:bg-opacity-black-100 hover:text-opacity-black-600 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 disabled:opacity-600 data-[state=selected]:bg-solid-slate-1200 data-[state=selected]:fill-solid-slate-50 data-[state=selected]:text-solid-slate-50"
+  class="chipBaseClassnames px-600 py-[3px] text-50 gap-x-400 rounded-4800 hover:bg-opacity-black-100 hover:text-opacity-black-600 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 disabled:opacity-600 data-[state=selected]:bg-solid-slate-1200 data-[state=selected]:fill-solid-slate-50 data-[state=selected]:text-solid-slate-50"
   data-state=""
 >
   Chip - sm
