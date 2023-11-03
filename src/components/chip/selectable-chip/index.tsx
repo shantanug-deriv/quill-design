@@ -51,6 +51,7 @@ export const SelectableChip = forwardRef<
     return (
       <button
         className={chipBaseVariant({
+          dismissible,
           size,
           className: qtMerge(
             chipBaseClassnames,
@@ -71,6 +72,7 @@ export const SelectableChip = forwardRef<
             {...ChipStandaloneIconSizes[size ?? 'md']}
             onClick={handleDismiss}
             data-testid="dt-chip-dismissable-btn"
+            className="cursor-pointer"
           />
         )}
         {dropdown && (

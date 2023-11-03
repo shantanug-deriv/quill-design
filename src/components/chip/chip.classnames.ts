@@ -8,6 +8,10 @@ export const chipBaseVariant = cva('chipBaseClassnames', {
       md: ['px-800', 'py-[5px]', 'text-75', 'gap-x-400'],
       lg: ['px-1200', 'py-[7px]', 'text-100', 'gap-x-400'],
     },
+    dismissible: {
+      true: ['cursor-default'],
+      false: ['cursor-pointer'],
+    },
   },
   defaultVariants: {
     size: 'md',
