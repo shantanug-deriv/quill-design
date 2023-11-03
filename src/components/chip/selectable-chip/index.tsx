@@ -28,7 +28,7 @@ export const SelectableChip = forwardRef<
       labelTag,
       onChipSelect,
       onDismiss,
-      size,
+      size = 'md',
       ...rest
     },
     ref,

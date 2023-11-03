@@ -1,15 +1,15 @@
 import { QuillSvgProps } from '@deriv/quill-icons'
 import { chipBaseVariant } from './chip.classnames'
 import { type VariantProps } from 'class-variance-authority'
+import { ExcludeNull } from 'types'
 
 export type ChipSize = 'sm' | 'md' | 'lg'
+
 export type TBaseChipVariant = VariantProps<typeof chipBaseVariant>
-export interface TBaseChipVariantExcludingNull extends TBaseChipVariant {
-  size: Exclude<TBaseChipVariant['size'], null | undefined>
-}
+type BaseChipVariantExcludingNull = ExcludeNull<TBaseChipVariant, 'size'>
 
 export interface BaseChipProps
-  extends TBaseChipVariantExcludingNull,
+  extends BaseChipVariantExcludingNull,
     React.ButtonHTMLAttributes<HTMLButtonElement> {
   dismissible?: boolean
   icon?: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
