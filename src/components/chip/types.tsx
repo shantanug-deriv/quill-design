@@ -1,22 +1,23 @@
 import { QuillSvgProps } from '@deriv/quill-icons'
-import { ButtonHTMLAttributes } from 'react'
 import { chipBaseVariant } from './chip.classnames'
 import { type VariantProps } from 'class-variance-authority'
 
 export type ChipSize = 'sm' | 'md' | 'lg'
+export type TBaseChipVariant = VariantProps<typeof chipBaseVariant>
+export interface TBaseChipVariantExcludingNull extends TBaseChipVariant {
+  size: Exclude<TBaseChipVariant['size'], null | undefined>
+}
 
 export interface BaseChipProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    Required<Pick<VariantProps<typeof chipBaseVariant>, 'size'>> {
+  extends TBaseChipVariantExcludingNull,
+    React.ButtonHTMLAttributes<HTMLButtonElement> {
+  dismissible?: boolean
   icon?: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
   labelTag?: string
   disabled?: boolean
 }
 
-export interface SelectableChipProps
-  extends ButtonHTMLAttributes<HTMLButtonElement>,
-    BaseChipProps {
-  dismissible?: boolean
+export interface SelectableChipProps extends BaseChipProps {
   isDropdownOpen?: boolean
   dropdown?: boolean
   labelTag?: string
@@ -27,9 +28,7 @@ export interface SelectableChipProps
   onDismiss?: (event: React.MouseEvent<SVGSVGElement, MouseEvent>) => void
 }
 
-export interface DismissibleChipProps
-  extends BaseChipProps,
-    ButtonHTMLAttributes<HTMLButtonElement> {
+export interface DismissibleChipProps extends BaseChipProps {
   disabled?: boolean
   onDismiss?: (event: React.MouseEvent<SVGSVGElement, MouseEvent>) => void
 }

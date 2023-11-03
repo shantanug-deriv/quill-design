@@ -64,12 +64,12 @@ export const SelectableChip = forwardRef<
         onClick={handleClick}
         {...rest}
       >
-        {Icon && <Icon {...ChipIconSizes[size ?? 'md']} />}
+        {Icon && <Icon {...ChipIconSizes[size]} />}
         {children}
         {labelTag && <span className="font-bold">{labelTag}</span>}
         {dismissible && (
           <StandaloneCircleXmarkRegularIcon
-            {...ChipStandaloneIconSizes[size ?? 'md']}
+            {...ChipStandaloneIconSizes[size]}
             onClick={handleDismiss}
             data-testid="dt-chip-dismissable-btn"
             className="cursor-pointer"
