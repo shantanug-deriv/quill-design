@@ -36,7 +36,7 @@ export interface DismissibleChipProps
 
 export type TSingleSelectItem = {
   value: number | string
-  label: React.ReactNode | string
+  label: React.ReactNode
   disabled?: boolean
 }
 

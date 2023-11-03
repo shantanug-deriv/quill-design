@@ -1,7 +1,7 @@
 import { ChipSize } from './types'
 import { cva } from 'class-variance-authority'
 
-export const chipBaseVariant = cva('button', {
+export const chipBaseVariant = cva('chipBaseClassnames', {
   variants: {
     size: {
       sm: ['px-600', 'py-[3px]', 'text-50', 'gap-x-400'],
@@ -9,7 +9,6 @@ export const chipBaseVariant = cva('button', {
       lg: ['px-1200', 'py-[7px]', 'text-100', 'gap-x-400'],
     },
   },
-  compoundVariants: [{ size: 'md' }],
   defaultVariants: {
     size: 'md',
   },
