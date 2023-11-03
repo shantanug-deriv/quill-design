@@ -1,4 +1,4 @@
-import { Fragment, Ref, forwardRef } from 'react'
+import { Fragment, forwardRef } from 'react'
 import { useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import SelectableChip from '../selectable-chip'
@@ -28,7 +28,10 @@ const Options = ({ item }: { item: TSingleSelectItem }) => {
   )
 }
 
-export const DropdownChipSingleSelect = forwardRef(
+export const DropdownChipSingleSelect = forwardRef<
+  HTMLButtonElement,
+  SingleSelectChipProps
+>(
   (
     {
       defaultOption,
@@ -40,8 +43,8 @@ export const DropdownChipSingleSelect = forwardRef(
       onSelectionChange,
       className,
       ...rest
-    }: SingleSelectChipProps,
-    ref: Ref<HTMLButtonElement>,
+    },
+    ref,
   ) => {
     const [selectedItem, setSelectedItem] =
       useState<TSingleSelectItem>(defaultOption)
