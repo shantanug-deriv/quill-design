@@ -7,7 +7,7 @@ describe('Dismissible Chip', () => {
     const onClickButton = jest.fn()
     render(
       <DismissibleChip size={'sm'} onDismiss={onClickButton}>
-        Selectbale Chip
+        Selectable Chip
       </DismissibleChip>,
     )
     const button = screen.getByTestId('dt-chip-dismissable-btn')

@@ -9,10 +9,10 @@ describe('Selectable Chip', () => {
     const onClickButton = jest.fn()
     render(
       <SelectableChip size={'sm'} onClick={onClickButton}>
-        Selectbale Chip
+        Selectable Chip
       </SelectableChip>,
     )
-    const button = screen.getByRole('button', { name: /Selectbale Chip/i })
+    const button = screen.getByRole('button', { name: /Selectable Chip/i })
     await userEvent.click(button)
     expect(onClickButton).toBeCalled()
   })
@@ -21,18 +21,18 @@ describe('Selectable Chip', () => {
     const onClickButton = jest.fn()
     render(
       <SelectableChip size={'sm'} disabled>
-        Selectbale Chip
+        Selectable Chip
       </SelectableChip>,
     )
-    const button = screen.getByRole('button', { name: /Selectbale Chip/i })
+    const button = screen.getByRole('button', { name: /Selectable Chip/i })
     await userEvent.click(button)
     expect(button).toBeDisabled()
     expect(onClickButton).not.toBeCalled()
   })
 
   it('should toggle selected state on clicking the chip', async () => {
-    render(<SelectableChip size={'sm'}>Selectbale Chip</SelectableChip>)
-    const button = screen.getByRole('button', { name: /Selectbale Chip/i })
+    render(<SelectableChip size={'sm'}>Selectable Chip</SelectableChip>)
+    const button = screen.getByRole('button', { name: /Selectable Chip/i })
     await userEvent.click(button)
     expect(button).toHaveAttribute('data-state', 'selected')
     await userEvent.click(button)
@@ -40,15 +40,15 @@ describe('Selectable Chip', () => {
   })
 
   it('should render correct disabled classname when it is disabled', () => {
-    render(<SelectableChip size={'sm'}>Selectbale Chip</SelectableChip>)
-    const button = screen.getByRole('button', { name: /Selectbale Chip/i })
+    render(<SelectableChip size={'sm'}>Selectable Chip</SelectableChip>)
+    const button = screen.getByRole('button', { name: /Selectable Chip/i })
     expect(button).toHaveClass('disabled:opacity-600')
   })
 
   it('should render correct labelTag', () => {
     render(
       <SelectableChip size={'sm'} labelTag="labelTag">
-        Selectbale Chip
+        Selectable Chip
       </SelectableChip>,
     )
     const labelTag = screen.getByText('labelTag')
@@ -58,7 +58,7 @@ describe('Selectable Chip', () => {
   it('should render icon properly', () => {
     render(
       <SelectableChip icon={LabelPairedAndroidIcon} size={'sm'}>
-        Selectbale Chip
+        Selectable Chip
       </SelectableChip>,
     )
     const icon = screen.getByRole('img', { name: '' })
@@ -69,10 +69,10 @@ describe('Selectable Chip', () => {
     const onSelect = jest.fn()
     render(
       <SelectableChip size={'sm'} onChipSelect={onSelect}>
-        Selectbale Chip
+        Selectable Chip
       </SelectableChip>,
     )
-    const button = screen.getByText('Selectbale Chip')
+    const button = screen.getByText('Selectable Chip')
     await userEvent.click(button)
     expect(onSelect).toBeCalled()
   })
@@ -81,7 +81,7 @@ describe('Selectable Chip', () => {
     const onDismiss = jest.fn()
     render(
       <SelectableChip size={'sm'} dismissible onDismiss={onDismiss}>
-        Selectbale Chip
+        Selectable Chip
       </SelectableChip>,
     )
     const button = screen.getByTestId('dt-chip-dismissable-btn')
@@ -92,11 +92,11 @@ describe('Selectable Chip', () => {
   it('should not toggle data-state if chip is dissmisable', async () => {
     render(
       <SelectableChip size={'sm'} dismissible>
-        Selectbale Chip
+        Selectable Chip
       </SelectableChip>,
     )
     const dismissButton = screen.getByTestId('dt-chip-dismissable-btn')
-    const chipButton = screen.getByRole('button', { name: /Selectbale Chip/i })
+    const chipButton = screen.getByRole('button', { name: /Selectable Chip/i })
     await userEvent.click(dismissButton)
     expect(chipButton).toHaveAttribute('data-state', '')
   })
