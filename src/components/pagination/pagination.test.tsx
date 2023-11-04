@@ -5,10 +5,10 @@ import { MOCK_DATA } from './mocks/sample-data'
 import Post from './mocks/Post'
 
 jest.mock('@deriv/quill-icons', () => ({
-  LabelPairedChevronLeftRegularIcon: () => <div>Previous</div>,
-  LabelPairedChevronRightRegularIcon: () => <div>Next</div>,
-  LabelPairedEllipsisRegularIcon: () => <div>...</div>,
-  LabelPairedCircleFillIcon: () => <div>O</div>,
+  StandaloneChevronLeftRegularIcon: () => <div>Previous</div>,
+  StandaloneChevronRightRegularIcon: () => <div>Next</div>,
+  StandaloneEllipsisRegularIcon: () => <div>...</div>,
+  StandaloneCircleFillIcon: () => <div>O</div>,
 }))
 
 describe('Pagination', () => {

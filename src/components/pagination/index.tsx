@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import {
-  LabelPairedChevronLeftRegularIcon,
-  LabelPairedChevronRightRegularIcon,
+  StandaloneChevronLeftRegularIcon,
+  StandaloneChevronRightRegularIcon,
 } from '@deriv/quill-icons'
 import { usePaginationRange } from 'hooks/usePaginationRange'
 import PaginationButton from './pagination-button'
@@ -81,7 +81,7 @@ const Pagination = <T,>({
           disabled={currentPage === 1}
           className={paginationVariants({ variant })}
         >
-          <LabelPairedChevronLeftRegularIcon
+          <StandaloneChevronLeftRegularIcon
             iconSize="sm"
             className={navigationIconFillVariants({
               disabled: currentPage === 1,
@@ -102,7 +102,7 @@ const Pagination = <T,>({
           disabled={currentPage === totalPageCount}
           className={paginationVariants({ variant })}
         >
-          <LabelPairedChevronRightRegularIcon
+          <StandaloneChevronRightRegularIcon
             iconSize="sm"
             className={navigationIconFillVariants({
               disabled: currentPage === totalPageCount,

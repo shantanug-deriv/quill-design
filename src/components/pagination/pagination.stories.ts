@@ -11,8 +11,29 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    variant: { control: { type: 'select', options: ['number', 'bullet'] } },
-    contentPerPage: { control: 'number' },
+    variant: {
+      options: ['number', 'bullet'],
+      control: { type: 'select' },
+      description: 'Type of pagination',
+      table: {
+        defaultValue: { summary: 'number' },
+      },
+    },
+    contentPerPage: {
+      control: { type: 'number', min: 1 },
+      description: 'List of data to be rendered per page',
+      table: {
+        defaultValue: { summary: 1 },
+      },
+    },
+    renderComponent: {
+      control: { type: null },
+      description: 'Component to render the data',
+    },
+    dataList: {
+      control: 'object',
+      description: 'Data set that is to be displayed',
+    },
   },
 } satisfies Meta<typeof Pagination>
 

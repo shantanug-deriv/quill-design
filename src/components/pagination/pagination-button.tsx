@@ -1,6 +1,6 @@
 import {
-  LabelPairedCircleFillIcon,
-  LabelPairedEllipsisRegularIcon,
+  StandaloneCircleFillIcon,
+  StandaloneEllipsisRegularIcon,
 } from '@deriv/quill-icons'
 import {
   bulletIconFillVariants,
@@ -38,7 +38,7 @@ const PaginationButton = <T,>({
         className={paginationVariants({ variant })}
       >
         <div>
-          <LabelPairedCircleFillIcon
+          <StandaloneCircleFillIcon
             iconSize="sm"
             height={12}
             width={12}
@@ -58,7 +58,7 @@ const PaginationButton = <T,>({
         disabled
         className={paginationVariants({ variant })}
       >
-        <LabelPairedEllipsisRegularIcon fill="black" iconSize="sm" />
+        <StandaloneEllipsisRegularIcon fill="black" iconSize="sm" />
       </button>
     )
   }

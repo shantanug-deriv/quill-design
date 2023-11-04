@@ -4,8 +4,8 @@ import PaginationButton from './pagination-button'
 import { DOTS } from 'hooks/usePaginationRange'
 
 jest.mock('@deriv/quill-icons', () => ({
-  LabelPairedEllipsisRegularIcon: () => <div>...</div>,
-  LabelPairedCircleFillIcon: () => <div>O</div>,
+  StandaloneEllipsisRegularIcon: () => <div>...</div>,
+  StandaloneCircleFillIcon: () => <div>O</div>,
 }))
 
 describe('Pagination', () => {
