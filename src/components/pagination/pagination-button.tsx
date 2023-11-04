@@ -2,7 +2,11 @@ import {
   LabelPairedCircleFillIcon,
   LabelPairedEllipsisRegularIcon,
 } from '@deriv/quill-icons'
-import { buttonTextVariants, paginationVariants } from './pagination.classnames'
+import {
+  bulletIconFillVariants,
+  buttonTextVariants,
+  paginationVariants,
+} from './pagination.classnames'
 import { DOTS } from 'hooks/usePaginationRange'
 import { CaptionText } from '..'
 import { PaginationProps } from './pagination.types'
@@ -35,10 +39,12 @@ const PaginationButton = <T,>({
       >
         <div>
           <LabelPairedCircleFillIcon
-            fill="black"
             iconSize="sm"
             height={12}
             width={12}
+            className={bulletIconFillVariants({
+              selected: currentPage === pageNumber,
+            })}
           />
         </div>
       </button>

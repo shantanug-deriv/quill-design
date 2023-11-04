@@ -5,7 +5,10 @@ import {
 } from '@deriv/quill-icons'
 import { usePaginationRange } from 'hooks/usePaginationRange'
 import PaginationButton from './pagination-button'
-import { paginationVariants } from './pagination.classnames'
+import {
+  navigationIconFillVariants,
+  paginationVariants,
+} from './pagination.classnames'
 import { PaginationProps } from './pagination.types'
 
 /**
@@ -78,7 +81,12 @@ const Pagination = <T,>({
           disabled={currentPage === 1}
           className={paginationVariants({ variant })}
         >
-          <LabelPairedChevronLeftRegularIcon fill="black" iconSize="sm" />
+          <LabelPairedChevronLeftRegularIcon
+            iconSize="sm"
+            className={navigationIconFillVariants({
+              disabled: currentPage === 1,
+            })}
+          />
         </button>
         {paginationRange.map((pageNumber, index) => (
           <PaginationButton
@@ -94,7 +102,12 @@ const Pagination = <T,>({
           disabled={currentPage === totalPageCount}
           className={paginationVariants({ variant })}
         >
-          <LabelPairedChevronRightRegularIcon fill="black" iconSize="sm" />
+          <LabelPairedChevronRightRegularIcon
+            iconSize="sm"
+            className={navigationIconFillVariants({
+              disabled: currentPage === totalPageCount,
+            })}
+          />
         </button>
       </section>
     </div>
