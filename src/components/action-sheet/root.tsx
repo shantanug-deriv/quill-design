@@ -5,6 +5,7 @@ type RootProps = ComponentPropsWithoutRef<'div'> & {
   show: boolean
   onClose: () => void
   position?: 'left' | 'right'
+  type?: 'modal' | 'non-modal'
 }
 
 const Root = ({
@@ -13,6 +14,7 @@ const Root = ({
   show,
   onClose,
   position = 'right',
+  type = 'modal',
 }: RootProps) => {
   return (
     <div
@@ -25,15 +27,17 @@ const Root = ({
         show && position === 'left' && 'md:left-50',
       )}
     >
-      <div
-        onClick={onClose}
-        className="fixed inset-50 -z-10 bg-opacity-black-500"
-      ></div>
+      {type === 'modal' && (
+        <div
+          onClick={onClose}
+          className="fixed inset-50 -z-10 bg-opacity-black-500"
+        ></div>
+      )}
       <div
         className={qtMerge(
-          'flex min-w-[320px] max-w-[800px] flex-col rounded-t-800 bg-background-dialog px-800 pb-800 md:h-full md:max-w-[360px] md:rounded-50',
-          position === 'right' && 'md:ml-auto',
-          position === 'left' && 'md:mr-auto',
+          'mx-auto flex min-w-[320px] max-w-[800px] flex-col rounded-t-800 bg-background-dialog px-800 pb-800 md:h-full md:max-w-[360px] md:rounded-50',
+          position === 'right' && 'md:ml-auto md:mr-50',
+          position === 'left' && 'md:ml-50 md:mr-auto',
           className,
         )}
       >
