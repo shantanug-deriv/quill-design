@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import ActionSheet from '.'
+import ActionSheet from './example'
 
 const meta = {
   title: 'Action Sheet',
