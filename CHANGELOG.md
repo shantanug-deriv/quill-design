@@ -1,3 +1,20 @@
+## [1.0.24](https://github.com/deriv-com/quill-design/compare/v1.0.23...v1.0.24) (2023-11-06)
+
+
+### ♻️ 	 Chores
+
+* Chip component ([8d9418d](https://github.com/deriv-com/quill-design/commit/8d9418d1e7b46bbf63c003f26983acac17a5e777))
+* Dismissible chip cursor only shown on icon ([62c23de](https://github.com/deriv-com/quill-design/commit/62c23dec4cf29e93c24745cf4da39725039acd28))
+* Finalize component ([dbe4be9](https://github.com/deriv-com/quill-design/commit/dbe4be98a3dd826ed80d6ef829e01368a608c209))
+* fix null issue from CVA ([fae12b3](https://github.com/deriv-com/quill-design/commit/fae12b302db2d482a9c6143066a41ef4a2f17db8))
+* fix types ([ca8a4bf](https://github.com/deriv-com/quill-design/commit/ca8a4bfa8fe7e57d682c3217474455a4a63775aa))
+* fix typos for test case ([e554ea1](https://github.com/deriv-com/quill-design/commit/e554ea1c924390a63921221d967cb065e2acac06))
+* import types as type ([e11ae25](https://github.com/deriv-com/quill-design/commit/e11ae2586982008459e67960990090dba666d5d0))
+* remove nullish check on size ([8c87374](https://github.com/deriv-com/quill-design/commit/8c87374e97789891d5f4cb0d35d3f0b808d4f953))
+* update test snapshots ([1c10257](https://github.com/deriv-com/quill-design/commit/1c1025747b99c56bf029748c0e6c4ce219650b16))
+* update TS type ([bc60ee2](https://github.com/deriv-com/quill-design/commit/bc60ee226ce87646fbf9027d299a72bea3e6a853))
+* use generic ExcludeNull type ([3ebc99f](https://github.com/deriv-com/quill-design/commit/3ebc99f1c522fe685a9a587a5920e226cb29a417))
+
 ## [1.0.23](https://github.com/deriv-com/quill-design/compare/v1.0.22...v1.0.23) (2023-11-06)
 
 
