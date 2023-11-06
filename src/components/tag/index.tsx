@@ -1,38 +1,27 @@
+import React, { forwardRef, HTMLAttributes } from 'react'
+import { QuillSvgProps } from '@deriv/quill-icons'
+import { TagClassNamesCVA, TagProps, TagSizeCVA } from './tag.classnames'
 import qtMerge from 'qtMerge'
-import { type QuillSvgProps } from '@deriv/quill-icons'
-import {
-  TagSizes,
-  TagIconSizes,
-  TagIcons,
-  TagIconColors,
-  TagColors,
-  tagBaseClassnames,
-} from './tag.classnames'
-import { HTMLAttributes, forwardRef } from 'react'
+import TagIcon from './tag.icon'
 
-export type TagType = 'error' | 'warning' | 'success' | 'info'
-export type TagSize = 'xs' | 'sm' | 'md' | 'lg'
-export type TagVariant = 'fill' | 'outline'
-
-export interface TagProps extends HTMLAttributes<HTMLDivElement> {
-  type?: TagType
-  size?: TagSize
-  variant?: TagVariant
+export interface TagComponentProps
+  extends HTMLAttributes<HTMLDivElement>,
+    TagProps {
   icon?: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
-  className?: string
-  bold?: boolean
+  iconClassName?: string
 }
 
-const Tag = forwardRef<HTMLDivElement, TagProps>(
+const Tag = forwardRef<HTMLDivElement, TagComponentProps>(
   (
     {
-      bold = false,
       children,
-      className = '',
+      className,
+      variant,
       size = 'md',
-      type = 'info',
-      variant = 'fill',
-      icon: Icon = TagIcons[type],
+      colorStyle = 'success',
+      isBold = false,
+      icon,
+      iconClassName,
       ...rest
     },
     ref,
@@ -40,18 +29,25 @@ const Tag = forwardRef<HTMLDivElement, TagProps>(
     return (
       <div
         className={qtMerge(
-          tagBaseClassnames,
-          TagSizes[size],
-          TagColors[type][variant],
-          bold && 'font-bold',
+          TagClassNamesCVA({
+            variant,
+            className,
+            colorStyle,
+            isBold,
+          }),
+          TagSizeCVA({ size }),
           className,
         )}
         {...rest}
         ref={ref}
       >
-        {Icon && (
-          <Icon {...TagIconSizes[size]} className={TagIconColors[type]} />
-        )}
+        <TagIcon
+          isBold={isBold}
+          className={iconClassName}
+          icon={icon}
+          colorStyle={colorStyle}
+          size={size}
+        />
         {children}
       </div>
     )
