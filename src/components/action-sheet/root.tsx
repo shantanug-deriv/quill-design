@@ -20,7 +20,7 @@ const Root = ({ children, className, show, onClose }: RootProps) => {
       ></div>
       <div
         className={qtMerge(
-          'rounded-t-800 bg-background-dialog px-800 pb-800',
+          'min-w-[320px] max-w-[800px] rounded-t-800 bg-background-dialog px-800 pb-800',
           className,
         )}
       >
