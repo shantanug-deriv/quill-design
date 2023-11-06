@@ -10,8 +10,8 @@ const Root = ({ children, className, show, onClose }: RootProps) => {
   return (
     <div
       className={qtMerge(
-        'invisible fixed inset-general-none z-10 flex items-end justify-center opacity-50',
-        show && 'visible opacity-1300',
+        'invisible fixed inset-general-none -bottom-full z-10 flex items-end justify-center opacity-50 transition-all',
+        show && 'visible bottom-50 opacity-1300',
       )}
     >
       <div
