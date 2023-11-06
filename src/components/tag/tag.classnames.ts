@@ -10,10 +10,20 @@ import {
   LabelPairedCircleInfoRegularIcon,
   QuillSvgProps,
 } from '@deriv/quill-icons'
+import { ExcludeNull } from 'types'
 
-export type BaseTagProps = VariantProps<typeof TagClassNamesCVA>
-export type BaseTagIconProps = VariantProps<typeof TagIconFillCVA>
-export type BaseTagSizeProps = VariantProps<typeof TagSizeCVA>
+export type BaseTagProps = ExcludeNull<
+  VariantProps<typeof TagClassNamesCVA>,
+  'colorStyle' | 'isBold' | 'variant'
+>
+export type BaseTagIconProps = ExcludeNull<
+  VariantProps<typeof TagIconFillCVA>,
+  'colorStyle'
+>
+export type BaseTagSizeProps = ExcludeNull<
+  VariantProps<typeof TagSizeCVA>,
+  'size'
+>
 export type TagProps = BaseTagProps & BaseTagIconProps & BaseTagSizeProps
 
 export const TagIconFillCVA = cva('', {
