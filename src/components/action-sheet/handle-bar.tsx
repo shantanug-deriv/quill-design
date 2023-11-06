@@ -1,6 +1,13 @@
-const HandleBar = () => {
+import { ComponentProps } from 'react'
+
+type BarProps = ComponentProps<'div'>
+
+const HandleBar = (props: BarProps) => {
   return (
-    <div className="flex items-center justify-center py-400">
+    <div
+      className="flex items-center justify-center py-400 md:hidden"
+      {...props}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="48"
