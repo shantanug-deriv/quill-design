@@ -1,3 +1,14 @@
+## [1.0.23](https://github.com/deriv-com/quill-design/compare/v1.0.22...v1.0.23) (2023-11-06)
+
+
+### ♻️ 	 Chores
+
+* added custom tags ([0174999](https://github.com/deriv-com/quill-design/commit/017499983c82950e217f99129ab00a90be4ea196))
+* improvements on existing Tag component ([a7a633e](https://github.com/deriv-com/quill-design/commit/a7a633e24544054996e73bf4a43b50c5cbc40c63))
+* refactor Tag component ([1ea54e4](https://github.com/deriv-com/quill-design/commit/1ea54e4196edd73c4c5f588554c8e4700ebcdf1b))
+* resolve comments ([b2a1de4](https://github.com/deriv-com/quill-design/commit/b2a1de4d966c2b33a63d813b012c5d06f90a6b68))
+* use cva package for tag variations ([f6a3a5b](https://github.com/deriv-com/quill-design/commit/f6a3a5bdbc05c3420fa4c783b1d2da78dc312cce))
+
 ## [1.0.22](https://github.com/deriv-com/quill-design/compare/v1.0.21...v1.0.22) (2023-11-03)
 
 
