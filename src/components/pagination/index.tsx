@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useMemo, useState } from 'react'
 import {
   StandaloneChevronLeftRegularIcon,
   StandaloneChevronRightRegularIcon,
@@ -36,8 +36,12 @@ const Pagination = <T,>({
   renderComponent,
   variant = 'number',
 }: PaginationProps<T>) => {
-  const [totalPageCount, setTotalPageCount] = useState(0)
   const [currentPage, setCurrentPage] = useState(1)
+
+  const totalPageCount = useMemo(() => {
+    const dataToDisplay = contentPerPage > 0 ? contentPerPage : 1
+    return Math.ceil(dataList.length / dataToDisplay)
+  }, [dataList.length, contentPerPage])
 
   const RenderComponent = renderComponent
 
@@ -46,12 +50,6 @@ const Pagination = <T,>({
     currentPage,
     variant,
   })
-
-  useEffect(() => {
-    // Ensuring that 0 is not provided for contentPerPage
-    const dataToDisplay = contentPerPage > 0 ? contentPerPage : 1
-    setTotalPageCount(Math.ceil(dataList.length / dataToDisplay))
-  }, [dataList.length, contentPerPage])
 
   const goToNextPage = () => setCurrentPage((page) => page + 1)
 
