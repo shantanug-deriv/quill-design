@@ -1,20 +1,27 @@
-import qtMerge from 'qtMerge'
-import Content from './content'
-import Footer from './footer'
-import Header from './header'
+import { ReactNode } from 'react'
+import ActionSheetRoot from './root'
+import ActionSheetHeader from './header'
+import ActionSheetContent from './content'
+import ActionSheetFooter from './footer'
 
-const ActionSheet = () => {
-  return (
-    <div
-      className={qtMerge(
-        'h-auto w-full rounded-t-800 bg-background-dialog px-800 pb-800',
-      )}
-    >
-      <Header>Header</Header>
-      <Content>Content</Content>
-      <Footer>Footer</Footer>
-    </div>
-  )
+type ActionSheetType = {
+  Root: typeof ActionSheetRoot
+  Header: typeof ActionSheetHeader
+  Content: typeof ActionSheetContent
+  Footer: typeof ActionSheetFooter
 }
+
+const ActionSheet: ActionSheetType = ({
+  children,
+}: {
+  children: ReactNode
+}) => {
+  return <>{children}</>
+}
+
+ActionSheet.Root = ActionSheetRoot
+ActionSheet.Header = ActionSheetHeader
+ActionSheet.Content = ActionSheetContent
+ActionSheet.Footer = ActionSheetFooter
 
 export default ActionSheet
