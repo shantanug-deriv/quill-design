@@ -1,14 +1,15 @@
 import { ComponentPropsWithoutRef, useEffect, useRef, useState } from 'react'
 import { useDrag } from '@use-gesture/react'
+import { type VariantProps } from 'class-variance-authority'
 import qtMerge, { qtJoin } from 'qtMerge'
 import HandleBar from './handle-bar'
+import { actionSheetRootCVA } from './action-sheet.classNames'
 
-type RootProps = ComponentPropsWithoutRef<'div'> & {
-  show: boolean
-  onClose: () => void
-  position?: 'left' | 'right'
-  type?: 'modal' | 'non-modal'
-}
+type RootProps = ComponentPropsWithoutRef<'div'> &
+  VariantProps<typeof actionSheetRootCVA> & {
+    onClose: () => void
+    type?: 'modal' | 'non-modal'
+  }
 
 const windowHeight = window.innerHeight
 
@@ -17,7 +18,7 @@ const Root = ({
   className,
   show,
   onClose,
-  position = 'right',
+  position,
   type = 'modal',
 }: RootProps) => {
   const [height, setheight] = useState('auto')
@@ -27,7 +28,8 @@ const Root = ({
     const isLg = window.matchMedia('(min-width: 1024px)').matches
     if (isLg) {
       setheight('100%')
-    } else {
+    }
+    if (!isLg && show) {
       setheight('auto')
     }
   }, [show])
@@ -61,7 +63,7 @@ const Root = ({
         } else {
           if (draggingPoint <= windowHeight * 0.3) {
             setheight('0px')
-            // onClose()
+            onClose()
           } else if (draggingPoint <= windowHeight * 0.5) {
             setheight(`${windowHeight * 0.3}px`)
           } else {
@@ -75,38 +77,32 @@ const Root = ({
 
   //  TODO: need to update the transition classes
   return (
-    <div
-      className={qtJoin(
-        'fixed inset-general-none z-10 flex select-none items-end justify-center transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]',
-        !show && 'invisible -bottom-full opacity-50',
-        show && 'visible bottom-50 opacity-1300',
-        position === 'right' && !show && 'lg:-right-full lg:bottom-50',
-        position === 'left' && !show && 'lg:-left-full lg:bottom-50',
-        show && position === 'right' && 'lg:right-50',
-        show && position === 'left' && 'lg:left-50',
-      )}
-    >
+    <>
       {type === 'modal' && (
         <div
           onClick={onClose}
-          className="fixed inset-50 -z-10 bg-opacity-black-500"
+          className={qtJoin(
+            'fixed inset-50 z-10 bg-opacity-black-500 transition-opacity duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]',
+            !show && 'invisible',
+          )}
         ></div>
       )}
       <div
-        className={qtMerge(
-          'mx-auto flex min-w-[320px] max-w-[800px] flex-col overflow-y-auto rounded-t-800 bg-background-dialog px-800 pb-800 transition-all lg:max-w-[360px] lg:rounded-50',
-          position === 'right' && 'lg:ml-auto lg:mr-50',
-          position === 'left' && 'lg:ml-50 lg:mr-auto',
-          height === '0px' && 'origin-bottom scale-y-0 pb-50',
-          className,
+        className={qtJoin(
+          'pointer-events-none fixed inset-general-none z-10 flex select-none items-end justify-center overflow-x-hidden transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]',
+          !show && 'invisible',
         )}
-        ref={ref}
-        style={{ height }}
       >
-        <HandleBar {...bindHandle()} />
-        {children}
+        <div
+          className={qtMerge(actionSheetRootCVA({ show, position, className }))}
+          ref={ref}
+          style={{ height }}
+        >
+          <HandleBar {...bindHandle()} />
+          {children}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

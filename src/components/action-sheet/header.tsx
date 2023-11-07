@@ -1,14 +1,9 @@
-import { ComponentPropsWithoutRef, ForwardRefExoticComponent } from 'react'
-import { QuillSvgProps } from '@deriv/quill-icons'
+import { ComponentPropsWithoutRef } from 'react'
 
-type HeaderProps = ComponentPropsWithoutRef<'div'> & {
-  title?: string
-  icon?: ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
-  description?: string
-}
+type HeaderProps = ComponentPropsWithoutRef<'div'>
 
-const Header = ({ children }: HeaderProps) => {
-  return <div>{children}</div>
+const Header = (props: HeaderProps) => {
+  return <div {...props} />
 }
 
 export default Header
