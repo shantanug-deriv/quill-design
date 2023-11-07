@@ -16,17 +16,27 @@ export const actionSheetRootCVA = cva(
     compoundVariants: [
       {
         position: 'left',
-        show: true,
+        show: false,
         className: 'lg:-translate-x-full',
+      },
+      {
+        position: 'left',
+        show: true,
+        className: 'lg:-translate-x-50',
+      },
+      {
+        position: 'right',
+        show: false,
+        className: 'lg:translate-x-full',
       },
       {
         position: 'right',
         show: true,
-        className: 'lg:translate-x-full',
+        className: 'lg:translate-x-50',
       },
     ],
     defaultVariants: {
-      position: 'right',
+      position: 'left',
       show: false,
     },
   },
