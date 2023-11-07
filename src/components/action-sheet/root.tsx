@@ -3,7 +3,7 @@ import { useDrag } from '@use-gesture/react'
 import { type VariantProps } from 'class-variance-authority'
 import qtMerge, { qtJoin } from 'qtMerge'
 import HandleBar from './handle-bar'
-import { actionSheetRootCVA } from './action-sheet.classNames'
+import { actionSheetRootCVA } from './action-sheet.classnames'
 
 type RootProps = ComponentPropsWithoutRef<'div'> &
   VariantProps<typeof actionSheetRootCVA> & {

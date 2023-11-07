@@ -2,7 +2,7 @@ import { ComponentPropsWithoutRef } from 'react'
 import { type VariantProps } from 'class-variance-authority'
 import qtMerge from 'qtMerge'
 import { Button } from '../button'
-import { actionSheetFooterCVA } from './action-sheet.classNames'
+import { actionSheetFooterCVA } from './action-sheet.classnames'
 
 type ActionType = {
   content: string
