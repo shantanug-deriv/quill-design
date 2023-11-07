@@ -1,80 +1,163 @@
-import { TagType, TagSize, TagVariant } from '.'
+import { VariantProps, cva } from 'class-variance-authority'
 import {
   LabelPairedTriangleExclamationBoldIcon,
   LabelPairedCircleExclamationBoldIcon,
   LabelPairedCircleCheckBoldIcon,
   LabelPairedCircleInfoBoldIcon,
+  LabelPairedTriangleExclamationRegularIcon,
+  LabelPairedCircleExclamationRegularIcon,
+  LabelPairedCircleCheckRegularIcon,
+  LabelPairedCircleInfoRegularIcon,
   QuillSvgProps,
 } from '@deriv/quill-icons'
+import { ExcludeNull } from 'types'
 
-type TypeTagColor = {
-  [key in TagType]: {
-    [key in TagVariant]: string
-  }
-}
+export type BaseTagProps = ExcludeNull<
+  VariantProps<typeof TagClassNamesCVA>,
+  'colorStyle' | 'isBold' | 'variant'
+>
+export type BaseTagIconProps = ExcludeNull<
+  VariantProps<typeof TagIconFillCVA>,
+  'colorStyle'
+>
+export type BaseTagSizeProps = ExcludeNull<
+  VariantProps<typeof TagSizeCVA>,
+  'size'
+>
+export type TagProps = BaseTagProps & BaseTagIconProps & BaseTagSizeProps
 
-export const TagColors: TypeTagColor = {
-  error: {
-    fill: 'bg-solid-red-100 text-solid-red-800',
-    outline: 'border-75 border-solid-red-700 text-solid-red-800',
+export const TagIconFillCVA = cva('', {
+  variants: {
+    colorStyle: {
+      custom: '',
+      error: 'fill-status-danger',
+      warning: 'fill-status-warning',
+      success: 'fill-status-success',
+      info: 'fill-status-info',
+    },
   },
-  warning: {
-    fill: 'bg-solid-orange-100 text-solid-orange-800',
-    outline: 'border-75 border-solid-orange-700 text-solid-orange-800',
-  },
-  info: {
-    fill: 'bg-solid-blue-100 text-solid-blue-800',
-    outline: 'border-75 border-solid-blue-700 text-solid-blue-800',
-  },
-  success: {
-    fill: 'bg-solid-green-100 text-solid-green-800',
-    outline: 'border-75 border-solid-green-700 text-solid-green-800',
-  },
-}
+})
 
-export const TagSizes: Record<TagSize, string> = {
-  xs: 'px-200 py-100 text-50 gap-x-200',
-  sm: 'px-400 py-[3px] text-50 gap-x-400',
-  md: 'px-600 py-[5px] text-75 gap-x-600',
-  lg: 'px-800 py-600 text-100 gap-x-800',
-}
+export const TagSizeCVA = cva('', {
+  variants: {
+    size: {
+      xs: 'px-200 py-100 text-50 gap-x-200',
+      sm: 'px-400 py-[3px] text-50 gap-x-400',
+      md: 'px-600 py-[5px] text-75 gap-x-600',
+      lg: 'px-800 py-600 text-100 gap-x-800',
+    },
+  },
+})
+
+export const TagClassNamesCVA = cva(
+  'min-w-full rounded-200 inline-flex items-center justify-center',
+  {
+    variants: {
+      colorStyle: {
+        custom: '',
+        error: 'text-status-danger',
+        warning: 'text-status-warning',
+        success: 'text-status-success',
+        info: 'text-status-info',
+      },
+      isBold: {
+        true: 'font-bold',
+      },
+
+      variant: {
+        custom: '',
+        outline: 'border-75 bg-none',
+        fill: 'border-collapse',
+      },
+    },
+    compoundVariants: [
+      {
+        variant: 'outline',
+        colorStyle: 'warning',
+        className: 'border-status-warning',
+      },
+      {
+        variant: 'fill',
+        colorStyle: 'warning',
+        className: 'bg-solid-orange-100',
+      },
+      {
+        variant: 'outline',
+        colorStyle: 'error',
+        className: 'border-status-danger',
+      },
+      {
+        variant: 'fill',
+        colorStyle: 'error',
+        className: 'bg-solid-red-100',
+      },
+      {
+        variant: 'outline',
+        colorStyle: 'success',
+        className: 'border-status-success',
+      },
+      {
+        variant: 'fill',
+        colorStyle: 'success',
+        className: 'bg-solid-green-100',
+      },
+      {
+        variant: 'outline',
+        colorStyle: 'info',
+        className: 'border-status-info',
+      },
+      {
+        variant: 'fill',
+        colorStyle: 'info',
+        className: 'bg-solid-blue-100',
+      },
+    ],
+  },
+)
 
 export const TagIcons: Record<
-  TagType,
-  React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
-> = {
-  error: LabelPairedTriangleExclamationBoldIcon,
-  warning: LabelPairedCircleExclamationBoldIcon,
-  success: LabelPairedCircleCheckBoldIcon,
-  info: LabelPairedCircleInfoBoldIcon,
-}
-
-export const TagIconSizes: Record<TagSize, { width: number; height: number }> =
+  Exclude<NonNullable<BaseTagProps['colorStyle']>, 'custom'>,
   {
-    xs: {
-      width: 11,
-      height: 18,
-    },
-    sm: {
-      width: 11,
-      height: 18,
-    },
-    md: {
-      width: 13,
-      height: 22,
-    },
-    lg: {
-      width: 14,
-      height: 24,
-    },
+    bold: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
+    regular: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
   }
-
-export const TagIconColors: Record<TagType, string> = {
-  error: 'fill-solid-red-800',
-  warning: 'fill-solid-orange-800',
-  success: 'fill-solid-green-800',
-  info: 'fill-solid-blue-800',
+> = {
+  error: {
+    bold: LabelPairedTriangleExclamationBoldIcon,
+    regular: LabelPairedTriangleExclamationRegularIcon,
+  },
+  warning: {
+    bold: LabelPairedCircleExclamationBoldIcon,
+    regular: LabelPairedCircleExclamationRegularIcon,
+  },
+  success: {
+    bold: LabelPairedCircleCheckBoldIcon,
+    regular: LabelPairedCircleCheckRegularIcon,
+  },
+  info: {
+    bold: LabelPairedCircleInfoBoldIcon,
+    regular: LabelPairedCircleInfoRegularIcon,
+  },
 }
 
-export const tagBaseClassnames =
-  'min-w-full rounded-200 inline-flex items-center justify-center'
+export const TagIconSizes: Record<
+  NonNullable<BaseTagSizeProps['size']>,
+  { width: number; height: number }
+> = {
+  xs: {
+    width: 11,
+    height: 18,
+  },
+  sm: {
+    width: 11,
+    height: 18,
+  },
+  md: {
+    width: 13,
+    height: 22,
+  },
+  lg: {
+    width: 14,
+    height: 24,
+  },
+}
