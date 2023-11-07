@@ -1,12 +1,15 @@
+//@ts-nocheck
+import { Fragment } from 'react'
+import { TPaginatedData } from '../pagination.types'
+
 type TData = {
-  id: number
   first_name: string
   last_name: string
   email: string
 }
 
 type PostProps = {
-  data: TData
+  data: TPaginatedData<TData>
 }
 
 const Post = ({ data }: PostProps) => (
@@ -24,4 +27,10 @@ const Post = ({ data }: PostProps) => (
   </div>
 )
 
-export default Post
+export const configureMockChild = <T,>({
+  paginatedData,
+}: TPaginatedData<T>) => (
+  <Fragment>
+    {paginatedData?.map((data) => <Post key={data?.id} data={data} />)}
+  </Fragment>
+)

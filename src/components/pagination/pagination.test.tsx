@@ -2,7 +2,8 @@ import { render, screen } from 'test-utils'
 import userEvent from '@testing-library/user-event'
 import Pagination from '.'
 import { MOCK_DATA } from './mocks/sample-data'
-import Post from './mocks/Post'
+import { configureMockChild } from './mocks/Post'
+// import Post from './mocks/Post'
 
 jest.mock('@deriv/quill-icons', () => ({
   StandaloneChevronLeftRegularIcon: () => <div>Previous</div>,
@@ -14,12 +15,9 @@ jest.mock('@deriv/quill-icons', () => ({
 describe('Pagination', () => {
   it('should render Previous and next navigation buttons and page numbers', () => {
     render(
-      <Pagination
-        contentPerPage={5}
-        dataList={MOCK_DATA}
-        renderComponent={Post}
-        variant="number"
-      />,
+      <Pagination contentPerPage={5} dataList={MOCK_DATA} variant="number">
+        {configureMockChild}
+      </Pagination>,
     )
 
     const elPreviousButton = screen.getByRole('button', { name: /previous/i })
@@ -33,12 +31,9 @@ describe('Pagination', () => {
 
   it('should render Previous and next navigation buttons and bullet points', () => {
     render(
-      <Pagination
-        contentPerPage={5}
-        dataList={MOCK_DATA}
-        renderComponent={Post}
-        variant="bullet"
-      />,
+      <Pagination contentPerPage={5} dataList={MOCK_DATA} variant="bullet">
+        {configureMockChild}
+      </Pagination>,
     )
 
     const elPreviousButton = screen.getByRole('button', { name: /previous/i })
@@ -52,12 +47,9 @@ describe('Pagination', () => {
 
   it('should disable Previous button when current page is 1', () => {
     render(
-      <Pagination
-        contentPerPage={5}
-        dataList={MOCK_DATA}
-        renderComponent={Post}
-        variant="number"
-      />,
+      <Pagination contentPerPage={5} dataList={MOCK_DATA} variant="number">
+        {configureMockChild}
+      </Pagination>,
     )
 
     const elPreviousButton = screen.getByRole('button', { name: /previous/i })
@@ -67,12 +59,9 @@ describe('Pagination', () => {
 
   it('should disable Next button when current page is last page', async () => {
     render(
-      <Pagination
-        contentPerPage={10}
-        dataList={MOCK_DATA}
-        renderComponent={Post}
-        variant="number"
-      />,
+      <Pagination contentPerPage={10} dataList={MOCK_DATA} variant="number">
+        {configureMockChild}
+      </Pagination>,
     )
 
     const elNextButton = screen.getByRole('button', { name: /next/i })
@@ -87,12 +76,9 @@ describe('Pagination', () => {
 
   it('should render disabled ellipses button when total page count is more than 5', () => {
     render(
-      <Pagination
-        contentPerPage={5}
-        dataList={MOCK_DATA}
-        renderComponent={Post}
-        variant="number"
-      />,
+      <Pagination contentPerPage={5} dataList={MOCK_DATA} variant="number">
+        {configureMockChild}
+      </Pagination>,
     )
 
     const elEllipsesButton = screen.getByRole('button', { name: /\.\.\./i })
@@ -102,12 +88,9 @@ describe('Pagination', () => {
 
   it('should select correct page number when a particular page is clicked', async () => {
     render(
-      <Pagination
-        contentPerPage={10}
-        dataList={MOCK_DATA}
-        renderComponent={Post}
-        variant="number"
-      />,
+      <Pagination contentPerPage={10} dataList={MOCK_DATA} variant="number">
+        {configureMockChild}
+      </Pagination>,
     )
 
     const elPageButtonOne = screen.getByRole('button', { name: /1/i })
@@ -124,12 +107,9 @@ describe('Pagination', () => {
 
   it('should be able to navigate to the required page when Previous and Next buttons are clicked', async () => {
     render(
-      <Pagination
-        contentPerPage={10}
-        dataList={MOCK_DATA}
-        renderComponent={Post}
-        variant="number"
-      />,
+      <Pagination contentPerPage={10} dataList={MOCK_DATA} variant="number">
+        {configureMockChild}
+      </Pagination>,
     )
     const elPreviousButton = screen.getByRole('button', { name: /previous/i })
     const elNextButton = screen.getByRole('button', { name: /next/i })

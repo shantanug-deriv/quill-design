@@ -17,23 +17,22 @@ import { PaginationProps } from './pagination.types'
  * @param {string} className- Styles to be applied to Pagination body
  * @param {number} contentPerPage- Number of items to be displayed per page
  * @param {Array} dataList- List of data to be displayed
- * @param {React.Component} renderComponent- Component to be rendered
  * @param {string} variant- Variant of Pagination.
  *
  * @example
- * <Pagination
- * className="pagination__container"
- * contentPerPage={10}
- * dataList={dataList}
- * renderComponent={<DisplayContent />}
- * variant="number"
- * />
+ * <Pagination className="pagination__container" contentPerPage={10}
+ * dataList={dataList} variant="number"
+ * >
+ * {({ paginatedData }) => (
+ *  <ComponentToRender data={paginatedData} />
+ * )}
+ * </Pagination>
  */
 const Pagination = <T,>({
+  children,
   className,
   contentPerPage,
   dataList = [],
-  renderComponent,
   variant = 'number',
 }: PaginationProps<T>) => {
   const [currentPage, setCurrentPage] = useState(1)
@@ -42,8 +41,6 @@ const Pagination = <T,>({
     const dataToDisplay = contentPerPage > 0 ? contentPerPage : 1
     return Math.ceil(dataList.length / dataToDisplay)
   }, [dataList.length, contentPerPage])
-
-  const RenderComponent = renderComponent
 
   const paginationRange = usePaginationRange({
     totalPageCount,
@@ -60,19 +57,15 @@ const Pagination = <T,>({
     setCurrentPage(pageNumber)
   }
 
-  const getPaginatedData = () => {
+  const paginatedData = useMemo(() => {
     const startIndex = currentPage * contentPerPage - contentPerPage
     const endIndex = startIndex + contentPerPage
     return dataList.slice(startIndex, endIndex)
-  }
+  }, [contentPerPage, currentPage, dataList])
 
   return (
     <div className="row-auto grid">
-      <section className={className}>
-        {getPaginatedData().map((dataItem) => (
-          <RenderComponent key={dataItem.id} data={dataItem} />
-        ))}
-      </section>
+      <section className={className}>{children({ paginatedData })}</section>
       <section className="flex items-center justify-center gap-400">
         <button
           onClick={gotToPreviousPage}

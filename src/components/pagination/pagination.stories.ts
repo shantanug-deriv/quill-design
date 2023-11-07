@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import Pagination from '.'
-import Post from './mocks/Post'
 import { MOCK_DATA } from './mocks/sample-data'
+import { configureMockChild } from './mocks/Post'
 
 const meta = {
   title: 'Components/Pagination',
@@ -26,10 +26,6 @@ const meta = {
         defaultValue: { summary: 1 },
       },
     },
-    renderComponent: {
-      control: { type: null },
-      description: 'Component to render the data',
-    },
     dataList: {
       control: 'object',
       description: 'Data set that is to be displayed',
@@ -43,17 +39,17 @@ type Story = StoryObj<typeof meta>
 export const NumberPagination: Story = {
   args: {
     contentPerPage: 5,
-    renderComponent: Post,
     dataList: MOCK_DATA,
     variant: 'number',
     className: 'p-general-sm',
+    children: configureMockChild,
   },
 }
 
 export const BulletPagination: Story = {
   args: {
     contentPerPage: 20,
-    renderComponent: Post,
+    children: configureMockChild,
     dataList: MOCK_DATA,
     variant: 'bullet',
     className: 'p-general-sm',
