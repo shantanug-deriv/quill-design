@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, useRef, useState } from 'react'
+import { ComponentPropsWithoutRef, useEffect, useRef, useState } from 'react'
 import { useDrag } from '@use-gesture/react'
 import qtMerge, { qtJoin } from 'qtMerge'
 import HandleBar from './handle-bar'
@@ -20,8 +20,17 @@ const Root = ({
   position = 'right',
   type = 'modal',
 }: RootProps) => {
-  const [pos, setPos] = useState('auto')
+  const [height, setheight] = useState('auto')
   const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const isLg = window.matchMedia('(min-width: 1024px)').matches
+    if (isLg) {
+      setheight('100%')
+    } else {
+      setheight('auto')
+    }
+  }, [show])
 
   const bindHandle = useDrag(
     ({ dragging, distance, initial, xy }) => {
@@ -36,26 +45,27 @@ const Root = ({
       }
 
       if (dragging) {
-        setPos(`${draggingPoint}px`)
+        setheight(`${draggingPoint}px`)
       } else {
         if (!isGoingDown) {
           if (draggingPoint >= 0 && draggingPoint <= windowHeight * 0.3) {
-            setPos(`${windowHeight * 0.3}px`)
+            setheight(`${windowHeight * 0.3}px`)
           } else if (
             draggingPoint >= windowHeight * 0.3 &&
             draggingPoint <= windowHeight * 0.5
           ) {
-            setPos(`${windowHeight * 0.5}px`)
+            setheight(`${windowHeight * 0.5}px`)
           } else {
-            setPos(`${windowHeight * 0.7}px`)
+            setheight(`${windowHeight * 0.7}px`)
           }
         } else {
           if (draggingPoint <= windowHeight * 0.3) {
-            onClose()
+            setheight('0px')
+            // onClose()
           } else if (draggingPoint <= windowHeight * 0.5) {
-            setPos(`${windowHeight * 0.3}px`)
+            setheight(`${windowHeight * 0.3}px`)
           } else {
-            setPos(`${windowHeight * 0.5}px`)
+            setheight(`${windowHeight * 0.5}px`)
           }
         }
       }
@@ -67,12 +77,13 @@ const Root = ({
   return (
     <div
       className={qtJoin(
-        'invisible fixed inset-general-none -bottom-full z-10 flex select-none items-end justify-center opacity-50 transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]',
+        'fixed inset-general-none z-10 flex select-none items-end justify-center transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]',
+        !show && 'invisible -bottom-full opacity-50',
         show && 'visible bottom-50 opacity-1300',
-        position === 'right' && 'md:-right-full md:bottom-50',
-        position === 'left' && 'md:-left-full md:bottom-50',
-        show && position === 'right' && 'md:right-50',
-        show && position === 'left' && 'md:left-50',
+        position === 'right' && !show && 'lg:-right-full lg:bottom-50',
+        position === 'left' && !show && 'lg:-left-full lg:bottom-50',
+        show && position === 'right' && 'lg:right-50',
+        show && position === 'left' && 'lg:left-50',
       )}
     >
       {type === 'modal' && (
@@ -83,13 +94,14 @@ const Root = ({
       )}
       <div
         className={qtMerge(
-          'transition-allmd:h-full mx-auto flex min-w-[320px] max-w-[800px] flex-col overflow-y-auto rounded-t-800 bg-background-dialog px-800 pb-800 md:max-w-[360px] md:rounded-50',
-          position === 'right' && 'md:ml-auto md:mr-50',
-          position === 'left' && 'md:ml-50 md:mr-auto',
+          'mx-auto flex min-w-[320px] max-w-[800px] flex-col overflow-y-auto rounded-t-800 bg-background-dialog px-800 pb-800 transition-all lg:max-w-[360px] lg:rounded-50',
+          position === 'right' && 'lg:ml-auto lg:mr-50',
+          position === 'left' && 'lg:ml-50 lg:mr-auto',
+          height === '0px' && 'origin-bottom scale-y-0 pb-50',
           className,
         )}
         ref={ref}
-        style={{ height: pos }}
+        style={{ height }}
       >
         <HandleBar {...bindHandle()} />
         {children}

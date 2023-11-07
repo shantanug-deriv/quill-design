@@ -5,7 +5,7 @@ type BarProps = ComponentProps<'div'>
 const HandleBar = (props: BarProps) => {
   return (
     <div
-      className="flex touch-none items-center justify-center py-400 md:hidden"
+      className="flex touch-none items-center justify-center py-400 lg:hidden"
       {...props}
     >
       <svg
