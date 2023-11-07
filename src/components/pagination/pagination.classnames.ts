@@ -12,7 +12,6 @@ export const paginationVariants = cva(paginationBaseClass, {
         'h-1600 w-1600 rounded-200 hover:bg-opacity-black-100 active:bg-opacity-black-200',
       bullet: 'rounded-pill',
     },
-    theme: {},
     selected: {
       true: '',
       false: '',
