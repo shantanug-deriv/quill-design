@@ -5,17 +5,15 @@ import { ReactNode } from 'react'
 
 export type PaginationVariantProps = VariantProps<typeof paginationVariants>
 
-export type TPaginatedData<T> = {
-  paginatedData: Array<T & { id: string | number }>
-}
+export type TPaginatedData<T> = Array<T & { id: string | number }>
 
 export interface PaginationProps<T>
   extends ExcludeNull<
     Required<Pick<PaginationVariantProps, 'variant'>>,
     'variant'
   > {
-  children: (props: TPaginatedData<T>) => ReactNode
+  children: (props: { paginatedData: TPaginatedData<T> }) => ReactNode
   className?: string
   contentPerPage: number
-  dataList: Array<T & { id: string | number }>
+  dataList: TPaginatedData<T>
 }

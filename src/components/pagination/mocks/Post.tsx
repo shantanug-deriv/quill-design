@@ -9,7 +9,7 @@ type TData = {
 }
 
 type PostProps = {
-  data: TPaginatedData<TData>
+  data: TPaginatedData<TData>[0]
 }
 
 const Post = ({ data }: PostProps) => (
@@ -29,7 +29,9 @@ const Post = ({ data }: PostProps) => (
 
 export const configureMockChild = <T,>({
   paginatedData,
-}: TPaginatedData<T>) => (
+}: {
+  paginatedData: TPaginatedData<T>
+}) => (
   <Fragment>
     {paginatedData?.map((data) => <Post key={data?.id} data={data} />)}
   </Fragment>
