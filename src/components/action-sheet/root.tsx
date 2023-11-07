@@ -4,10 +4,10 @@ import qtMerge, { qtJoin } from 'qtMerge'
 import HandleBar from './handle-bar'
 import { actionSheetRootCVA } from './action-sheet.classnames'
 import { useSwipeBlock } from 'hooks'
-import { ExcludeNull } from 'types'
+import { ExcludeNullAndUndefined } from 'types'
 
 type RootProps = ComponentPropsWithoutRef<'div'> &
-  ExcludeNull<VariantProps<typeof actionSheetRootCVA>, 'show'> & {
+  ExcludeNullAndUndefined<VariantProps<typeof actionSheetRootCVA>, 'show'> & {
     onClose: () => void
     type?: 'modal' | 'non-modal'
     expandable?: boolean
@@ -23,8 +23,6 @@ const Root = ({
   expandable = true,
 }: RootProps) => {
   const { height, containerRef, bindHandle } = useSwipeBlock({ show, onClose })
-
-  console.log(show)
 
   //  TODO: need to update the transition classes
   return (
