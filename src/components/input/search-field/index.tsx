@@ -1,6 +1,6 @@
 import { ComponentProps, forwardRef } from 'react'
 import Input from '../base'
-import { StandaloneSearchRegularIcon } from '@deriv/quill-icons'
+import { StandaloneSearchBoldIcon } from '@deriv/quill-icons'
 
 export type SearchFieldProps = ComponentProps<typeof Input>
 
@@ -9,7 +9,7 @@ const SearchField = forwardRef<HTMLInputElement, SearchFieldProps>(
     return (
       <Input
         {...rest}
-        icon={StandaloneSearchRegularIcon}
+        icon={StandaloneSearchBoldIcon}
         type={type}
         placeholder="Search"
         ref={ref}

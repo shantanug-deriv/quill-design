@@ -12,15 +12,17 @@ import {
   baseInputVariants,
   baseInputWrapperVariants,
   baseStatusMessageVariants,
+  iconSize,
+  statusIconColours,
 } from './base.classnames'
 import { VariantProps } from 'class-variance-authority'
 import qtMerge, { qtJoin } from 'qtMerge'
 
-type InputSize = Exclude<
+export type InputSize = Exclude<
   VariantProps<typeof baseInputWrapperVariants>['size'],
   null
 >
-type InputStatus = Exclude<
+export type InputStatus = Exclude<
   VariantProps<typeof baseInputWrapperVariants>['status'],
   null
 >
@@ -66,6 +68,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       textAlignment = 'left',
       label,
       placeholder,
+      statusIcon: StatusIcon,
       ...rest
     },
     ref,
@@ -124,7 +127,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         >
           {Icon && (
             <div>
-              <Icon iconSize={inputSize} />
+              <Icon {...iconSize[inputSize]} />
             </div>
           )}
           <input
@@ -156,6 +159,14 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             >
               {label}
             </label>
+          )}
+          {StatusIcon && (
+            <div>
+              <StatusIcon
+                {...iconSize[inputSize]}
+                fill={statusIconColours[status]}
+              />
+            </div>
           )}
         </div>
         <div className={qtMerge('flex justify-between')}>

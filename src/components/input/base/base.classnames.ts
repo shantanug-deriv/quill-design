@@ -1,4 +1,5 @@
 import { cva } from 'class-variance-authority'
+import { InputSize, type InputStatus } from '.'
 
 export const baseInputWrapperVariants = cva(
   'w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative',
@@ -92,3 +93,20 @@ export const baseStatusMessageVariants = cva(
     },
   },
 )
+
+export const statusIconColours: Record<
+  Exclude<InputStatus, undefined>,
+  string
+> = {
+  neutral: '',
+  error: 'red',
+  success: 'green',
+}
+
+export const iconSize: Record<
+  Exclude<InputSize, undefined>,
+  { width: number; height: number }
+> = {
+  sm: { width: 24, height: 24 },
+  md: { width: 24, height: 24 },
+}
