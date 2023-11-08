@@ -6,10 +6,10 @@ exports[`TextField It should render a default TextField 1`] = `
     class="flex flex-col"
   >
     <div
-      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative bg-solid-slate-50 data-[disabled]:bg-solid-slate-50 data-[disabled]:text-opacity-black-100 data-[disabled]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 data-[hovered]:text-opacity-black-200 data-[hovered]:border-opacity-black-200 data-[focused]:border-solid-slate-1400 data-[focused]:text-solid-slate-1400"
+      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer data-[disabled]:cursor-not-allowed bg-solid-slate-50 data-[disabled]:bg-solid-slate-50 data-[disabled]:text-opacity-black-100 data-[disabled]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 data-[hovered]:text-opacity-black-200 data-[hovered]:border-opacity-black-200 data-[focused]:border-solid-slate-1400 data-[focused]:text-solid-slate-1400"
     >
       <input
-        class="h-1200 leading-300 peer grow focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 text-left h-1200"
+        class="h-1200 leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 text-left h-1200"
         type="text"
       />
     </div>

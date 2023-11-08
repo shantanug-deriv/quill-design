@@ -2,7 +2,7 @@ import { cva } from 'class-variance-authority'
 import { InputSize, type InputStatus } from '.'
 
 export const baseInputWrapperVariants = cva(
-  'w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative',
+  'w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer  data-[disabled]:cursor-not-allowed',
   {
     variants: {
       variant: {
@@ -30,6 +30,12 @@ export const baseInputWrapperVariants = cva(
         className:
           'bg-opacity-green-100 border-opacity-green-100 data-[hovered]:bg-opacity-green-200 data-[hovered]:border-opacity-green-200',
       },
+      {
+        variant: ['fill'],
+        status: ['error'],
+        className:
+          'bg-opacity-red-100 border-opacity-red-100 data-[hovered]:bg-opacity-red-200 data-[hovered]:border-opacity-red-200',
+      },
     ],
     defaultVariants: {
       size: 'md',
@@ -40,7 +46,7 @@ export const baseInputWrapperVariants = cva(
 )
 
 export const baseInputVariants = cva(
-  'h-1200 leading-300 peer grow focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300',
+  'h-1200 leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300',
   {
     variants: {
       alignment: {

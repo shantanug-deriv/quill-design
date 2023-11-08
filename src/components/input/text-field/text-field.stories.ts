@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 import TextField from '.'
+import { StandaloneCircleCheckBoldIcon } from '@deriv/quill-icons'
 
 const meta = {
   title: 'Inputs/Text Field',
@@ -69,5 +70,21 @@ export const TextFieldWithLabel: Story = {
   args: {
     placeholder: 'Placeholder',
     label: 'Label',
+  },
+}
+
+export const SuccessStatusIconTextField: Story = {
+  args: {
+    placeholder: 'Placeholder',
+    variant: 'outline',
+    status: 'success',
+    statusIcon: StandaloneCircleCheckBoldIcon,
+  },
+  argTypes: {
+    status: {
+      table: {
+        disable: true,
+      },
+    },
   },
 }

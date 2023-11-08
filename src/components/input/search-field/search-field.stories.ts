@@ -1,6 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react'
 import SearchField from '.'
-import { StandaloneCircleCheckBoldIcon } from '@deriv/quill-icons'
+import {
+  StandaloneCircleCheckBoldIcon,
+  StandaloneTriangleExclamationBoldIcon,
+} from '@deriv/quill-icons'
 
 const meta = {
   title: 'Inputs/Search Field',
@@ -100,5 +103,28 @@ export const SuccessStatusIconSearchField: Story = {
     variant: 'outline',
     status: 'success',
     statusIcon: StandaloneCircleCheckBoldIcon,
+  },
+  argTypes: {
+    status: {
+      table: {
+        disable: true,
+      },
+    },
+  },
+}
+
+export const ErrorStatusIconSearchField: Story = {
+  args: {
+    placeholder: 'Placeholder',
+    variant: 'outline',
+    status: 'error',
+    statusIcon: StandaloneTriangleExclamationBoldIcon,
+  },
+  argTypes: {
+    status: {
+      table: {
+        disable: true,
+      },
+    },
   },
 }
