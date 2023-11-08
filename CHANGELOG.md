@@ -1,3 +1,10 @@
+## [1.0.27](https://github.com/deriv-com/quill-design/compare/v1.0.26...v1.0.27) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* added exclude null and undefined type ([05d640a](https://github.com/deriv-com/quill-design/commit/05d640aa562885cf2a19894ba0d49560ba4b3b51))
+
 ## [1.0.26](https://github.com/deriv-com/quill-design/compare/v1.0.25...v1.0.26) (2023-11-08)
 
 
