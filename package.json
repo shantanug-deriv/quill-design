@@ -107,11 +107,11 @@
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "@deriv/quill-icons": "^1.0.5",
-    "@types/react": "^18.x",
+    "@deriv/quill-icons": "1.0.6",
+    "@types/react": ">=17.x",
     "class-variance-authority": "^0.7.0",
-    "react": "^18.x",
-    "react-dom": "^18.x",
+    "react": ">=17.x",
+    "react-dom": ">=17.x",
     "tailwind-merge": "^1.14.0",
     "usehooks-ts": "^2.9.1",
     "@headlessui/react": "^1.7.17"
