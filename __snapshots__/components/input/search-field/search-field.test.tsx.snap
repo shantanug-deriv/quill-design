@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchField It should render a default SearchField 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative bg-solid-slate-50 data-[disabled]:bg-solid-slate-50 data-[disabled]:text-opacity-black-100 data-[disabled]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 data-[hovered]:text-opacity-black-200 data-[hovered]:border-opacity-black-200 data-[focused]:border-solid-slate-1400 data-[focused]:text-solid-slate-1400"
+    >
+      <div>
+        <svg
+          height="32"
+          role="img"
+          viewBox="0 0 32 32"
+          width="32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21 14.625c0-1.25-.313-2.396-.938-3.438a6.772 6.772 0 0 0-2.5-2.5c-1.093-.624-2.24-.937-3.437-.937-1.198 0-2.344.313-3.438.938a6.772 6.772 0 0 0-2.5 2.5 6.556 6.556 0 0 0-.937 3.437c0 1.25.313 2.396.938 3.438a6.772 6.772 0 0 0 2.5 2.5c1.093.625 2.24.937 3.437.937 1.198 0 2.344-.313 3.438-.938a6.772 6.772 0 0 0 2.5-2.5A6.556 6.556 0 0 0 21 14.626Zm-1.602 6.172c-1.458 1.25-3.216 1.9-5.273 1.953-2.292-.052-4.206-.846-5.742-2.383-1.537-1.536-2.33-3.45-2.383-5.742.052-2.292.846-4.206 2.383-5.742 1.536-1.537 3.45-2.33 5.742-2.383 2.292.052 4.206.846 5.742 2.383 1.537 1.536 2.33 3.45 2.383 5.742-.052 2.057-.703 3.815-1.953 5.273l5.508 5.547c.26.287.26.573 0 .86-.287.26-.573.26-.86 0l-5.547-5.508Z"
+            fill-opacity="0.72"
+          />
+        </svg>
+      </div>
+      <input
+        class="h-1200 leading-300 peer grow focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 text-left h-1200"
+        placeholder="Search"
+        type="search"
+      />
+    </div>
+    <div
+      class="flex justify-between"
+    />
+  </div>
+</div>
+`;
