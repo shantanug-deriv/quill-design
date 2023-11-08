@@ -1,21 +1,26 @@
-import { useState } from 'react'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { ComponentProps, useState } from 'react'
 import { IllustrativeCloseAccountIcon } from '@deriv/quill-icons'
-import ActionSheet from '.'
+import ActionSheet from '..'
 
-const ActionSheetExample = () => {
-  const [show, setShow] = useState(true)
+const ActionSheetExample = ({
+  show: _show,
+  onClose: _onClose,
+  primaryAction,
+  secondaryAction,
+  alignment,
+  ...props
+}: ComponentProps<typeof ActionSheet.Root> &
+  ComponentProps<typeof ActionSheet.Footer>) => {
+  const [show, setShow] = useState(false)
   const handleToggle = () => {
     setShow((prev) => !prev)
   }
   return (
     <>
-      <button onClick={handleToggle}>Show Action Sheet</button>
-      <div className="h-[600px] w-[700px] max-w-full">
-        <ActionSheet.Root
-          className="max-w-sm"
-          show={show}
-          onClose={handleToggle}
-        >
+      <div className="h-[600px] min-w-[360px] max-w-full md:w-[700px]">
+        <button onClick={handleToggle}>Show Action Sheet</button>
+        <ActionSheet.Root show={show} onClose={handleToggle} {...props}>
           <ActionSheet.Header>
             <div>
               <h3>Title</h3>
@@ -42,11 +47,9 @@ const ActionSheetExample = () => {
             </p>
           </ActionSheet.Content>
           <ActionSheet.Footer
-            primaryAction={{ content: 'Primary Action', onAction: () => null }}
-            secondaryAction={{
-              content: 'Secondary Action',
-              onAction: () => null,
-            }}
+            primaryAction={primaryAction}
+            secondaryAction={secondaryAction}
+            alignment={alignment}
           />
         </ActionSheet.Root>
       </div>
