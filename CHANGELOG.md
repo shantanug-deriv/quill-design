@@ -1,3 +1,12 @@
+## [1.0.26](https://github.com/deriv-com/quill-design/compare/v1.0.25...v1.0.26) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* add status icon ([e82f7e2](https://github.com/deriv-com/quill-design/commit/e82f7e20b41f7628fb08caf0321be8f33b6b3de4))
+* disable status change for icon story ([65c8721](https://github.com/deriv-com/quill-design/commit/65c8721175160b516f6530421709cc5ecf97018b))
+* initial commit ([565d6a9](https://github.com/deriv-com/quill-design/commit/565d6a9e6e2d7a2c7fd754d6a8cb5feb8e9c6a5a))
+
 ## [1.0.25](https://github.com/deriv-com/quill-design/compare/v1.0.24...v1.0.25) (2023-11-08)
 
 
