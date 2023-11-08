@@ -1,3 +1,10 @@
+## [1.0.25](https://github.com/deriv-com/quill-design/compare/v1.0.24...v1.0.25) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* Fix dropdown chip layout shifting issue ([7bf167a](https://github.com/deriv-com/quill-design/commit/7bf167a54827f8ea522dd984b1cf4032d004a73c))
+
 ## [1.0.24](https://github.com/deriv-com/quill-design/compare/v1.0.23...v1.0.24) (2023-11-06)
 
 
