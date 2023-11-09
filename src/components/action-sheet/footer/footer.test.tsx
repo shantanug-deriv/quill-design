@@ -4,12 +4,12 @@ import userEvent from '@testing-library/user-event'
 import { FooterAlignment } from '../types'
 
 describe('<ActionSheet.Footer/>', () => {
-  it('should renders correctly with className', () => {
+  it('should render correctly with className', () => {
     render(<ActionSheet.Footer className="px-50" aria-label="Footer" />)
     const footerEl = screen.getByLabelText('Footer')
     expect(footerEl).toHaveClass('px-50')
   })
-  it('should renders with primaryAction correctly', async () => {
+  it('should render with primaryAction correctly', async () => {
     const onActionButton = jest.fn()
     render(
       <ActionSheet.Footer
@@ -21,7 +21,7 @@ describe('<ActionSheet.Footer/>', () => {
     await userEvent.click(primaryBtn)
     expect(onActionButton).toBeCalled()
   })
-  it('should renders secondaryAction correctly', async () => {
+  it('should render secondaryAction correctly', async () => {
     const onSecondaryAction = jest.fn()
     render(
       <ActionSheet.Footer
