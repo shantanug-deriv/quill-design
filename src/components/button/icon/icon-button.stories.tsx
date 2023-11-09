@@ -1,20 +1,49 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import Button from '.'
+import {
+  LabelPairedPlaceholderRegularIcon,
+  QuillSvgProps,
+} from '@deriv/quill-icons'
+import IconButton from '.'
+
 const meta = {
-  title: 'Buttons/Button',
-  component: Button,
+  title: 'Buttons/IconButton',
+  component: IconButton,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Button>
+  args: {
+    fullWidth: false,
+    isLoading: false,
+    disabled: false,
+    size: 'md',
+    icon: LabelPairedPlaceholderRegularIcon as React.ForwardRefExoticComponent<QuillSvgProps>,
+    variant: 'primary',
+    colorStyle: 'coral',
+  },
+  argTypes: {
+    icon: {
+      table: {
+        disable: true,
+      },
+    },
+  },
+  decorators: [
+    (Story) => (
+      <div className="flex min-h-[256px] min-w-[512px] items-center justify-center">
+        <Story />
+      </div>
+    ),
+  ],
+} satisfies Meta<typeof IconButton>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
+export const Default: Story = {}
+
 export const PrimaryCoral: Story = {
   args: {
-    children: 'Primary Coral Button',
     size: 'md',
     variant: 'primary',
     colorStyle: 'coral',
@@ -24,7 +53,6 @@ export const PrimaryCoral: Story = {
 
 export const PrimaryBlack: Story = {
   args: {
-    children: 'Primary Black Button',
     size: 'md',
     variant: 'primary',
     colorStyle: 'black',
@@ -34,7 +62,6 @@ export const PrimaryBlack: Story = {
 
 export const PrimaryWhite: Story = {
   args: {
-    children: 'Primary White Button',
     size: 'md',
     variant: 'primary',
     colorStyle: 'white',
@@ -44,7 +71,6 @@ export const PrimaryWhite: Story = {
 
 export const SecondaryCoral: Story = {
   args: {
-    children: 'Secondary Coral Button',
     size: 'md',
     variant: 'secondary',
     colorStyle: 'coral',
@@ -54,7 +80,6 @@ export const SecondaryCoral: Story = {
 
 export const SecondaryBlack: Story = {
   args: {
-    children: 'Secondary Black Button',
     size: 'md',
     variant: 'secondary',
     colorStyle: 'black',
@@ -64,7 +89,6 @@ export const SecondaryBlack: Story = {
 
 export const SecondaryWhite: Story = {
   args: {
-    children: 'Secondary White Button',
     size: 'md',
     variant: 'secondary',
     colorStyle: 'white',
@@ -74,7 +98,6 @@ export const SecondaryWhite: Story = {
 
 export const TertiaryCoral: Story = {
   args: {
-    children: 'Tertiary Coral Button',
     size: 'md',
     variant: 'tertiary',
     colorStyle: 'coral',
@@ -84,7 +107,6 @@ export const TertiaryCoral: Story = {
 
 export const TertiaryBlack: Story = {
   args: {
-    children: 'Tertiary Black Button',
     size: 'md',
     variant: 'tertiary',
     colorStyle: 'black',
@@ -94,7 +116,6 @@ export const TertiaryBlack: Story = {
 
 export const TertiaryWhite: Story = {
   args: {
-    children: 'Tertiary White Button',
     size: 'md',
     variant: 'tertiary',
     colorStyle: 'white',

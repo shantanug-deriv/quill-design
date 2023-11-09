@@ -1,28 +1,31 @@
 import qtMerge from 'qtMerge'
-import { forwardRef } from 'react'
-import { BodyTypographyProps } from 'types'
+import { HTMLAttributes, forwardRef } from 'react'
+import { BodyTextProps } from '../text/text.classes'
+
+export interface CaptionTextProps
+  extends HTMLAttributes<HTMLParagraphElement>,
+    BodyTextProps {}
 
 export const captionTextSizeClassnames = 'text-caption'
 
-export const CaptionText = forwardRef<
-  HTMLParagraphElement,
-  Omit<BodyTypographyProps, 'size'>
->(({ bold, italic, underline, className, ...rest }, ref) => {
-  return (
-    <p
-      ref={ref}
-      className={qtMerge(
-        captionTextSizeClassnames,
-        'text-typography-prominent',
-        bold ? 'font-bold' : 'font-regular',
-        italic ? 'italic' : 'not-italic',
-        underline && 'underline',
-        className,
-      )}
-      {...rest}
-    />
-  )
-})
+export const CaptionText = forwardRef<HTMLParagraphElement, CaptionTextProps>(
+  ({ bold, italic, underline, className, ...rest }, ref) => {
+    return (
+      <p
+        ref={ref}
+        className={qtMerge(
+          captionTextSizeClassnames,
+          'text-typography-prominent',
+          bold ? 'font-bold' : 'font-regular',
+          italic ? 'italic' : 'not-italic',
+          underline && 'underline',
+          className,
+        )}
+        {...rest}
+      />
+    )
+  },
+)
 
 CaptionText.displayName = 'CaptionText'
 

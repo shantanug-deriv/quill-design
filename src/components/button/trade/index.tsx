@@ -1,30 +1,30 @@
 import qtMerge from 'qtMerge'
 import { forwardRef } from 'react'
-
-import { QuillIconComponent } from 'types'
 import {
-  ButtonClassesProps,
+  TradeButtonVariantProps,
   baseButtonCVA,
-  buttonColorVariantCVA,
-  buttonIconFillCVA,
   buttonIconSize,
   buttonSizeCVA,
+  tradeButtonCVAs,
+  tradeButtonIconFillCVAs,
 } from '../button.classes'
 
-export interface BasicButtonProps
+import { QuillIconComponent } from 'types'
+
+export interface TradeButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    ButtonClassesProps {
+    TradeButtonVariantProps {
   icon?: QuillIconComponent
   iconPosition?: 'start' | 'end'
 }
 
-export const BasicButton = forwardRef<HTMLButtonElement, BasicButtonProps>(
+export const TradeButton = forwardRef<HTMLButtonElement, TradeButtonProps>(
   (
     {
       className,
       size = 'md',
       variant = 'primary',
-      colorStyle = 'coral',
+      tradeType = 'buy',
       fullWidth = false,
       isLoading = false, // TODO: we need to implement loading state
       children,
@@ -38,9 +38,12 @@ export const BasicButton = forwardRef<HTMLButtonElement, BasicButtonProps>(
       <button
         ref={ref}
         className={qtMerge(
-          baseButtonCVA({ fullWidth, isLoading }),
-          buttonColorVariantCVA({ variant, colorStyle }),
+          baseButtonCVA({
+            fullWidth,
+            isLoading,
+          }),
           buttonSizeCVA({ size, componentType: 'with-label' }),
+          tradeButtonCVAs({ variant, tradeType }),
           className,
         )}
         {...rest}
@@ -48,14 +51,14 @@ export const BasicButton = forwardRef<HTMLButtonElement, BasicButtonProps>(
         {iconPosition === 'start' && Icon && (
           <Icon
             {...buttonIconSize[size ?? 'md']}
-            className={buttonIconFillCVA({ variant, colorStyle })}
+            className={tradeButtonIconFillCVAs({ variant, tradeType })}
           />
         )}
         <span className="flex-1">{children}</span>
         {iconPosition === 'end' && Icon && (
           <Icon
             {...buttonIconSize[size ?? 'md']}
-            className={buttonIconFillCVA({ variant, colorStyle })}
+            className={tradeButtonIconFillCVAs({ variant, tradeType })}
           />
         )}
       </button>
@@ -63,6 +66,6 @@ export const BasicButton = forwardRef<HTMLButtonElement, BasicButtonProps>(
   },
 )
 
-BasicButton.displayName = 'BasicButton'
+TradeButton.displayName = 'TradeButton'
 
-export default BasicButton
+export default TradeButton

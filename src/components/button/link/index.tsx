@@ -1,7 +1,5 @@
 import qtMerge from 'qtMerge'
 import { forwardRef } from 'react'
-
-import { QuillIconComponent } from 'types'
 import {
   ButtonClassesProps,
   baseButtonCVA,
@@ -11,14 +9,16 @@ import {
   buttonSizeCVA,
 } from '../button.classes'
 
-export interface BasicButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+import { QuillIconComponent } from 'types'
+
+export interface LinkButtonProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     ButtonClassesProps {
   icon?: QuillIconComponent
   iconPosition?: 'start' | 'end'
 }
 
-export const BasicButton = forwardRef<HTMLButtonElement, BasicButtonProps>(
+export const LinkButton = forwardRef<HTMLAnchorElement, LinkButtonProps>(
   (
     {
       className,
@@ -35,7 +35,7 @@ export const BasicButton = forwardRef<HTMLButtonElement, BasicButtonProps>(
     ref,
   ) => {
     return (
-      <button
+      <a
         ref={ref}
         className={qtMerge(
           baseButtonCVA({ fullWidth, isLoading }),
@@ -58,11 +58,11 @@ export const BasicButton = forwardRef<HTMLButtonElement, BasicButtonProps>(
             className={buttonIconFillCVA({ variant, colorStyle })}
           />
         )}
-      </button>
+      </a>
     )
   },
 )
 
-BasicButton.displayName = 'BasicButton'
+LinkButton.displayName = 'LinkButton'
 
-export default BasicButton
+export default LinkButton
