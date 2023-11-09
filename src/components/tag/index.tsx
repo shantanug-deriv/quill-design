@@ -1,8 +1,8 @@
 import React, { forwardRef, HTMLAttributes } from 'react'
-import { QuillSvgProps } from '@deriv/quill-icons'
 import { TagClassNamesCVA, TagProps, TagSizeCVA } from './tag.classnames'
 import qtMerge from 'qtMerge'
 import TagIcon from './tag.icon'
+import { QuillSvgProps } from '@deriv/quill-icons/QuillTypes'
 
 export interface TagComponentProps
   extends HTMLAttributes<HTMLDivElement>,
