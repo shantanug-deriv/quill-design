@@ -61,7 +61,7 @@ export const chipSelectionClassnames =
   'data-[state=selected]:bg-solid-slate-1200 data-[state=selected]:fill-solid-slate-50 data-[state=selected]:text-solid-slate-50'
 
 export const chipDropdownClassnames =
-  'm-200 max-w-md border-75 border-solid-slate-75 bg-solid-slate-50 p-200 shadow-530'
+  'absolute min-w-[350px] m-200 max-w-md border-75 border-solid-slate-75 bg-solid-slate-50 p-200 shadow-530'
 
 export const chipDropdownMultiClassnames =
   'px-600 py-[3px] text-75 flex cursor-pointer items-center gap-x-400 rounded-600 p-600 hover:bg-opacity-black-100 hover:text-opacity-black-600'
