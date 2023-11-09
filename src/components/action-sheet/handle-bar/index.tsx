@@ -6,6 +6,7 @@ const HandleBar = (props: BarProps) => {
   return (
     <div
       className="flex touch-none items-center justify-center py-400 lg:hidden"
+      data-testid="handle-bar"
       {...props}
     >
       <svg

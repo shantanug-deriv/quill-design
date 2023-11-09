@@ -1,17 +1,8 @@
-import { ComponentPropsWithoutRef } from 'react'
-import { type VariantProps } from 'class-variance-authority'
 import qtMerge, { qtJoin } from 'qtMerge'
-import HandleBar from './handle-bar'
-import { actionSheetRootCVA } from './action-sheet.classnames'
+import HandleBar from '../handle-bar'
+import { actionSheetRootCVA } from '../action-sheet.classnames'
 import { useSwipeBlock } from 'hooks'
-import { ExcludeNullAndUndefined } from 'types'
-
-type RootProps = ComponentPropsWithoutRef<'div'> &
-  ExcludeNullAndUndefined<VariantProps<typeof actionSheetRootCVA>, 'show'> & {
-    onClose: () => void
-    type?: 'modal' | 'non-modal'
-    expandable?: boolean
-  }
+import { RootProps } from '../types'
 
 const Root = ({
   children,
@@ -21,6 +12,7 @@ const Root = ({
   position,
   type = 'modal',
   expandable = true,
+  ...restProps
 }: RootProps) => {
   const { height, containerRef, bindHandle } = useSwipeBlock({ show, onClose })
 
@@ -29,6 +21,7 @@ const Root = ({
     <>
       {type === 'modal' && (
         <div
+          data-testid="modal-overlay"
           onClick={onClose}
           className={qtJoin(
             'fixed inset-50 z-10 bg-opacity-black-500 transition-opacity duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]',
@@ -41,6 +34,7 @@ const Root = ({
           'pointer-events-none fixed inset-general-none z-10 flex select-none items-end justify-center overflow-x-hidden transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]',
           !show && 'invisible',
         )}
+        {...restProps}
       >
         <div
           className={qtMerge(actionSheetRootCVA({ show, position, className }))}
