@@ -12,6 +12,11 @@ const meta = {
     layout: 'centered',
   },
   argTypes: {
+    type: {
+      table: {
+        disable: true,
+      },
+    },
     icon: {
       table: {
         disable: true,
@@ -23,6 +28,11 @@ const meta = {
       },
     },
     statusIcon: {
+      table: {
+        disable: true,
+      },
+    },
+    label: {
       table: {
         disable: true,
       },
