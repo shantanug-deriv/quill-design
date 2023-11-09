@@ -88,3 +88,12 @@ export const SuccessStatusIconTextField: Story = {
     },
   },
 }
+
+export const StatusMessageTextField: Story = {
+  args: {
+    placeholder: 'Placeholder',
+    variant: 'outline',
+    status: 'success',
+    leftStatusMessage: 'Message goes here',
+  },
+}
