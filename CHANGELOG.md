@@ -1,3 +1,18 @@
+## [1.0.29](https://github.com/deriv-com/quill-design/compare/v1.0.28...v1.0.29) (2023-11-09)
+
+
+### ♻️ 	 Chores
+
+* added 75 black and white colors ([bb2036a](https://github.com/deriv-com/quill-design/commit/bb2036a89df3675582df57c45fbfaade436bdecd))
+
+## [1.0.28](https://github.com/deriv-com/quill-design/compare/v1.0.27...v1.0.28) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* fixed the version number of quill-icons ([d9e304a](https://github.com/deriv-com/quill-design/commit/d9e304aaaa605649d5239bb7df6e018b88561afa))
+* updated react package versions ([06fc6c1](https://github.com/deriv-com/quill-design/commit/06fc6c1a0952031208a25cbc7ca1e49898d3078c))
+
 ## [1.0.27](https://github.com/deriv-com/quill-design/compare/v1.0.26...v1.0.27) (2023-11-08)
 
 
