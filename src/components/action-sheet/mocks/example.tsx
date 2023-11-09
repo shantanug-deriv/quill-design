@@ -18,41 +18,39 @@ const ActionSheetExample = ({
   }
   return (
     <>
-      <div className="h-[600px] min-w-[360px] max-w-full md:w-[700px]">
-        <button onClick={handleToggle}>Show Action Sheet</button>
-        <ActionSheet.Root show={show} onClose={handleToggle} {...props}>
-          <ActionSheet.Header>
-            <div>
-              <h3>Title</h3>
-              <IllustrativeCloseAccountIcon />
-            </div>
-            <p>Description</p>
-          </ActionSheet.Header>
-          <ActionSheet.Content>
-            <p>
-              Bottom sheet is a surface fixed at the bottom of the screen which
-              includes content related to the previous screen.
-            </p>
-            <p>
-              Bottom sheet is a surface fixed at the bottom of the screen which
-              includes content related to the previous screen.
-            </p>
-            <p>
-              Bottom sheet is a surface fixed at the bottom of the screen which
-              includes content related to the previous screen.
-            </p>
-            <p>
-              Bottom sheet is a surface fixed at the bottom of the screen which
-              includes content related to the previous screen.
-            </p>
-          </ActionSheet.Content>
-          <ActionSheet.Footer
-            primaryAction={primaryAction}
-            secondaryAction={secondaryAction}
-            alignment={alignment}
-          />
-        </ActionSheet.Root>
-      </div>
+      <button onClick={handleToggle}>Show Action Sheet</button>
+      <ActionSheet.Root show={show} onClose={handleToggle} {...props}>
+        <ActionSheet.Header>
+          <div>
+            <h3>Title</h3>
+            <IllustrativeCloseAccountIcon />
+          </div>
+          <p>Description</p>
+        </ActionSheet.Header>
+        <ActionSheet.Content>
+          <p>
+            Bottom sheet is a surface fixed at the bottom of the screen which
+            includes content related to the previous screen.
+          </p>
+          <p>
+            Bottom sheet is a surface fixed at the bottom of the screen which
+            includes content related to the previous screen.
+          </p>
+          <p>
+            Bottom sheet is a surface fixed at the bottom of the screen which
+            includes content related to the previous screen.
+          </p>
+          <p>
+            Bottom sheet is a surface fixed at the bottom of the screen which
+            includes content related to the previous screen.
+          </p>
+        </ActionSheet.Content>
+        <ActionSheet.Footer
+          primaryAction={primaryAction}
+          secondaryAction={secondaryAction}
+          alignment={alignment}
+        />
+      </ActionSheet.Root>
     </>
   )
 }
