@@ -1,28 +1,20 @@
-import { ComponentPropsWithoutRef } from 'react'
-import { type VariantProps } from 'class-variance-authority'
 import qtMerge from 'qtMerge'
-import { Button } from '../button'
-import { actionSheetFooterCVA } from './action-sheet.classnames'
-
-type ActionType = {
-  content: string
-  onAction: () => void
-}
-
-type FooterProps = ComponentPropsWithoutRef<'div'> &
-  VariantProps<typeof actionSheetFooterCVA> & {
-    primaryAction?: ActionType
-    secondaryAction?: ActionType
-  }
+import { Button } from '../../button'
+import { actionSheetFooterCVA } from '../action-sheet.classnames'
+import { FooterProps } from '../types'
 
 const Footer = ({
   primaryAction,
   secondaryAction,
   alignment,
   className,
+  ...restProps
 }: FooterProps) => {
   return (
-    <div className={qtMerge(actionSheetFooterCVA({ alignment, className }))}>
+    <div
+      className={qtMerge(actionSheetFooterCVA({ alignment, className }))}
+      {...restProps}
+    >
       {primaryAction && (
         <Button
           onClick={primaryAction.onAction}
