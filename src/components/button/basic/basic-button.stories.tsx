@@ -1,9 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import {
+  LabelPairedAndroidIcon,
+  LabelPairedAppleIcon,
+  LabelPairedCircleInfoBoldIcon,
   LabelPairedPlaceholderRegularIcon,
-  QuillSvgProps,
 } from '@deriv/quill-icons'
 import BasicButton from '.'
+import { QuillIconComponent } from 'types'
+
+const icons: Record<string, QuillIconComponent | undefined> = {
+  placeholder: LabelPairedPlaceholderRegularIcon,
+  'Circle info bold': LabelPairedCircleInfoBoldIcon,
+  Android: LabelPairedAndroidIcon,
+  Apple: LabelPairedAppleIcon,
+  none: undefined,
+}
 
 const meta = {
   title: 'Buttons/Basic',
@@ -13,8 +24,6 @@ const meta = {
   },
   tags: ['autodocs'],
   args: {
-    icon: LabelPairedPlaceholderRegularIcon as React.ForwardRefExoticComponent<QuillSvgProps>,
-    iconPosition: undefined,
     fullWidth: false,
     isLoading: false,
     disabled: false,
@@ -25,10 +34,12 @@ const meta = {
   },
   argTypes: {
     children: { name: 'Text', control: 'text' },
-
     icon: {
-      table: {
-        disable: true,
+      description: 'Icon to display on the left side of the chip',
+      options: Object.keys(icons),
+      mapping: icons,
+      control: {
+        type: 'select',
       },
     },
   },

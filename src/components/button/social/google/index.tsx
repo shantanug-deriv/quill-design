@@ -15,8 +15,6 @@ export interface SocialGoogleButtonProps
     SocialButtonClassesProps,
     SocialButtonVariantProps {
   hideLabel?: boolean
-  fullWidth?: boolean
-  isLoading?: boolean
 }
 
 export const SocialGoogleButton = forwardRef<
