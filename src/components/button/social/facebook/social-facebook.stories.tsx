@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import SocialFacebookButton from '.'
 
 const meta = {
-  title: 'Buttons/Social/With Label/Facebook Social Button',
+  title: 'Buttons/Social/Facebook Social Button',
   component: SocialFacebookButton,
   parameters: {
     layout: 'centered',
