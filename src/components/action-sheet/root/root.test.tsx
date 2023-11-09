@@ -4,19 +4,17 @@ import userEvent from '@testing-library/user-event'
 import { RootPosition } from '../types'
 
 describe('<ActionSheet.Root/>', () => {
-  it('should render correctly when show is true', () => {
+  it('should set the data-state attribute to "open" when the show prop is true', () => {
     const onCloseAction = jest.fn()
-    const actionRoot = render(
-      <ActionSheet.Root show={true} onClose={onCloseAction} />,
-    )
-    expect(actionRoot).toMatchSnapshot()
+    render(<ActionSheet.Root show={true} onClose={onCloseAction} />)
+    const state = screen.getByRole('dialog').getAttribute('data-state')
+    expect(state).toBe('open')
   })
-  it('should render correctly when show is false', () => {
+  it('should set the data-state attribute to "close" when the show prop is false', () => {
     const onCloseAction = jest.fn()
-    const actionRoot = render(
-      <ActionSheet.Root show={false} onClose={onCloseAction} />,
-    )
-    expect(actionRoot).toMatchSnapshot()
+    render(<ActionSheet.Root show={false} onClose={onCloseAction} />)
+    const state = screen.getByRole('dialog').getAttribute('data-state')
+    expect(state).toBe('close')
   })
   it('should render overlay when type prop is modal', () => {
     const onCloseAction = jest.fn()
