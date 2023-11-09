@@ -10,10 +10,14 @@ const mockOptions = [
   },
   { value: '3', label: 'Sample Item 3' },
   { value: '4', label: 'Sample Item 4' },
+  { value: '5', label: 'Sample Item 5', disabled: true },
 ]
 
 describe('Dropdown Chip Multi Select', () => {
-  const onSelectionChange = jest.fn()
+  let onSelectionChange = jest.fn()
+  afterEach(() => {
+    onSelectionChange = jest.fn()
+  })
   it('should render label', async () => {
     render(
       <DropdownChipMultiSelect
@@ -41,6 +45,38 @@ describe('Dropdown Chip Multi Select', () => {
     const item = screen.getByText('Sample Item 3')
     await userEvent.click(item)
     expect(onSelectionChange).toBeCalled()
+  })
+
+  it('should not handle onSelectionChange if item is disabled', async () => {
+    render(
+      <DropdownChipMultiSelect
+        size={'sm'}
+        onSelectionChange={onSelectionChange}
+        options={mockOptions}
+        label="Sample Label"
+      />,
+    )
+    const label = screen.getByText('Sample Label')
+    await userEvent.click(label)
+    const item = screen.getByText('Sample Item 5')
+    await userEvent.click(item)
+    expect(onSelectionChange).not.toBeCalled()
+  })
+
+  it('should not throw error if onSelectionChange function is not passed', async () => {
+    render(
+      <DropdownChipMultiSelect
+        size={'sm'}
+        onSelectionChange={null as unknown as typeof onSelectionChange}
+        options={mockOptions}
+        label="Sample Label"
+      />,
+    )
+    const label = screen.getByText('Sample Label')
+    await userEvent.click(label)
+    const item = screen.getByText('Sample Item 3')
+    await userEvent.click(item)
+    expect(onSelectionChange).not.toBeCalled()
   })
 
   it('should handle multiple items selection', async () => {

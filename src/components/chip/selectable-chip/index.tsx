@@ -8,7 +8,7 @@ import {
   chipBaseClassnames,
   ChipStandaloneIconSizes,
   chipBaseVariant,
-  chipSelectionClassnames,
+  chipBaseTextColorClassnames,
 } from '../chip.classnames'
 import type { SelectableChipProps } from '../types'
 import qtMerge from 'qtMerge'
@@ -25,6 +25,7 @@ export const SelectableChip = forwardRef<
       icon: Icon,
       isDropdownOpen,
       dropdown = false,
+      dropdownItemSelected = false,
       labelTag,
       onChipSelect,
       onDismiss,
@@ -47,7 +48,6 @@ export const SelectableChip = forwardRef<
     ) => {
       onDismiss?.(event)
     }
-
     return (
       <button
         className={chipBaseVariant({
@@ -55,21 +55,34 @@ export const SelectableChip = forwardRef<
           size,
           className: qtMerge(
             chipBaseClassnames,
-            chipSelectionClassnames,
+            chipBaseTextColorClassnames,
             className,
           ),
         })}
-        data-state=""
+        data-state={dropdownItemSelected ? 'selected' : ''}
         ref={ref}
         onClick={handleClick}
         {...rest}
       >
-        {Icon && <Icon {...ChipIconSizes[size]} />}
-        {children}
-        {labelTag && <span className="font-bold">{labelTag}</span>}
+        {Icon && <Icon id="selectable-chip-icon" {...ChipIconSizes[size]} />}
+        <div
+          id="selectable-chip-label"
+          className="transition-transform duration-1000 ease-in-out"
+        >
+          {children}
+        </div>
+        {labelTag && (
+          <span
+            id="selectable-chip-label-tag"
+            className={`font-bold ${chipBaseTextColorClassnames}`}
+          >
+            {labelTag}
+          </span>
+        )}
         {dismissible && (
           <StandaloneCircleXmarkRegularIcon
             {...ChipStandaloneIconSizes[size]}
+            id="selectable-chip-dismiss-icon"
             onClick={handleDismiss}
             data-testid="dt-chip-dismissable-btn"
             className="cursor-pointer"

@@ -42,7 +42,7 @@ describe('Selectable Chip', () => {
   it('should render correct disabled classname when it is disabled', () => {
     render(<SelectableChip size={'sm'}>Selectable Chip</SelectableChip>)
     const button = screen.getByRole('button', { name: /Selectable Chip/i })
-    expect(button).toHaveClass('disabled:opacity-600')
+    expect(button).toHaveClass('disabled:text-opacity-black-300')
   })
 
   it('should render correct labelTag', () => {

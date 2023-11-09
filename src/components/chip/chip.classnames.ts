@@ -55,16 +55,16 @@ export const ChipStandaloneIconSizes: Record<
 }
 
 export const chipBaseClassnames =
-  'rounded-4800 hover:bg-opacity-black-100 hover:text-opacity-black-600 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 disabled:opacity-600'
+  'disabled:bg-opacity-black-0 disabled:text-opacity-black-300 disabled:fill-opacity-black-300 rounded-4800 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 enabled:hover:bg-opacity-black-100 enabled:hover:text-opacity-black-600 data-[state=selected]:enabled:bg-solid-slate-1200'
 
-export const chipSelectionClassnames =
-  'data-[state=selected]:bg-solid-slate-1200 data-[state=selected]:fill-solid-slate-50 data-[state=selected]:text-solid-slate-50'
+export const chipBaseTextColorClassnames =
+  'data-[state=selected]:enabled:text-solid-slate-50 data-[state=selected]:enabled:fill-solid-slate-50'
 
-export const chipDropdownClassnames =
-  'absolute min-w-[350px] m-200 max-w-md border-75 border-solid-slate-75 bg-solid-slate-50 p-200 shadow-530'
+export const chipDropdownPanelClassnames =
+  'cursor-pointer absolute min-w-[350px] m-200 max-w-md border-75 border-solid-slate-75 bg-solid-slate-50 p-200 shadow-530'
 
 export const chipDropdownMultiClassnames =
-  'px-600 py-[3px] text-75 flex cursor-pointer items-center gap-x-400 rounded-600 p-600 hover:bg-opacity-black-100 hover:text-opacity-black-600'
+  'hover:bg-opacity-black-100 hover:text-opacity-black-600 px-600 py-[3px] text-75 flex  items-center gap-x-400 rounded-[8px] p-600 my-300'
 
 export const chipDropdownSingleClassnames =
-  'cursor-pointer rounded-600 px-600 py-300 hover:bg-opacity-black-100 hover:text-opacity-black-600'
+  'hover:bg-opacity-black-100 hover:text-opacity-black-600 rounded-[8px] px-600 py-300 my-300'
