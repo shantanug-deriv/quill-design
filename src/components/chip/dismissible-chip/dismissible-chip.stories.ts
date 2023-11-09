@@ -18,6 +18,9 @@ const meta = {
   component: Chip,
   parameters: {
     layout: 'centered',
+    controls: {
+      exclude: ['dismissible'],
+    },
   },
   args: {
     children: 'Dismissible Chip',

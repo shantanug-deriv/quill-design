@@ -22,6 +22,9 @@ const meta = {
         height: '300px',
       },
     },
+    controls: {
+      exclude: ['dismissible'],
+    },
   },
   args: {
     label: 'Dropdown Chip Multi Select',
