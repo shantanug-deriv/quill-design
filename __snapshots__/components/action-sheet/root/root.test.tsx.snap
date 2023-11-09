@@ -4,43 +4,7 @@ exports[`<ActionSheet.Root/> should render correctly when show is false 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
-    <div>
-      <div
-        class="fixed inset-50 z-10 bg-opacity-black-500 transition-opacity duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)] invisible"
-        data-testid="modal-overlay"
-      />
-      <div
-        class="pointer-events-none fixed inset-general-none z-10 flex select-none items-end justify-center overflow-x-hidden transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)] invisible"
-      >
-        <div
-          class="pointer-events-auto mx-auto flex max-h-[70vh] min-w-[320px] max-w-[800px] flex-col overflow-y-auto rounded-t-800 bg-background-dialog px-800 pb-800 transition-all lg:max-h-full lg:max-w-[360px] lg:rounded-50 lg:ml-50 invisible translate-y-full lg:translate-y-50 lg:-translate-x-full"
-          style="height: auto;"
-        >
-          <div
-            class="flex touch-none items-center justify-center py-400 lg:hidden"
-            data-testid="handle-bar"
-          >
-            <svg
-              fill="none"
-              height="4"
-              viewBox="0 0 48 4"
-              width="48"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="black"
-                fill-opacity="0.08"
-                height="4"
-                rx="2"
-                width="48"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
+    <div />
     <div
       class="fixed inset-50 z-10 bg-opacity-black-500 transition-opacity duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)] invisible"
       data-testid="modal-overlay"
@@ -74,7 +38,8 @@ exports[`<ActionSheet.Root/> should render correctly when show is false 1`] = `
         </div>
       </div>
     </div>
-  </div>,
+  </body>,
+  "container": <div />,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],
@@ -133,43 +98,7 @@ exports[`<ActionSheet.Root/> should render correctly when show is true 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
-    <div>
-      <div
-        class="fixed inset-50 z-10 bg-opacity-black-500 transition-opacity duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
-        data-testid="modal-overlay"
-      />
-      <div
-        class="pointer-events-none fixed inset-general-none z-10 flex select-none items-end justify-center overflow-x-hidden transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
-      >
-        <div
-          class="pointer-events-auto mx-auto flex max-h-[70vh] min-w-[320px] max-w-[800px] flex-col overflow-y-auto rounded-t-800 bg-background-dialog px-800 pb-800 transition-all lg:max-h-full lg:max-w-[360px] lg:rounded-50 lg:ml-50 lg:-translate-x-50"
-          style="height: auto;"
-        >
-          <div
-            class="flex touch-none items-center justify-center py-400 lg:hidden"
-            data-testid="handle-bar"
-          >
-            <svg
-              fill="none"
-              height="4"
-              viewBox="0 0 48 4"
-              width="48"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="black"
-                fill-opacity="0.08"
-                height="4"
-                rx="2"
-                width="48"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
+    <div />
     <div
       class="fixed inset-50 z-10 bg-opacity-black-500 transition-opacity duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
       data-testid="modal-overlay"
@@ -203,7 +132,8 @@ exports[`<ActionSheet.Root/> should render correctly when show is true 1`] = `
         </div>
       </div>
     </div>
-  </div>,
+  </body>,
+  "container": <div />,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],
