@@ -6,7 +6,7 @@ import {
 import TradeButton from '.'
 
 const meta = {
-  title: 'Buttons/Purchase',
+  title: 'Buttons/Trade',
   component: TradeButton,
   parameters: {
     layout: 'centered',
@@ -19,7 +19,7 @@ const meta = {
     isLoading: false,
     disabled: false,
     size: 'md',
-    children: 'Purchase Primary Sell Button',
+    children: 'Trade Primary Sell Button',
     variant: 'primary',
     tradeType: 'sell',
   },
@@ -48,7 +48,7 @@ export const Default: Story = {}
 
 export const PrimarySell: Story = {
   args: {
-    children: 'Primary Sell PurchaseButton',
+    children: 'Primary Sell TradeButton',
     size: 'md',
     variant: 'primary',
     tradeType: 'sell',

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import SocialGoogleIcon from '.'
 
 const meta = {
-  title: 'Buttons/Social/With Label/Google Social Button',
+  title: 'Buttons/Social/Google Social Button',
   component: SocialGoogleIcon,
   parameters: {
     layout: 'centered',
