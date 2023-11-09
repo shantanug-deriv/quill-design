@@ -1,7 +1,6 @@
-import { QuillSvgProps } from '@deriv/quill-icons'
 import { chipBaseVariant } from './chip.classnames'
 import { type VariantProps } from 'class-variance-authority'
-import { ExcludeNull } from 'types'
+import { ExcludeNull, QuillIconComponent } from 'types'
 
 export type ChipSize = 'sm' | 'md' | 'lg'
 
@@ -12,7 +11,7 @@ export interface BaseChipProps
   extends BaseChipVariantExcludingNull,
     React.ButtonHTMLAttributes<HTMLButtonElement> {
   dismissible?: boolean
-  icon?: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
+  icon?: QuillIconComponent
   labelTag?: string
   disabled?: boolean
 }
