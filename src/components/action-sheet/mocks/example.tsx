@@ -2,6 +2,7 @@
 import { ComponentProps, useState } from 'react'
 import { StandaloneXmarkRegularIcon } from '@deriv/quill-icons'
 import ActionSheet from '..'
+import Button from 'components/button'
 
 const ActionSheetExample = ({
   show: _show,
@@ -18,7 +19,7 @@ const ActionSheetExample = ({
   }
   return (
     <>
-      <button onClick={handleToggle}>Show Action Sheet</button>
+      <Button onClick={handleToggle}>Click heret</Button>
       <ActionSheet.Root show={show} onClose={handleToggle} {...props}>
         <ActionSheet.Header className="py-400 text-center">
           <div className="relative py-1100">
