@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { ComponentProps, useState } from 'react'
-import { IllustrativeCloseAccountIcon } from '@deriv/quill-icons'
+import { StandaloneXmarkRegularIcon } from '@deriv/quill-icons'
 import ActionSheet from '..'
 
 const ActionSheetExample = ({
@@ -20,14 +20,20 @@ const ActionSheetExample = ({
     <>
       <button onClick={handleToggle}>Show Action Sheet</button>
       <ActionSheet.Root show={show} onClose={handleToggle} {...props}>
-        <ActionSheet.Header>
-          <div>
-            <h3>Title</h3>
-            <IllustrativeCloseAccountIcon />
+        <ActionSheet.Header className="py-400 text-center">
+          <div className="relative py-1100">
+            <h3 className="ml-auto">Title</h3>
+            <button
+              aria-label="close"
+              className="absolute right-50 top-1/2 -translate-y-800"
+              onClick={handleToggle}
+            >
+              <StandaloneXmarkRegularIcon />
+            </button>
           </div>
           <p>Description</p>
         </ActionSheet.Header>
-        <ActionSheet.Content>
+        <ActionSheet.Content className="flex flex-col gap-500 py-800">
           <p>
             Bottom sheet is a surface fixed at the bottom of the screen which
             includes content related to the previous screen.
