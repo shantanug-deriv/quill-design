@@ -1,3 +1,10 @@
+## [1.0.29](https://github.com/deriv-com/quill-design/compare/v1.0.28...v1.0.29) (2023-11-09)
+
+
+### ♻️ 	 Chores
+
+* added 75 black and white colors ([bb2036a](https://github.com/deriv-com/quill-design/commit/bb2036a89df3675582df57c45fbfaade436bdecd))
+
 ## [1.0.28](https://github.com/deriv-com/quill-design/compare/v1.0.27...v1.0.28) (2023-11-08)
 
 
