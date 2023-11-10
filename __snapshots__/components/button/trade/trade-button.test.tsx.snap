@@ -34,6 +34,26 @@ exports[`Trade Button Should render Sell Trade Button with Sell label 1`] = `
 </button>
 `;
 
+exports[`Trade Button Should render lg Trade Button 1`] = `
+<button
+  class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-800 text-body-md leading-body-md h-[48px] min-w-[96px] px-800 py-600 gap-400 bg-solid-emerald-700 text-solid-slate-50 hover:bg-solid-emerald-800 active:bg-solid-emerald-900"
+>
+  <span
+    class="flex-1"
+  />
+</button>
+`;
+
+exports[`Trade Button Should render md Trade Button 1`] = `
+<button
+  class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 text-body-sm leading-body-sm h-[32px] min-w-[64px] px-600 py-300 gap-300 bg-solid-emerald-700 text-solid-slate-50 hover:bg-solid-emerald-800 active:bg-solid-emerald-900"
+>
+  <span
+    class="flex-1"
+  />
+</button>
+`;
+
 exports[`Trade Button Should render primary Trade Button 1`] = `
 <button
   class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 text-body-sm leading-body-sm h-[32px] min-w-[64px] px-600 py-300 gap-300 bg-solid-emerald-700 text-solid-slate-50 hover:bg-solid-emerald-800 active:bg-solid-emerald-900"
@@ -54,9 +74,29 @@ exports[`Trade Button Should render secondary Trade Button 1`] = `
 </button>
 `;
 
+exports[`Trade Button Should render sm Trade Button 1`] = `
+<button
+  class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-400 text-caption h-[24px] min-w-[48px] px-400 py-200 gap-200 bg-solid-emerald-700 text-solid-slate-50 hover:bg-solid-emerald-800 active:bg-solid-emerald-900"
+>
+  <span
+    class="flex-1"
+  />
+</button>
+`;
+
 exports[`Trade Button Should render tertiary Trade Button 1`] = `
 <button
   class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 text-body-sm leading-body-sm h-[32px] min-w-[64px] px-600 py-300 gap-300 underline text-solid-emerald-700 hover:bg-opacity-emerald-100 active:bg-opacity-emerald-200"
+>
+  <span
+    class="flex-1"
+  />
+</button>
+`;
+
+exports[`Trade Button Should render xl Trade Button 1`] = `
+<button
+  class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-1200 text-body-lg leading-body-lg h-[64px] min-w-[128px] px-1200 py-800 gap-600 bg-solid-emerald-700 text-solid-slate-50 hover:bg-solid-emerald-800 active:bg-solid-emerald-900"
 >
   <span
     class="flex-1"
