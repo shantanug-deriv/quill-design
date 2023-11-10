@@ -24,7 +24,7 @@ export default defineConfig([
         sourcemap: true,
       },
     ],
-    external: ['react', 'react-dom', 'usehooks-ts'],
+    external: ['react', 'react-dom', 'usehooks-ts', 'react/jsx-runtime'],
     plugins: [
       findUnused(),
       peerDepsExternal(),

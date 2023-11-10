@@ -1,7 +1,7 @@
 import { render, screen } from 'test-utils'
 import userEvent from '@testing-library/user-event'
 import SelectableChip from '.'
-import { LabelPairedAndroidIcon } from '@deriv/quill-icons'
+import { LabelPairedAndroidIcon } from '@deriv/quill-icons/LabelPaired'
 import { ChipSize } from '../types'
 
 describe('Selectable Chip', () => {
