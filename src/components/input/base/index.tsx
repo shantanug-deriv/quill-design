@@ -110,7 +110,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 
           {label && inputSize === 'md' && (
             <label
-              className={qtMerge(
+              className={qtJoin(
                 baseInputLabelVariants({
                   status,
                 }),
@@ -123,15 +123,15 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             <div>
               <StatusIcon
                 {...iconSize[inputSize]}
-                className={statusIconColours[status]}
+                className={qtJoin(statusIconColours[status])}
               />
             </div>
           )}
         </div>
-        <div className={qtMerge('flex justify-between')}>
+        <div className="flex justify-between">
           {leftStatusMessage && (
             <p
-              className={qtMerge(
+              className={qtJoin(
                 baseStatusMessageVariants({ status, disabled }),
               )}
             >
@@ -140,7 +140,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           )}
           {rightStatusMessage && (
             <p
-              className={qtMerge(
+              className={qtJoin(
                 baseStatusMessageVariants({ status, className: 'self-end' }),
               )}
             >
