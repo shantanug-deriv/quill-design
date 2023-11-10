@@ -42,4 +42,12 @@ describe('Input', () => {
     const { container } = render(<Input variant="fill" />)
     expect(container).toMatchSnapshot()
   })
+  it('It should render a disabled Input with a variant of fill', () => {
+    const { container } = render(<Input disabled variant="fill" />)
+    expect(container).toMatchSnapshot()
+  })
+  it('It should render a disabled Input with a variant of outline', () => {
+    const { container } = render(<Input disabled variant="outline" />)
+    expect(container).toMatchSnapshot()
+  })
 })
