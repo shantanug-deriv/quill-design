@@ -2,20 +2,20 @@ import { type VariantProps } from 'class-variance-authority'
 import { ExcludeNull } from 'types'
 import { QuillSvgProps } from '@deriv/quill-icons/QuillTypes'
 import { AnchorHTMLAttributes } from 'react'
-import { linkCva } from './link.classnames'
+import { linkItemCva } from './link-item.classnames'
 
-export interface LinkProps
+export interface LinkItemProps
   extends AnchorHTMLAttributes<HTMLAnchorElement>,
     ExcludeNull<
-      VariantProps<typeof linkCva>,
+      VariantProps<typeof linkItemCva>,
       'colorStyle' | 'size' | 'disabled'
     > {
   icon?: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
   hasIcon?: boolean
 }
 
-export type colorStyle = LinkProps['colorStyle']
+export type colorStyle = LinkItemProps['colorStyle']
 
-export type size = LinkProps['size']
+export type size = LinkItemProps['size']
 
-export type disabled = LinkProps['disabled']
+export type disabled = LinkItemProps['disabled']

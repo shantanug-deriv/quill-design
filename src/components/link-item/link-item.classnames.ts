@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
 export type LinkSize = 'caption' | 'sm' | 'md' | 'lg' | 'xl'
 
-export const linkCva = cva('inline-flex items-center gap-500', {
+export const linkItemCva = cva('inline-flex items-center gap-500', {
   variants: {
     colorStyle: {
       black: ['text-solid-slate-1400', 'hover:underline', 'active:underline'],
@@ -20,7 +20,7 @@ export const linkCva = cva('inline-flex items-center gap-500', {
   },
 })
 
-export const linkIconCva = cva('', {
+export const linkItemIconCva = cva('', {
   variants: {
     colorStyle: {
       black: 'fill-solid-slate-1400',
@@ -29,7 +29,7 @@ export const linkIconCva = cva('', {
   },
 })
 
-export const LinkIconStandaloneSizes: Record<
+export const LinkItemIconStandaloneSizes: Record<
   LinkSize,
   { width: number; height: number }
 > = {
@@ -55,7 +55,7 @@ export const LinkIconStandaloneSizes: Record<
   },
 }
 
-export const LinkIconSizes: Record<
+export const LinkItemIconSizes: Record<
   LinkSize,
   { width: number; height: number }
 > = {

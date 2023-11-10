@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import Link from '.'
+import LinkItem from '.'
 import { StandaloneArrowLeftBoldIcon } from '@deriv/quill-icons/Standalone'
 const meta = {
   title: 'Links/Link',
-  component: Link,
+  component: LinkItem,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Link>
+} satisfies Meta<typeof LinkItem>
 
 export default meta
 type Story = StoryObj<typeof meta>
