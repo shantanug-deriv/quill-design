@@ -1,7 +1,7 @@
 import { ChipSize } from './types'
 import { cva } from 'class-variance-authority'
 
-export const chipBaseVariant = cva('chipBaseClassnames', {
+export const chipBaseVariant = cva('', {
   variants: {
     size: {
       sm: ['px-600', 'py-[3px]', 'text-50', 'gap-x-400'],
