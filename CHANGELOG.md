@@ -1,3 +1,11 @@
+## [1.0.31-beta.1](https://github.com/deriv-com/quill-design/compare/v1.0.30...v1.0.31-beta.1) (2023-11-10)
+
+
+### ♻️ 	 Chores
+
+* added beta to release workflow [skip ci] ([814f9f3](https://github.com/deriv-com/quill-design/commit/814f9f3570e43d7f2ab65b67a8f4bc9dbd0c045f))
+* updated to latest quill-icons with main exports ([d9a0cb7](https://github.com/deriv-com/quill-design/commit/d9a0cb7787e3f3d402384ba38796e6cd39e9a8f1))
+
 ## [1.0.30](https://github.com/deriv-com/quill-design/compare/v1.0.29...v1.0.30) (2023-11-09)
 
 
