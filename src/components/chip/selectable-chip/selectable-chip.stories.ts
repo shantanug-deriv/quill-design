@@ -4,7 +4,7 @@ import {
   LabelPairedCircleInfoBoldIcon,
   LabelPairedAndroidIcon,
   LabelPairedAppleIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/LabelPaired'
 
 const icons: Record<string, object | null> = {
   sample_1: LabelPairedCircleInfoBoldIcon,
@@ -19,7 +19,13 @@ const meta = {
   parameters: {
     layout: 'centered',
     controls: {
-      exclude: ['dismissible', 'onDismiss', 'isDropdownOpen', 'dropdown'],
+      exclude: [
+        'dismissible',
+        'onDismiss',
+        'isDropdownOpen',
+        'dropdown',
+        'dropdownItemSelected',
+      ],
     },
   },
   args: {

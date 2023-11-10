@@ -1,14 +1,14 @@
 import {
   StandaloneChevronDownRegularIcon,
   StandaloneCircleXmarkRegularIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/Standalone'
 import { forwardRef } from 'react'
 import {
   ChipIconSizes,
   chipBaseClassnames,
   ChipStandaloneIconSizes,
   chipBaseVariant,
-  chipSelectionClassnames,
+  chipBaseTextColorClassnames,
 } from '../chip.classnames'
 import type { SelectableChipProps } from '../types'
 import qtMerge from 'qtMerge'
@@ -25,6 +25,7 @@ export const SelectableChip = forwardRef<
       icon: Icon,
       isDropdownOpen,
       dropdown = false,
+      dropdownItemSelected = false,
       labelTag,
       onChipSelect,
       onDismiss,
@@ -47,26 +48,31 @@ export const SelectableChip = forwardRef<
     ) => {
       onDismiss?.(event)
     }
-
     return (
       <button
+        {...rest}
         className={chipBaseVariant({
           dismissible,
           size,
           className: qtMerge(
             chipBaseClassnames,
-            chipSelectionClassnames,
+            chipBaseTextColorClassnames,
             className,
           ),
         })}
-        data-state=""
+        data-state={dropdownItemSelected ? 'selected' : ''}
         ref={ref}
         onClick={handleClick}
-        {...rest}
       >
         {Icon && <Icon {...ChipIconSizes[size]} />}
-        {children}
-        {labelTag && <span className="font-bold">{labelTag}</span>}
+        <div className="transition-transform duration-1000 ease-in-out">
+          {children}
+        </div>
+        {labelTag && (
+          <span className={`font-bold ${chipBaseTextColorClassnames}`}>
+            {labelTag}
+          </span>
+        )}
         {dismissible && (
           <StandaloneCircleXmarkRegularIcon
             {...ChipStandaloneIconSizes[size]}
@@ -79,7 +85,6 @@ export const SelectableChip = forwardRef<
           <>
             <StandaloneChevronDownRegularIcon
               data-state={isDropdownOpen ? 'open' : 'close'}
-              id="selectable_chip_chevron"
               className="transition-transform duration-300 data-[state=open]:rotate-180"
               {...ChipStandaloneIconSizes[size]}
             />

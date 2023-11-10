@@ -1,3 +1,89 @@
+## [1.0.32](https://github.com/deriv-com/quill-design/compare/v1.0.31...v1.0.32) (2023-11-10)
+
+
+### ♻️ 	 Chores
+
+* change border color for selected chip and udpate test snapshots ([fc27312](https://github.com/deriv-com/quill-design/commit/fc2731222a9ba3d4121ddda788a5b0356fb140b2))
+* Chip component design improvements ([ce904be](https://github.com/deriv-com/quill-design/commit/ce904be47b2743ecc64c4fb8ebc773a665813455))
+* udpate storybook to remove dismissible prop ([7dee7b0](https://github.com/deriv-com/quill-design/commit/7dee7b073ff87681fcdaf35f8fa6c17476e110de))
+* update styles ([30aa5e0](https://github.com/deriv-com/quill-design/commit/30aa5e0358fd6fa9b4aca3d5303ee7c5ca7d6516))
+* update test cases and remove unnecessary ID's ([b13ca1f](https://github.com/deriv-com/quill-design/commit/b13ca1f313726c88c66ae6a6707e824cb7a1ec94))
+
+## [1.0.31](https://github.com/deriv-com/quill-design/compare/v1.0.30...v1.0.31) (2023-11-10)
+
+
+### ♻️ 	 Chores
+
+* added beta to release workflow [skip ci] ([814f9f3](https://github.com/deriv-com/quill-design/commit/814f9f3570e43d7f2ab65b67a8f4bc9dbd0c045f))
+* updated quill-icons to 1.0.9 ([7fc021b](https://github.com/deriv-com/quill-design/commit/7fc021bdfa7ce48561015aeb89f8b25bd7e15b8a))
+* updated to latest quill-icons with main exports ([d9a0cb7](https://github.com/deriv-com/quill-design/commit/d9a0cb7787e3f3d402384ba38796e6cd39e9a8f1))
+
+
+### ⚙️ 	 Continuous Integrations
+
+* release(version): Release 1.0.31-beta.1 [skip ci] ([2849c9f](https://github.com/deriv-com/quill-design/commit/2849c9f97e196ae8ac4d6f9c5b21070f82f10539))
+* release(version): Release 1.0.31-beta.2 [skip ci] ([71a3578](https://github.com/deriv-com/quill-design/commit/71a35789d742e193aea32f3d329fb04366783235))
+
+## [1.0.31-beta.2](https://github.com/deriv-com/quill-design/compare/v1.0.31-beta.1...v1.0.31-beta.2) (2023-11-10)
+
+
+### ♻️ 	 Chores
+
+* updated quill-icons to 1.0.9 ([7fc021b](https://github.com/deriv-com/quill-design/commit/7fc021bdfa7ce48561015aeb89f8b25bd7e15b8a))
+
+## [1.0.31-beta.1](https://github.com/deriv-com/quill-design/compare/v1.0.30...v1.0.31-beta.1) (2023-11-10)
+
+
+### ♻️ 	 Chores
+
+* added beta to release workflow [skip ci] ([814f9f3](https://github.com/deriv-com/quill-design/commit/814f9f3570e43d7f2ab65b67a8f4bc9dbd0c045f))
+* updated to latest quill-icons with main exports ([d9a0cb7](https://github.com/deriv-com/quill-design/commit/d9a0cb7787e3f3d402384ba38796e6cd39e9a8f1))
+
+## [1.0.30](https://github.com/deriv-com/quill-design/compare/v1.0.29...v1.0.30) (2023-11-09)
+
+
+### ♻️ 	 Chores
+
+* updated quill-icons package ([eef29e3](https://github.com/deriv-com/quill-design/commit/eef29e32ab90673efa12239938385059807ffd03))
+
+## [1.0.29](https://github.com/deriv-com/quill-design/compare/v1.0.28...v1.0.29) (2023-11-09)
+
+
+### ♻️ 	 Chores
+
+* added 75 black and white colors ([bb2036a](https://github.com/deriv-com/quill-design/commit/bb2036a89df3675582df57c45fbfaade436bdecd))
+
+## [1.0.28](https://github.com/deriv-com/quill-design/compare/v1.0.27...v1.0.28) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* fixed the version number of quill-icons ([d9e304a](https://github.com/deriv-com/quill-design/commit/d9e304aaaa605649d5239bb7df6e018b88561afa))
+* updated react package versions ([06fc6c1](https://github.com/deriv-com/quill-design/commit/06fc6c1a0952031208a25cbc7ca1e49898d3078c))
+
+## [1.0.27](https://github.com/deriv-com/quill-design/compare/v1.0.26...v1.0.27) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* added exclude null and undefined type ([05d640a](https://github.com/deriv-com/quill-design/commit/05d640aa562885cf2a19894ba0d49560ba4b3b51))
+
+## [1.0.26](https://github.com/deriv-com/quill-design/compare/v1.0.25...v1.0.26) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* add status icon ([e82f7e2](https://github.com/deriv-com/quill-design/commit/e82f7e20b41f7628fb08caf0321be8f33b6b3de4))
+* disable status change for icon story ([65c8721](https://github.com/deriv-com/quill-design/commit/65c8721175160b516f6530421709cc5ecf97018b))
+* initial commit ([565d6a9](https://github.com/deriv-com/quill-design/commit/565d6a9e6e2d7a2c7fd754d6a8cb5feb8e9c6a5a))
+
+## [1.0.25](https://github.com/deriv-com/quill-design/compare/v1.0.24...v1.0.25) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* Fix dropdown chip layout shifting issue ([7bf167a](https://github.com/deriv-com/quill-design/commit/7bf167a54827f8ea522dd984b1cf4032d004a73c))
+
 ## [1.0.24](https://github.com/deriv-com/quill-design/compare/v1.0.23...v1.0.24) (2023-11-06)
 
 

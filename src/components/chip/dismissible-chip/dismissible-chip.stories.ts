@@ -4,7 +4,7 @@ import {
   LabelPairedCircleInfoBoldIcon,
   LabelPairedAndroidIcon,
   LabelPairedAppleIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/LabelPaired'
 
 const icons: Record<string, object | null> = {
   sample_1: LabelPairedCircleInfoBoldIcon,
@@ -18,6 +18,9 @@ const meta = {
   component: Chip,
   parameters: {
     layout: 'centered',
+    controls: {
+      exclude: ['dismissible'],
+    },
   },
   args: {
     children: 'Dismissible Chip',
