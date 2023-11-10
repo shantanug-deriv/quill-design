@@ -1,3 +1,105 @@
+## [1.0.30](https://github.com/deriv-com/quill-design/compare/v1.0.29...v1.0.30) (2023-11-09)
+
+
+### ♻️ 	 Chores
+
+* updated quill-icons package ([eef29e3](https://github.com/deriv-com/quill-design/commit/eef29e32ab90673efa12239938385059807ffd03))
+
+## [1.0.29](https://github.com/deriv-com/quill-design/compare/v1.0.28...v1.0.29) (2023-11-09)
+
+
+### ♻️ 	 Chores
+
+* added 75 black and white colors ([bb2036a](https://github.com/deriv-com/quill-design/commit/bb2036a89df3675582df57c45fbfaade436bdecd))
+
+## [1.0.28](https://github.com/deriv-com/quill-design/compare/v1.0.27...v1.0.28) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* fixed the version number of quill-icons ([d9e304a](https://github.com/deriv-com/quill-design/commit/d9e304aaaa605649d5239bb7df6e018b88561afa))
+* updated react package versions ([06fc6c1](https://github.com/deriv-com/quill-design/commit/06fc6c1a0952031208a25cbc7ca1e49898d3078c))
+
+## [1.0.27](https://github.com/deriv-com/quill-design/compare/v1.0.26...v1.0.27) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* added exclude null and undefined type ([05d640a](https://github.com/deriv-com/quill-design/commit/05d640aa562885cf2a19894ba0d49560ba4b3b51))
+
+## [1.0.26](https://github.com/deriv-com/quill-design/compare/v1.0.25...v1.0.26) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* add status icon ([e82f7e2](https://github.com/deriv-com/quill-design/commit/e82f7e20b41f7628fb08caf0321be8f33b6b3de4))
+* disable status change for icon story ([65c8721](https://github.com/deriv-com/quill-design/commit/65c8721175160b516f6530421709cc5ecf97018b))
+* initial commit ([565d6a9](https://github.com/deriv-com/quill-design/commit/565d6a9e6e2d7a2c7fd754d6a8cb5feb8e9c6a5a))
+
+## [1.0.25](https://github.com/deriv-com/quill-design/compare/v1.0.24...v1.0.25) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* Fix dropdown chip layout shifting issue ([7bf167a](https://github.com/deriv-com/quill-design/commit/7bf167a54827f8ea522dd984b1cf4032d004a73c))
+
+## [1.0.24](https://github.com/deriv-com/quill-design/compare/v1.0.23...v1.0.24) (2023-11-06)
+
+
+### ♻️ 	 Chores
+
+* Chip component ([8d9418d](https://github.com/deriv-com/quill-design/commit/8d9418d1e7b46bbf63c003f26983acac17a5e777))
+* Dismissible chip cursor only shown on icon ([62c23de](https://github.com/deriv-com/quill-design/commit/62c23dec4cf29e93c24745cf4da39725039acd28))
+* Finalize component ([dbe4be9](https://github.com/deriv-com/quill-design/commit/dbe4be98a3dd826ed80d6ef829e01368a608c209))
+* fix null issue from CVA ([fae12b3](https://github.com/deriv-com/quill-design/commit/fae12b302db2d482a9c6143066a41ef4a2f17db8))
+* fix types ([ca8a4bf](https://github.com/deriv-com/quill-design/commit/ca8a4bfa8fe7e57d682c3217474455a4a63775aa))
+* fix typos for test case ([e554ea1](https://github.com/deriv-com/quill-design/commit/e554ea1c924390a63921221d967cb065e2acac06))
+* import types as type ([e11ae25](https://github.com/deriv-com/quill-design/commit/e11ae2586982008459e67960990090dba666d5d0))
+* remove nullish check on size ([8c87374](https://github.com/deriv-com/quill-design/commit/8c87374e97789891d5f4cb0d35d3f0b808d4f953))
+* update test snapshots ([1c10257](https://github.com/deriv-com/quill-design/commit/1c1025747b99c56bf029748c0e6c4ce219650b16))
+* update TS type ([bc60ee2](https://github.com/deriv-com/quill-design/commit/bc60ee226ce87646fbf9027d299a72bea3e6a853))
+* use generic ExcludeNull type ([3ebc99f](https://github.com/deriv-com/quill-design/commit/3ebc99f1c522fe685a9a587a5920e226cb29a417))
+
+## [1.0.23](https://github.com/deriv-com/quill-design/compare/v1.0.22...v1.0.23) (2023-11-06)
+
+
+### ♻️ 	 Chores
+
+* added custom tags ([0174999](https://github.com/deriv-com/quill-design/commit/017499983c82950e217f99129ab00a90be4ea196))
+* improvements on existing Tag component ([a7a633e](https://github.com/deriv-com/quill-design/commit/a7a633e24544054996e73bf4a43b50c5cbc40c63))
+* refactor Tag component ([1ea54e4](https://github.com/deriv-com/quill-design/commit/1ea54e4196edd73c4c5f588554c8e4700ebcdf1b))
+* resolve comments ([b2a1de4](https://github.com/deriv-com/quill-design/commit/b2a1de4d966c2b33a63d813b012c5d06f90a6b68))
+* use cva package for tag variations ([f6a3a5b](https://github.com/deriv-com/quill-design/commit/f6a3a5bdbc05c3420fa4c783b1d2da78dc312cce))
+
+## [1.0.22](https://github.com/deriv-com/quill-design/compare/v1.0.21...v1.0.22) (2023-11-03)
+
+
+### ♻️ 	 Chores
+
+* add generic exlude null type ([11dba49](https://github.com/deriv-com/quill-design/commit/11dba49a657fdb59ba4aedd2dd1b847cae65bc4c))
+
+## [1.0.21](https://github.com/deriv-com/quill-design/compare/v1.0.20...v1.0.21) (2023-10-31)
+
+
+### ♻️ 	 Chores
+
+* added class variance authority package ([9431c31](https://github.com/deriv-com/quill-design/commit/9431c3125533deccbae30d90b379614f135f381d))
+
+## [1.0.20](https://github.com/deriv-com/quill-design/compare/v1.0.19...v1.0.20) (2023-10-30)
+
+
+### ♻️ 	 Chores
+
+* added args inside of storybook ([c861af1](https://github.com/deriv-com/quill-design/commit/c861af1c209da9a70b806113e902fc86b52de2e3))
+* added Tag component ([0ca3ed9](https://github.com/deriv-com/quill-design/commit/0ca3ed9f7e03634a4b22ddc84792f2d708aab932))
+* Updated the tag component ([0cbb556](https://github.com/deriv-com/quill-design/commit/0cbb556cc2c38eef7e3f49a482ec2720b334d021)), closes [#34](https://github.com/deriv-com/quill-design/issues/34)
+
+
+### 🐛 	 Bug Fixes
+
+* added quill icons ([2e0bf47](https://github.com/deriv-com/quill-design/commit/2e0bf477115472eabc7aa3e6e7eb11e9da96c52b))
+* small improvements ([f181247](https://github.com/deriv-com/quill-design/commit/f181247d240d72c61538457ba6dde565bfd91240))
+
 ## [1.0.19](https://github.com/deriv-com/quill-design/compare/v1.0.18...v1.0.19) (2023-10-28)
 
 
