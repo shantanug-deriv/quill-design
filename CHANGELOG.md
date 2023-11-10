@@ -1,3 +1,18 @@
+## [1.0.31](https://github.com/deriv-com/quill-design/compare/v1.0.30...v1.0.31) (2023-11-10)
+
+
+### ♻️ 	 Chores
+
+* added beta to release workflow [skip ci] ([814f9f3](https://github.com/deriv-com/quill-design/commit/814f9f3570e43d7f2ab65b67a8f4bc9dbd0c045f))
+* updated quill-icons to 1.0.9 ([7fc021b](https://github.com/deriv-com/quill-design/commit/7fc021bdfa7ce48561015aeb89f8b25bd7e15b8a))
+* updated to latest quill-icons with main exports ([d9a0cb7](https://github.com/deriv-com/quill-design/commit/d9a0cb7787e3f3d402384ba38796e6cd39e9a8f1))
+
+
+### ⚙️ 	 Continuous Integrations
+
+* release(version): Release 1.0.31-beta.1 [skip ci] ([2849c9f](https://github.com/deriv-com/quill-design/commit/2849c9f97e196ae8ac4d6f9c5b21070f82f10539))
+* release(version): Release 1.0.31-beta.2 [skip ci] ([71a3578](https://github.com/deriv-com/quill-design/commit/71a35789d742e193aea32f3d329fb04366783235))
+
 ## [1.0.31-beta.2](https://github.com/deriv-com/quill-design/compare/v1.0.31-beta.1...v1.0.31-beta.2) (2023-11-10)
 
 
