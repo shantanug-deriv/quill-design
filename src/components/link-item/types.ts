@@ -13,6 +13,7 @@ export interface LinkItemProps
   icon?: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
   hasIcon?: boolean
 }
+export type LinkItemSize = 'caption' | 'sm' | 'md' | 'lg' | 'xl'
 
 export type colorStyle = LinkItemProps['colorStyle']
 

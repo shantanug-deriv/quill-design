@@ -1,5 +1,5 @@
 import { cva } from 'class-variance-authority'
-export type LinkSize = 'caption' | 'sm' | 'md' | 'lg' | 'xl'
+import { LinkItemSize } from './types'
 
 export const linkItemCva = cva('inline-flex items-center gap-500', {
   variants: {
@@ -30,7 +30,7 @@ export const linkItemIconCva = cva('', {
 })
 
 export const LinkItemIconStandaloneSizes: Record<
-  LinkSize,
+  LinkItemSize,
   { width: number; height: number }
 > = {
   caption: {
@@ -56,7 +56,7 @@ export const LinkItemIconStandaloneSizes: Record<
 }
 
 export const LinkItemIconSizes: Record<
-  LinkSize,
+  LinkItemSize,
   { width: number; height: number }
 > = {
   caption: {
