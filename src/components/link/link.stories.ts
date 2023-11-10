@@ -12,41 +12,19 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const PrimaryBlack: Story = {
+export const BlackLink: Story = {
   args: {
-    children: 'Primary Black Link',
+    children: ' Black Link',
     size: 'md',
-    variant: 'primary',
     colorStyle: 'black',
     disabled: false,
   },
 }
 
-export const PrimaryWhite: Story = {
+export const WhiteLink: Story = {
   args: {
-    children: 'Primary White Link',
+    children: ' White Link',
     size: 'md',
-    variant: 'primary',
-    colorStyle: 'white',
-    disabled: false,
-  },
-}
-
-export const SecondaryBlack: Story = {
-  args: {
-    children: 'Secondary Black Link',
-    size: 'md',
-    variant: 'secondary',
-    colorStyle: 'black',
-    disabled: false,
-  },
-}
-
-export const SecondaryWhite: Story = {
-  args: {
-    children: 'Secondary White Link',
-    size: 'md',
-    variant: 'secondary',
     colorStyle: 'white',
     disabled: false,
   },
