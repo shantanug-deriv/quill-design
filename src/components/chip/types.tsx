@@ -1,4 +1,4 @@
-import { QuillSvgProps } from '@deriv/quill-icons/QuillTypes'
+import { QuillSvgProps } from '@deriv/quill-icons'
 import { chipBaseVariant } from './chip.classnames'
 import { type VariantProps } from 'class-variance-authority'
 import { ExcludeNull } from 'types'
@@ -20,6 +20,7 @@ export interface BaseChipProps
 export interface SelectableChipProps extends BaseChipProps {
   isDropdownOpen?: boolean
   dropdown?: boolean
+  dropdownItemSelected?: boolean
   labelTag?: string
   onChipSelect?: (
     event: React.MouseEvent<HTMLButtonElement>,

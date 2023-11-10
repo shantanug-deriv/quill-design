@@ -8,7 +8,7 @@ import {
   LabelPairedSquareRegularIcon,
 } from '@deriv/quill-icons/LabelPaired'
 import {
-  chipDropdownClassnames,
+  chipDropdownPanelClassnames,
   chipDropdownMultiClassnames,
 } from '../chip.classnames'
 import qtMerge from 'qtMerge'
@@ -77,18 +77,21 @@ export const DropdownChipMultiSelect = forwardRef<
             <>
               <Listbox.Button as="div">
                 <SelectableChip
+                  {...rest}
                   icon={icon}
                   size={size}
                   labelTag={labelTag}
                   ref={ref}
                   dropdown
+                  dropdownItemSelected={selectedItems.length > 0}
                   isDropdownOpen={open}
                   disabled={disabled}
-                  {...rest}
                 >
                   <span>{label}</span>
                   <span>
-                    {selectedItems.length > 0 && `(${selectedItems.length})`}
+                    {selectedItems.length > 0 && (
+                      <span className="p-200">({selectedItems.length})</span>
+                    )}
                   </span>
                 </SelectableChip>
               </Listbox.Button>
@@ -101,7 +104,7 @@ export const DropdownChipMultiSelect = forwardRef<
                 leaveTo="scale-y-0 -translate-y-2/4"
               >
                 <Listbox.Options
-                  className={qtMerge(className, chipDropdownClassnames)}
+                  className={qtMerge(chipDropdownPanelClassnames, className)}
                 >
                   {options.map((item, index) => (
                     <Options
