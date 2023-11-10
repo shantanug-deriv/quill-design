@@ -4,8 +4,8 @@ import {
   LabelPairedAppleIcon,
   LabelPairedCircleInfoBoldIcon,
   LabelPairedPlaceholderRegularIcon,
-} from '@deriv/quill-icons'
-import BasicButton from '.'
+} from '@deriv/quill-icons/LabelPaired'
+import Button from '.'
 import { QuillIconComponent } from 'types'
 
 const icons: Record<string, QuillIconComponent | undefined> = {
@@ -18,7 +18,7 @@ const icons: Record<string, QuillIconComponent | undefined> = {
 
 const meta = {
   title: 'Buttons/Basic',
-  component: BasicButton,
+  component: Button,
   parameters: {
     layout: 'centered',
   },
@@ -50,7 +50,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof BasicButton>
+} satisfies Meta<typeof Button>
 
 export default meta
 type Story = StoryObj<typeof meta>

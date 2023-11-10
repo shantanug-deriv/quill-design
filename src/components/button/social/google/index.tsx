@@ -1,5 +1,5 @@
 import { forwardRef } from 'react'
-import { SocialGoogleIcon } from '@deriv/quill-icons'
+import { SocialGoogleBrandIcon } from '@deriv/quill-icons/Social'
 import qtMerge from 'qtMerge'
 import {
   SocialButtonClassesProps,
@@ -47,7 +47,7 @@ export const SocialGoogleButton = forwardRef<
         {...rest}
         ref={ref}
       >
-        <SocialGoogleIcon {...socialButtonIconSize[size ?? 'md']} />
+        <SocialGoogleBrandIcon {...socialButtonIconSize[size ?? 'md']} />
         {!hideLabel && <span className="flex-1">Google</span>}
       </button>
     )

@@ -4,7 +4,7 @@ import {
   LabelPairedAppleIcon,
   LabelPairedCircleInfoBoldIcon,
   LabelPairedPlaceholderRegularIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/LabelPaired'
 import LinkButton from '.'
 import { QuillIconComponent } from 'types'
 

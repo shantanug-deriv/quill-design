@@ -1,5 +1,5 @@
 import { forwardRef } from 'react'
-import { SocialFacebookIcon } from '@deriv/quill-icons'
+import { SocialFacebookBrandIcon } from '@deriv/quill-icons/Social'
 import qtMerge from 'qtMerge'
 import {
   SocialButtonClassesProps,
@@ -47,7 +47,7 @@ export const FacebookSocialButton = forwardRef<
         {...rest}
         ref={ref}
       >
-        <SocialFacebookIcon
+        <SocialFacebookBrandIcon
           {...socialButtonIconSize[size ?? 'md']}
           fill="#fff"
         />

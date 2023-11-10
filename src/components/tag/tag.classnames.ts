@@ -8,7 +8,7 @@ import {
   LabelPairedCircleExclamationRegularIcon,
   LabelPairedCircleCheckRegularIcon,
   LabelPairedCircleInfoRegularIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/LabelPaired'
 import { ExcludeAllNull, QuillIconComponent } from 'types'
 
 export type BaseTagProps = ExcludeAllNull<VariantProps<typeof TagClassNamesCVA>>

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ActionSheet.Footer/> should render correctly with horizontal 1`] = `
+<div
+  aria-label="horizontal footer"
+  class="flex gap-400 pt-800 lg:mt-auto flex-row"
+/>
+`;
+
+exports[`<ActionSheet.Footer/> should render correctly with vertical 1`] = `
+<div
+  aria-label="vertical footer"
+  class="flex gap-400 pt-800 lg:mt-auto flex-col"
+/>
+`;

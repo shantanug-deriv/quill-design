@@ -11,14 +11,14 @@ import {
   buttonSizeCVA,
 } from '../button.classes'
 
-export interface BasicButtonProps
+export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     ButtonClassesProps {
   icon?: QuillIconComponent
   iconPosition?: 'start' | 'end'
 }
 
-export const BasicButton = forwardRef<HTMLButtonElement, BasicButtonProps>(
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       className,
@@ -63,6 +63,6 @@ export const BasicButton = forwardRef<HTMLButtonElement, BasicButtonProps>(
   },
 )
 
-BasicButton.displayName = 'BasicButton'
+Button.displayName = 'Button'
 
-export default BasicButton
+export default Button

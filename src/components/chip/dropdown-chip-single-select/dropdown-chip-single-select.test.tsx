@@ -11,10 +11,14 @@ const mockOptions = [
   },
   { value: '3', label: 'Sample Item 3' },
   { value: '4', label: 'Sample Item 4' },
+  { value: '5', label: 'Sample Item 5' },
 ]
 
 describe('Dropdown Chip Single Select', () => {
-  const onSelectionChange = jest.fn()
+  let onSelectionChange = jest.fn()
+  afterEach(() => {
+    onSelectionChange = jest.fn()
+  })
   it('should render default value as the label', async () => {
     render(
       <DropdownChipSingleSelect
@@ -26,6 +30,22 @@ describe('Dropdown Chip Single Select', () => {
     )
     const label = screen.getByText('Sample Item 1')
     expect(label).toBeInTheDocument()
+  })
+
+  it('should not throw error if onSelectionChange function is not passed', async () => {
+    render(
+      <DropdownChipSingleSelect
+        size={'sm'}
+        onSelectionChange={null as unknown as typeof onSelectionChange}
+        options={mockOptions}
+        defaultOption={mockOptions[0]}
+      />,
+    )
+    const label = screen.getByText('Sample Item 1')
+    await userEvent.click(label)
+    const item = screen.getByText('Sample Item 3')
+    await userEvent.click(item)
+    expect(onSelectionChange).not.toHaveBeenCalled()
   })
 
   it('should handle onSelectionChange event', async () => {
@@ -41,6 +61,6 @@ describe('Dropdown Chip Single Select', () => {
     await userEvent.click(label)
     const item = screen.getByText('Sample Item 3')
     await userEvent.click(item)
-    expect(onSelectionChange).toBeCalled()
+    expect(onSelectionChange).toHaveBeenCalled()
   })
 })

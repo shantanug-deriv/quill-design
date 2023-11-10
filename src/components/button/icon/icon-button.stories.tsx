@@ -5,7 +5,7 @@ import {
   LabelPairedAppleIcon,
   LabelPairedCircleInfoBoldIcon,
   LabelPairedPlaceholderRegularIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/LabelPaired'
 import { QuillIconComponent } from 'types'
 
 const icons: Record<string, QuillIconComponent | undefined> = {

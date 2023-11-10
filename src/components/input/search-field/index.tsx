@@ -1,6 +1,6 @@
 import { ComponentProps, forwardRef } from 'react'
 import Input from '../base'
-import { StandaloneSearchBoldIcon } from '@deriv/quill-icons'
+import { StandaloneSearchBoldIcon } from '@deriv/quill-icons/Standalone'
 
 export type SearchFieldProps = ComponentProps<typeof Input>
 
