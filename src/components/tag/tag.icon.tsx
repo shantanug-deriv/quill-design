@@ -1,4 +1,4 @@
-import { QuillSvgProps } from '@deriv/quill-icons/QuillTypes'
+import { QuillSvgProps } from '@deriv/quill-icons'
 import {
   BaseTagIconProps,
   BaseTagProps,
