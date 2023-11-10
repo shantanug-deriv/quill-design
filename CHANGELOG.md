@@ -1,3 +1,10 @@
+## [1.0.30](https://github.com/deriv-com/quill-design/compare/v1.0.29...v1.0.30) (2023-11-09)
+
+
+### ♻️ 	 Chores
+
+* updated quill-icons package ([eef29e3](https://github.com/deriv-com/quill-design/commit/eef29e32ab90673efa12239938385059807ffd03))
+
 ## [1.0.29](https://github.com/deriv-com/quill-design/compare/v1.0.28...v1.0.29) (2023-11-09)
 
 

@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 import TextField from '.'
-import { StandaloneCircleCheckBoldIcon } from '@deriv/quill-icons'
+import { StandaloneCircleCheckBoldIcon } from '@deriv/quill-icons/Standalone'
 
 const meta = {
   title: 'Inputs/Text Field',

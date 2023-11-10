@@ -3,7 +3,7 @@ import SearchField from '.'
 import {
   StandaloneCircleCheckBoldIcon,
   StandaloneTriangleExclamationBoldIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/Standalone'
 
 const meta = {
   title: 'Inputs/Search Field',
