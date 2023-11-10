@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link should render correctly with black color 1`] = `
+<span
+  class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline active:underline p-400 text-50"
+>
+  Click me - 
+  black
+</span>
+`;
+
+exports[`Link should render correctly with caption size 1`] = `
+<span
+  class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline active:underline p-400 text-50"
+>
+  Click me - 
+  caption
+</span>
+`;
+
+exports[`Link should render correctly with disabled false 1`] = `
+<span
+  class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline active:underline p-400 text-50"
+>
+  Click me disabled
+</span>
+`;
+
+exports[`Link should render correctly with disabled true 1`] = `
+<span
+  class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline active:underline p-400 text-50 opacity-300 cursor-none pointer-events-none"
+>
+  Click me disabled
+</span>
+`;
+
+exports[`Link should render correctly with lg size 1`] = `
+<span
+  class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline active:underline p-800 text-100"
+>
+  Click me - 
+  lg
+</span>
+`;
+
+exports[`Link should render correctly with md size 1`] = `
+<span
+  class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline active:underline p-600 text-75"
+>
+  Click me - 
+  md
+</span>
+`;
+
+exports[`Link should render correctly with sm size 1`] = `
+<span
+  class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline active:underline p-400 text-50"
+>
+  Click me - 
+  sm
+</span>
+`;
+
+exports[`Link should render correctly with white color 1`] = `
+<span
+  class="inline-flex items-center gap-500 text-solid-slate-50 hover:underline active:underline p-400 text-50"
+>
+  Click me - 
+  white
+</span>
+`;
+
+exports[`Link should render correctly with xl size 1`] = `
+<span
+  class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline active:underline p-1200 text-300"
+>
+  Click me - 
+  xl
+</span>
+`;

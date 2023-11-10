@@ -1,18 +1,14 @@
-import qtMerge from 'qt-merge'
-import { AnchorHTMLAttributes, ReactNode, Ref, forwardRef } from 'react'
-import { linkCva } from './link.classnames'
-import { type VariantProps } from 'class-variance-authority'
-import { ExcludeNull } from 'types'
+import qtMerge, { qtJoin } from 'qt-merge'
+import { Ref, forwardRef } from 'react'
+import {
+  LinkIconSizes,
+  LinkIconStandaloneSizes,
+  linkCva,
+  linkIconCva,
+} from './link.classnames'
 
-export interface LinkProps
-  extends AnchorHTMLAttributes<HTMLAnchorElement>,
-    ExcludeNull<
-      VariantProps<typeof linkCva>,
-      'colorStyle' | 'size' | 'disabled'
-    > {
-  renderLeftIcon?: () => ReactNode
-  renderRightIcon?: () => ReactNode
-}
+import { LabelPairedChevronRightRegularIcon } from '@deriv/quill-icons/LabelPaired'
+import { LinkProps } from './types'
 
 export const Link = forwardRef(
   (
@@ -21,24 +17,36 @@ export const Link = forwardRef(
       colorStyle = 'black',
       size = 'sm',
       disabled,
-      // renderLeftIcon,
-      // renderRightIcon,
+      icon: Icon,
+      hasIcon = false,
       children,
       ...rest
     }: LinkProps,
     ref: Ref<HTMLAnchorElement>,
   ) => {
     return (
-      <a
+      <span
         ref={ref}
-        href="/"
         {...rest}
         className={qtMerge(linkCva({ colorStyle, size, disabled, className }))}
       >
-        {/* {renderLeftIcon?.()} */}
+        {Icon && (
+          <Icon
+            className={qtJoin(linkIconCva({ colorStyle }))}
+            data-testid="dt-link-icon"
+            {...LinkIconStandaloneSizes[size]}
+          />
+        )}
         {children}
-        {/* {renderRightIcon?.()} */}
-      </a>
+
+        {hasIcon && (
+          <LabelPairedChevronRightRegularIcon
+            className={qtJoin(linkIconCva({ colorStyle }))}
+            data-testid="dt-link-chevron"
+            {...LinkIconSizes[size]}
+          />
+        )}
+      </span>
     )
   },
 )
