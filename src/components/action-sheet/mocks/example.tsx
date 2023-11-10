@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { ComponentProps, useState } from 'react'
-import { StandaloneXmarkRegularIcon } from '@deriv/quill-icons'
+import { StandaloneXmarkRegularIcon } from '@deriv/quill-icons/Standalone'
 import ActionSheet from '..'
 import Button from 'components/button'
 
