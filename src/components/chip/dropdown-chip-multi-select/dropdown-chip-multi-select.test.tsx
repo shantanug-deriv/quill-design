@@ -44,7 +44,7 @@ describe('Dropdown Chip Multi Select', () => {
     await userEvent.click(label)
     const item = screen.getByText('Sample Item 3')
     await userEvent.click(item)
-    expect(onSelectionChange).toBeCalled()
+    expect(onSelectionChange).toHaveBeenCalled()
   })
 
   it('should not handle onSelectionChange if item is disabled', async () => {
@@ -60,7 +60,7 @@ describe('Dropdown Chip Multi Select', () => {
     await userEvent.click(label)
     const item = screen.getByText('Sample Item 5')
     await userEvent.click(item)
-    expect(onSelectionChange).not.toBeCalled()
+    expect(onSelectionChange).not.toHaveBeenCalled()
   })
 
   it('should not throw error if onSelectionChange function is not passed', async () => {
@@ -76,7 +76,7 @@ describe('Dropdown Chip Multi Select', () => {
     await userEvent.click(label)
     const item = screen.getByText('Sample Item 3')
     await userEvent.click(item)
-    expect(onSelectionChange).not.toBeCalled()
+    expect(onSelectionChange).not.toHaveBeenCalled()
   })
 
   it('should handle multiple items selection', async () => {
@@ -94,6 +94,9 @@ describe('Dropdown Chip Multi Select', () => {
     await userEvent.click(item1)
     const item2 = screen.getByText('Sample Item 3')
     await userEvent.click(item2)
-    expect(onSelectionChange).toBeCalledWith([mockOptions[1], mockOptions[2]])
+    expect(onSelectionChange).toHaveBeenCalledWith([
+      mockOptions[1],
+      mockOptions[2],
+    ])
   })
 })

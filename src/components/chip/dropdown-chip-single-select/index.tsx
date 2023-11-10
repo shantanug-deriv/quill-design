@@ -61,6 +61,7 @@ export const DropdownChipSingleSelect = forwardRef<
             <>
               <Listbox.Button as="div">
                 <SelectableChip
+                  {...rest}
                   icon={icon}
                   size={size}
                   labelTag={labelTag}
@@ -71,7 +72,6 @@ export const DropdownChipSingleSelect = forwardRef<
                   }
                   isDropdownOpen={open}
                   disabled={disabled}
-                  {...rest}
                 >
                   {selectedItem?.label}
                 </SelectableChip>
@@ -85,7 +85,7 @@ export const DropdownChipSingleSelect = forwardRef<
                 leaveTo="scale-y-0 -translate-y-2/4"
               >
                 <Listbox.Options
-                  className={qtMerge(className, chipDropdownPanelClassnames)}
+                  className={qtMerge(chipDropdownPanelClassnames, className)}
                 >
                   <Options item={defaultOption} />
                   {options.map((item) => (

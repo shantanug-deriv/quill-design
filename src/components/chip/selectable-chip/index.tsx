@@ -50,6 +50,7 @@ export const SelectableChip = forwardRef<
     }
     return (
       <button
+        {...rest}
         className={chipBaseVariant({
           dismissible,
           size,
@@ -62,27 +63,19 @@ export const SelectableChip = forwardRef<
         data-state={dropdownItemSelected ? 'selected' : ''}
         ref={ref}
         onClick={handleClick}
-        {...rest}
       >
-        {Icon && <Icon id="selectable-chip-icon" {...ChipIconSizes[size]} />}
-        <div
-          id="selectable-chip-label"
-          className="transition-transform duration-1000 ease-in-out"
-        >
+        {Icon && <Icon {...ChipIconSizes[size]} />}
+        <div className="transition-transform duration-1000 ease-in-out">
           {children}
         </div>
         {labelTag && (
-          <span
-            id="selectable-chip-label-tag"
-            className={`font-bold ${chipBaseTextColorClassnames}`}
-          >
+          <span className={`font-bold ${chipBaseTextColorClassnames}`}>
             {labelTag}
           </span>
         )}
         {dismissible && (
           <StandaloneCircleXmarkRegularIcon
             {...ChipStandaloneIconSizes[size]}
-            id="selectable-chip-dismiss-icon"
             onClick={handleDismiss}
             data-testid="dt-chip-dismissable-btn"
             className="cursor-pointer"
@@ -92,7 +85,6 @@ export const SelectableChip = forwardRef<
           <>
             <StandaloneChevronDownRegularIcon
               data-state={isDropdownOpen ? 'open' : 'close'}
-              id="selectable_chip_chevron"
               className="transition-transform duration-300 data-[state=open]:rotate-180"
               {...ChipStandaloneIconSizes[size]}
             />

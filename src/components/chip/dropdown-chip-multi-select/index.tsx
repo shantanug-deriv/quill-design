@@ -77,6 +77,7 @@ export const DropdownChipMultiSelect = forwardRef<
             <>
               <Listbox.Button as="div">
                 <SelectableChip
+                  {...rest}
                   icon={icon}
                   size={size}
                   labelTag={labelTag}
@@ -85,7 +86,6 @@ export const DropdownChipMultiSelect = forwardRef<
                   dropdownItemSelected={selectedItems.length > 0}
                   isDropdownOpen={open}
                   disabled={disabled}
-                  {...rest}
                 >
                   <span>{label}</span>
                   <span>
@@ -104,7 +104,7 @@ export const DropdownChipMultiSelect = forwardRef<
                 leaveTo="scale-y-0 -translate-y-2/4"
               >
                 <Listbox.Options
-                  className={qtMerge(className, chipDropdownPanelClassnames)}
+                  className={qtMerge(chipDropdownPanelClassnames, className)}
                 >
                   {options.map((item, index) => (
                     <Options

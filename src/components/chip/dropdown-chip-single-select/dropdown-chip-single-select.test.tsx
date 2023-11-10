@@ -45,7 +45,7 @@ describe('Dropdown Chip Single Select', () => {
     await userEvent.click(label)
     const item = screen.getByText('Sample Item 3')
     await userEvent.click(item)
-    expect(onSelectionChange).not.toBeCalled()
+    expect(onSelectionChange).not.toHaveBeenCalled()
   })
 
   it('should handle onSelectionChange event', async () => {
@@ -61,6 +61,6 @@ describe('Dropdown Chip Single Select', () => {
     await userEvent.click(label)
     const item = screen.getByText('Sample Item 3')
     await userEvent.click(item)
-    expect(onSelectionChange).toBeCalled()
+    expect(onSelectionChange).toHaveBeenCalled()
   })
 })
