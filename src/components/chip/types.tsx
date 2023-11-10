@@ -1,4 +1,4 @@
-import { QuillSvgProps } from '@deriv/quill-icons'
+import { QuillSvgProps } from '@deriv/quill-icons/QuillTypes'
 import { chipBaseVariant } from './chip.classnames'
 import { type VariantProps } from 'class-variance-authority'
 import { ExcludeNull } from 'types'

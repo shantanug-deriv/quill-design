@@ -1,7 +1,7 @@
 import {
   StandaloneChevronDownRegularIcon,
   StandaloneCircleXmarkRegularIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/Standalone'
 import { forwardRef } from 'react'
 import {
   ChipIconSizes,

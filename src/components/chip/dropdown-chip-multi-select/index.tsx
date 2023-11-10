@@ -6,7 +6,7 @@ import type { MultiSelectChipProps, TSingleSelectItem } from '../types'
 import {
   LabelPairedSquareCheckFillIcon,
   LabelPairedSquareRegularIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/LabelPaired'
 import {
   chipDropdownPanelClassnames,
   chipDropdownMultiClassnames,

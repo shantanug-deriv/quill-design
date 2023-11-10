@@ -1,5 +1,5 @@
 import { render } from 'test-utils'
-import { StandalonePlaceholderRegularIcon } from '@deriv/quill-icons'
+import { StandalonePlaceholderRegularIcon } from '@deriv/quill-icons/Standalone'
 import Tag from '.'
 
 describe('Tag', () => {
