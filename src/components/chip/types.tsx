@@ -20,6 +20,7 @@ export interface BaseChipProps
 export interface SelectableChipProps extends BaseChipProps {
   isDropdownOpen?: boolean
   dropdown?: boolean
+  dropdownItemSelected?: boolean
   labelTag?: string
   onChipSelect?: (
     event: React.MouseEvent<HTMLButtonElement>,

@@ -16,7 +16,16 @@ const icons: Record<string, object | null> = {
 const meta = {
   title: 'Chips/Dropdown Chip Single Select',
   component: Chip,
-  parameters: {},
+  parameters: {
+    docs: {
+      story: {
+        height: '250px',
+      },
+    },
+    controls: {
+      exclude: ['dismissible'],
+    },
+  },
   args: {
     defaultOption: { value: '', label: 'Dropdown Chip Single Select' },
     size: 'md',

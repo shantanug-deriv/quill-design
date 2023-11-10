@@ -1,4 +1,23 @@
-export * from './selectable-chip'
-export * from './dismissible-chip'
-export * from './dropdown-chip-single-select'
-export * from './dropdown-chip-multi-select'
+import SelectableChip from './selectable-chip'
+import DismissibleChip from './dismissible-chip'
+import DropdownChipSingleSelect from './dropdown-chip-single-select'
+import DropdownChipMultiSelect from './dropdown-chip-multi-select'
+import { ReactNode } from 'react'
+
+type ChipVariants = {
+  Selectable: typeof SelectableChip
+  Dismissible: typeof DismissibleChip
+  SingleSelectDropdown: typeof DropdownChipSingleSelect
+  MultiSelectDropdown: typeof DropdownChipMultiSelect
+}
+
+export const Chip: ChipVariants = ({ children }: { children: ReactNode }) => {
+  return <>{children}</>
+}
+
+Chip.Selectable = SelectableChip
+Chip.Dismissible = SelectableChip
+Chip.SingleSelectDropdown = SelectableChip
+Chip.MultiSelectDropdown = SelectableChip
+
+export default Chip
