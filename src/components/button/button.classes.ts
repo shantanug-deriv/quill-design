@@ -441,7 +441,8 @@ export type ButtonClassesProps = ExcludeAllNull<
 >
 
 export type SocialButtonClassesProps = ExcludeAllNull<
-  VariantProps<typeof baseButtonCVA> & VariantProps<typeof socialButtonSize>
+  VariantProps<typeof baseButtonCVA> &
+    Omit<VariantProps<typeof socialButtonSize>, 'componentType'>
 >
 
 export type SocialButtonVariantProps = ExcludeAllNull<

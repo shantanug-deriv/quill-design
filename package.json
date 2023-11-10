@@ -16,6 +16,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test": "jest",
+    "test:watch": "jest --watch",
     "test:ci": "jest --coverage",
     "test:staged": "jest --bail --findRelatedTests",
     "test:update": "jest --updateSnapshot",

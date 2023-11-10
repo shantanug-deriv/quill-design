@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trade Button Should render Buy Trade Button with Buy label 1`] = `
+<button
+  class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 text-body-sm leading-body-sm h-[32px] min-w-[64px] px-600 py-300 gap-300 bg-solid-emerald-700 text-solid-slate-50 hover:bg-solid-emerald-800 active:bg-solid-emerald-900"
+>
+  <span
+    class="flex-1"
+  >
+    Buy
+  </span>
+</button>
+`;
+
+exports[`Trade Button Should render Default Button 1`] = `
+<button
+  class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 text-body-sm leading-body-sm h-[32px] min-w-[64px] px-600 py-300 gap-300 bg-solid-emerald-700 text-solid-slate-50 hover:bg-solid-emerald-800 active:bg-solid-emerald-900"
+>
+  <span
+    class="flex-1"
+  />
+</button>
+`;
+
+exports[`Trade Button Should render Sell Trade Button with Sell label 1`] = `
+<button
+  class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 text-body-sm leading-body-sm h-[32px] min-w-[64px] px-600 py-300 gap-300 bg-solid-cherry-700 text-solid-slate-50 hover:bg-solid-cherry-800 active:bg-solid-cherry-900"
+>
+  <span
+    class="flex-1"
+  >
+    Sell
+  </span>
+</button>
+`;
+
+exports[`Trade Button Should render primary Trade Button 1`] = `
+<button
+  class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 text-body-sm leading-body-sm h-[32px] min-w-[64px] px-600 py-300 gap-300 bg-solid-emerald-700 text-solid-slate-50 hover:bg-solid-emerald-800 active:bg-solid-emerald-900"
+>
+  <span
+    class="flex-1"
+  />
+</button>
+`;
+
+exports[`Trade Button Should render secondary Trade Button 1`] = `
+<button
+  class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 text-body-sm leading-body-sm h-[32px] min-w-[64px] px-600 py-300 gap-300 border-75 border-solid-emerald-700 text-solid-emerald-700 hover:bg-opacity-emerald-100 active:bg-opacity-emerald-200"
+>
+  <span
+    class="flex-1"
+  />
+</button>
+`;
+
+exports[`Trade Button Should render tertiary Trade Button 1`] = `
+<button
+  class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 text-body-sm leading-body-sm h-[32px] min-w-[64px] px-600 py-300 gap-300 underline text-solid-emerald-700 hover:bg-opacity-emerald-100 active:bg-opacity-emerald-200"
+>
+  <span
+    class="flex-1"
+  />
+</button>
+`;
