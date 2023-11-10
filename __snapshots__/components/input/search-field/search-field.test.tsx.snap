@@ -23,7 +23,7 @@ exports[`SearchField It should render a SearchField with a given classname and t
         </svg>
       </div>
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 text-left h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
         placeholder="Search"
         type="Search"
       />
@@ -58,7 +58,7 @@ exports[`SearchField It should render a TextField with error status 1`] = `
         </svg>
       </div>
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 text-left h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
         placeholder="Search"
         type="search"
       />
@@ -93,7 +93,7 @@ exports[`SearchField It should render a TextField with success status 1`] = `
         </svg>
       </div>
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 text-left h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
         placeholder="Search"
         type="search"
       />
@@ -128,7 +128,7 @@ exports[`SearchField It should render a default SearchField 1`] = `
         </svg>
       </div>
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 text-left h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
         placeholder="Search"
         type="search"
       />

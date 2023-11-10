@@ -1,6 +1,6 @@
 import { render } from 'test-utils'
 import Input from '.'
-import { StandaloneTriangleExclamationBoldIcon } from '@deriv/quill-icons'
+import { StandaloneTriangleExclamationBoldIcon } from '@deriv/quill-icons/Standalone'
 
 describe('Input', () => {
   it('It should render a default Input', () => {
