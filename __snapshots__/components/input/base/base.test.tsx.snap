@@ -19,3 +19,175 @@ exports[`Input It should render a default Input 1`] = `
   </div>
 </div>
 `;
+
+exports[`Input It should render a disabled Input 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+    >
+      <input
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 text-left h-1200"
+        disabled=""
+        type="text"
+      />
+    </div>
+    <div
+      class="flex justify-between"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input It should render an Input with a label 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+    >
+      <input
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 text-left h-1200"
+        type="text"
+      />
+      <label
+        class="transition-all duration-[160ms] ease-[cubic-bezier(0.72, 0, 0.24, 1)] pointer-events-none absolute peer-placeholder-shown:text-100 peer-placeholder-shown:translate-y-50 peer-focus:-translate-y-full peer-focus:leading-100 peer-focus:text-50 peer-focus:h-900 peer-focus:gap-200 [&:not(placeholder-shown)]:-translate-y-full [&:not(placeholder-shown)]:leading-100 [&:not(placeholder-shown)]:text-50 [&:not(placeholder-shown)]:mt-200 text-opacity-black-600"
+      >
+        Label
+      </label>
+    </div>
+    <div
+      class="flex justify-between"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input It should render an Input with a size of sm 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-400 h-1600 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+    >
+      <input
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 text-left h-1100"
+        type="text"
+      />
+    </div>
+    <div
+      class="flex justify-between"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input It should render an Input with a status icon 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-green-600 border-opacity-green-600 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-green-800 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-green-800 focus-within:text-solid-green-900 focus-within:border-solid-green-900"
+    >
+      <input
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 text-left h-1200"
+        type="text"
+      />
+      <div>
+        <svg
+          fill="green"
+          height="24"
+          role="img"
+          viewBox="0 0 32 32"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.688 9.781 7.952 22.516a.556.556 0 0 0-.078.312c.026.339.221.521.586.547h15.117c.339-.026.521-.208.547-.547a.693.693 0 0 0-.078-.312L16.312 9.78A.371.371 0 0 0 16 9.625a.371.371 0 0 0-.313.156Zm-1.602-.976c.469-.677 1.107-1.029 1.914-1.055.833.026 1.471.378 1.914 1.055l7.734 12.734c.235.39.352.82.352 1.29-.026.676-.26 1.25-.703 1.718-.469.443-1.042.677-1.719.703H8.461c-.703-.026-1.29-.26-1.758-.703-.443-.469-.677-1.042-.703-1.719 0-.469.117-.898.352-1.289l7.734-12.734Zm3.164 12.07c0 .365-.117.664-.352.898-.234.235-.533.352-.898.352s-.664-.117-.898-.352c-.235-.234-.352-.533-.352-.898s.117-.664.352-.898c.234-.235.533-.352.898-.352s.664.117.898.352c.235.234.352.533.352.898Zm-.313-7.188v3.75c-.052.573-.364.886-.937.938-.573-.052-.885-.365-.938-.938v-3.75c.053-.572.365-.885.938-.937.573.052.885.365.938.938Z"
+            fill-opacity="0.72"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      class="flex justify-between"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input It should render an Input with a variant of fill 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed [&:has(input:disabled)]:bg-opacity-black-75 focus-within:bg-opacity-black-75 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:bg-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+    >
+      <input
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 text-left h-1200"
+        type="text"
+      />
+    </div>
+    <div
+      class="flex justify-between"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input It should render an Input with centered text 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+    >
+      <input
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 text-center h-1200"
+        type="text"
+      />
+    </div>
+    <div
+      class="flex justify-between"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input It should render an Input with status messages 1`] = `
+<div>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+    >
+      <input
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-opacity-black-300 [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 text-left h-1200"
+        type="text"
+      />
+    </div>
+    <div
+      class="flex justify-between"
+    >
+      <p
+        class="py-50 px-800 text-50 leading-100 font-regular transition-all text-opacity-black-400"
+      >
+        Message goes here
+      </p>
+      <p
+        class="py-50 px-800 text-50 leading-100 font-regular transition-all text-opacity-black-400 self-end"
+      >
+        0/0
+      </p>
+    </div>
+  </div>
+</div>
+`;

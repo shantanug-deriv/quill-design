@@ -71,15 +71,13 @@ export const baseInputVariants = cva(
 )
 
 export const baseInputLabelVariants = cva(
-  'transition-all pointer-events-none absolute origin-center peer-placeholder-shown:text-100 peer-placeholder-shown:translate-y-50 peer-focus:-translate-y-full peer-focus:leading-100 peer-focus:text-50 peer-focus:h-900 peer-focus:gap-200 [&:not(placeholder-shown)]:-translate-y-full  [&:not(placeholder-shown)]:leading-100  [&:not(placeholder-shown)]:text-50 [&:not(placeholder-shown)]:mt-200',
+  'transition-all duration-[160ms] ease-[cubic-bezier(0.72, 0, 0.24, 1)] pointer-events-none absolute peer-placeholder-shown:text-100 peer-placeholder-shown:translate-y-50 peer-focus:-translate-y-full peer-focus:leading-100 peer-focus:text-50 peer-focus:h-900 peer-focus:gap-200 [&:not(placeholder-shown)]:-translate-y-full  [&:not(placeholder-shown)]:leading-100  [&:not(placeholder-shown)]:text-50 [&:not(placeholder-shown)]:mt-200',
   {
     variants: {
       status: {
-        neutral: 'text-opacity-black-600 duration-0',
-        error:
-          'text-solid-red-900 ease-[cubic-bezier(0.72, 0, 0.24, 1)] duration-[160ms] ',
-        success:
-          'text-solid-green-900 ease-[cubic-bezier(0.72, 0, 0.24, 1)] duration-[160ms] ',
+        neutral: 'text-opacity-black-600',
+        error: 'text-solid-red-900',
+        success: 'text-solid-green-900',
       },
     },
   },
