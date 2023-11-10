@@ -1,26 +1,73 @@
+import { HTMLAttributes, ReactNode, forwardRef } from 'react'
+import {
+  BadgeBaseCVA,
+  EmptyBadgeSizeCVA,
+  LabelBadgeSizeCVA,
+  BadgeEmptyClassProps,
+  BadgeLabelClassProps,
+} from './badge.classname'
 import qtMerge from 'qtMerge'
-import { ComponentPropsWithoutRef, forwardRef } from 'react'
-import { basecva } from './badge.classname'
-import { type VariantProps } from 'class-variance-authority'
-import { ExcludeNull } from 'types'
 
-export type BadgeProps = ComponentPropsWithoutRef<'div'> &
-  ExcludeNull<VariantProps<typeof basecva>, 'size' | 'colorStyle'>
+export interface EmptyBadgeProps
+  extends Omit<HTMLAttributes<HTMLDivElement>, 'children'>,
+    BadgeEmptyClassProps {}
 
-const Badge = forwardRef<HTMLDivElement, BadgeProps>(
-  ({ children, className, size, colorStyle, ...rest }, ref) => {
+export interface LabelBadgeProps
+  extends HTMLAttributes<HTMLDivElement>,
+    BadgeLabelClassProps {}
+
+export const EmptyBadge = forwardRef<HTMLDivElement, EmptyBadgeProps>(
+  ({ size, className, colorStyle, ...rest }, ref) => {
     return (
-      <div
-        className={qtMerge(className, basecva({ size, colorStyle }))}
-        {...rest}
+      <span
+        className={qtMerge(
+          BadgeBaseCVA({
+            colorStyle,
+          }),
+          EmptyBadgeSizeCVA({ size }),
+          className,
+        )}
         ref={ref}
-      >
-        {children}
-      </div>
+        {...rest}
+      />
     )
   },
 )
 
-Badge.displayName = 'Badge'
+EmptyBadge.displayName = 'EmptyBadge'
+
+export const LabelBadge = forwardRef<HTMLSpanElement, LabelBadgeProps>(
+  ({ children, size, colorStyle, className, ...rest }, ref) => {
+    return (
+      <span
+        className={qtMerge(
+          BadgeBaseCVA({
+            colorStyle,
+          }),
+          LabelBadgeSizeCVA({ size }),
+          className,
+        )}
+        ref={ref}
+        {...rest}
+      >
+        {children}
+      </span>
+    )
+  },
+)
+
+LabelBadge.displayName = 'LabelBadge'
+
+type BadgeVariants = {
+  Empty: typeof EmptyBadge
+  Label: typeof LabelBadge
+}
+
+export const Badge: BadgeVariants = ({ children }: { children: ReactNode }) => {
+  return <>{children}</>
+}
+
+Badge.Empty = EmptyBadge
+Badge.Label = LabelBadge
 
 export default Badge

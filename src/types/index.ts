@@ -30,6 +30,10 @@ export type ExcludeNull<T, Keys extends keyof T> = {
   [K in keyof T]: K extends Keys ? Exclude<T[K], null> : T[K]
 }
 
+export type ExcludeAllNull<T> = {
+  [K in keyof T]: Exclude<T[K], null>
+}
+
 export type ExcludeNullAndUndefined<T, K extends keyof T> = {
   [P in K]-?: NonNullable<T[P]>
 } & Omit<T, K>

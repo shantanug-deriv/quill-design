@@ -1,14 +1,18 @@
-import { cva } from 'class-variance-authority'
+import { VariantProps, cva } from 'class-variance-authority'
+import { ExcludeAllNull } from 'types'
 
-export const basecva = cva(
-  'rounded-pill inline-flex items-center justify-center font-bold text-solid-slate-50 text-center',
+export type BadgeEmptyClassProps = ExcludeAllNull<
+  VariantProps<typeof BadgeBaseCVA> & VariantProps<typeof EmptyBadgeSizeCVA>
+>
+
+export type BadgeLabelClassProps = ExcludeAllNull<
+  VariantProps<typeof BadgeBaseCVA> & VariantProps<typeof LabelBadgeSizeCVA>
+>
+
+export const BadgeBaseCVA = cva(
+  'rounded-[50%] inline-flex items-center justify-center font-bold text-solid-slate-50 text-center',
   {
     variants: {
-      size: {
-        sm: 'px-[5px] min-h-[8px] min-w-[8px] text-caption',
-        md: 'px-[7px] min-h-[16px] min-w-[16px] text-body-sm',
-        lg: 'px-[10.5px] min-h-[24px] min-w-[24px] text-body-md',
-      },
       colorStyle: {
         success: 'bg-solid-green-700',
         warning: 'bg-solid-yellow-700',
@@ -16,8 +20,33 @@ export const basecva = cva(
       },
     },
     defaultVariants: {
-      size: 'md',
       colorStyle: 'success',
     },
   },
 )
+
+export const EmptyBadgeSizeCVA = cva('', {
+  variants: {
+    size: {
+      sm: 'h-400 w-400',
+      md: 'h-800 w-800',
+      lg: 'h-1200 w-1200',
+    },
+  },
+  defaultVariants: {
+    size: 'md',
+  },
+})
+
+export const LabelBadgeSizeCVA = cva('', {
+  variants: {
+    size: {
+      sm: 'h-900 min-w-[18px] text-caption',
+      md: 'h-1200 min-w-[24px] text-body-sm',
+      lg: 'h-1800 min-w-[36px] text-body-md',
+    },
+  },
+  defaultVariants: {
+    size: 'md',
+  },
+})
