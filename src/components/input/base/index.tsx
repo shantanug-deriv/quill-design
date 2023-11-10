@@ -123,7 +123,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             <div>
               <StatusIcon
                 {...iconSize[inputSize]}
-                fill={statusIconColours[status]}
+                className={statusIconColours[status]}
               />
             </div>
           )}

@@ -37,6 +37,7 @@ describe('SearchField', () => {
     await userEvent.click(input)
     await userEvent.tab()
     expect(onBlur).toHaveBeenCalledTimes(1)
+    expect(input).not.toHaveFocus()
   })
 
   it('It should render a TextField with success status', () => {

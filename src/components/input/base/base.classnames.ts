@@ -28,13 +28,13 @@ export const baseInputWrapperVariants = cva(
         variant: ['fill'],
         status: ['success'],
         className:
-          'bg-opacity-green-100 border-opacity-green-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:bg-opacity-green-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-green-200',
+          'bg-opacity-green-100 border-opacity-green-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:bg-opacity-green-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-green-200 focus-within:bg-opacity-green-100',
       },
       {
         variant: ['fill'],
         status: ['error'],
         className:
-          'bg-opacity-red-100 border-opacity-red-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:bg-opacity-red-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-red-200',
+          'bg-opacity-red-100 border-opacity-red-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:bg-opacity-red-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-red-200 focus-within:bg-opacity-red-100',
       },
     ],
     defaultVariants: {
@@ -51,7 +51,7 @@ export const baseInputVariants = cva(
     variants: {
       alignment: {
         left: 'text-left',
-        center: 'text-center',
+        center: '[&:not(:has(~label))]:text-center',
       },
       variant: {
         fill: '',
@@ -104,9 +104,10 @@ export const statusIconColours: Record<
   Exclude<InputStatus, undefined>,
   string
 > = {
-  neutral: '',
-  error: 'red',
-  success: 'green',
+  neutral: 'fill-opacity-black-600',
+  error: 'fill-solid-red-900',
+
+  success: 'fill-solid-green-900',
 }
 
 export const iconSize: Record<
