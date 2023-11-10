@@ -19,21 +19,9 @@ exports[`<ActionSheet.Root/> should render correctly with position left 1`] = `
       class="flex touch-none items-center justify-center py-400 lg:hidden"
       data-testid="handle-bar"
     >
-      <svg
-        fill="none"
-        height="4"
-        viewBox="0 0 48 4"
-        width="48"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          fill="black"
-          fill-opacity="0.08"
-          height="4"
-          rx="2"
-          width="48"
-        />
-      </svg>
+      <span
+        class="inline-block h-200 w-2400 rounded-100 bg-solid-slate-200"
+      />
     </div>
   </div>
 </div>
@@ -58,21 +46,9 @@ exports[`<ActionSheet.Root/> should render correctly with position right 1`] = `
       class="flex touch-none items-center justify-center py-400 lg:hidden"
       data-testid="handle-bar"
     >
-      <svg
-        fill="none"
-        height="4"
-        viewBox="0 0 48 4"
-        width="48"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          fill="black"
-          fill-opacity="0.08"
-          height="4"
-          rx="2"
-          width="48"
-        />
-      </svg>
+      <span
+        class="inline-block h-200 w-2400 rounded-100 bg-solid-slate-200"
+      />
     </div>
   </div>
 </div>

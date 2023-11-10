@@ -19,7 +19,7 @@ const ActionSheetExample = ({
   }
   return (
     <>
-      <Button onClick={handleToggle}>Click heret</Button>
+      <Button onClick={handleToggle}>Click here</Button>
       <ActionSheet.Root show={show} onClose={handleToggle} {...props}>
         <ActionSheet.Header className="py-400 text-center">
           <div className="relative py-1100">
