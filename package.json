@@ -1,6 +1,6 @@
 {
   "name": "@deriv/quill-design",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "Deriv Quill Design UI library",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -107,14 +107,14 @@
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "@deriv/quill-icons": "1.0.6",
+    "@deriv/quill-icons": "^1.0.8",
+    "@headlessui/react": "^1.7.17",
     "@types/react": "^17.x || ^18.x",
     "class-variance-authority": "^0.7.0",
     "react": "^17.x || ^18.x",
     "react-dom": "^17.x || ^18.x",
     "tailwind-merge": "^1.14.0",
-    "usehooks-ts": "^2.9.1",
-    "@headlessui/react": "^1.7.17"
+    "usehooks-ts": "^2.9.1"
   },
   "dependencies": {
     "@use-gesture/react": "^10.3.0"

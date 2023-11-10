@@ -1,3 +1,48 @@
+## [1.0.30](https://github.com/deriv-com/quill-design/compare/v1.0.29...v1.0.30) (2023-11-09)
+
+
+### ♻️ 	 Chores
+
+* updated quill-icons package ([eef29e3](https://github.com/deriv-com/quill-design/commit/eef29e32ab90673efa12239938385059807ffd03))
+
+## [1.0.29](https://github.com/deriv-com/quill-design/compare/v1.0.28...v1.0.29) (2023-11-09)
+
+
+### ♻️ 	 Chores
+
+* added 75 black and white colors ([bb2036a](https://github.com/deriv-com/quill-design/commit/bb2036a89df3675582df57c45fbfaade436bdecd))
+
+## [1.0.28](https://github.com/deriv-com/quill-design/compare/v1.0.27...v1.0.28) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* fixed the version number of quill-icons ([d9e304a](https://github.com/deriv-com/quill-design/commit/d9e304aaaa605649d5239bb7df6e018b88561afa))
+* updated react package versions ([06fc6c1](https://github.com/deriv-com/quill-design/commit/06fc6c1a0952031208a25cbc7ca1e49898d3078c))
+
+## [1.0.27](https://github.com/deriv-com/quill-design/compare/v1.0.26...v1.0.27) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* added exclude null and undefined type ([05d640a](https://github.com/deriv-com/quill-design/commit/05d640aa562885cf2a19894ba0d49560ba4b3b51))
+
+## [1.0.26](https://github.com/deriv-com/quill-design/compare/v1.0.25...v1.0.26) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* add status icon ([e82f7e2](https://github.com/deriv-com/quill-design/commit/e82f7e20b41f7628fb08caf0321be8f33b6b3de4))
+* disable status change for icon story ([65c8721](https://github.com/deriv-com/quill-design/commit/65c8721175160b516f6530421709cc5ecf97018b))
+* initial commit ([565d6a9](https://github.com/deriv-com/quill-design/commit/565d6a9e6e2d7a2c7fd754d6a8cb5feb8e9c6a5a))
+
+## [1.0.25](https://github.com/deriv-com/quill-design/compare/v1.0.24...v1.0.25) (2023-11-08)
+
+
+### ♻️ 	 Chores
+
+* Fix dropdown chip layout shifting issue ([7bf167a](https://github.com/deriv-com/quill-design/commit/7bf167a54827f8ea522dd984b1cf4032d004a73c))
+
 ## [1.0.24](https://github.com/deriv-com/quill-design/compare/v1.0.23...v1.0.24) (2023-11-06)
 
 
