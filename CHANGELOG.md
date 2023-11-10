@@ -1,3 +1,14 @@
+## [1.0.32](https://github.com/deriv-com/quill-design/compare/v1.0.31...v1.0.32) (2023-11-10)
+
+
+### ♻️ 	 Chores
+
+* change border color for selected chip and udpate test snapshots ([fc27312](https://github.com/deriv-com/quill-design/commit/fc2731222a9ba3d4121ddda788a5b0356fb140b2))
+* Chip component design improvements ([ce904be](https://github.com/deriv-com/quill-design/commit/ce904be47b2743ecc64c4fb8ebc773a665813455))
+* udpate storybook to remove dismissible prop ([7dee7b0](https://github.com/deriv-com/quill-design/commit/7dee7b073ff87681fcdaf35f8fa6c17476e110de))
+* update styles ([30aa5e0](https://github.com/deriv-com/quill-design/commit/30aa5e0358fd6fa9b4aca3d5303ee7c5ca7d6516))
+* update test cases and remove unnecessary ID's ([b13ca1f](https://github.com/deriv-com/quill-design/commit/b13ca1f313726c88c66ae6a6707e824cb7a1ec94))
+
 ## [1.0.31](https://github.com/deriv-com/quill-design/compare/v1.0.30...v1.0.31) (2023-11-10)
 
 
