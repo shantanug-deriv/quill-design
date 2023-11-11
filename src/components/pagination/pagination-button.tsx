@@ -49,7 +49,7 @@ const PaginationButton = ({
   if (pageNumber === DOTS) {
     return (
       <button
-        onClick={(e) => handleOnClick((e.target as HTMLElement).textContent)}
+        onClick={(e) => handleOnClick(e.currentTarget.textContent)}
         disabled
         className={paginationVariants({ variant })}
       >
@@ -61,7 +61,7 @@ const PaginationButton = ({
   return (
     <button
       key={pageNumber}
-      onClick={(e) => handleOnClick((e.target as HTMLElement).textContent)}
+      onClick={(e) => handleOnClick(e.currentTarget.textContent)}
       data-state={currentPage === pageNumber ? 'selected' : ''}
       className={paginationVariants({
         variant,
