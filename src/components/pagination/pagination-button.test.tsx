@@ -72,6 +72,6 @@ describe('Pagination', () => {
 
     await userEvent.click(elPageNumber)
 
-    expect(handleOnClick).toBeCalledWith(pageNumber.toString())
+    expect(handleOnClick).toHaveBeenCalledWith(pageNumber.toString())
   })
 })
