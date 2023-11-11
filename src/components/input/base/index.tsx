@@ -1,8 +1,8 @@
 import { QuillSvgProps } from '@deriv/quill-icons'
 import {
   ForwardRefExoticComponent,
-  HTMLAttributes,
   HTMLInputTypeAttribute,
+  InputHTMLAttributes,
   forwardRef,
 } from 'react'
 import {
@@ -40,7 +40,7 @@ export type InputVariant =
 export type InputTextAlignment =
   baseInputVariantsExcludingNullAndUndefined['alignment']
 
-export interface InputProps extends HTMLAttributes<HTMLInputElement> {
+export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   type?: HTMLInputTypeAttribute
   icon?: ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
   statusIcon?: ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>

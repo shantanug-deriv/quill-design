@@ -144,7 +144,7 @@ exports[`Social Facebook Button Should render Primary Variant 1`] = `
 exports[`Social Facebook Button Should render Secondary Variant 1`] = `
 <div>
   <button
-    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm p-600 gap-300 border-75 border-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200"
+    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer text-typography-prominent rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm p-600 gap-300 border-75 border-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200"
   >
     <svg
       fill="#fff"

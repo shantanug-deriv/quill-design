@@ -59,6 +59,7 @@ export const baseButtonCVA = cva(
     'items-center',
     'justify-center',
     'cursor-pointer',
+    'text-typography-prominent',
   ],
   {
     variants: {

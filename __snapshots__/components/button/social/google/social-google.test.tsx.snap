@@ -3,7 +3,7 @@
 exports[`Social Google Button Should render Default Button 1`] = `
 <div>
   <button
-    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm p-600 gap-300 bg-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200"
+    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer text-typography-prominent rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm p-600 gap-300 bg-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200"
   >
     <svg
       fill="none"
@@ -56,7 +56,7 @@ exports[`Social Google Button Should render Default Button 1`] = `
 exports[`Social Google Button Should render IconButton with className=opacity-50 1`] = `
 <div>
   <button
-    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm p-600 gap-300 bg-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200 opacity-50"
+    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer text-typography-prominent rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm p-600 gap-300 bg-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200 opacity-50"
   >
     <svg
       fill="none"
@@ -109,7 +109,7 @@ exports[`Social Google Button Should render IconButton with className=opacity-50
 exports[`Social Google Button Should render Primary Variant 1`] = `
 <div>
   <button
-    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm p-600 gap-300 bg-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200"
+    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer text-typography-prominent rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm p-600 gap-300 bg-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200"
   >
     <svg
       fill="none"
@@ -162,7 +162,7 @@ exports[`Social Google Button Should render Primary Variant 1`] = `
 exports[`Social Google Button Should render Secondary Variant 1`] = `
 <div>
   <button
-    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm p-600 gap-300 border-75 border-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200"
+    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer text-typography-prominent rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm p-600 gap-300 border-75 border-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200"
   >
     <svg
       fill="none"
@@ -215,7 +215,7 @@ exports[`Social Google Button Should render Secondary Variant 1`] = `
 exports[`Social Google Button Should render no label if hideLabel is true 1`] = `
 <div>
   <button
-    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm bg-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200"
+    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer text-typography-prominent rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm bg-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200"
   >
     <svg
       fill="none"
@@ -263,7 +263,7 @@ exports[`Social Google Button Should render no label if hideLabel is true 1`] = 
 exports[`Social Google Button Should render properly with fullWidth true 1`] = `
 <div>
   <button
-    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer w-full rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm p-600 gap-300 bg-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200"
+    class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer text-typography-prominent w-full rounded-600 h-[32px] min-w-[32px] text-body-sm leading-body-sm p-600 gap-300 bg-opacity-black-100 hover:bg-opacity-black-100 active:bg-opacity-black-200"
   >
     <svg
       fill="none"
