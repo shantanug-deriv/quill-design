@@ -12,6 +12,6 @@ describe('Dismissible Chip', () => {
     )
     const button = screen.getByTestId('dt-chip-dismissable-btn')
     await userEvent.click(button)
-    expect(onClickButton).toBeCalled()
+    expect(onClickButton).toHaveBeenCalled()
   })
 })

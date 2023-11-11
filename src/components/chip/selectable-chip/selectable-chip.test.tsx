@@ -8,13 +8,13 @@ describe('Selectable Chip', () => {
   it('should handle onClick event', async () => {
     const onClickButton = jest.fn()
     render(
-      <SelectableChip size={'sm'} onClick={onClickButton}>
+      <SelectableChip size={'sm'} onChipSelect={onClickButton}>
         Selectable Chip
       </SelectableChip>,
     )
     const button = screen.getByRole('button', { name: /Selectable Chip/i })
     await userEvent.click(button)
-    expect(onClickButton).toBeCalled()
+    expect(onClickButton).toHaveBeenCalled()
   })
 
   it('should not handle onClick event when it is disabled', async () => {
@@ -27,7 +27,7 @@ describe('Selectable Chip', () => {
     const button = screen.getByRole('button', { name: /Selectable Chip/i })
     await userEvent.click(button)
     expect(button).toBeDisabled()
-    expect(onClickButton).not.toBeCalled()
+    expect(onClickButton).not.toHaveBeenCalled()
   })
 
   it('should toggle selected state on clicking the chip', async () => {
@@ -42,7 +42,7 @@ describe('Selectable Chip', () => {
   it('should render correct disabled classname when it is disabled', () => {
     render(<SelectableChip size={'sm'}>Selectable Chip</SelectableChip>)
     const button = screen.getByRole('button', { name: /Selectable Chip/i })
-    expect(button).toHaveClass('disabled:opacity-600')
+    expect(button).toHaveClass('disabled:text-opacity-black-300')
   })
 
   it('should render correct labelTag', () => {
@@ -74,7 +74,7 @@ describe('Selectable Chip', () => {
     )
     const button = screen.getByText('Selectable Chip')
     await userEvent.click(button)
-    expect(onSelect).toBeCalled()
+    expect(onSelect).toHaveBeenCalled()
   })
 
   it('should handle onDismiss for dissmisable chip', async () => {
@@ -86,7 +86,7 @@ describe('Selectable Chip', () => {
     )
     const button = screen.getByTestId('dt-chip-dismissable-btn')
     await userEvent.click(button)
-    expect(onDismiss).toBeCalled()
+    expect(onDismiss).toHaveBeenCalled()
   })
 
   it('should not toggle data-state if chip is dissmisable', async () => {
