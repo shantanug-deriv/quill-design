@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/deriv-com/quill-design/compare/v1.1.2...v1.1.3) (2023-11-11)
+
+
+### ♻️ 	 Chores
+
+* updated fluid container paddings on mobile, tablet ([39adc7c](https://github.com/deriv-com/quill-design/commit/39adc7c39d641ed8eeb772f9884864f4735907f8))
+
 ## [1.1.2](https://github.com/deriv-com/quill-design/compare/v1.1.1...v1.1.2) (2023-11-11)
 
 
