@@ -50,14 +50,14 @@ export const TradeButton = forwardRef<HTMLButtonElement, TradeButtonProps>(
       >
         {iconPosition === 'start' && Icon && (
           <Icon
-            {...buttonIconSize[size ?? 'md']}
+            {...buttonIconSize[size]}
             className={tradeButtonIconFillCVAs({ variant, tradeType })}
           />
         )}
         <span className="flex-1">{children}</span>
         {iconPosition === 'end' && Icon && (
           <Icon
-            {...buttonIconSize[size ?? 'md']}
+            {...buttonIconSize[size]}
             className={tradeButtonIconFillCVAs({ variant, tradeType })}
           />
         )}

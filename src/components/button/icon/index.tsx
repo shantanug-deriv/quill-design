@@ -43,7 +43,7 @@ export const IconButton = forwardRef<HTMLButtonElement, BasicIconButtonProps>(
         {...rest}
       >
         <Icon
-          {...buttonIconSize[size ?? 'md']}
+          {...buttonIconSize[size]}
           className={buttonIconFillCVA({ variant, colorStyle })}
         />
       </button>

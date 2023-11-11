@@ -47,14 +47,14 @@ export const LinkButton = forwardRef<HTMLAnchorElement, LinkButtonProps>(
       >
         {iconPosition === 'start' && Icon && (
           <Icon
-            {...buttonIconSize[size ?? 'md']}
+            {...buttonIconSize[size]}
             className={buttonIconFillCVA({ variant, colorStyle })}
           />
         )}
         <span className="flex-1">{children}</span>
         {iconPosition === 'end' && Icon && (
           <Icon
-            {...buttonIconSize[size ?? 'md']}
+            {...buttonIconSize[size]}
             className={buttonIconFillCVA({ variant, colorStyle })}
           />
         )}

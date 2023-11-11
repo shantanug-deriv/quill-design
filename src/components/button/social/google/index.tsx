@@ -47,7 +47,7 @@ export const SocialGoogleButton = forwardRef<
         {...rest}
         ref={ref}
       >
-        <SocialGoogleBrandIcon {...socialButtonIconSize[size ?? 'md']} />
+        <SocialGoogleBrandIcon {...socialButtonIconSize[size]} />
         {!hideLabel && <span className="flex-1">Google</span>}
       </button>
     )

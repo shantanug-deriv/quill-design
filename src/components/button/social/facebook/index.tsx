@@ -47,10 +47,7 @@ export const FacebookSocialButton = forwardRef<
         {...rest}
         ref={ref}
       >
-        <SocialFacebookBrandIcon
-          {...socialButtonIconSize[size ?? 'md']}
-          fill="#fff"
-        />
+        <SocialFacebookBrandIcon {...socialButtonIconSize[size]} fill="#fff" />
         {!hideLabel && <span className="flex-1">Facebook</span>}
       </button>
     )

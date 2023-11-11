@@ -48,7 +48,7 @@ export const SocialAppleButton = forwardRef<
         ref={ref}
       >
         <SocialAppleBlackIcon
-          {...socialButtonIconSize[size ?? 'md']}
+          {...socialButtonIconSize[size]}
           fill="#fff"
           className={qtJoin(
             variant === 'primary' && '[&>g]:fill-solid-slate-50',
