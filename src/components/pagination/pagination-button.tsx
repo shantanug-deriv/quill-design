@@ -1,17 +1,13 @@
 import {
   StandaloneCircleFillIcon,
   StandaloneEllipsisRegularIcon,
-} from '@deriv/quill-icons'
-import {
-  bulletIconFillVariants,
-  buttonTextVariants,
-  paginationVariants,
-} from './pagination.classnames'
+} from '@deriv/quill-icons/Standalone'
+import { paginationVariants } from './pagination.classnames'
 import { DOTS } from 'hooks/usePaginationRange'
 import { CaptionText } from '..'
 import { PaginationProps } from './pagination.types'
 
-interface PaginationButtonProps<T> extends Pick<PaginationProps<T>, 'variant'> {
+interface PaginationButtonProps extends Pick<PaginationProps, 'variant'> {
   pageNumber: number | string
   currentPage: number
   handleOnClick: (event: string | null) => void
@@ -25,12 +21,12 @@ interface PaginationButtonProps<T> extends Pick<PaginationProps<T>, 'variant'> {
  * @param {number} pageNumber - Page number
  * @param {string} variant - Variant of Pagination
  */
-const PaginationButton = <T,>({
+const PaginationButton = ({
   currentPage,
   handleOnClick,
   pageNumber,
   variant,
-}: PaginationButtonProps<T>) => {
+}: PaginationButtonProps) => {
   if (variant === 'bullet') {
     return (
       <button
@@ -42,9 +38,8 @@ const PaginationButton = <T,>({
             iconSize="sm"
             height={12}
             width={12}
-            className={bulletIconFillVariants({
-              selected: currentPage === pageNumber,
-            })}
+            data-state={currentPage === pageNumber ? 'selected' : ''}
+            className="fill-opacity-black-100 active:fill-opacity-black-200 data-[state=selected]:fill-solid-slate-1400"
           />
         </div>
       </button>
@@ -67,15 +62,14 @@ const PaginationButton = <T,>({
     <button
       key={pageNumber}
       onClick={(e) => handleOnClick((e.target as HTMLElement).textContent)}
+      data-state={currentPage === pageNumber ? 'selected' : ''}
       className={paginationVariants({
         variant,
-        selected: currentPage === pageNumber,
       })}
     >
       <CaptionText
-        className={buttonTextVariants({
-          selected: currentPage === pageNumber,
-        })}
+        data-state={currentPage === pageNumber ? 'selected' : ''}
+        className="text-ellipsis leading-100 text-typography-default data-[state=selected]:text-solid-slate-50"
       >
         {pageNumber}
       </CaptionText>

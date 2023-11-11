@@ -1,13 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import Pagination from '.'
 import { MOCK_DATA } from './mocks/sample-data'
-import { configureMockChild } from './mocks/Post'
+import Blog from './mocks/Blog'
 
 const meta = {
   title: 'Components/Pagination',
   component: Pagination,
   parameters: {
     layout: 'centered',
+    exclude: ['contentLength'],
   },
   tags: ['autodocs'],
   argTypes: {
@@ -26,9 +27,22 @@ const meta = {
         defaultValue: { summary: 1 },
       },
     },
-    dataList: {
-      control: 'object',
-      description: 'Data set that is to be displayed',
+    contentLength: {
+      control: { type: 'number', min: 1 },
+      description: 'Total length of data to be paginated',
+      table: {
+        defaultValue: { summary: 1 },
+      },
+    },
+    className: {
+      control: { type: 'text' },
+      description: 'Styles to be applied to Pagination body',
+    },
+    onPagination: {
+      description: 'Callback function when pagination is triggered',
+      table: {
+        disable: true,
+      },
     },
   },
 } satisfies Meta<typeof Pagination>
@@ -39,19 +53,28 @@ type Story = StoryObj<typeof meta>
 export const NumberPagination: Story = {
   args: {
     contentPerPage: 5,
-    dataList: MOCK_DATA,
     variant: 'number',
     className: 'p-general-sm',
-    children: configureMockChild,
+    contentLength: MOCK_DATA.length,
+    onPagination: () => {},
   },
 }
 
 export const BulletPagination: Story = {
   args: {
     contentPerPage: 20,
-    children: configureMockChild,
-    dataList: MOCK_DATA,
     variant: 'bullet',
     className: 'p-general-sm',
+    contentLength: MOCK_DATA.length,
+    onPagination: () => {},
+  },
+}
+
+export const PaginationImplementation: Story = {
+  render: () => <Blog posts={MOCK_DATA} />,
+  args: {
+    contentPerPage: 5,
+    variant: 'bullet',
+    contentLength: MOCK_DATA.length,
   },
 }

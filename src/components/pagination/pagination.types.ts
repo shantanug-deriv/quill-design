@@ -1,19 +1,21 @@
 import { type VariantProps } from 'class-variance-authority'
 import { paginationVariants } from './pagination.classnames'
 import { ExcludeNull } from 'types'
-import { ReactNode } from 'react'
 
 export type PaginationVariantProps = VariantProps<typeof paginationVariants>
 
-export type TPaginatedData<T> = Array<T & { id: string | number }>
+export type TPaginationEvent = {
+  currentPage: number
+  totalPageCount: number
+}
 
-export interface PaginationProps<T>
+export interface PaginationProps
   extends ExcludeNull<
     Required<Pick<PaginationVariantProps, 'variant'>>,
     'variant'
   > {
-  children: (props: { paginatedData: TPaginatedData<T> }) => ReactNode
   className?: string
   contentPerPage: number
-  dataList: TPaginatedData<T>
+  contentLength: number
+  onPagination: (props: TPaginationEvent) => void
 }

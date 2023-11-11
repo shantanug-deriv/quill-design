@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event'
 import PaginationButton from './pagination-button'
 import { DOTS } from 'hooks/usePaginationRange'
 
-jest.mock('@deriv/quill-icons', () => ({
+jest.mock('@deriv/quill-icons/Standalone', () => ({
   StandaloneEllipsisRegularIcon: () => <div>...</div>,
   StandaloneCircleFillIcon: () => <div>O</div>,
 }))

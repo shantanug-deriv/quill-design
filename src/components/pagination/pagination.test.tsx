@@ -1,11 +1,8 @@
 import { render, screen } from 'test-utils'
 import userEvent from '@testing-library/user-event'
 import Pagination from '.'
-import { MOCK_DATA } from './mocks/sample-data'
-import { configureMockChild } from './mocks/Post'
-// import Post from './mocks/Post'
 
-jest.mock('@deriv/quill-icons', () => ({
+jest.mock('@deriv/quill-icons/Standalone', () => ({
   StandaloneChevronLeftRegularIcon: () => <div>Previous</div>,
   StandaloneChevronRightRegularIcon: () => <div>Next</div>,
   StandaloneEllipsisRegularIcon: () => <div>...</div>,
@@ -13,11 +10,16 @@ jest.mock('@deriv/quill-icons', () => ({
 }))
 
 describe('Pagination', () => {
+  const mockOnPagination = jest.fn()
+
   it('should render Previous and next navigation buttons and page numbers', () => {
     render(
-      <Pagination contentPerPage={5} dataList={MOCK_DATA} variant="number">
-        {configureMockChild}
-      </Pagination>,
+      <Pagination
+        contentPerPage={5}
+        contentLength={50}
+        variant="number"
+        onPagination={mockOnPagination}
+      />,
     )
 
     const elPreviousButton = screen.getByRole('button', { name: /previous/i })
@@ -31,9 +33,12 @@ describe('Pagination', () => {
 
   it('should render Previous and next navigation buttons and bullet points', () => {
     render(
-      <Pagination contentPerPage={5} dataList={MOCK_DATA} variant="bullet">
-        {configureMockChild}
-      </Pagination>,
+      <Pagination
+        contentPerPage={5}
+        contentLength={50}
+        variant="bullet"
+        onPagination={mockOnPagination}
+      />,
     )
 
     const elPreviousButton = screen.getByRole('button', { name: /previous/i })
@@ -47,9 +52,12 @@ describe('Pagination', () => {
 
   it('should disable Previous button when current page is 1', () => {
     render(
-      <Pagination contentPerPage={5} dataList={MOCK_DATA} variant="number">
-        {configureMockChild}
-      </Pagination>,
+      <Pagination
+        contentPerPage={5}
+        contentLength={50}
+        variant="number"
+        onPagination={mockOnPagination}
+      />,
     )
 
     const elPreviousButton = screen.getByRole('button', { name: /previous/i })
@@ -59,9 +67,12 @@ describe('Pagination', () => {
 
   it('should disable Next button when current page is last page', async () => {
     render(
-      <Pagination contentPerPage={10} dataList={MOCK_DATA} variant="number">
-        {configureMockChild}
-      </Pagination>,
+      <Pagination
+        contentPerPage={10}
+        contentLength={50}
+        variant="number"
+        onPagination={mockOnPagination}
+      />,
     )
 
     const elNextButton = screen.getByRole('button', { name: /next/i })
@@ -76,9 +87,12 @@ describe('Pagination', () => {
 
   it('should render disabled ellipses button when total page count is more than 5', () => {
     render(
-      <Pagination contentPerPage={5} dataList={MOCK_DATA} variant="number">
-        {configureMockChild}
-      </Pagination>,
+      <Pagination
+        contentPerPage={5}
+        contentLength={50}
+        variant="number"
+        onPagination={mockOnPagination}
+      />,
     )
 
     const elEllipsesButton = screen.getByRole('button', { name: /\.\.\./i })
@@ -86,45 +100,28 @@ describe('Pagination', () => {
     expect(elEllipsesButton).toBeDisabled()
   })
 
-  it('should select correct page number when a particular page is clicked', async () => {
+  it('should trigger onPagination event when page is changed', async () => {
     render(
-      <Pagination contentPerPage={10} dataList={MOCK_DATA} variant="number">
-        {configureMockChild}
-      </Pagination>,
-    )
-
-    const elPageButtonOne = screen.getByRole('button', { name: /1/i })
-    const elPageButtonTwo = screen.getByRole('button', { name: /2/i })
-
-    expect(elPageButtonOne).toHaveClass('bg-solid-slate-1400')
-    expect(elPageButtonTwo).not.toHaveClass('bg-solid-slate-1400')
-
-    await userEvent.click(elPageButtonTwo)
-
-    expect(elPageButtonOne).not.toHaveClass('bg-solid-slate-1400')
-    expect(elPageButtonTwo).toHaveClass('bg-solid-slate-1400')
-  })
-
-  it('should be able to navigate to the required page when Previous and Next buttons are clicked', async () => {
-    render(
-      <Pagination contentPerPage={10} dataList={MOCK_DATA} variant="number">
-        {configureMockChild}
-      </Pagination>,
+      <Pagination
+        contentPerPage={10}
+        contentLength={50}
+        variant="bullet"
+        onPagination={mockOnPagination}
+      />,
     )
     const elPreviousButton = screen.getByRole('button', { name: /previous/i })
     const elNextButton = screen.getByRole('button', { name: /next/i })
-    const elPageButtonOne = screen.getByRole('button', { name: /1/i })
-    const elPageButtonTwo = screen.getByRole('button', { name: /2/i })
-
-    expect(elPageButtonOne).toHaveClass('bg-solid-slate-1400')
-    expect(elPageButtonTwo).not.toHaveClass('bg-solid-slate-1400')
 
     await userEvent.click(elNextButton)
-    expect(elPageButtonOne).not.toHaveClass('bg-solid-slate-1400')
-    expect(elPageButtonTwo).toHaveClass('bg-solid-slate-1400')
+    expect(mockOnPagination).toHaveBeenCalledWith({
+      currentPage: 2,
+      totalPageCount: 5,
+    })
 
     await userEvent.click(elPreviousButton)
-    expect(elPageButtonOne).toHaveClass('bg-solid-slate-1400')
-    expect(elPageButtonTwo).not.toHaveClass('bg-solid-slate-1400')
+    expect(mockOnPagination).toHaveBeenCalledWith({
+      currentPage: 1,
+      totalPageCount: 5,
+    })
   })
 })

@@ -1,52 +1,51 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import {
   StandaloneChevronLeftRegularIcon,
   StandaloneChevronRightRegularIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/Standalone'
+import qtMerge from 'qtMerge'
 import { usePaginationRange } from 'hooks/usePaginationRange'
 import PaginationButton from './pagination-button'
-import {
-  navigationIconFillVariants,
-  paginationVariants,
-} from './pagination.classnames'
+import { paginationVariants } from './pagination.classnames'
 import { PaginationProps } from './pagination.types'
 
 /**
  * Component that can divide large lists of data into smaller more manageable pages.
  * @name Pagination
- * @param {string} className- Styles to be applied to Pagination body
- * @param {number} contentPerPage- Number of items to be displayed per page
- * @param {Array} dataList- List of data to be displayed
- * @param {string} variant- Variant of Pagination.
+ * @param className - Styles to be applied to Pagination body
+ * @param contentPerPage - Number of items to be displayed per page
+ * @param contentLength - Total length of data to be paginated
+ * @param onPagination - Function to handle pagination event. It passes an object with currentPage and totalPageCount
+ * @param variant - Variant of Pagination.
  *
  * @example
  * <Pagination className="pagination__container" contentPerPage={10}
- * dataList={dataList} variant="number"
- * >
- * {({ paginatedData }) => (
- *  <ComponentToRender data={paginatedData} />
- * )}
- * </Pagination>
+ * contentLength={100} variant="number" onPagination={handlePagination}>
+ * />
  */
-const Pagination = <T,>({
-  children,
+const Pagination = ({
   className,
   contentPerPage,
-  dataList = [],
+  contentLength,
+  onPagination,
   variant = 'number',
-}: PaginationProps<T>) => {
+}: PaginationProps) => {
   const [currentPage, setCurrentPage] = useState(1)
 
   const totalPageCount = useMemo(() => {
     const dataToDisplay = contentPerPage > 0 ? contentPerPage : 1
-    return Math.ceil(dataList.length / dataToDisplay)
-  }, [dataList.length, contentPerPage])
+    return Math.ceil(contentLength / dataToDisplay)
+  }, [contentLength, contentPerPage])
 
   const paginationRange = usePaginationRange({
     totalPageCount,
     currentPage,
     variant,
   })
+
+  useEffect(() => {
+    onPagination({ currentPage, totalPageCount })
+  }, [currentPage, onPagination, totalPageCount])
 
   const goToNextPage = () => setCurrentPage((page) => page + 1)
 
@@ -57,51 +56,40 @@ const Pagination = <T,>({
     setCurrentPage(pageNumber)
   }
 
-  const paginatedData = useMemo(() => {
-    const startIndex = currentPage * contentPerPage - contentPerPage
-    const endIndex = startIndex + contentPerPage
-    return dataList.slice(startIndex, endIndex)
-  }, [contentPerPage, currentPage, dataList])
-
   return (
-    <div className="row-auto grid">
-      <section className={className}>{children({ paginatedData })}</section>
-      <section className="flex items-center justify-center gap-400">
-        <button
-          onClick={gotToPreviousPage}
-          disabled={currentPage === 1}
-          className={paginationVariants({ variant })}
-        >
-          <StandaloneChevronLeftRegularIcon
-            iconSize="sm"
-            className={navigationIconFillVariants({
-              disabled: currentPage === 1,
-            })}
-          />
-        </button>
-        {paginationRange.map((pageNumber, index) => (
-          <PaginationButton
-            key={`${pageNumber}_${index}`}
-            pageNumber={pageNumber}
-            variant={variant}
-            currentPage={currentPage}
-            handleOnClick={changePage}
-          />
-        ))}
-        <button
-          onClick={goToNextPage}
-          disabled={currentPage === totalPageCount}
-          className={paginationVariants({ variant })}
-        >
-          <StandaloneChevronRightRegularIcon
-            iconSize="sm"
-            className={navigationIconFillVariants({
-              disabled: currentPage === totalPageCount,
-            })}
-          />
-        </button>
-      </section>
-    </div>
+    <section
+      className={qtMerge('flex items-center justify-center gap-400', className)}
+    >
+      <button
+        onClick={gotToPreviousPage}
+        disabled={currentPage === 1}
+        className={paginationVariants({ variant })}
+      >
+        <StandaloneChevronLeftRegularIcon
+          iconSize="sm"
+          className="fill-solid-slate-1400 group-disabled:fill-opacity-black-300"
+        />
+      </button>
+      {paginationRange.map((pageNumber, index) => (
+        <PaginationButton
+          key={`${pageNumber}_${index}`}
+          pageNumber={pageNumber}
+          variant={variant}
+          currentPage={currentPage}
+          handleOnClick={changePage}
+        />
+      ))}
+      <button
+        onClick={goToNextPage}
+        disabled={currentPage === totalPageCount}
+        className={paginationVariants({ variant })}
+      >
+        <StandaloneChevronRightRegularIcon
+          iconSize="sm"
+          className="fill-solid-slate-1400 group-disabled:fill-opacity-black-300"
+        />
+      </button>
+    </section>
   )
 }
 
