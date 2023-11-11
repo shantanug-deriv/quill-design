@@ -1,3 +1,11 @@
+## [1.1.5](https://github.com/deriv-com/quill-design/compare/v1.1.4...v1.1.5) (2023-11-11)
+
+
+### ♻️ 	 Chores
+
+* updated buttons, chip typography ([2c4dbdd](https://github.com/deriv-com/quill-design/commit/2c4dbddf7e9061ee7714c37e27b9b1d9d98744b5))
+* using semantic tokens for chips typography color ([f587d43](https://github.com/deriv-com/quill-design/commit/f587d4351570a3809ed24e7bcfc6fc7594cc1a5e))
+
 ## [1.1.4](https://github.com/deriv-com/quill-design/compare/v1.1.3...v1.1.4) (2023-11-11)
 
 
