@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { useDrag } from '@use-gesture/react'
-
-const windowHeight = window.innerHeight
+import { useMediaQuery } from 'usehooks-ts'
 
 type SwipeBlockType = {
   show: boolean
@@ -9,21 +8,27 @@ type SwipeBlockType = {
 }
 
 export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
-  const [height, setheight] = useState('auto')
+  const [height, setHeight] = useState('auto')
   const containerRef = useRef<HTMLDivElement>(null)
 
+  // TODO: replace this with useScreens when @aizad-deriv is done with it.
+  const isLg = useMediaQuery('(min-width: 1024px)')
+
   useEffect(() => {
-    const isLg = window.matchMedia('(min-width: 1024px)').matches
     if (isLg) {
-      setheight('100%')
+      setHeight('100%')
     }
     if (!isLg && show) {
-      setheight('auto')
+      setHeight('auto')
     }
-  }, [show])
+  }, [show, isLg])
 
   const bindHandle = useDrag(
     ({ dragging, distance, initial, xy }) => {
+      // TODO: @hasan-deriv, we might have to rethink this logic a little bit. for now I'm going to move the windowHeight here
+      const windowHeight =
+        typeof window !== 'undefined' ? window.innerHeight : 0
+
       const clientHeight = containerRef.current?.clientHeight || 0
       let draggingPoint = clientHeight
       const isGoingDown = initial[1] < xy[1]
@@ -35,27 +40,27 @@ export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
       }
 
       if (dragging) {
-        setheight(`${draggingPoint}px`)
+        setHeight(`${draggingPoint}px`)
       } else {
         if (!isGoingDown) {
           if (draggingPoint >= 0 && draggingPoint <= windowHeight * 0.3) {
-            setheight(`${windowHeight * 0.3}px`)
+            setHeight(`${windowHeight * 0.3}px`)
           } else if (
             draggingPoint >= windowHeight * 0.3 &&
             draggingPoint <= windowHeight * 0.5
           ) {
-            setheight(`${windowHeight * 0.5}px`)
+            setHeight(`${windowHeight * 0.5}px`)
           } else {
-            setheight(`${windowHeight * 0.7}px`)
+            setHeight(`${windowHeight * 0.7}px`)
           }
         } else {
           if (draggingPoint <= windowHeight * 0.3) {
-            setheight('0px')
+            setHeight('0px')
             onClose()
           } else if (draggingPoint <= windowHeight * 0.5) {
-            setheight(`${windowHeight * 0.3}px`)
+            setHeight(`${windowHeight * 0.3}px`)
           } else {
-            setheight(`${windowHeight * 0.5}px`)
+            setHeight(`${windowHeight * 0.5}px`)
           }
         }
       }
