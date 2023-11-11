@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/deriv-com/quill-design/compare/v1.1.3...v1.1.4) (2023-11-11)
+
+
+### 🐛 	 Bug Fixes
+
+* updated logic in useSwipeBlock to be SSR/SSG friendly ([6e38b9c](https://github.com/deriv-com/quill-design/commit/6e38b9ca2fe04a2c25dc989003a9d3739a2e63aa))
+
 ## [1.1.3](https://github.com/deriv-com/quill-design/compare/v1.1.2...v1.1.3) (2023-11-11)
 
 
