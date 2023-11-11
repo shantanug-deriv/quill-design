@@ -1,3 +1,17 @@
+## [1.1.1](https://github.com/deriv-com/quill-design/compare/v1.1.0...v1.1.1) (2023-11-11)
+
+
+### ♻️ 	 Chores
+
+* add test case for disabled input ([6b3ca20](https://github.com/deriv-com/quill-design/commit/6b3ca20b691d517f7f82141760629f2fe2fdc227))
+* add tests cases ([e974678](https://github.com/deriv-com/quill-design/commit/e974678beb4265e4fe5d0f452e4d57fcbcf8f1ce))
+* add transparent to color config ([d2fb0c2](https://github.com/deriv-com/quill-design/commit/d2fb0c2b6719c43412e3456db9fbe964412df47b))
+* remove default webkit and ms search box styles ([d065268](https://github.com/deriv-com/quill-design/commit/d0652681b52f188d717ed5cf5baf270356911e16))
+* replace js with css ([43868a2](https://github.com/deriv-com/quill-design/commit/43868a23210cb0d32ef311a31cdb9a489c5a6e08))
+* update snapshot ([a318409](https://github.com/deriv-com/quill-design/commit/a318409a90688052a9b7d4ec5dfb146d707a92b6))
+* update stories and status icon colors ([57969cb](https://github.com/deriv-com/quill-design/commit/57969cba5fb666116d5c478652bde4c206f190c6))
+* use qtjoin instead of qtmerge ([e5292c9](https://github.com/deriv-com/quill-design/commit/e5292c98264c84a179b6c75661d138295d65d27d))
+
 # [1.1.0](https://github.com/deriv-com/quill-design/compare/v1.0.32...v1.1.0) (2023-11-10)
 
 
