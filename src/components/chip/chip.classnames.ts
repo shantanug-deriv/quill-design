@@ -4,9 +4,9 @@ import { cva } from 'class-variance-authority'
 export const chipBaseVariant = cva('', {
   variants: {
     size: {
-      sm: ['px-600', 'py-[3px]', 'text-50', 'gap-x-400'],
-      md: ['px-800', 'py-[5px]', 'text-75', 'gap-x-400'],
-      lg: ['px-1200', 'py-[7px]', 'text-100', 'gap-x-400'],
+      sm: ['px-600', 'py-[3px]', 'text-50', 'gap-x-400', 'max-h-1200'],
+      md: ['px-800', 'py-[5px]', 'text-75', 'gap-x-400', 'max-h-1600'],
+      lg: ['px-1200', 'py-[7px]', 'text-100', 'gap-x-400', 'max-h-2400'],
     },
     dismissible: {
       true: ['cursor-default'],
@@ -55,7 +55,7 @@ export const ChipStandaloneIconSizes: Record<
 }
 
 export const chipBaseClassnames =
-  'disabled:bg-opacity-black-0 disabled:text-opacity-black-300 disabled:fill-opacity-black-300 rounded-4800 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 data-[state=selected]:border-solid-slate-1200 enabled:hover:bg-opacity-black-100 enabled:hover:text-opacity-black-600 data-[state=selected]:enabled:bg-solid-slate-1200'
+  'disabled:bg-opacity-black-0 text-typography-default disabled:text-opacity-black-300 disabled:fill-opacity-black-300 rounded-4800 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 data-[state=selected]:border-solid-slate-1200 enabled:hover:bg-opacity-black-100 enabled:hover:text-opacity-black-600 data-[state=selected]:enabled:bg-solid-slate-1200'
 
 export const chipBaseTextColorClassnames =
   'data-[state=selected]:enabled:text-solid-slate-50 data-[state=selected]:enabled:fill-solid-slate-50'

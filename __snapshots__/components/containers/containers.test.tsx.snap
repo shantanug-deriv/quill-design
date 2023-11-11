@@ -11,7 +11,7 @@ exports[`FixContainer should render correctly 1`] = `
 exports[`FluidContainer should render correctly 1`] = `
 <div>
   <div
-    class="mx-auto w-full max-w-[1232px] px-general-md 2xl:px-general-none"
+    class="mx-auto w-full max-w-[1232px] px-800 md:px-1200 lg:px-general-none"
   />
 </div>
 `;
