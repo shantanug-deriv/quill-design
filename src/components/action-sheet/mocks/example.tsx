@@ -2,7 +2,7 @@
 import { ComponentProps, useState } from 'react'
 import { StandaloneXmarkRegularIcon } from '@deriv/quill-icons/Standalone'
 import ActionSheet from '..'
-import Button from 'components/button'
+import { Button } from 'index'
 
 const ActionSheetExample = ({
   show: _show,

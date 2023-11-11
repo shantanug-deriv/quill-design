@@ -1,7 +1,7 @@
 import qtMerge from 'qtMerge'
-import { Button } from '../../button'
 import { actionSheetFooterCVA } from '../action-sheet.classnames'
 import { FooterProps } from '../types'
+import Button from '../../button/basic'
 
 const Footer = ({
   primaryAction,

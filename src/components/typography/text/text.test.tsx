@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react'
 import { Text } from '.'
-import { TextSize } from 'types'
+import { BodyTextSizeProps } from './text.classes'
 
-const textSizes: TextSize[] = ['sm', 'md', 'lg', 'xl']
+const textSizes: BodyTextSizeProps['size'][] = ['sm', 'md', 'lg', 'xl']
 
 describe('Text', () => {
   it('should display correct content', () => {

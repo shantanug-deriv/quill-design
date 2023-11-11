@@ -3,7 +3,7 @@
 exports[`Text should display content with default classnames 1`] = `
 <div>
   <p
-    class="text-body-md space-y-paragraphSpacing-body-md leading-body-md font-regular not-italic text-typography-prominent"
+    class="font-regular text-typography-prominent text-body-md leading-body-md space-y-paragraphSpacing-body-md"
   >
     Text content
   </p>
@@ -13,7 +13,7 @@ exports[`Text should display content with default classnames 1`] = `
 exports[`Text should have correct classnames with bold enabled 1`] = `
 <div>
   <p
-    class="text-body-md space-y-paragraphSpacing-body-md leading-body-md font-bold not-italic text-typography-prominent"
+    class="font-bold text-typography-prominent text-body-md leading-body-md space-y-paragraphSpacing-body-md"
   >
     Text content
   </p>
@@ -23,7 +23,7 @@ exports[`Text should have correct classnames with bold enabled 1`] = `
 exports[`Text should have correct classnames with italic enabled 1`] = `
 <div>
   <p
-    class="text-body-md space-y-paragraphSpacing-body-md leading-body-md font-regular italic text-typography-prominent"
+    class="font-regular italic text-typography-prominent text-body-md leading-body-md space-y-paragraphSpacing-body-md"
   >
     Text content
   </p>
@@ -33,7 +33,7 @@ exports[`Text should have correct classnames with italic enabled 1`] = `
 exports[`Text should have correct classnames with size lg 1`] = `
 <div>
   <p
-    class="text-body-lg space-y-paragraphSpacing-body-lg leading-body-lg font-regular not-italic text-typography-prominent"
+    class="font-regular text-typography-prominent text-body-lg leading-body-lg space-y-paragraphSpacing-body-lg"
   >
     Text content
   </p>
@@ -43,7 +43,7 @@ exports[`Text should have correct classnames with size lg 1`] = `
 exports[`Text should have correct classnames with size md 1`] = `
 <div>
   <p
-    class="text-body-md space-y-paragraphSpacing-body-md leading-body-md font-regular not-italic text-typography-prominent"
+    class="font-regular text-typography-prominent text-body-md leading-body-md space-y-paragraphSpacing-body-md"
   >
     Text content
   </p>
@@ -53,7 +53,7 @@ exports[`Text should have correct classnames with size md 1`] = `
 exports[`Text should have correct classnames with size sm 1`] = `
 <div>
   <p
-    class="text-body-sm space-y-paragraphSpacing-body-sm leading-body-sm font-regular not-italic text-typography-prominent"
+    class="font-regular text-typography-prominent text-body-sm leading-body-sm space-y-paragraphSpacing-body-sm"
   >
     Text content
   </p>
@@ -63,7 +63,7 @@ exports[`Text should have correct classnames with size sm 1`] = `
 exports[`Text should have correct classnames with size xl 1`] = `
 <div>
   <p
-    class="text-body-xl space-y-paragraphSpacing-body-xl leading-body-xl font-regular not-italic text-typography-prominent"
+    class="font-regular text-typography-prominent text-body-xl leading-body-xl space-y-paragraphSpacing-body-xl"
   >
     Text content
   </p>
@@ -73,7 +73,7 @@ exports[`Text should have correct classnames with size xl 1`] = `
 exports[`Text should have correct classnames with size xl and type underline 1`] = `
 <div>
   <p
-    class="text-body-xl space-y-paragraphSpacing-body-xl leading-body-xl font-regular not-italic underline text-typography-prominent"
+    class="font-regular underline text-typography-prominent text-body-xl leading-body-xl space-y-paragraphSpacing-body-xl"
   >
     Text content
   </p>
