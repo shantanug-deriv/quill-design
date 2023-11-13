@@ -18,6 +18,9 @@ export const linkItemCva = cva('inline-flex items-center gap-500', {
       true: 'opacity-300 cursor-none pointer-events-none',
     },
   },
+  defaultVariants: {
+    size: 'md',
+  },
 })
 
 export const linkItemIconCva = cva('', {

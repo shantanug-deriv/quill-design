@@ -1,6 +1,6 @@
 import { render, screen } from 'test-utils'
 import LinkItem from '.'
-import { colorStyle, disabled, size } from './types'
+import { colorStyle, LinkItemDisabled, LinkItemTestSize } from './types'
 import { StandaloneArrowLeftBoldIcon } from '@deriv/quill-icons/Standalone'
 
 describe('LinkItem', () => {
@@ -37,7 +37,7 @@ describe('LinkItem', () => {
     })
   })
 
-  const sizes: size[] = ['caption', 'sm', 'md', 'lg', 'xl']
+  const sizes: LinkItemTestSize[] = ['caption', 'sm', 'md', 'lg', 'xl']
   sizes.forEach((size) => {
     it(`should render correctly with ${size} size`, () => {
       render(<LinkItem size={size}>Click me - {size}</LinkItem>)
@@ -46,7 +46,7 @@ describe('LinkItem', () => {
     })
   })
 
-  const disabled: disabled[] = [true, false]
+  const disabled: LinkItemDisabled[] = [true, false]
   disabled.forEach((dis) => {
     it(`should render correctly with disabled ${dis}`, () => {
       render(<LinkItem disabled={dis}>Click me disabled</LinkItem>)

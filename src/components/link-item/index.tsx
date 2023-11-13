@@ -10,7 +10,7 @@ import {
 import { LabelPairedChevronRightRegularIcon } from '@deriv/quill-icons/LabelPaired'
 import { LinkItemProps } from './types'
 
-export const LinkItem = forwardRef<HTMLAnchorElement, LinkItemProps>(
+export const LinkItem = forwardRef<HTMLSpanElement, LinkItemProps>(
   (
     {
       className,
