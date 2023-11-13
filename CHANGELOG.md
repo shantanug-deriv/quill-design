@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/deriv-com/quill-design/compare/v1.1.7...v1.1.8) (2023-11-13)
+
+
+### ♻️ 	 Chores
+
+* renamed useScreen to useBreakpoints ([93bda54](https://github.com/deriv-com/quill-design/commit/93bda5436b0832601bfae0f7cab8d64d30d65f97))
+
 ## [1.1.7](https://github.com/deriv-com/quill-design/compare/v1.1.6...v1.1.7) (2023-11-13)
 
 
