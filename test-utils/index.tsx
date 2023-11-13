@@ -9,13 +9,13 @@ import {
   renderHook,
 } from '@testing-library/react'
 import { ThemeProvider } from '../src'
-import { ScreenProvider } from '../src'
+import { BreakpointProvider } from '../src'
 
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ScreenProvider>
+    <BreakpointProvider>
       <ThemeProvider theme="light">{children}</ThemeProvider>
-    </ScreenProvider>
+    </BreakpointProvider>
   )
 }
 
