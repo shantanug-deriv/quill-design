@@ -5,7 +5,7 @@ import {
   StandaloneAppStoreIcon,
   StandaloneAppStoreIosIcon,
   StandaloneArrowDownAZBoldIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/Standalone'
 import { Heading } from 'components/typography'
 
 const meta = {

@@ -1,12 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Elevate } from '.'
+
+import { Heading } from 'components/typography'
 import {
   StandaloneAndroidIcon,
   StandaloneAppStoreIcon,
   StandaloneAppStoreIosIcon,
   StandaloneArrowDownAZBoldIcon,
-} from '@deriv/quill-icons'
-import { Heading } from 'components/typography'
+} from '@deriv/quill-icons/Standalone'
 
 const meta = {
   title: 'Components/Accordion/Elevate',
