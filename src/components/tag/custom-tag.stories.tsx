@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { LabelPairedPlaceholderRegularIcon } from '@deriv/quill-icons'
+import { LabelPairedPlaceholderRegularIcon } from '@deriv/quill-icons/LabelPaired'
 
 import Tag from '.'
 const meta = {

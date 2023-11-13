@@ -8,23 +8,17 @@ import {
   LabelPairedCircleExclamationRegularIcon,
   LabelPairedCircleCheckRegularIcon,
   LabelPairedCircleInfoRegularIcon,
-  QuillSvgProps,
-} from '@deriv/quill-icons'
-import { ExcludeNull } from 'types'
+} from '@deriv/quill-icons/LabelPaired'
+import { ExcludeAllNull, QuillIconComponent } from 'types'
 
-export type BaseTagProps = ExcludeNull<
-  VariantProps<typeof TagClassNamesCVA>,
-  'colorStyle' | 'isBold' | 'variant'
+export type BaseTagProps = ExcludeAllNull<VariantProps<typeof TagClassNamesCVA>>
+export type BaseTagIconProps = ExcludeAllNull<
+  VariantProps<typeof TagIconFillCVA>
 >
-export type BaseTagIconProps = ExcludeNull<
-  VariantProps<typeof TagIconFillCVA>,
-  'colorStyle'
+export type BaseTagSizeProps = ExcludeAllNull<VariantProps<typeof TagSizeCVA>>
+export type TagProps = ExcludeAllNull<
+  BaseTagProps & BaseTagIconProps & BaseTagSizeProps
 >
-export type BaseTagSizeProps = ExcludeNull<
-  VariantProps<typeof TagSizeCVA>,
-  'size'
->
-export type TagProps = BaseTagProps & BaseTagIconProps & BaseTagSizeProps
 
 export const TagIconFillCVA = cva('', {
   variants: {
@@ -118,8 +112,8 @@ export const TagClassNamesCVA = cva(
 export const TagIcons: Record<
   Exclude<NonNullable<BaseTagProps['colorStyle']>, 'custom'>,
   {
-    bold: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
-    regular: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
+    bold: QuillIconComponent
+    regular: QuillIconComponent
   }
 > = {
   error: {

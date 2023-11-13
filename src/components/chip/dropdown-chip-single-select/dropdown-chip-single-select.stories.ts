@@ -4,7 +4,7 @@ import {
   LabelPairedCircleInfoBoldIcon,
   LabelPairedAndroidIcon,
   LabelPairedAppleIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/LabelPaired'
 
 const icons: Record<string, object | null> = {
   sample_1: LabelPairedCircleInfoBoldIcon,
@@ -16,7 +16,16 @@ const icons: Record<string, object | null> = {
 const meta = {
   title: 'Chips/Dropdown Chip Single Select',
   component: Chip,
-  parameters: {},
+  parameters: {
+    docs: {
+      story: {
+        height: '250px',
+      },
+    },
+    controls: {
+      exclude: ['dismissible'],
+    },
+  },
   args: {
     defaultOption: { value: '', label: 'Dropdown Chip Single Select' },
     size: 'md',

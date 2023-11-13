@@ -8,7 +8,7 @@ export const FluidContainer = ({
   return (
     <div
       className={qtMerge(
-        'mx-auto w-full max-w-[1232px] px-general-md 2xl:px-general-none',
+        'mx-auto w-full max-w-[1232px] px-800 md:px-1200 lg:px-general-none',
         className,
       )}
       {...rest}

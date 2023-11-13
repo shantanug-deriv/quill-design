@@ -3,7 +3,7 @@ import SearchField from '.'
 import {
   StandaloneCircleCheckBoldIcon,
   StandaloneTriangleExclamationBoldIcon,
-} from '@deriv/quill-icons'
+} from '@deriv/quill-icons/Standalone'
 
 const meta = {
   title: 'Inputs/Search Field',
@@ -12,6 +12,11 @@ const meta = {
     layout: 'centered',
   },
   argTypes: {
+    type: {
+      table: {
+        disable: true,
+      },
+    },
     icon: {
       table: {
         disable: true,
@@ -23,6 +28,11 @@ const meta = {
       },
     },
     statusIcon: {
+      table: {
+        disable: true,
+      },
+    },
+    label: {
       table: {
         disable: true,
       },
@@ -41,7 +51,7 @@ export const DefaultSearchField: Story = {
   },
 }
 
-export const DisabledSearchFieldOutline: Story = {
+export const DisabledSearchField: Story = {
   args: {
     placeholder: 'Placeholder',
     disabled: true,
@@ -49,22 +59,14 @@ export const DisabledSearchFieldOutline: Story = {
   },
 }
 
-export const DisabledSearchFieldFill: Story = {
-  args: {
-    placeholder: 'Placeholder',
-    disabled: true,
-    variant: 'fill',
-  },
-}
-
-export const SuccessSearchFieldOutline: Story = {
+export const SuccessSearchField: Story = {
   args: {
     placeholder: 'Placeholder',
     variant: 'outline',
     status: 'success',
   },
 }
-export const SuccessMessageSearchFieldOutline: Story = {
+export const SuccessMessageSearchField: Story = {
   args: {
     placeholder: 'Placeholder',
     variant: 'outline',
@@ -72,28 +74,30 @@ export const SuccessMessageSearchFieldOutline: Story = {
     leftStatusMessage: 'Success message goes here',
   },
 }
-export const SuccessMessageSearchFieldFill: Story = {
-  args: {
-    placeholder: 'Placeholder',
-    variant: 'outline',
-    status: 'success',
-    leftStatusMessage: 'Success message goes here',
-  },
-}
-export const ErrorSearchFieldOutline: Story = {
+export const ErrorSearchField: Story = {
   args: {
     placeholder: 'Placeholder',
     variant: 'outline',
     status: 'error',
   },
 }
-export const StatusMessageSearchFieldOutline: Story = {
+
+export const SuccessMessageSearchFieldWithIcons: Story = {
   args: {
     placeholder: 'Placeholder',
     variant: 'outline',
     status: 'success',
-    leftStatusMessage: 'Fail message goes here',
-    rightStatusMessage: '0/0',
+    leftStatusMessage: 'Status message goes here',
+    statusIcon: StandaloneCircleCheckBoldIcon,
+  },
+}
+export const ErrorMessageSearchFieldWithIcons: Story = {
+  args: {
+    placeholder: 'Placeholder',
+    variant: 'outline',
+    status: 'error',
+    leftStatusMessage: 'Status message goes here',
+    statusIcon: StandaloneTriangleExclamationBoldIcon,
   },
 }
 

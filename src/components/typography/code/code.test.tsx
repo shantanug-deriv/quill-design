@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react'
 import { CodeText } from '.'
-import { TextSize } from 'types'
+import { BodyTextSizeProps } from '../text/text.classes'
 
-const captionSizes: TextSize[] = ['sm', 'md', 'lg', 'xl']
+const captionSizes: BodyTextSizeProps['size'][] = ['sm', 'md', 'lg', 'xl']
 
 describe('CaptionText', () => {
   it('should display correct content', () => {
