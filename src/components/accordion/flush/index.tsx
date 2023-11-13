@@ -13,4 +13,6 @@ export const Flush = ({ ...otherProps }: AccordionProps) => {
   )
 }
 
+Flush.displayName = 'AccordionFlush'
+
 export default Flush

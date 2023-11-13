@@ -13,4 +13,6 @@ export const Fill = ({ className, ...otherProps }: AccordionProps) => {
   )
 }
 
+Fill.displayName = 'AccordionFill'
+
 export default Fill

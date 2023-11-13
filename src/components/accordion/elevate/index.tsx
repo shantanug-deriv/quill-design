@@ -13,4 +13,6 @@ export const Elevate = ({ className, ...otherProps }: AccordionProps) => {
   )
 }
 
+Elevate.displayName = 'AccordionElevate'
+
 export default Elevate

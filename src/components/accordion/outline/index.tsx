@@ -15,4 +15,6 @@ export const Outline = ({ className, ...otherProps }: AccordionProps) => {
   )
 }
 
+Outline.displayName = 'AccordionOutline'
+
 export default Outline

@@ -146,4 +146,6 @@ export const Base = ({
   )
 }
 
+Base.displayName = 'AccordionBase'
+
 export default Base
