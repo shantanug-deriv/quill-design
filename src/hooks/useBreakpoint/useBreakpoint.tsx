@@ -1,9 +1,9 @@
 import { cleanup, renderHook } from 'test-utils'
 import { setMedia } from 'mock-match-media'
-import { useScreen } from '.'
+import { useBreakpoint } from '.'
 import 'mock-match-media/jest-setup'
 
-describe('useScreen', () => {
+describe('useBreakpoint', () => {
   beforeEach(() => {
     cleanup()
   })
@@ -11,7 +11,7 @@ describe('useScreen', () => {
     setMedia({
       width: '639px',
     })
-    const { result } = renderHook(() => useScreen())
+    const { result } = renderHook(() => useBreakpoint())
 
     expect(result.current.isXs).toBe(true)
     expect(result.current.isSm).toBe(false)
@@ -24,7 +24,7 @@ describe('useScreen', () => {
     setMedia({
       width: '641px',
     })
-    const { result } = renderHook(() => useScreen())
+    const { result } = renderHook(() => useBreakpoint())
 
     expect(result.current.isXs).toBe(false)
     expect(result.current.isSm).toBe(true)
@@ -38,7 +38,7 @@ describe('useScreen', () => {
     setMedia({
       width: '800px',
     })
-    const { result } = renderHook(() => useScreen())
+    const { result } = renderHook(() => useBreakpoint())
 
     expect(result.current.isXs).toBe(false)
     expect(result.current.isSm).toBe(true)
@@ -52,7 +52,7 @@ describe('useScreen', () => {
     setMedia({
       width: '1100px',
     })
-    const { result } = renderHook(() => useScreen())
+    const { result } = renderHook(() => useBreakpoint())
 
     expect(result.current.isXs).toBe(false)
     expect(result.current.isSm).toBe(true)
@@ -66,7 +66,7 @@ describe('useScreen', () => {
     setMedia({
       width: '1300px',
     })
-    const { result } = renderHook(() => useScreen())
+    const { result } = renderHook(() => useBreakpoint())
 
     expect(result.current.isXs).toBe(false)
     expect(result.current.isSm).toBe(true)
@@ -80,7 +80,7 @@ describe('useScreen', () => {
     setMedia({
       width: '1550px',
     })
-    const { result } = renderHook(() => useScreen())
+    const { result } = renderHook(() => useBreakpoint())
 
     expect(result.current.isXs).toBe(false)
     expect(result.current.isSm).toBe(true)
