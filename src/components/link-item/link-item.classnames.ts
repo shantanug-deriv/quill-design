@@ -4,8 +4,18 @@ import { LinkItemSize } from './types'
 export const linkItemCva = cva('inline-flex items-center gap-500', {
   variants: {
     colorStyle: {
-      black: ['text-solid-slate-1400', 'hover:underline', 'active:underline'],
-      white: ['text-solid-slate-50', 'hover:underline', 'active:underline'],
+      black: [
+        'text-solid-slate-1400',
+        'hover:underline',
+        'hover:cursor-pointer',
+        'active:underline',
+      ],
+      white: [
+        'text-solid-slate-50',
+        'hover:underline',
+        'hover:cursor-pointer',
+        'active:underline',
+      ],
     },
     size: {
       caption: 'p-400 text-50',
