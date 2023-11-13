@@ -1,13 +1,17 @@
 import { qtMerge } from 'qtMerge'
-import { forwardRef } from 'react'
-import { BodyTypographyProps, TextSize } from 'types'
+import { HTMLAttributes, forwardRef } from 'react'
+import {
+  BodyTextProps,
+  BodyTextSizeProps,
+  bodyTextCVA,
+  bodyTextParagraphSpacingCVA,
+  bodyTextSizeCVA,
+} from './text.classes'
 
-export const bodyTextSizeClassnames: Record<TextSize, string> = {
-  sm: 'text-body-sm space-y-paragraphSpacing-body-sm leading-body-sm',
-  md: 'text-body-md space-y-paragraphSpacing-body-md leading-body-md',
-  lg: 'text-body-lg space-y-paragraphSpacing-body-lg leading-body-lg',
-  xl: 'text-body-xl space-y-paragraphSpacing-body-xl leading-body-xl',
-}
+export interface BodyTypographyProps
+  extends HTMLAttributes<HTMLParagraphElement>,
+    BodyTextProps,
+    BodyTextSizeProps {}
 
 export const Text = forwardRef<HTMLParagraphElement, BodyTypographyProps>(
   (
@@ -25,11 +29,14 @@ export const Text = forwardRef<HTMLParagraphElement, BodyTypographyProps>(
       <p
         ref={ref}
         className={qtMerge(
-          bodyTextSizeClassnames[size],
-          bold ? 'font-bold' : 'font-regular',
-          italic ? 'italic' : 'not-italic',
-          underline && 'underline',
-          'text-typography-prominent',
+          bodyTextCVA({
+            colorStyle: 'prominent',
+            bold,
+            italic,
+            underline,
+          }),
+          bodyTextSizeCVA({ size }),
+          bodyTextParagraphSpacingCVA({ size }),
           className,
         )}
         {...rest}

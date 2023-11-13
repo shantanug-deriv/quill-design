@@ -2,27 +2,39 @@
 
 exports[`Selectable Chip should render correctly with lg size 1`] = `
 <button
-  class="chipBaseClassnames px-1200 py-[7px] text-100 gap-x-400 cursor-pointer rounded-4800 hover:bg-opacity-black-100 hover:text-opacity-black-600 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 disabled:opacity-600 data-[state=selected]:bg-solid-slate-1200 data-[state=selected]:fill-solid-slate-50 data-[state=selected]:text-solid-slate-50"
+  class="px-1200 py-[7px] text-100 gap-x-400 max-h-2400 cursor-pointer disabled:bg-opacity-black-0 text-typography-default disabled:text-opacity-black-300 disabled:fill-opacity-black-300 rounded-4800 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 data-[state=selected]:border-solid-slate-1200 enabled:hover:bg-opacity-black-100 enabled:hover:text-opacity-black-600 data-[state=selected]:enabled:bg-solid-slate-1200 data-[state=selected]:enabled:text-solid-slate-50 data-[state=selected]:enabled:fill-solid-slate-50"
   data-state=""
 >
-  Chip - lg
+  <div
+    class="transition-transform duration-1000 ease-in-out"
+  >
+    Chip - lg
+  </div>
 </button>
 `;
 
 exports[`Selectable Chip should render correctly with md size 1`] = `
 <button
-  class="chipBaseClassnames px-800 py-[5px] text-75 gap-x-400 cursor-pointer rounded-4800 hover:bg-opacity-black-100 hover:text-opacity-black-600 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 disabled:opacity-600 data-[state=selected]:bg-solid-slate-1200 data-[state=selected]:fill-solid-slate-50 data-[state=selected]:text-solid-slate-50"
+  class="px-800 py-[5px] text-75 gap-x-400 max-h-1600 cursor-pointer disabled:bg-opacity-black-0 text-typography-default disabled:text-opacity-black-300 disabled:fill-opacity-black-300 rounded-4800 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 data-[state=selected]:border-solid-slate-1200 enabled:hover:bg-opacity-black-100 enabled:hover:text-opacity-black-600 data-[state=selected]:enabled:bg-solid-slate-1200 data-[state=selected]:enabled:text-solid-slate-50 data-[state=selected]:enabled:fill-solid-slate-50"
   data-state=""
 >
-  Chip - md
+  <div
+    class="transition-transform duration-1000 ease-in-out"
+  >
+    Chip - md
+  </div>
 </button>
 `;
 
 exports[`Selectable Chip should render correctly with sm size 1`] = `
 <button
-  class="chipBaseClassnames px-600 py-[3px] text-50 gap-x-400 cursor-pointer rounded-4800 hover:bg-opacity-black-100 hover:text-opacity-black-600 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 disabled:opacity-600 data-[state=selected]:bg-solid-slate-1200 data-[state=selected]:fill-solid-slate-50 data-[state=selected]:text-solid-slate-50"
+  class="px-600 py-[3px] text-50 gap-x-400 max-h-1200 cursor-pointer disabled:bg-opacity-black-0 text-typography-default disabled:text-opacity-black-300 disabled:fill-opacity-black-300 rounded-4800 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 data-[state=selected]:border-solid-slate-1200 enabled:hover:bg-opacity-black-100 enabled:hover:text-opacity-black-600 data-[state=selected]:enabled:bg-solid-slate-1200 data-[state=selected]:enabled:text-solid-slate-50 data-[state=selected]:enabled:fill-solid-slate-50"
   data-state=""
 >
-  Chip - sm
+  <div
+    class="transition-transform duration-1000 ease-in-out"
+  >
+    Chip - sm
+  </div>
 </button>
 `;

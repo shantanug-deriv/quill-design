@@ -1,3 +1,156 @@
+## [1.1.5](https://github.com/deriv-com/quill-design/compare/v1.1.4...v1.1.5) (2023-11-11)
+
+
+### ♻️ 	 Chores
+
+* updated buttons, chip typography ([2c4dbdd](https://github.com/deriv-com/quill-design/commit/2c4dbddf7e9061ee7714c37e27b9b1d9d98744b5))
+* using semantic tokens for chips typography color ([f587d43](https://github.com/deriv-com/quill-design/commit/f587d4351570a3809ed24e7bcfc6fc7594cc1a5e))
+
+## [1.1.4](https://github.com/deriv-com/quill-design/compare/v1.1.3...v1.1.4) (2023-11-11)
+
+
+### 🐛 	 Bug Fixes
+
+* updated logic in useSwipeBlock to be SSR/SSG friendly ([6e38b9c](https://github.com/deriv-com/quill-design/commit/6e38b9ca2fe04a2c25dc989003a9d3739a2e63aa))
+
+## [1.1.3](https://github.com/deriv-com/quill-design/compare/v1.1.2...v1.1.3) (2023-11-11)
+
+
+### ♻️ 	 Chores
+
+* updated fluid container paddings on mobile, tablet ([39adc7c](https://github.com/deriv-com/quill-design/commit/39adc7c39d641ed8eeb772f9884864f4735907f8))
+
+## [1.1.2](https://github.com/deriv-com/quill-design/compare/v1.1.1...v1.1.2) (2023-11-11)
+
+
+### ♻️ 	 Chores
+
+* added more test cases ([d61234a](https://github.com/deriv-com/quill-design/commit/d61234aceb26024742098e34cd15d0149d53de1b))
+* added tests for buttons ([e52dd93](https://github.com/deriv-com/quill-design/commit/e52dd935147e7ea8bfbbbe7d8963afbe427ef83b))
+* temp buttons ([4736384](https://github.com/deriv-com/quill-design/commit/473638428c07d7dceed25c889d472d81ec071d16))
+* trade button variants added ([0a00592](https://github.com/deriv-com/quill-design/commit/0a0059227580f9e1d9699369a8d267d578f2db5f))
+* updated QuillIconComponent type ([2e6c82e](https://github.com/deriv-com/quill-design/commit/2e6c82eaada352bcd8807f3818cf285e530e6218))
+* updated social icons ([d9b6d33](https://github.com/deriv-com/quill-design/commit/d9b6d339d358413c768678a9d81025f636c5412c))
+* updated stories and types ([bdf2265](https://github.com/deriv-com/quill-design/commit/bdf2265321f0dadfb3cff5a9a6fb0b5f6778d7d2))
+* updated storybook names ([43e4667](https://github.com/deriv-com/quill-design/commit/43e4667c1346c39c82c74d7b9c0edf06effd0dee))
+* updated storybook names ([2c267bd](https://github.com/deriv-com/quill-design/commit/2c267bdefed5f390a896ccb69edc0ce7fe7f77db))
+* updated trade button test snapshots ([a1b26be](https://github.com/deriv-com/quill-design/commit/a1b26bea58fced37671000b6c82d453633cb6dd3))
+
+## [1.1.1](https://github.com/deriv-com/quill-design/compare/v1.1.0...v1.1.1) (2023-11-11)
+
+
+### ♻️ 	 Chores
+
+* add test case for disabled input ([6b3ca20](https://github.com/deriv-com/quill-design/commit/6b3ca20b691d517f7f82141760629f2fe2fdc227))
+* add tests cases ([e974678](https://github.com/deriv-com/quill-design/commit/e974678beb4265e4fe5d0f452e4d57fcbcf8f1ce))
+* add transparent to color config ([d2fb0c2](https://github.com/deriv-com/quill-design/commit/d2fb0c2b6719c43412e3456db9fbe964412df47b))
+* remove default webkit and ms search box styles ([d065268](https://github.com/deriv-com/quill-design/commit/d0652681b52f188d717ed5cf5baf270356911e16))
+* replace js with css ([43868a2](https://github.com/deriv-com/quill-design/commit/43868a23210cb0d32ef311a31cdb9a489c5a6e08))
+* update snapshot ([a318409](https://github.com/deriv-com/quill-design/commit/a318409a90688052a9b7d4ec5dfb146d707a92b6))
+* update stories and status icon colors ([57969cb](https://github.com/deriv-com/quill-design/commit/57969cba5fb666116d5c478652bde4c206f190c6))
+* use qtjoin instead of qtmerge ([e5292c9](https://github.com/deriv-com/quill-design/commit/e5292c98264c84a179b6c75661d138295d65d27d))
+
+# [1.1.0](https://github.com/deriv-com/quill-design/compare/v1.0.32...v1.1.0) (2023-11-10)
+
+
+### ♻️ 	 Chores
+
+* added actions to footer ([46513de](https://github.com/deriv-com/quill-design/commit/46513de424c2caef704f5e4a53e07e7dd2ff0575))
+* added dragging ([fb227d6](https://github.com/deriv-com/quill-design/commit/fb227d6458c0f07b6c8f3efd2f998e51f022593e))
+* added exclude null and undefined type ([b507cb7](https://github.com/deriv-com/quill-design/commit/b507cb78fc4f22077c40a056e6838c4e0ac9f9dc))
+* added handle bar ([e43f020](https://github.com/deriv-com/quill-design/commit/e43f020b2fecdf9b73d8a8a9f1bd8dc490adde08))
+* added icon to handle bar ([596492f](https://github.com/deriv-com/quill-design/commit/596492f07b4f783c4ddc78e3822fd173a2973431))
+* added min and max width to root ([dd7827b](https://github.com/deriv-com/quill-design/commit/dd7827b2c2282859f44aa75ce5ebc6b55f0760df))
+* added portal ([520d1a6](https://github.com/deriv-com/quill-design/commit/520d1a658c86a0f45d180b97b83507ebe30487b7))
+* added props to handle bar ([fc4b1d7](https://github.com/deriv-com/quill-design/commit/fc4b1d77923c964c2401112974a6f3dc062692af))
+* added side sheet ([d9682c1](https://github.com/deriv-com/quill-design/commit/d9682c1bdec524a0f61a1845098ad2ed479f4e24))
+* added storybook documentation ([627f2df](https://github.com/deriv-com/quill-design/commit/627f2df1daa965df40bd8b02783180ea4dfdc3f4))
+* added test cases for root ([adc495f](https://github.com/deriv-com/quill-design/commit/adc495f81431f07313be3a684227e44becddf3e4))
+* added test cases for useSwipeBlock ([ae26150](https://github.com/deriv-com/quill-design/commit/ae26150c70a9d72f496e1b9fac91a6f7c1a94342))
+* added test for content ([bf10594](https://github.com/deriv-com/quill-design/commit/bf105948bcbdb9ca3dab56d5e7980872b6158015))
+* added test for footer ([feede53](https://github.com/deriv-com/quill-design/commit/feede53b36cb90f22b21908c1b169b60f22f7813))
+* added test for handle bar ([1352e76](https://github.com/deriv-com/quill-design/commit/1352e762d28c8b297490cae68154bceda06a765b))
+* added test for header ([89a6054](https://github.com/deriv-com/quill-design/commit/89a60548b8ea4b05fd46ad450d848a2806a5128d))
+* added transition ([acebb4f](https://github.com/deriv-com/quill-design/commit/acebb4fd61c9509bdfb203c610b5f9416ae1d905))
+* added transition ([0219a89](https://github.com/deriv-com/quill-design/commit/0219a891f813d23237e369b0edbfd2e5eca76ef5))
+* added type ([5bc05f9](https://github.com/deriv-com/quill-design/commit/5bc05f9d70dd9ffae2e7f3f8868b19b16929c856))
+* added use gesture hook ([226b7d7](https://github.com/deriv-com/quill-design/commit/226b7d7dd314c4ac362fefa375d86e877773852c))
+* classname import fix ([895b0f5](https://github.com/deriv-com/quill-design/commit/895b0f58db71b228b00295f2dab00be0ce547168))
+* cva implemented ([1f0a83a](https://github.com/deriv-com/quill-design/commit/1f0a83a1bf537ce78499c34cb58245081e28e7cc))
+* fix deriv icons import ([f6a743f](https://github.com/deriv-com/quill-design/commit/f6a743f4143cd03903ab3e5ed8ca6a81e6a1d460))
+* footer ([f0acec2](https://github.com/deriv-com/quill-design/commit/f0acec2e7830167759df67443709aa553c0f87ce))
+* header ([6f983a6](https://github.com/deriv-com/quill-design/commit/6f983a60b51bd58cf31a0972b3ff304babc4ad2e))
+* implement dot notation ([5a6202c](https://github.com/deriv-com/quill-design/commit/5a6202c4f2b9756a6a5f1b9912e30653566fa1fd))
+* implemented commit suggestion ([62bb394](https://github.com/deriv-com/quill-design/commit/62bb394d3a17906a57c93043d3bac387c697d107))
+* responsive ([ac48123](https://github.com/deriv-com/quill-design/commit/ac4812366bdc84d2e920c665441fe3c435b03f4a))
+* root ([ec327c7](https://github.com/deriv-com/quill-design/commit/ec327c705923e233cc2379c690db338d70d94d9d))
+* typo fix ([b21e4ae](https://github.com/deriv-com/quill-design/commit/b21e4aeb1b308a13972a59de9874a968e237889a))
+* update storybook ([7c9ea45](https://github.com/deriv-com/quill-design/commit/7c9ea45dbbbd13c10243f3be8736e38e70891987))
+* updated cva ([4ee47c3](https://github.com/deriv-com/quill-design/commit/4ee47c34502d4e04e3c48834a9a3691a4bdeba51))
+* updated example ([64670ad](https://github.com/deriv-com/quill-design/commit/64670adfc0300469e03ecaafc83785aafd52c679))
+* updated example ([5e450e1](https://github.com/deriv-com/quill-design/commit/5e450e1bf245bc28bc9800554e1a450ebe00d1ae))
+* updated example ([035e8eb](https://github.com/deriv-com/quill-design/commit/035e8ebf2fba284e04e73f92dfcb4c9baf9337bf))
+* updated package json ([4f63ae3](https://github.com/deriv-com/quill-design/commit/4f63ae3c6226442f931643c25bf9055f57bf4d4a))
+* updated package lock ([239cb52](https://github.com/deriv-com/quill-design/commit/239cb52d185bee61973256dfd5116ea9dab7cf36))
+* updated root ([148ed31](https://github.com/deriv-com/quill-design/commit/148ed31e020a103d68fb89e6187e0fe4f785ecc7))
+* updated snapshot ([719622e](https://github.com/deriv-com/quill-design/commit/719622e62781a9f0b1965b6c25513ad8a94f6662))
+* updated type ([c6fe072](https://github.com/deriv-com/quill-design/commit/c6fe072bb9bfb0d679ca7ab6503814566e9217ae))
+* use swipe block hook added ([af32d38](https://github.com/deriv-com/quill-design/commit/af32d38fb8bf6f3fe8964464536d968227103906))
+
+
+### ✨ 	 Features
+
+* action sheet component created ([60dbc09](https://github.com/deriv-com/quill-design/commit/60dbc098617dde60a5eb07421a0e523572ad296a))
+* action sheet component created ([154e523](https://github.com/deriv-com/quill-design/commit/154e52358a93bcf33951dc1ff9a7bddbecf68bbe))
+* added wrapper classes ([2fee24b](https://github.com/deriv-com/quill-design/commit/2fee24ba92950f3e11b8406512b3d2e722d79adb))
+
+
+### 🐛 	 Bug Fixes
+
+* removed body ([aaf3241](https://github.com/deriv-com/quill-design/commit/aaf32418db9f799550ff9b26808d90cef53d6508))
+* updated body ([5dd343d](https://github.com/deriv-com/quill-design/commit/5dd343dfed619507c6620e3e1a375c71c8a5ea6d))
+
+## [1.0.32](https://github.com/deriv-com/quill-design/compare/v1.0.31...v1.0.32) (2023-11-10)
+
+
+### ♻️ 	 Chores
+
+* change border color for selected chip and udpate test snapshots ([fc27312](https://github.com/deriv-com/quill-design/commit/fc2731222a9ba3d4121ddda788a5b0356fb140b2))
+* Chip component design improvements ([ce904be](https://github.com/deriv-com/quill-design/commit/ce904be47b2743ecc64c4fb8ebc773a665813455))
+* udpate storybook to remove dismissible prop ([7dee7b0](https://github.com/deriv-com/quill-design/commit/7dee7b073ff87681fcdaf35f8fa6c17476e110de))
+* update styles ([30aa5e0](https://github.com/deriv-com/quill-design/commit/30aa5e0358fd6fa9b4aca3d5303ee7c5ca7d6516))
+* update test cases and remove unnecessary ID's ([b13ca1f](https://github.com/deriv-com/quill-design/commit/b13ca1f313726c88c66ae6a6707e824cb7a1ec94))
+
+## [1.0.31](https://github.com/deriv-com/quill-design/compare/v1.0.30...v1.0.31) (2023-11-10)
+
+
+### ♻️ 	 Chores
+
+* added beta to release workflow [skip ci] ([814f9f3](https://github.com/deriv-com/quill-design/commit/814f9f3570e43d7f2ab65b67a8f4bc9dbd0c045f))
+* updated quill-icons to 1.0.9 ([7fc021b](https://github.com/deriv-com/quill-design/commit/7fc021bdfa7ce48561015aeb89f8b25bd7e15b8a))
+* updated to latest quill-icons with main exports ([d9a0cb7](https://github.com/deriv-com/quill-design/commit/d9a0cb7787e3f3d402384ba38796e6cd39e9a8f1))
+
+
+### ⚙️ 	 Continuous Integrations
+
+* release(version): Release 1.0.31-beta.1 [skip ci] ([2849c9f](https://github.com/deriv-com/quill-design/commit/2849c9f97e196ae8ac4d6f9c5b21070f82f10539))
+* release(version): Release 1.0.31-beta.2 [skip ci] ([71a3578](https://github.com/deriv-com/quill-design/commit/71a35789d742e193aea32f3d329fb04366783235))
+
+## [1.0.31-beta.2](https://github.com/deriv-com/quill-design/compare/v1.0.31-beta.1...v1.0.31-beta.2) (2023-11-10)
+
+
+### ♻️ 	 Chores
+
+* updated quill-icons to 1.0.9 ([7fc021b](https://github.com/deriv-com/quill-design/commit/7fc021bdfa7ce48561015aeb89f8b25bd7e15b8a))
+
+## [1.0.31-beta.1](https://github.com/deriv-com/quill-design/compare/v1.0.30...v1.0.31-beta.1) (2023-11-10)
+
+
+### ♻️ 	 Chores
+
+* added beta to release workflow [skip ci] ([814f9f3](https://github.com/deriv-com/quill-design/commit/814f9f3570e43d7f2ab65b67a8f4bc9dbd0c045f))
+* updated to latest quill-icons with main exports ([d9a0cb7](https://github.com/deriv-com/quill-design/commit/d9a0cb7787e3f3d402384ba38796e6cd39e9a8f1))
+
 ## [1.0.30](https://github.com/deriv-com/quill-design/compare/v1.0.29...v1.0.30) (2023-11-09)
 
 

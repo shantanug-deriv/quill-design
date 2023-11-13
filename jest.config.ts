@@ -7,6 +7,7 @@ const config: JestConfigWithTsJest = {
     '!./src/**/*.stories.{js,jsx,ts,tsx}',
     '!./src/qt-merge/**/*.{js,jsx,ts,tsx}',
     '!**/node_modules/**',
+    '!./src/**/mocks/**',
   ],
   coverageReporters: ['lcov'],
   coverageDirectory: './coverage/',

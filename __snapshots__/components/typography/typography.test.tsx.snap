@@ -83,7 +83,7 @@ exports[`Heading Should render h7 Heading with h7 1`] = `
 exports[`Text Should display correct content 1`] = `
 <div>
   <p
-    class="text-body-md space-y-paragraphSpacing-body-md leading-body-md font-regular not-italic text-typography-prominent"
+    class="font-regular text-typography-prominent text-body-md leading-body-md space-y-paragraphSpacing-body-md"
   >
     Text content
   </p>

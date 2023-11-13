@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ActionSheet.Root/> should render correctly with position left 1`] = `
+<div
+  aria-label="left root"
+  class="pointer-events-none fixed inset-general-none z-10 flex select-none items-end justify-center overflow-x-hidden transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)] data-[state=close]:invisible"
+  data-state="open"
+  role="dialog"
+>
+  <div
+    class="pointer-events-auto fixed inset-50 -z-10 bg-opacity-black-500 transition-opacity duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
+    data-testid="modal-overlay"
+  />
+  <div
+    class="pointer-events-auto relative z-20 mx-auto flex max-h-[70vh] min-w-[320px] max-w-[800px] flex-col overflow-y-auto rounded-t-800 bg-background-dialog px-800 pb-800 transition-all lg:max-h-full lg:max-w-[360px] lg:rounded-50 lg:ml-50 lg:-translate-x-50"
+    style="height: auto;"
+  >
+    <div
+      class="flex touch-none items-center justify-center py-400 lg:hidden"
+      data-testid="handle-bar"
+    >
+      <span
+        class="inline-block h-200 w-2400 rounded-100 bg-solid-slate-200"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ActionSheet.Root/> should render correctly with position right 1`] = `
+<div
+  aria-label="right root"
+  class="pointer-events-none fixed inset-general-none z-10 flex select-none items-end justify-center overflow-x-hidden transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)] data-[state=close]:invisible"
+  data-state="open"
+  role="dialog"
+>
+  <div
+    class="pointer-events-auto fixed inset-50 -z-10 bg-opacity-black-500 transition-opacity duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
+    data-testid="modal-overlay"
+  />
+  <div
+    class="pointer-events-auto relative z-20 mx-auto flex max-h-[70vh] min-w-[320px] max-w-[800px] flex-col overflow-y-auto rounded-t-800 bg-background-dialog px-800 pb-800 transition-all lg:max-h-full lg:max-w-[360px] lg:rounded-50 lg:mr-50 lg:translate-x-50"
+    style="height: auto;"
+  >
+    <div
+      class="flex touch-none items-center justify-center py-400 lg:hidden"
+      data-testid="handle-bar"
+    >
+      <span
+        class="inline-block h-200 w-2400 rounded-100 bg-solid-slate-200"
+      />
+    </div>
+  </div>
+</div>
+`;
