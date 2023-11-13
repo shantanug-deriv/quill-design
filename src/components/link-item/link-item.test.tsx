@@ -29,20 +29,18 @@ describe('LinkItem', () => {
   })
 
   const colorStyles: colorStyle[] = ['black', 'white']
-  colorStyles.forEach((color) => {
-    it(`should render correctly with ${color} color`, () => {
-      render(<LinkItem colorStyle={color}>Click me - {color}</LinkItem>)
-      const LinkElement = screen.getByText(`Click me - ${color}`)
-      expect(LinkElement).toMatchSnapshot()
-    })
-  })
-
   const sizes: LinkItemTestSize[] = ['caption', 'sm', 'md', 'lg', 'xl']
-  sizes.forEach((size) => {
-    it(`should render correctly with ${size} size`, () => {
-      render(<LinkItem size={size}>Click me - {size}</LinkItem>)
-      const LinkElement = screen.getByText(`Click me - ${size}`)
-      expect(LinkElement).toMatchSnapshot()
+
+  colorStyles.forEach((colorStyle) => {
+    sizes.forEach((size) => {
+      it(`should render correctly with ${size} size and color ${colorStyle}`, () => {
+        const { container } = render(
+          <LinkItem size={size} colorStyle={colorStyle}>
+            Click me - {size}
+          </LinkItem>,
+        )
+        expect(container).toMatchSnapshot()
+      })
     })
   })
 
