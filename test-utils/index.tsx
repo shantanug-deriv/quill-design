@@ -9,9 +9,14 @@ import {
   renderHook,
 } from '@testing-library/react'
 import { ThemeProvider } from '../src'
+import { ScreenProvider } from '../src'
 
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
-  return <ThemeProvider theme="light">{children}</ThemeProvider>
+  return (
+    <ScreenProvider>
+      <ThemeProvider theme="light">{children}</ThemeProvider>
+    </ScreenProvider>
+  )
 }
 
 const customRender = (

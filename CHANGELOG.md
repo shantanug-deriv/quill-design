@@ -1,3 +1,12 @@
+## [1.1.6](https://github.com/deriv-com/quill-design/compare/v1.1.5...v1.1.6) (2023-11-13)
+
+
+### ♻️ 	 Chores
+
+* added ScreenProvider ([b31105c](https://github.com/deriv-com/quill-design/commit/b31105c65254961bb75def57075d12d178e70f97))
+* added useMediaQuery hook ([b829d26](https://github.com/deriv-com/quill-design/commit/b829d26eec4d8ea57ff4f2cc2ce4f2e26ffee5b8))
+* removed hard coded value from screen provider ([9d6bdb2](https://github.com/deriv-com/quill-design/commit/9d6bdb2aa31036bf3ef621b0307319e9173aae10))
+
 ## [1.1.5](https://github.com/deriv-com/quill-design/compare/v1.1.4...v1.1.5) (2023-11-11)
 
 
