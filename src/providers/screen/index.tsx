@@ -10,7 +10,7 @@ export interface ScreenProviderProps {
 }
 
 export const ScreenProvider = ({ children }: ScreenProviderProps) => {
-  const isXs = useMediaQuery('(max-width: 639px)')
+  const isXs = useMediaQuery(`(max-width: ${screens.sm})`)
   const isSm = useMediaQuery(`(min-width: ${screens.sm})`)
   const isMd = useMediaQuery(`(min-width: ${screens.md})`)
   const isLg = useMediaQuery(`(min-width: ${screens.lg})`)
