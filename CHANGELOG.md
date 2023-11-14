@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/deriv-com/quill-design/compare/v1.1.8...v1.1.9) (2023-11-14)
+
+
+### ♻️ 	 Chores
+
+* removed component from LinkItem to Link ([43ae415](https://github.com/deriv-com/quill-design/commit/43ae415ff07447fe8fa26773a2a8d50b009048ed))
+
 ## [1.1.8](https://github.com/deriv-com/quill-design/compare/v1.1.7...v1.1.8) (2023-11-13)
 
 
