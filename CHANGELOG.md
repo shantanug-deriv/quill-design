@@ -1,3 +1,44 @@
+## [1.1.9](https://github.com/deriv-com/quill-design/compare/v1.1.8...v1.1.9) (2023-11-14)
+
+
+### ♻️ 	 Chores
+
+* removed component from LinkItem to Link ([43ae415](https://github.com/deriv-com/quill-design/commit/43ae415ff07447fe8fa26773a2a8d50b009048ed))
+
+## [1.1.8](https://github.com/deriv-com/quill-design/compare/v1.1.7...v1.1.8) (2023-11-13)
+
+
+### ♻️ 	 Chores
+
+* renamed useScreen to useBreakpoints ([93bda54](https://github.com/deriv-com/quill-design/commit/93bda5436b0832601bfae0f7cab8d64d30d65f97))
+
+## [1.1.7](https://github.com/deriv-com/quill-design/compare/v1.1.6...v1.1.7) (2023-11-13)
+
+
+### ♻️ 	 Chores
+
+* added CVA thing in link component ([2d34211](https://github.com/deriv-com/quill-design/commit/2d34211177144f6db39399bc147e6a11ccb5f65c))
+* added test file ([220820a](https://github.com/deriv-com/quill-design/commit/220820acdacffa5413c56ad5f9a54bc8eb840c29))
+* added tests for link component and icons as well ([984ca8b](https://github.com/deriv-com/quill-design/commit/984ca8b3e298a14c8e0c3cb21b94aadad6fd0a2e))
+* fixed test which was failing for icons and updated the type for span ([5b6a506](https://github.com/deriv-com/quill-design/commit/5b6a50678ca553490d458146911a18ce49912d03))
+* moved type in types file and updated type name as well ([f82458d](https://github.com/deriv-com/quill-design/commit/f82458d3e1a1cb37d18b612c1952fb2d65741508))
+
+
+### 🐛 	 Bug Fixes
+
+* added cursor pointer ([09ae264](https://github.com/deriv-com/quill-design/commit/09ae2641fa3b0e1720d74045ae0bfcb788fbe91f))
+* fixed type issue ([08d5c3a](https://github.com/deriv-com/quill-design/commit/08d5c3ad9a1c9e08a003cb1ed7565dea65d1685e))
+* updated test and removed default varients ([6069ed6](https://github.com/deriv-com/quill-design/commit/6069ed61b2923bf5f31537995e766350c75060fa))
+
+## [1.1.6](https://github.com/deriv-com/quill-design/compare/v1.1.5...v1.1.6) (2023-11-13)
+
+
+### ♻️ 	 Chores
+
+* added ScreenProvider ([b31105c](https://github.com/deriv-com/quill-design/commit/b31105c65254961bb75def57075d12d178e70f97))
+* added useMediaQuery hook ([b829d26](https://github.com/deriv-com/quill-design/commit/b829d26eec4d8ea57ff4f2cc2ce4f2e26ffee5b8))
+* removed hard coded value from screen provider ([9d6bdb2](https://github.com/deriv-com/quill-design/commit/9d6bdb2aa31036bf3ef621b0307319e9173aae10))
+
 ## [1.1.5](https://github.com/deriv-com/quill-design/compare/v1.1.4...v1.1.5) (2023-11-11)
 
 
