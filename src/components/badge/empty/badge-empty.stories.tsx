@@ -7,9 +7,6 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  args: {
-    size: 'sm',
-  },
 } satisfies Meta<typeof Badge.Empty>
 
 export default meta
