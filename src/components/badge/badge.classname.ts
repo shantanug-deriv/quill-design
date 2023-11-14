@@ -1,13 +1,4 @@
-import { VariantProps, cva } from 'class-variance-authority'
-import { ExcludeAllNull } from 'types'
-
-export type BadgeEmptyClassProps = ExcludeAllNull<
-  VariantProps<typeof BadgeBaseCVA> & VariantProps<typeof EmptyBadgeSizeCVA>
->
-
-export type BadgeLabelClassProps = ExcludeAllNull<
-  VariantProps<typeof BadgeBaseCVA> & VariantProps<typeof LabelBadgeSizeCVA>
->
+import { cva } from 'class-variance-authority'
 
 export const BadgeBaseCVA = cva(
   'rounded-[50%] inline-flex items-center justify-center font-bold text-solid-slate-50 text-center',
