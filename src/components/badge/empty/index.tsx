@@ -1,10 +1,7 @@
 import { HTMLAttributes, forwardRef } from 'react'
-import {
-  BadgeBaseCVA,
-  EmptyBadgeSizeCVA,
-  BadgeEmptyClassProps,
-} from '../badge.classname'
+import { BadgeBaseCVA, EmptyBadgeSizeCVA } from '../badge.classname'
 import qtMerge from 'qtMerge'
+import { BadgeEmptyClassProps } from '../types'
 
 export interface EmptyBadgeProps
   extends Omit<HTMLAttributes<HTMLDivElement>, 'children'>,

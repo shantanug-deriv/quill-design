@@ -1,10 +1,7 @@
 import { HTMLAttributes, forwardRef } from 'react'
 import qtMerge from 'qtMerge'
-import {
-  BadgeBaseCVA,
-  BadgeLabelClassProps,
-  LabelBadgeSizeCVA,
-} from '../badge.classname'
+import { BadgeBaseCVA, LabelBadgeSizeCVA } from '../badge.classname'
+import { BadgeLabelClassProps } from '../types'
 
 export interface LabelBadgeProps
   extends HTMLAttributes<HTMLDivElement>,
