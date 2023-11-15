@@ -32,7 +32,7 @@ export const bodyTextCVA = cva('', {
     },
   },
   defaultVariants: {
-    colorStyle: 'prominent',
+    colorStyle: 'default',
     underline: false,
     italic: false,
     bold: false,
