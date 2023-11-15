@@ -1,15 +1,36 @@
-import { screen, render } from 'test-utils'
+import {
+  screen,
+  render as rtlRender,
+  RenderResult,
+  RenderOptions,
+} from 'test-utils'
 import userEvent from '@testing-library/user-event'
 import { RootPosition } from '../types'
 import ActionSheet from '..'
+import { RootProps } from '../types'
+
+const render = (
+  ui: React.ReactElement,
+  options?: RenderOptions & {
+    wrapperProps?: RootProps
+  },
+): RenderResult => {
+  const { wrapperProps, ...renderOptions } = options || {}
+  return rtlRender(ui, {
+    wrapper: (props: RootProps) => (
+      <ActionSheet.Root {...props} {...wrapperProps} />
+    ),
+    ...renderOptions,
+  })
+}
 
 describe('<ActionSheet.Portal/>', () => {
   it('should set the data-state attribute to "open" when the show is true', async () => {
     render(
-      <ActionSheet.Root>
+      <>
         <ActionSheet.Trigger>Trigger</ActionSheet.Trigger>
         <ActionSheet.Portal>Portal</ActionSheet.Portal>
-      </ActionSheet.Root>,
+      </>,
     )
     const trigger = screen.getByText('Trigger')
     await userEvent.click(trigger)
@@ -19,12 +40,12 @@ describe('<ActionSheet.Portal/>', () => {
 
   it('should set the data-state attribute to "close" when the show is false', async () => {
     render(
-      <ActionSheet.Root>
+      <>
         <ActionSheet.Trigger>Trigger</ActionSheet.Trigger>
         <ActionSheet.Portal>
           <ActionSheet.Close>Close</ActionSheet.Close>
         </ActionSheet.Portal>
-      </ActionSheet.Root>,
+      </>,
     )
     const trigger = screen.getByText('Trigger')
     await userEvent.click(trigger)
@@ -34,37 +55,29 @@ describe('<ActionSheet.Portal/>', () => {
     expect(state).toBe('close')
   })
   it('should render overlay when type prop is modal', () => {
-    render(
-      <ActionSheet.Root type="modal">
-        <ActionSheet.Trigger>Trigger</ActionSheet.Trigger>
-        <ActionSheet.Portal>
-          <ActionSheet.Close>Close</ActionSheet.Close>
-        </ActionSheet.Portal>
-      </ActionSheet.Root>,
-    )
+    render(<ActionSheet.Portal>Portal</ActionSheet.Portal>, {
+      wrapperProps: {
+        type: 'modal',
+      },
+    })
     const modalOverlay = screen.getByTestId('dt-actionsheet-overlay')
     expect(modalOverlay).toBeInTheDocument()
   })
   it('should not render overlay when type prop is non-modal', () => {
-    render(
-      <ActionSheet.Root type="non-modal">
-        <ActionSheet.Trigger>Trigger</ActionSheet.Trigger>
-        <ActionSheet.Portal>
-          <ActionSheet.Close>Close</ActionSheet.Close>
-        </ActionSheet.Portal>
-      </ActionSheet.Root>,
-    )
+    render(<ActionSheet.Portal>Portal</ActionSheet.Portal>, {
+      wrapperProps: {
+        type: 'non-modal',
+      },
+    })
     const modalOverlay = screen.queryByTestId('dt-actionsheet-overlay')
     expect(modalOverlay).not.toBeInTheDocument()
   })
   it('should close the action sheet when user clicked on overlay', async () => {
     render(
-      <ActionSheet.Root type="modal">
+      <>
         <ActionSheet.Trigger>Trigger</ActionSheet.Trigger>
-        <ActionSheet.Portal>
-          <ActionSheet.Close>Close</ActionSheet.Close>
-        </ActionSheet.Portal>
-      </ActionSheet.Root>,
+        <ActionSheet.Portal>Portal</ActionSheet.Portal>
+      </>,
     )
     const trigger = screen.getByText('Trigger')
     await userEvent.click(trigger)
@@ -74,26 +87,16 @@ describe('<ActionSheet.Portal/>', () => {
     expect(state).toBe('close')
   })
   it('should render handle bar when expandable prop is true', () => {
-    render(
-      <ActionSheet.Root expandable>
-        <ActionSheet.Trigger>Trigger</ActionSheet.Trigger>
-        <ActionSheet.Portal>
-          <ActionSheet.Close>Close</ActionSheet.Close>
-        </ActionSheet.Portal>
-      </ActionSheet.Root>,
-    )
+    render(<ActionSheet.Portal>Portal</ActionSheet.Portal>, {
+      wrapperProps: { expandable: true },
+    })
     const handleBar = screen.getByTestId('dt-actionsheet-handle-bar')
     expect(handleBar).toBeInTheDocument()
   })
   it('should not render handle bar when expandable prop is false', () => {
-    render(
-      <ActionSheet.Root expandable={false}>
-        <ActionSheet.Trigger>Trigger</ActionSheet.Trigger>
-        <ActionSheet.Portal>
-          <ActionSheet.Close>Close</ActionSheet.Close>
-        </ActionSheet.Portal>
-      </ActionSheet.Root>,
-    )
+    render(<ActionSheet.Portal>Portal</ActionSheet.Portal>, {
+      wrapperProps: { expandable: false },
+    })
     const handleBar = screen.queryByTestId('dt-actionsheet-handle-bar')
     expect(handleBar).not.toBeInTheDocument()
   })
@@ -102,11 +105,14 @@ describe('<ActionSheet.Portal/>', () => {
   positions.forEach((position) => {
     it(`should render correctly with position ${position}`, () => {
       render(
-        <ActionSheet.Root position={position}>
-          <ActionSheet.Portal>
-            <p>{position} portal</p>
-          </ActionSheet.Portal>
-        </ActionSheet.Root>,
+        <ActionSheet.Portal>
+          <p>{position} portal</p>
+        </ActionSheet.Portal>,
+        {
+          wrapperProps: {
+            position,
+          },
+        },
       )
       const actionRoot = screen.getByText(`${position} portal`)
       expect(actionRoot).toMatchSnapshot()
