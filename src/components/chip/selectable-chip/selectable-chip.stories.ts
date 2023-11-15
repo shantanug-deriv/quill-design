@@ -19,13 +19,7 @@ const meta = {
   parameters: {
     layout: 'centered',
     controls: {
-      exclude: [
-        'dismissible',
-        'onDismiss',
-        'isDropdownOpen',
-        'dropdown',
-        'dropdownItemSelected',
-      ],
+      exclude: ['dismissible', 'onDismiss', 'isDropdownOpen', 'dropdown'],
     },
   },
   args: {

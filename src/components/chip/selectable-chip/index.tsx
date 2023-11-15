@@ -8,7 +8,6 @@ import {
   chipBaseClassnames,
   ChipStandaloneIconSizes,
   chipBaseVariant,
-  chipBaseTextColorClassnames,
 } from '../chip.classnames'
 import type { SelectableChipProps } from '../types'
 import qtMerge from 'qtMerge'
@@ -25,7 +24,7 @@ export const SelectableChip = forwardRef<
       icon: Icon,
       isDropdownOpen,
       dropdown = false,
-      dropdownItemSelected = false,
+      selected = false,
       labelTag,
       onChipSelect,
       onDismiss,
@@ -54,13 +53,9 @@ export const SelectableChip = forwardRef<
         className={chipBaseVariant({
           dismissible,
           size,
-          className: qtMerge(
-            chipBaseClassnames,
-            chipBaseTextColorClassnames,
-            className,
-          ),
+          className: qtMerge(chipBaseClassnames, 'group', className),
         })}
-        data-state={dropdownItemSelected ? 'selected' : ''}
+        data-state={selected ? 'selected' : ''}
         ref={ref}
         onClick={handleClick}
       >
@@ -69,7 +64,7 @@ export const SelectableChip = forwardRef<
           {children}
         </div>
         {labelTag && (
-          <span className={`font-bold ${chipBaseTextColorClassnames}`}>
+          <span className="font-bold group-disabled:text-typography-default">
             {labelTag}
           </span>
         )}

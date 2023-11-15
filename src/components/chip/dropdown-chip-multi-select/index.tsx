@@ -83,7 +83,7 @@ export const DropdownChipMultiSelect = forwardRef<
                   labelTag={labelTag}
                   ref={ref}
                   dropdown
-                  dropdownItemSelected={selectedItems.length > 0}
+                  selected={selectedItems.length > 0}
                   isDropdownOpen={open}
                   disabled={disabled}
                 >
