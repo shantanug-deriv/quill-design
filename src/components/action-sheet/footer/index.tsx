@@ -10,6 +10,7 @@ const Footer = ({
   className,
   ...restProps
 }: FooterProps) => {
+  if (!primaryAction && !secondaryAction) return null
   return (
     <div
       className={qtMerge(actionSheetFooterCVA({ alignment, className }))}

@@ -4,11 +4,11 @@ import {
   actionSheetFooterCVA,
   actionSheetRootCVA,
 } from './action-sheet.classnames'
-import { ExcludeNullAndUndefined } from 'types'
+import { ExcludeAllNull } from 'types'
 
 export type RootProps = ComponentPropsWithoutRef<'div'> &
-  ExcludeNullAndUndefined<VariantProps<typeof actionSheetRootCVA>, 'show'> & {
-    onClose: () => void
+  ExcludeAllNull<VariantProps<typeof actionSheetRootCVA>> & {
+    onClose?: () => void
     type?: 'modal' | 'non-modal'
     expandable?: boolean
   }
