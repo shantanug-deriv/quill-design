@@ -1,4 +1,4 @@
-import { type HTMLAttributes } from 'react'
+import { QuillSvgProps } from '@deriv/quill-icons'
 
 export type Theme = 'dark' | 'light'
 
@@ -16,14 +16,10 @@ export type GenericElements<T extends keyof JSX.IntrinsicElements> = Pick<
   T
 >
 
-export type TextSize = 'sm' | 'md' | 'lg' | 'xl'
+export type VariantClassNames<T extends string, U = string> = { [key in T]: U }
 
-export interface BodyTypographyProps
-  extends HTMLAttributes<HTMLParagraphElement> {
-  size?: TextSize
-  bold?: boolean
-  italic?: boolean
-  underline?: boolean
+export type OptionalVariantClassNames<T extends string, U = string> = {
+  [key in T]?: U
 }
 
 export type ExcludeNull<T, Keys extends keyof T> = {
@@ -37,3 +33,7 @@ export type ExcludeAllNull<T> = {
 export type ExcludeNullAndUndefined<T, K extends keyof T> = {
   [P in K]-?: NonNullable<T[P]>
 } & Omit<T, K>
+
+export type QuillIconComponent = React.ForwardRefExoticComponent<
+  Omit<QuillSvgProps, 'ref'>
+>

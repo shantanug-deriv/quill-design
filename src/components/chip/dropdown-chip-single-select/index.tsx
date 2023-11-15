@@ -5,7 +5,7 @@ import SelectableChip from '../selectable-chip'
 import type { SingleSelectChipProps, TSingleSelectItem } from '../types'
 import qtMerge from 'qtMerge'
 import {
-  chipDropdownClassnames,
+  chipDropdownPanelClassnames,
   chipDropdownSingleClassnames,
 } from '../chip.classnames'
 
@@ -18,7 +18,7 @@ const Options = ({ item }: { item: TSingleSelectItem }) => {
             chipDropdownSingleClassnames,
             disabled && 'opacity-600',
             selected &&
-              'bg-solid-slate-1400 text-solid-slate-50 hover:bg-solid-slate-1400 hover:text-solid-slate-50',
+              'bg-solid-slate-1400 fill-solid-slate-50 text-solid-slate-50 hover:bg-solid-slate-1400 hover:fill-solid-slate-50 hover:text-solid-slate-50',
           )}
         >
           {item.label}
@@ -61,14 +61,17 @@ export const DropdownChipSingleSelect = forwardRef<
             <>
               <Listbox.Button as="div">
                 <SelectableChip
+                  {...rest}
                   icon={icon}
                   size={size}
                   labelTag={labelTag}
                   ref={ref}
                   dropdown
+                  dropdownItemSelected={
+                    selectedItem.value !== defaultOption.value
+                  }
                   isDropdownOpen={open}
                   disabled={disabled}
-                  {...rest}
                 >
                   {selectedItem?.label}
                 </SelectableChip>
@@ -82,7 +85,7 @@ export const DropdownChipSingleSelect = forwardRef<
                 leaveTo="scale-y-0 -translate-y-2/4"
               >
                 <Listbox.Options
-                  className={qtMerge(className, chipDropdownClassnames)}
+                  className={qtMerge(chipDropdownPanelClassnames, className)}
                 >
                   <Options item={defaultOption} />
                   {options.map((item) => (

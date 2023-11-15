@@ -9,9 +9,14 @@ import {
   renderHook,
 } from '@testing-library/react'
 import { ThemeProvider } from '../src'
+import { BreakpointProvider } from '../src'
 
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
-  return <ThemeProvider theme="light">{children}</ThemeProvider>
+  return (
+    <BreakpointProvider>
+      <ThemeProvider theme="light">{children}</ThemeProvider>
+    </BreakpointProvider>
+  )
 }
 
 const customRender = (

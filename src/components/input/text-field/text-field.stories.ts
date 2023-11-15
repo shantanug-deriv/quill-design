@@ -1,6 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react'
 import TextField from '.'
-import { StandaloneCircleCheckBoldIcon } from '@deriv/quill-icons/Standalone'
+import {
+  StandaloneCircleCheckBoldIcon,
+  StandaloneTriangleExclamationBoldIcon,
+} from '@deriv/quill-icons/Standalone'
 
 const meta = {
   title: 'Inputs/Text Field',
@@ -37,28 +40,21 @@ export const DefaultTextField: Story = {
     placeholder: 'Placeholder',
   },
 }
-export const DisabledTextFieldOutline: Story = {
+export const DisabledTextField: Story = {
   args: {
     placeholder: 'Placeholder',
     disabled: true,
     variant: 'outline',
   },
 }
-export const DisabledTextFieldFill: Story = {
-  args: {
-    placeholder: 'Placeholder',
-    disabled: true,
-    variant: 'fill',
-  },
-}
-export const SuccessTextFieldOutline: Story = {
+export const SuccessTextField: Story = {
   args: {
     placeholder: 'Placeholder',
     variant: 'outline',
     status: 'success',
   },
 }
-export const ErrorTextFieldOutline: Story = {
+export const ErrorTextField: Story = {
   args: {
     placeholder: 'Placeholder',
     variant: 'outline',
@@ -86,5 +82,45 @@ export const SuccessStatusIconTextField: Story = {
         disable: true,
       },
     },
+  },
+}
+
+export const StatusMessageTextField: Story = {
+  args: {
+    placeholder: 'Placeholder',
+    variant: 'outline',
+    status: 'success',
+    leftStatusMessage: 'Status message goes here',
+  },
+}
+
+export const DoubleStatusMessageTextField: Story = {
+  args: {
+    placeholder: 'Placeholder',
+    variant: 'outline',
+    status: 'success',
+    leftStatusMessage: 'Status message goes here',
+    rightStatusMessage: '0/0',
+  },
+}
+
+export const SuccessMessageTextFieldWithIcons: Story = {
+  args: {
+    placeholder: 'Placeholder',
+    variant: 'outline',
+    status: 'success',
+    leftStatusMessage: 'Status message goes here',
+    rightStatusMessage: '0/0',
+    statusIcon: StandaloneCircleCheckBoldIcon,
+  },
+}
+export const ErrorMessageTextFieldWithIcons: Story = {
+  args: {
+    placeholder: 'Placeholder',
+    variant: 'outline',
+    status: 'error',
+    leftStatusMessage: 'Status message goes here',
+    rightStatusMessage: '0/0',
+    statusIcon: StandaloneTriangleExclamationBoldIcon,
   },
 }

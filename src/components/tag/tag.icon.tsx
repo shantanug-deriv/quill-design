@@ -1,4 +1,3 @@
-import { QuillSvgProps } from '@deriv/quill-icons/QuillTypes'
 import {
   BaseTagIconProps,
   BaseTagProps,
@@ -7,9 +6,10 @@ import {
   TagIconSizes,
   TagIcons,
 } from './tag.classnames'
+import { QuillIconComponent } from 'types'
 
 export interface TagIconProps extends BaseTagSizeProps, BaseTagIconProps {
-  icon?: React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
+  icon?: QuillIconComponent
   className?: string
   isBold: BaseTagProps['isBold']
 }
@@ -21,10 +21,7 @@ export const TagIcon = ({
   isBold,
   colorStyle,
 }: TagIconProps) => {
-  let IconComponent:
-    | React.ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
-    | null
-    | undefined = null
+  let IconComponent: QuillIconComponent | undefined
   if (colorStyle === 'custom') {
     IconComponent = Icon
   } else {
