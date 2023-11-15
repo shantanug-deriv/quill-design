@@ -57,13 +57,16 @@ const Pagination = ({
   }
 
   return (
-    <section
+    <nav
+      role="navigation"
+      aria-label="Pagination Navigation"
       className={qtMerge('flex items-center justify-center gap-400', className)}
     >
       <button
         onClick={gotToPreviousPage}
         disabled={currentPage === 1}
         className={paginationVariants({ variant })}
+        aria-label="Go to Previous page"
       >
         <StandaloneChevronLeftRegularIcon
           iconSize="sm"
@@ -83,13 +86,14 @@ const Pagination = ({
         onClick={goToNextPage}
         disabled={currentPage === totalPageCount}
         className={paginationVariants({ variant })}
+        aria-label="Go to Next page"
       >
         <StandaloneChevronRightRegularIcon
           iconSize="sm"
           className="fill-solid-slate-1400 group-disabled:fill-opacity-black-300"
         />
       </button>
-    </section>
+    </nav>
   )
 }
 

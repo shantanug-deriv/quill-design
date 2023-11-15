@@ -4,7 +4,6 @@ import {
 } from '@deriv/quill-icons/Standalone'
 import { paginationVariants } from './pagination.classnames'
 import { DOTS } from 'hooks/usePaginationRange'
-import { CaptionText } from '..'
 import { PaginationProps } from './pagination.types'
 
 interface PaginationButtonProps extends Pick<PaginationProps, 'variant'> {
@@ -32,16 +31,15 @@ const PaginationButton = ({
       <button
         onClick={() => handleOnClick(String(pageNumber))}
         className={paginationVariants({ variant })}
+        aria-label={`Go to page ${pageNumber}`}
+        aria-current={currentPage === pageNumber}
       >
-        <div>
-          <StandaloneCircleFillIcon
-            iconSize="sm"
-            height={12}
-            width={12}
-            data-state={currentPage === pageNumber ? 'selected' : ''}
-            className="fill-opacity-black-100 active:fill-opacity-black-200 data-[state=selected]:fill-solid-slate-1400"
-          />
-        </div>
+        <StandaloneCircleFillIcon
+          iconSize="sm"
+          height={12}
+          width={12}
+          className="active:fill-opacity-black-200 group-aria-[current=false]:fill-opacity-black-100 group-aria-[current=true]:fill-solid-slate-1400"
+        />
       </button>
     )
   }
@@ -49,9 +47,9 @@ const PaginationButton = ({
   if (pageNumber === DOTS) {
     return (
       <button
-        onClick={(e) => handleOnClick(e.currentTarget.textContent)}
         disabled
         className={paginationVariants({ variant })}
+        aria-label="Hidden pages"
       >
         <StandaloneEllipsisRegularIcon fill="black" iconSize="sm" />
       </button>
@@ -60,19 +58,14 @@ const PaginationButton = ({
 
   return (
     <button
-      key={pageNumber}
+      aria-label={`Go to page ${pageNumber}`}
+      aria-current={currentPage === pageNumber}
       onClick={(e) => handleOnClick(e.currentTarget.textContent)}
-      data-state={currentPage === pageNumber ? 'selected' : ''}
       className={paginationVariants({
         variant,
       })}
     >
-      <CaptionText
-        data-state={currentPage === pageNumber ? 'selected' : ''}
-        className="text-ellipsis leading-100 text-typography-default data-[state=selected]:text-solid-slate-50"
-      >
-        {pageNumber}
-      </CaptionText>
+      {pageNumber}
     </button>
   )
 }

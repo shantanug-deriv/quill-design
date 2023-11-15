@@ -41,13 +41,17 @@ describe('Pagination', () => {
       />,
     )
 
-    const elPreviousButton = screen.getByRole('button', { name: /previous/i })
-    const elNextButton = screen.getByRole('button', { name: /next/i })
-    const elPageNumbers = screen.getAllByRole('button', { name: /o/i })
+    const elPreviousButton = screen.getByRole('button', {
+      name: /Go to Previous page/i,
+    })
+    const elNextButton = screen.getByRole('button', {
+      name: /Go to Next page/i,
+    })
+    const elPageNumbers = screen.getAllByRole('button', { name: /Go to page/i })
 
     expect(elPreviousButton).toBeInTheDocument()
     expect(elNextButton).toBeInTheDocument()
-    expect(elPageNumbers).toHaveLength(11)
+    expect(elPageNumbers).toHaveLength(10)
   })
 
   it('should disable Previous button when current page is 1', () => {
@@ -95,7 +99,9 @@ describe('Pagination', () => {
       />,
     )
 
-    const elEllipsesButton = screen.getByRole('button', { name: /\.\.\./i })
+    const elEllipsesButton = screen.getByRole('button', {
+      name: /Hidden pages/i,
+    })
 
     expect(elEllipsesButton).toBeDisabled()
   })

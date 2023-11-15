@@ -8,7 +8,7 @@ jest.mock('@deriv/quill-icons/Standalone', () => ({
   StandaloneCircleFillIcon: () => <div>O</div>,
 }))
 
-describe('Pagination', () => {
+describe('PaginationButton', () => {
   it('should render bullet icons when variant is bullet', () => {
     render(
       <PaginationButton
@@ -19,9 +19,9 @@ describe('Pagination', () => {
       />,
     )
 
-    const elBullet = screen.getByRole('button', { name: 'O' })
+    const elBullet = screen.getByRole('button', { name: /Go to page 1/i })
 
-    expect(elBullet).toBeInTheDocument()
+    expect(elBullet.innerHTML).toMatch('O')
   })
 
   it('should render ellipsis icon when page number is DOTS', () => {
@@ -34,7 +34,7 @@ describe('Pagination', () => {
       />,
     )
 
-    const elEllipsis = screen.getByRole('button', { name: '...' })
+    const elEllipsis = screen.getByRole('button', { name: /Hidden pages/i })
 
     expect(elEllipsis).toBeInTheDocument()
     expect(elEllipsis).toBeDisabled()
@@ -50,9 +50,10 @@ describe('Pagination', () => {
       />,
     )
 
-    const elPageNumber = screen.getByRole('button', { name: '1' })
+    const elPageNumber = screen.getByRole('button', { name: /Go to page 1/i })
 
     expect(elPageNumber).toBeInTheDocument()
+    expect(elPageNumber.innerHTML).toMatch('1')
   })
 
   it('should call handleOnClick when clicked', async () => {
@@ -68,7 +69,7 @@ describe('Pagination', () => {
       />,
     )
 
-    const elPageNumber = screen.getByRole('button', { name: '3' })
+    const elPageNumber = screen.getByRole('button', { name: /Go to page 3/i })
 
     await userEvent.click(elPageNumber)
 
