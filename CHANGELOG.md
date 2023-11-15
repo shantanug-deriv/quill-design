@@ -1,3 +1,40 @@
+## [1.1.10](https://github.com/deriv-com/quill-design/compare/v1.1.9...v1.1.10) (2023-11-15)
+
+
+### ♻️ 	 Chores
+
+* :bento: updated index files ([24ad912](https://github.com/deriv-com/quill-design/commit/24ad912ce6d80e4cf2beebb11e51d1b93193352b))
+* :building_construction: incorporated number pagination and variants ([3a82591](https://github.com/deriv-com/quill-design/commit/3a825913747b1aca0c8e213b2e54017ef237cab1))
+* :memo: updated storybook content ([9a16b28](https://github.com/deriv-com/quill-design/commit/9a16b28d98df655a64843d9528de75bf46ac359a))
+* :recycle: incorporated review comments ([8194164](https://github.com/deriv-com/quill-design/commit/8194164e62c5a06c67391680bb7881961e300244))
+* :recycle: incorporated review comments ([3cff7fb](https://github.com/deriv-com/quill-design/commit/3cff7fb1cc2992bb8a6fdd06cf787a8e578c92fc))
+* :recycle: incorporated review comments ([374c077](https://github.com/deriv-com/quill-design/commit/374c077afe4eb03ea6a9ff0abda000fc0c5c4653))
+* Merge branch 'main' into likhith/pagination-component ([9a511ea](https://github.com/deriv-com/quill-design/commit/9a511ea97202c0da7826f186e366ce51f24bde7d))
+
+
+### 🐛 	 Bug Fixes
+
+* :fire: removed theme variant placeholder ([de85297](https://github.com/deriv-com/quill-design/commit/de85297cc1c488421389b96ee237fc6e7b35e4ba))
+
+
+### 💎 	 Styles
+
+* :art: incorporated accessibility and styles ([4a67784](https://github.com/deriv-com/quill-design/commit/4a67784649edf8fa589a919431127d6ebc723214))
+* :lipstick: updated style in variants ([0445e80](https://github.com/deriv-com/quill-design/commit/0445e803bc8f1e2227a3562bb0694f6ed9cc6493))
+
+
+### 📦 	 Code Refactoring
+
+* :bug: incorporated child component in Pagination ([b6937d1](https://github.com/deriv-com/quill-design/commit/b6937d1c955ef915154b2791f5c500f908061b5e))
+* :label: added typesafety ([591be1b](https://github.com/deriv-com/quill-design/commit/591be1ba9af7b469a9ff72e966a814c358585d28))
+* :label: fixed type for mock file ([f33f2d8](https://github.com/deriv-com/quill-design/commit/f33f2d8edada0a25283efe00ca66fc196e1100fc))
+* :recycle: incorporated review comments ([7d4fa1f](https://github.com/deriv-com/quill-design/commit/7d4fa1f68e973f19f74b874b98b4e0956eb431a1))
+
+
+### 🚨 	 Tests
+
+* :white_check_mark: verify the functionality ([1ff0869](https://github.com/deriv-com/quill-design/commit/1ff0869cab57c812036502c1500c227f630019a1))
+
 ## [1.1.9](https://github.com/deriv-com/quill-design/compare/v1.1.8...v1.1.9) (2023-11-14)
 
 
