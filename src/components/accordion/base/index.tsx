@@ -140,7 +140,14 @@ export const Base = ({
           (isAutoExpand || isExpanded) && 'max-h-[9999px]',
         )}
       >
-        <div className="flex h-fit p-general-lg">{Content && <Content />}</div>
+        <div
+          className={qtMerge(
+            'flex h-fit p-general-lg',
+            (isAutoExpand || isExpanded) && 'opacity-1300',
+          )}
+        >
+          {Content && <Content />}
+        </div>
       </div>
     </div>
   )

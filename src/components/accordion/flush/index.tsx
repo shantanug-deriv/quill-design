@@ -1,12 +1,13 @@
 import { AccordionProps } from '../types'
 
 import Base from '../base'
+import qtMerge from 'qtMerge'
 
-export const Flush = ({ ...otherProps }: AccordionProps) => {
+export const Flush = ({ className, ...otherProps }: AccordionProps) => {
   return (
     <Base
       divider="bottom"
-      className="border-x-none"
+      className={qtMerge('border-x-none', className)}
       contentClassname="rounded-50"
       {...otherProps}
     />

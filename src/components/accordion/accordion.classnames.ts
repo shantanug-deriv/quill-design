@@ -12,8 +12,8 @@ export const accordionTransitionClassNames =
 export const accordionBaseVariant = cva(accordionBaseClassNames, {
   variants: {
     divider: {
-      both: 'border-xs border-x-none border-b-opacity-black-100 border-t-opacity-black-100',
-      bottom: 'border-100 border-b-opacity-black-100 border-t-none',
+      both: 'border-100 border-x-none border-b-opacity-black-100 border-t-opacity-black-100',
+      bottom: 'border-100 border-b-opacity-black-100 !border-t-none',
       none: '',
     },
   },
