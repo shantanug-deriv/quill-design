@@ -33,7 +33,7 @@ const meta = {
   },
   argTypes: {
     label: {
-      name: 'defaultOption',
+      name: 'label',
       control: 'text',
     },
     icon: {
