@@ -1,3 +1,23 @@
+## [1.1.11](https://github.com/deriv-com/quill-design/compare/v1.1.10...v1.1.11) (2023-11-15)
+
+
+### ♻️ 	 Chores
+
+* :green_heart: added Badge component ([28467fe](https://github.com/deriv-com/quill-design/commit/28467fe5b8ce3a0c97563d31e2b3d49a470582cc))
+* :recycle: refactor the approach ([0316f2f](https://github.com/deriv-com/quill-design/commit/0316f2fefdac6fbfec79a2ca9abb9c592b85126d))
+* added a wrapper in portal test ([9d31649](https://github.com/deriv-com/quill-design/commit/9d31649401d6f6a96e126b03068aa8e9bcbea95f))
+* added test cases for empty label ([bb1db15](https://github.com/deriv-com/quill-design/commit/bb1db15754737985467189249f184020a7b9f1ee))
+* added test cases for label badge ([50d7251](https://github.com/deriv-com/quill-design/commit/50d7251efdaec8694d65cde0b9e4605b7603995f))
+* created different directory for each badge ([908294e](https://github.com/deriv-com/quill-design/commit/908294e540bd07428efc753becfbf6cf10202b0d))
+* exported action sheet ([1253d16](https://github.com/deriv-com/quill-design/commit/1253d16b67f0dd57be0dbc7ebc9071e7451935a2))
+* implemented context ([d538cc4](https://github.com/deriv-com/quill-design/commit/d538cc43f717fd1512c7f8bfd25a6d3b5cf346e6))
+* rename index.tsx to index.ts ([c421cb8](https://github.com/deriv-com/quill-design/commit/c421cb80c25ec38615eabb0f75621e1d415bcc13))
+* types are moved to a different file ([723a051](https://github.com/deriv-com/quill-design/commit/723a051cce6cc5c76aff5aaf9bc26ef0fa7ef372))
+* udpated story ([486db65](https://github.com/deriv-com/quill-design/commit/486db65e68b6c3fd1c72f19fae10f55226c3b5b2))
+* update chip component style and allow controlled behaviour ([f154615](https://github.com/deriv-com/quill-design/commit/f15461550177805d260a7aeecfbfa3e6c852ab7d))
+* update snapshots ([4b550a8](https://github.com/deriv-com/quill-design/commit/4b550a8cca370c7f9dcb9562013efae83cd2833b))
+* update typography default colors ([471bf69](https://github.com/deriv-com/quill-design/commit/471bf69a6aebf088ca2ac285958a5d4c093ecb57))
+
 ## [1.1.10](https://github.com/deriv-com/quill-design/compare/v1.1.9...v1.1.10) (2023-11-15)
 
 
