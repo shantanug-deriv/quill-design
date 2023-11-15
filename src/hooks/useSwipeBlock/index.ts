@@ -3,8 +3,8 @@ import { useDrag } from '@use-gesture/react'
 import { useMediaQuery } from 'usehooks-ts'
 
 type SwipeBlockType = {
-  show: boolean
-  onClose: () => void
+  show?: boolean
+  onClose?: () => void
 }
 
 export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
@@ -56,7 +56,7 @@ export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
         } else {
           if (draggingPoint <= windowHeight * 0.3) {
             setHeight('0px')
-            onClose()
+            onClose?.()
           } else if (draggingPoint <= windowHeight * 0.5) {
             setHeight(`${windowHeight * 0.3}px`)
           } else {
