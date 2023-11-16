@@ -5,13 +5,13 @@ import { StandaloneSearchBoldIcon } from '@deriv/quill-icons/Standalone'
 export type SearchFieldProps = ComponentProps<typeof Input>
 
 export const SearchField = forwardRef<HTMLInputElement, SearchFieldProps>(
-  ({ type = 'search', ...rest }, ref) => {
+  ({ type = 'search', placeholder = 'Search', ...rest }, ref) => {
     return (
       <Input
         {...rest}
         icon={StandaloneSearchBoldIcon}
         type={type}
-        placeholder="Search"
+        placeholder={placeholder}
         ref={ref}
       />
     )
