@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/deriv-com/quill-design/compare/v1.1.11...v1.1.12) (2023-11-16)
+
+
+### ♻️ 	 Chores
+
+* add border animation for input wrapper ([bfeb1bf](https://github.com/deriv-com/quill-design/commit/bfeb1bf4cce33b6bdb747b0759e00649ca0ac375))
+
 ## [1.1.11](https://github.com/deriv-com/quill-design/compare/v1.1.10...v1.1.11) (2023-11-15)
 
 
