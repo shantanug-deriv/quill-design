@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
-import { LinkItemSize } from './types'
+import { LinkSize } from './types'
 
-export const linkItemCva = cva('inline-flex items-center gap-500', {
+export const linkCva = cva('inline-flex items-center gap-500', {
   variants: {
     colorStyle: {
       black: [
@@ -30,7 +30,7 @@ export const linkItemCva = cva('inline-flex items-center gap-500', {
   },
 })
 
-export const linkItemIconCva = cva('', {
+export const linkIconCva = cva('', {
   variants: {
     colorStyle: {
       black: 'fill-solid-slate-1400',
@@ -39,8 +39,8 @@ export const linkItemIconCva = cva('', {
   },
 })
 
-export const LinkItemIconStandaloneSizes: Record<
-  LinkItemSize,
+export const LinkIconStandaloneSizes: Record<
+  LinkSize,
   { width: number; height: number }
 > = {
   caption: {
@@ -65,8 +65,8 @@ export const LinkItemIconStandaloneSizes: Record<
   },
 }
 
-export const LinkItemIconSizes: Record<
-  LinkItemSize,
+export const LinkIconSizes: Record<
+  LinkSize,
   { width: number; height: number }
 > = {
   caption: {

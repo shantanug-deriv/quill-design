@@ -3,7 +3,7 @@
 exports[`CaptionText should have correct classnames with bold enabled 1`] = `
 <div>
   <code
-    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-bold text-typography-prominent"
+    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-bold text-typography-default"
   >
     CaptionText content
   </code>
@@ -13,7 +13,7 @@ exports[`CaptionText should have correct classnames with bold enabled 1`] = `
 exports[`CaptionText should have correct classnames with default values 1`] = `
 <div>
   <code
-    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-regular text-typography-prominent"
+    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-regular text-typography-default"
   >
     CodeText content
   </code>
@@ -23,7 +23,7 @@ exports[`CaptionText should have correct classnames with default values 1`] = `
 exports[`CaptionText should have correct classnames with italic enabled 1`] = `
 <div>
   <code
-    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-regular italic text-typography-prominent"
+    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-regular italic text-typography-default"
   >
     CaptionText content
   </code>
@@ -33,7 +33,7 @@ exports[`CaptionText should have correct classnames with italic enabled 1`] = `
 exports[`CaptionText should have correct classnames with size lg 1`] = `
 <div>
   <code
-    class="font-mono text-code-lg space-y-paragraphSpacing-code-lg leading-code-lg font-regular text-typography-prominent"
+    class="font-mono text-code-lg space-y-paragraphSpacing-code-lg leading-code-lg font-regular text-typography-default"
   >
     CodeText content
   </code>
@@ -43,7 +43,7 @@ exports[`CaptionText should have correct classnames with size lg 1`] = `
 exports[`CaptionText should have correct classnames with size md 1`] = `
 <div>
   <code
-    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-regular text-typography-prominent"
+    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-regular text-typography-default"
   >
     CodeText content
   </code>
@@ -53,7 +53,7 @@ exports[`CaptionText should have correct classnames with size md 1`] = `
 exports[`CaptionText should have correct classnames with size sm 1`] = `
 <div>
   <code
-    class="font-mono text-code-sm space-y-paragraphSpacing-code-sm leading-code-sm font-regular text-typography-prominent"
+    class="font-mono text-code-sm space-y-paragraphSpacing-code-sm leading-code-sm font-regular text-typography-default"
   >
     CodeText content
   </code>
@@ -63,7 +63,7 @@ exports[`CaptionText should have correct classnames with size sm 1`] = `
 exports[`CaptionText should have correct classnames with size xl 1`] = `
 <div>
   <code
-    class="font-mono text-code-xl space-y-paragraphSpacing-code-xl leading-code-xl font-regular text-typography-prominent"
+    class="font-mono text-code-xl space-y-paragraphSpacing-code-xl leading-code-xl font-regular text-typography-default"
   >
     CodeText content
   </code>
@@ -73,7 +73,7 @@ exports[`CaptionText should have correct classnames with size xl 1`] = `
 exports[`CaptionText should have correct classnames with underline enabled 1`] = `
 <div>
   <code
-    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-regular underline text-typography-prominent"
+    class="font-mono text-code-md space-y-paragraphSpacing-code-md leading-code-md font-regular underline text-typography-default"
   >
     CaptionText content
   </code>

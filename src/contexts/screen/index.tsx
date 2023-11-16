@@ -1,6 +1,6 @@
 import { createContext } from 'react'
 
-export type ScreenContextValue = {
+export type BreakpointContextValue = {
   isXs: boolean
   isSm: boolean
   isMd: boolean
@@ -9,7 +9,7 @@ export type ScreenContextValue = {
   isXXl: boolean
 }
 
-export const ScreenContext = createContext<ScreenContextValue>({
+export const BreakpointContext = createContext<BreakpointContextValue>({
   isXs: false,
   isSm: false,
   isMd: false,
@@ -18,4 +18,4 @@ export const ScreenContext = createContext<ScreenContextValue>({
   isXXl: false,
 })
 
-export default ScreenContext
+export default BreakpointContext

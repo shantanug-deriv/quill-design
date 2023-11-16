@@ -4,9 +4,9 @@ import { cva } from 'class-variance-authority'
 export const chipBaseVariant = cva('', {
   variants: {
     size: {
-      sm: ['px-600', 'py-[3px]', 'text-50', 'gap-x-400', 'max-h-1200'],
-      md: ['px-800', 'py-[5px]', 'text-75', 'gap-x-400', 'max-h-1600'],
-      lg: ['px-1200', 'py-[7px]', 'text-100', 'gap-x-400', 'max-h-2400'],
+      sm: ['max-h-1200', 'gap-x-400', 'px-600', 'py-[3px]', 'text-50'],
+      md: ['max-h-1600', 'gap-x-400', 'px-800', 'py-[5px]', 'text-75'],
+      lg: ['max-h-2400', 'gap-x-400', 'px-1200', 'py-[7px]', 'text-100'],
     },
     dismissible: {
       true: ['cursor-default'],
@@ -55,16 +55,13 @@ export const ChipStandaloneIconSizes: Record<
 }
 
 export const chipBaseClassnames =
-  'disabled:bg-opacity-black-0 text-typography-default disabled:text-opacity-black-300 disabled:fill-opacity-black-300 rounded-4800 font-regular inline-flex items-center justify-center border-75 border-solid-slate-200 data-[state=selected]:border-solid-slate-1200 enabled:hover:bg-opacity-black-100 enabled:hover:text-opacity-black-600 data-[state=selected]:enabled:bg-solid-slate-1200'
-
-export const chipBaseTextColorClassnames =
-  'data-[state=selected]:enabled:text-solid-slate-50 data-[state=selected]:enabled:fill-solid-slate-50'
+  'inline-flex items-center justify-center rounded-4800 border-75 border-opacity-black-100 font-regular text-typography-default enabled:hover:bg-opacity-black-100 enabled:hover:text-opacity-black-600 disabled:fill-opacity-black-300 disabled:text-opacity-black-300 data-[state=selected]:enabled:border-solid-slate-1200 data-[state=selected]:enabled:bg-solid-slate-1200 data-[state=selected]:enabled:fill-solid-slate-50 data-[state=selected]:enabled:text-solid-slate-50'
 
 export const chipDropdownPanelClassnames =
-  'cursor-pointer absolute min-w-[350px] m-200 max-w-md border-75 border-solid-slate-75 bg-solid-slate-50 p-200 shadow-530'
+  'absolute m-200 min-w-[350px] max-w-md cursor-pointer border-75 border-solid-slate-75 bg-solid-slate-50 p-200 shadow-530'
 
 export const chipDropdownMultiClassnames =
-  'hover:bg-opacity-black-100 hover:text-opacity-black-600 px-600 py-[3px] text-75 flex  items-center gap-x-400 rounded-[8px] p-600 my-300'
+  'my-300 flex items-center gap-x-400 rounded-[8px] p-600  py-[3px] text-75 hover:bg-opacity-black-100 hover:text-opacity-black-600'
 
 export const chipDropdownSingleClassnames =
-  'hover:bg-opacity-black-100 hover:text-opacity-black-600 rounded-[8px] px-600 py-300 my-300'
+  'my-300 rounded-[8px] px-600 py-300 hover:bg-opacity-black-100 hover:text-opacity-black-600'

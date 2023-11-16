@@ -1,6 +1,6 @@
 import { useMediaQuery } from 'usehooks-ts'
 import QuillTailwindConfig from '../../../quill-tailwind/tailwind.config.cjs'
-import ScreenContext, { ScreenContextValue } from 'contexts/screen'
+import BreakpointContext, { BreakpointContextValue } from 'contexts/screen'
 import { useMemo } from 'react'
 
 const screens = QuillTailwindConfig!.theme!.screens as Record<string, string>
@@ -9,7 +9,7 @@ export interface ScreenProviderProps {
   children: React.ReactNode
 }
 
-export const ScreenProvider = ({ children }: ScreenProviderProps) => {
+export const BreakpointProvider = ({ children }: ScreenProviderProps) => {
   const isXs = useMediaQuery(`(max-width: ${screens.sm})`)
   const isSm = useMediaQuery(`(min-width: ${screens.sm})`)
   const isMd = useMediaQuery(`(min-width: ${screens.md})`)
@@ -17,7 +17,7 @@ export const ScreenProvider = ({ children }: ScreenProviderProps) => {
   const isXl = useMediaQuery(`(min-width: ${screens.xl})`)
   const isXXl = useMediaQuery(`(min-width: ${screens['2xl']})`)
 
-  const value: ScreenContextValue = useMemo(() => {
+  const value: BreakpointContextValue = useMemo(() => {
     return {
       isXs,
       isSm,
@@ -29,6 +29,10 @@ export const ScreenProvider = ({ children }: ScreenProviderProps) => {
   }, [isLg, isMd, isSm, isXXl, isXl, isXs])
 
   return (
-    <ScreenContext.Provider value={value}>{children}</ScreenContext.Provider>
+    <BreakpointContext.Provider value={value}>
+      {children}
+    </BreakpointContext.Provider>
   )
 }
+
+export default BreakpointProvider
