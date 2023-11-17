@@ -1,3 +1,10 @@
+## [1.1.14](https://github.com/deriv-com/quill-design/compare/v1.1.13...v1.1.14) (2023-11-17)
+
+
+### ♻️ 	 Chores
+
+* removed h7 heading tag ([57c9f08](https://github.com/deriv-com/quill-design/commit/57c9f089c6628d42575cbac8f07061c1750eaa63))
+
 ## [1.1.13](https://github.com/deriv-com/quill-design/compare/v1.1.12...v1.1.13) (2023-11-17)
 
 
