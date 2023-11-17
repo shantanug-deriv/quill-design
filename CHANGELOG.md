@@ -1,3 +1,10 @@
+## [1.1.13](https://github.com/deriv-com/quill-design/compare/v1.1.12...v1.1.13) (2023-11-17)
+
+
+### ♻️ 	 Chores
+
+* Update from https://github.com/deriv-com/quill-tokens/commit/580adb8317681cf59c49be803d14651443468e79 ([10fba90](https://github.com/deriv-com/quill-design/commit/10fba90aeca7ca45f3c8b797ed27801579a8c567))
+
 ## [1.1.12](https://github.com/deriv-com/quill-design/compare/v1.1.11...v1.1.12) (2023-11-16)
 
 
