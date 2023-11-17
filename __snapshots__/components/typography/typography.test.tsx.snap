@@ -70,16 +70,6 @@ exports[`Heading Should render h6 Heading with h6 1`] = `
 </div>
 `;
 
-exports[`Heading Should render h7 Heading with h7 1`] = `
-<div>
-  <h6
-    class="font-heading text-heading-h7 font-bold leading-heading-h7 space-y-paragraphSpacing-heading-h7 text-typography-prominent"
-  >
-    h7 heading
-  </h6>
-</div>
-`;
-
 exports[`Text Should display correct content 1`] = `
 <div>
   <p
