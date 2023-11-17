@@ -6,7 +6,6 @@ import H3 from './h3'
 import H4 from './h4'
 import H5 from './h5'
 import H6 from './h6'
-import H7 from './h7'
 
 type HeadingVariants = {
   Hero: typeof HeroHeading
@@ -16,7 +15,6 @@ type HeadingVariants = {
   H4: typeof H4
   H5: typeof H5
   H6: typeof H6
-  H7: typeof H7
 }
 
 export const Heading: HeadingVariants = ({
@@ -34,6 +32,5 @@ Heading.H3 = H3
 Heading.H4 = H4
 Heading.H5 = H5
 Heading.H6 = H6
-Heading.H7 = H7
 
 export default Heading

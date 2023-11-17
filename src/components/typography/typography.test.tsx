@@ -30,10 +30,6 @@ describe('Heading', () => {
     const { container } = render(<Heading.H6>h6 heading</Heading.H6>)
     expect(container).toMatchSnapshot()
   })
-  it('Should render h7 Heading with h7', () => {
-    const { container } = render(<Heading.H7>h7 heading</Heading.H7>)
-    expect(container).toMatchSnapshot()
-  })
 })
 
 describe('Text', () => {
