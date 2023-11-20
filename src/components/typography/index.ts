@@ -1,4 +1,4 @@
 export * from './heading'
-export { Text } from './text'
-export { CaptionText } from './caption'
-export { CodeText } from './code'
+export * from './text'
+export * from './caption'
+export * from './code'

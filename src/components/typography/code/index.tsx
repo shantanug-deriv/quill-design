@@ -30,7 +30,7 @@ export const CodeText = forwardRef<HTMLParagraphElement, CodeTextProps>(
           'font-mono',
           codeTextSizeCVA({ size }),
           bodyTextCVA({
-            colorStyle: 'prominent',
+            colorStyle: 'default',
             bold,
             italic,
             underline,

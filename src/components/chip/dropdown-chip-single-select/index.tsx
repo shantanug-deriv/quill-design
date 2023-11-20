@@ -67,9 +67,7 @@ export const DropdownChipSingleSelect = forwardRef<
                   labelTag={labelTag}
                   ref={ref}
                   dropdown
-                  dropdownItemSelected={
-                    selectedItem.value !== defaultOption.value
-                  }
+                  selected={selectedItem.value !== defaultOption.value}
                   isDropdownOpen={open}
                   disabled={disabled}
                 >

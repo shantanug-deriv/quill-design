@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Badge.Empty/> should render correctly with color danger 1`] = `
+<span
+  aria-label="danger Badge"
+  class="rounded-[50%] inline-flex items-center justify-center font-bold text-solid-slate-50 text-center bg-solid-green-700 h-800 w-800"
+  color="danger"
+/>
+`;
+
+exports[`<Badge.Empty/> should render correctly with color success 1`] = `
+<span
+  aria-label="success Badge"
+  class="rounded-[50%] inline-flex items-center justify-center font-bold text-solid-slate-50 text-center bg-solid-green-700 h-800 w-800"
+  color="success"
+/>
+`;
+
+exports[`<Badge.Empty/> should render correctly with color warning 1`] = `
+<span
+  aria-label="warning Badge"
+  class="rounded-[50%] inline-flex items-center justify-center font-bold text-solid-slate-50 text-center bg-solid-green-700 h-800 w-800"
+  color="warning"
+/>
+`;
+
+exports[`<Badge.Empty/> should render correctly with size lg 1`] = `
+<span
+  aria-label="lg Badge"
+  class="rounded-[50%] inline-flex items-center justify-center font-bold text-solid-slate-50 text-center bg-solid-green-700 h-1200 w-1200"
+/>
+`;
+
+exports[`<Badge.Empty/> should render correctly with size md 1`] = `
+<span
+  aria-label="md Badge"
+  class="rounded-[50%] inline-flex items-center justify-center font-bold text-solid-slate-50 text-center bg-solid-green-700 h-800 w-800"
+/>
+`;
+
+exports[`<Badge.Empty/> should render correctly with size sm 1`] = `
+<span
+  aria-label="sm Badge"
+  class="rounded-[50%] inline-flex items-center justify-center font-bold text-solid-slate-50 text-center bg-solid-green-700 h-400 w-400"
+/>
+`;

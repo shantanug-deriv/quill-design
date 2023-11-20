@@ -4,8 +4,20 @@ import userEvent from '@testing-library/user-event'
 import { FooterAlignment } from '../types'
 
 describe('<ActionSheet.Footer/>', () => {
+  it('should not render footer if no action passed', () => {
+    render(<ActionSheet.Footer aria-label="Footer" />)
+    const footerEl = screen.queryByLabelText('Footer')
+    expect(footerEl).not.toBeInTheDocument()
+  })
   it('should render correctly with className', () => {
-    render(<ActionSheet.Footer className="px-50" aria-label="Footer" />)
+    const onActionButton = jest.fn()
+    render(
+      <ActionSheet.Footer
+        className="px-50"
+        aria-label="Footer"
+        primaryAction={{ content: 'Primary action', onAction: onActionButton }}
+      />,
+    )
     const footerEl = screen.getByLabelText('Footer')
     expect(footerEl).toHaveClass('px-50')
   })
@@ -19,7 +31,7 @@ describe('<ActionSheet.Footer/>', () => {
     const primaryBtn = screen.getByRole('button', { name: 'Primary action' })
     expect(primaryBtn).toBeInTheDocument()
     await userEvent.click(primaryBtn)
-    expect(onActionButton).toBeCalled()
+    expect(onActionButton).toHaveBeenCalled()
   })
   it('should render secondaryAction correctly', async () => {
     const onSecondaryAction = jest.fn()
@@ -36,7 +48,7 @@ describe('<ActionSheet.Footer/>', () => {
     })
     expect(secondaryBtn).toBeInTheDocument()
     await userEvent.click(secondaryBtn)
-    expect(onSecondaryAction).toBeCalled()
+    expect(onSecondaryAction).toHaveBeenCalled()
   })
   const alignments: FooterAlignment[] = ['vertical', 'horizontal']
 
@@ -46,6 +58,7 @@ describe('<ActionSheet.Footer/>', () => {
         <ActionSheet.Footer
           alignment={alignment}
           aria-label={`${alignment} footer`}
+          primaryAction={{ content: 'action', onAction: () => null }}
         />,
       )
       const footer = screen.getByLabelText(`${alignment} footer`)

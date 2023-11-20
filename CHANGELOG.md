@@ -1,3 +1,95 @@
+## [1.1.14](https://github.com/deriv-com/quill-design/compare/v1.1.13...v1.1.14) (2023-11-17)
+
+
+### ♻️ 	 Chores
+
+* removed h7 heading tag ([57c9f08](https://github.com/deriv-com/quill-design/commit/57c9f089c6628d42575cbac8f07061c1750eaa63))
+
+## [1.1.13](https://github.com/deriv-com/quill-design/compare/v1.1.12...v1.1.13) (2023-11-17)
+
+
+### ♻️ 	 Chores
+
+* Update from https://github.com/deriv-com/quill-tokens/commit/580adb8317681cf59c49be803d14651443468e79 ([10fba90](https://github.com/deriv-com/quill-design/commit/10fba90aeca7ca45f3c8b797ed27801579a8c567))
+
+## [1.1.12](https://github.com/deriv-com/quill-design/compare/v1.1.11...v1.1.12) (2023-11-16)
+
+
+### ♻️ 	 Chores
+
+* add border animation for input wrapper ([bfeb1bf](https://github.com/deriv-com/quill-design/commit/bfeb1bf4cce33b6bdb747b0759e00649ca0ac375))
+
+## [1.1.11](https://github.com/deriv-com/quill-design/compare/v1.1.10...v1.1.11) (2023-11-15)
+
+
+### ♻️ 	 Chores
+
+* :green_heart: added Badge component ([28467fe](https://github.com/deriv-com/quill-design/commit/28467fe5b8ce3a0c97563d31e2b3d49a470582cc))
+* :recycle: refactor the approach ([0316f2f](https://github.com/deriv-com/quill-design/commit/0316f2fefdac6fbfec79a2ca9abb9c592b85126d))
+* added a wrapper in portal test ([9d31649](https://github.com/deriv-com/quill-design/commit/9d31649401d6f6a96e126b03068aa8e9bcbea95f))
+* added test cases for empty label ([bb1db15](https://github.com/deriv-com/quill-design/commit/bb1db15754737985467189249f184020a7b9f1ee))
+* added test cases for label badge ([50d7251](https://github.com/deriv-com/quill-design/commit/50d7251efdaec8694d65cde0b9e4605b7603995f))
+* created different directory for each badge ([908294e](https://github.com/deriv-com/quill-design/commit/908294e540bd07428efc753becfbf6cf10202b0d))
+* exported action sheet ([1253d16](https://github.com/deriv-com/quill-design/commit/1253d16b67f0dd57be0dbc7ebc9071e7451935a2))
+* implemented context ([d538cc4](https://github.com/deriv-com/quill-design/commit/d538cc43f717fd1512c7f8bfd25a6d3b5cf346e6))
+* rename index.tsx to index.ts ([c421cb8](https://github.com/deriv-com/quill-design/commit/c421cb80c25ec38615eabb0f75621e1d415bcc13))
+* types are moved to a different file ([723a051](https://github.com/deriv-com/quill-design/commit/723a051cce6cc5c76aff5aaf9bc26ef0fa7ef372))
+* udpated story ([486db65](https://github.com/deriv-com/quill-design/commit/486db65e68b6c3fd1c72f19fae10f55226c3b5b2))
+* update chip component style and allow controlled behaviour ([f154615](https://github.com/deriv-com/quill-design/commit/f15461550177805d260a7aeecfbfa3e6c852ab7d))
+* update snapshots ([4b550a8](https://github.com/deriv-com/quill-design/commit/4b550a8cca370c7f9dcb9562013efae83cd2833b))
+* update typography default colors ([471bf69](https://github.com/deriv-com/quill-design/commit/471bf69a6aebf088ca2ac285958a5d4c093ecb57))
+
+## [1.1.10](https://github.com/deriv-com/quill-design/compare/v1.1.9...v1.1.10) (2023-11-15)
+
+
+### ♻️ 	 Chores
+
+* :bento: updated index files ([24ad912](https://github.com/deriv-com/quill-design/commit/24ad912ce6d80e4cf2beebb11e51d1b93193352b))
+* :building_construction: incorporated number pagination and variants ([3a82591](https://github.com/deriv-com/quill-design/commit/3a825913747b1aca0c8e213b2e54017ef237cab1))
+* :memo: updated storybook content ([9a16b28](https://github.com/deriv-com/quill-design/commit/9a16b28d98df655a64843d9528de75bf46ac359a))
+* :recycle: incorporated review comments ([8194164](https://github.com/deriv-com/quill-design/commit/8194164e62c5a06c67391680bb7881961e300244))
+* :recycle: incorporated review comments ([3cff7fb](https://github.com/deriv-com/quill-design/commit/3cff7fb1cc2992bb8a6fdd06cf787a8e578c92fc))
+* :recycle: incorporated review comments ([374c077](https://github.com/deriv-com/quill-design/commit/374c077afe4eb03ea6a9ff0abda000fc0c5c4653))
+* Merge branch 'main' into likhith/pagination-component ([9a511ea](https://github.com/deriv-com/quill-design/commit/9a511ea97202c0da7826f186e366ce51f24bde7d))
+
+
+### 🐛 	 Bug Fixes
+
+* :fire: removed theme variant placeholder ([de85297](https://github.com/deriv-com/quill-design/commit/de85297cc1c488421389b96ee237fc6e7b35e4ba))
+
+
+### 💎 	 Styles
+
+* :art: incorporated accessibility and styles ([4a67784](https://github.com/deriv-com/quill-design/commit/4a67784649edf8fa589a919431127d6ebc723214))
+* :lipstick: updated style in variants ([0445e80](https://github.com/deriv-com/quill-design/commit/0445e803bc8f1e2227a3562bb0694f6ed9cc6493))
+
+
+### 📦 	 Code Refactoring
+
+* :bug: incorporated child component in Pagination ([b6937d1](https://github.com/deriv-com/quill-design/commit/b6937d1c955ef915154b2791f5c500f908061b5e))
+* :label: added typesafety ([591be1b](https://github.com/deriv-com/quill-design/commit/591be1ba9af7b469a9ff72e966a814c358585d28))
+* :label: fixed type for mock file ([f33f2d8](https://github.com/deriv-com/quill-design/commit/f33f2d8edada0a25283efe00ca66fc196e1100fc))
+* :recycle: incorporated review comments ([7d4fa1f](https://github.com/deriv-com/quill-design/commit/7d4fa1f68e973f19f74b874b98b4e0956eb431a1))
+
+
+### 🚨 	 Tests
+
+* :white_check_mark: verify the functionality ([1ff0869](https://github.com/deriv-com/quill-design/commit/1ff0869cab57c812036502c1500c227f630019a1))
+
+## [1.1.9](https://github.com/deriv-com/quill-design/compare/v1.1.8...v1.1.9) (2023-11-14)
+
+
+### ♻️ 	 Chores
+
+* removed component from LinkItem to Link ([43ae415](https://github.com/deriv-com/quill-design/commit/43ae415ff07447fe8fa26773a2a8d50b009048ed))
+
+## [1.1.8](https://github.com/deriv-com/quill-design/compare/v1.1.7...v1.1.8) (2023-11-13)
+
+
+### ♻️ 	 Chores
+
+* renamed useScreen to useBreakpoints ([93bda54](https://github.com/deriv-com/quill-design/commit/93bda5436b0832601bfae0f7cab8d64d30d65f97))
+
 ## [1.1.7](https://github.com/deriv-com/quill-design/compare/v1.1.6...v1.1.7) (2023-11-13)
 
 

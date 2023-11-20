@@ -30,7 +30,7 @@ export const Text = forwardRef<HTMLParagraphElement, BodyTypographyProps>(
         ref={ref}
         className={qtMerge(
           bodyTextCVA({
-            colorStyle: 'prominent',
+            colorStyle: 'default',
             bold,
             italic,
             underline,
