@@ -1,3 +1,24 @@
+## [1.1.14](https://github.com/deriv-com/quill-design/compare/v1.1.13...v1.1.14) (2023-11-17)
+
+
+### ♻️ 	 Chores
+
+* removed h7 heading tag ([57c9f08](https://github.com/deriv-com/quill-design/commit/57c9f089c6628d42575cbac8f07061c1750eaa63))
+
+## [1.1.13](https://github.com/deriv-com/quill-design/compare/v1.1.12...v1.1.13) (2023-11-17)
+
+
+### ♻️ 	 Chores
+
+* Update from https://github.com/deriv-com/quill-tokens/commit/580adb8317681cf59c49be803d14651443468e79 ([10fba90](https://github.com/deriv-com/quill-design/commit/10fba90aeca7ca45f3c8b797ed27801579a8c567))
+
+## [1.1.12](https://github.com/deriv-com/quill-design/compare/v1.1.11...v1.1.12) (2023-11-16)
+
+
+### ♻️ 	 Chores
+
+* add border animation for input wrapper ([bfeb1bf](https://github.com/deriv-com/quill-design/commit/bfeb1bf4cce33b6bdb747b0759e00649ca0ac375))
+
 ## [1.1.11](https://github.com/deriv-com/quill-design/compare/v1.1.10...v1.1.11) (2023-11-15)
 
 
