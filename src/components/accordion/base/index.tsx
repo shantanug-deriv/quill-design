@@ -111,7 +111,9 @@ export const Base = ({
           <>
             {icon && <div className="flex">{icon}</div>}
             <div className="flex w-full flex-col gap-general-xs">
-              <Heading.H6 className="overflow-hidden">{title}</Heading.H6>
+              <Heading.H6 className="overflow-hidden text-center">
+                {title}
+              </Heading.H6>
               {subtitle && (
                 <Text
                   size="sm"
