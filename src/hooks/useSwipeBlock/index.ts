@@ -31,7 +31,8 @@ export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
     const handleScroll = () => {
       if (element) {
         const scrolled =
-          element.scrollTop > 0 && element.scrollTop < element.clientHeight
+          element.scrollTop > 0 &&
+          element.scrollTop + element.clientHeight < element.scrollHeight
         setIsScrolled(scrolled)
       }
     }
