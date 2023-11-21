@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
 
 export const actionSheetRootCVA = cva(
-  'pointer-events-auto relative z-20 mx-auto flex max-h-[70vh] min-w-[320px] max-w-[800px] flex-col overflow-y-auto rounded-t-800 bg-background-dialog px-800 pb-800 transition-all lg:max-h-full lg:max-w-[360px] lg:rounded-50',
+  'pointer-events-auto touch-none relative z-20 mx-auto flex max-h-[90vh] min-w-[320px] max-w-[800px] flex-col overflow-y-auto rounded-t-800 bg-background-dialog px-800 pb-800 transition-all lg:max-h-full lg:max-w-[360px] lg:rounded-50',
   {
     variants: {
       position: {

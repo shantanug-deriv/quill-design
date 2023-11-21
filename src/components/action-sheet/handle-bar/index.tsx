@@ -5,7 +5,7 @@ type BarProps = ComponentProps<'div'>
 const HandleBar = (props: BarProps) => {
   return (
     <div
-      className="flex touch-none items-center justify-center py-400 lg:hidden"
+      className="sticky left-50 top-50 flex touch-none items-center justify-center py-400 lg:hidden"
       data-testid="dt-actionsheet-handle-bar"
       {...props}
     >

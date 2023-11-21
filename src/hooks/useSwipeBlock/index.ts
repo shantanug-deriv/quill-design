@@ -9,6 +9,7 @@ type SwipeBlockType = {
 
 export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
   const [height, setHeight] = useState('auto')
+  const [isScrolled, setIsScrolled] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
   // TODO: replace this with useScreens when @aizad-deriv is done with it.
@@ -22,6 +23,29 @@ export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
       setHeight('auto')
     }
   }, [show, isLg])
+
+  // Check element is scrolled or not
+  useEffect(() => {
+    const element = containerRef.current
+
+    const handleScroll = () => {
+      if (element) {
+        const scrolled =
+          element.scrollTop > 0 && element.scrollTop < element.clientHeight
+        setIsScrolled(scrolled)
+      }
+    }
+
+    if (element) {
+      // Attach the scroll event listener when the component mounts
+      element.addEventListener('scroll', handleScroll)
+
+      // Clean up the event listener when the component unmounts
+      return () => {
+        element.removeEventListener('scroll', handleScroll)
+      }
+    }
+  }, [])
 
   const bindHandle = useDrag(
     ({ dragging, distance, initial, xy }) => {
@@ -44,28 +68,28 @@ export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
       } else {
         if (!isGoingDown) {
           if (draggingPoint >= 0 && draggingPoint <= windowHeight * 0.3) {
-            setHeight(`${windowHeight * 0.3}px`)
+            setHeight('30vh')
           } else if (
             draggingPoint >= windowHeight * 0.3 &&
             draggingPoint <= windowHeight * 0.5
           ) {
-            setHeight(`${windowHeight * 0.5}px`)
+            setHeight('50vh')
           } else {
-            setHeight(`${windowHeight * 0.7}px`)
+            setHeight('70vh')
           }
         } else {
           if (draggingPoint <= windowHeight * 0.3) {
             setHeight('0px')
             onClose?.()
           } else if (draggingPoint <= windowHeight * 0.5) {
-            setHeight(`${windowHeight * 0.3}px`)
+            setHeight('30vh')
           } else {
-            setHeight(`${windowHeight * 0.5}px`)
+            setHeight('50vh')
           }
         }
       }
     },
     { filterTaps: true },
   )
-  return { height, containerRef, bindHandle }
+  return { height, containerRef, bindHandle, isScrolled }
 }
