@@ -69,14 +69,13 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       rightStatusMessage,
       textAlignment = 'left',
       label,
-      placeholder,
       statusIcon: StatusIcon,
       ...rest
     },
     ref,
   ) => {
     return (
-      <div className="flex flex-col">
+      <div className="flex w-full flex-col">
         <div
           className={qtMerge(
             baseInputWrapperVariants({
@@ -104,7 +103,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               }),
             )}
             disabled={!!disabled}
-            placeholder={placeholder}
             ref={ref}
           />
 
