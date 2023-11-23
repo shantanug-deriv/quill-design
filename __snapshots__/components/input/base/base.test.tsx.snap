@@ -230,12 +230,12 @@ exports[`Input It should render an Input with status messages 1`] = `
       class="flex justify-between pt-400"
     >
       <p
-        class="py-50 px-800 text-50 leading-100 font-regular text-opacity-black-400"
+        class="py-50 px-800 text-50 leading-100 font-regular animate-drop-in text-opacity-black-400"
       >
         Message goes here
       </p>
       <p
-        class="py-50 px-800 text-50 leading-100 font-regular text-opacity-black-400 self-end"
+        class="py-50 px-800 text-50 leading-100 font-regular animate-drop-in text-opacity-black-400 self-end"
       >
         0/0
       </p>
