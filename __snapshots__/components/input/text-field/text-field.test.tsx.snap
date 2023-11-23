@@ -15,7 +15,7 @@ exports[`TextField It should render a TextField with error status 1`] = `
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -36,7 +36,7 @@ exports[`TextField It should render a TextField with success status 1`] = `
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -57,7 +57,7 @@ exports[`TextField It should render a default TextField 1`] = `
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>

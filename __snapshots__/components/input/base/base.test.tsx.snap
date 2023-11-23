@@ -15,7 +15,7 @@ exports[`Input It should render a default Input 1`] = `
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -37,7 +37,7 @@ exports[`Input It should render a disabled Input 1`] = `
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -59,7 +59,7 @@ exports[`Input It should render a disabled Input with a variant of fill 1`] = `
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -81,7 +81,7 @@ exports[`Input It should render a disabled Input with a variant of outline 1`] =
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -107,7 +107,7 @@ exports[`Input It should render an Input with a label 1`] = `
       </label>
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -128,7 +128,7 @@ exports[`Input It should render an Input with a size of sm 1`] = `
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -164,7 +164,7 @@ exports[`Input It should render an Input with a status icon 1`] = `
       </div>
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -185,7 +185,7 @@ exports[`Input It should render an Input with a variant of fill 1`] = `
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -206,7 +206,7 @@ exports[`Input It should render an Input with centered text 1`] = `
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -227,15 +227,15 @@ exports[`Input It should render an Input with status messages 1`] = `
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     >
       <p
-        class="py-50 px-800 text-50 leading-100 font-regular transition-all text-opacity-black-400"
+        class="py-50 px-800 text-50 leading-100 font-regular text-opacity-black-400"
       >
         Message goes here
       </p>
       <p
-        class="py-50 px-800 text-50 leading-100 font-regular transition-all text-opacity-black-400 self-end"
+        class="py-50 px-800 text-50 leading-100 font-regular text-opacity-black-400 self-end"
       >
         0/0
       </p>
