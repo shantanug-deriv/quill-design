@@ -4,6 +4,7 @@ import {
   HTMLInputTypeAttribute,
   InputHTMLAttributes,
   forwardRef,
+  useState,
 } from 'react'
 import {
   baseInputLabelVariants,
@@ -70,13 +71,16 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       textAlignment = 'left',
       label,
       statusIcon: StatusIcon,
+      onChange,
       ...rest
     },
     ref,
   ) => {
+    const [hasValue, setHasValue] = useState(false)
     return (
       <div className="flex w-full flex-col">
         <div
+          data-has-value={hasValue}
           className={qtMerge(
             baseInputWrapperVariants({
               size: inputSize,
@@ -103,6 +107,10 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               }),
             )}
             disabled={!!disabled}
+            onChange={(e) => {
+              setHasValue(!!e.target.value)
+              onChange?.(e)
+            }}
             ref={ref}
           />
 
