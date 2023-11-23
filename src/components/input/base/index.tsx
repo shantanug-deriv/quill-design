@@ -134,9 +134,10 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             </div>
           )}
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between pt-400">
           {leftStatusMessage && (
             <p
+              key={leftStatusMessage}
               className={qtJoin(
                 baseStatusMessageVariants({ status, disabled }),
               )}
@@ -146,6 +147,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           )}
           {rightStatusMessage && (
             <p
+              key={rightStatusMessage}
               className={qtJoin(
                 baseStatusMessageVariants({ status, className: 'self-end' }),
               )}

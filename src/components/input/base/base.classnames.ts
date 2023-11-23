@@ -84,13 +84,13 @@ export const baseInputLabelVariants = cva(
 )
 
 export const baseStatusMessageVariants = cva(
-  'py-50 px-800 text-50 leading-100 font-regular transition-all',
+  'py-50 px-800 text-50 leading-100 font-regular',
   {
     variants: {
       status: {
         neutral: 'text-opacity-black-400',
-        error: 'text-solid-red-900',
-        success: 'text-solid-green-900',
+        error: 'text-solid-red-900 animate-drop-in',
+        success: 'text-solid-green-900 animate-drop-in',
       },
       disabled: {
         true: 'text-opacity-black-400',
