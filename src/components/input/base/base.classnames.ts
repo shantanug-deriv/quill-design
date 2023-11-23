@@ -2,7 +2,7 @@ import { cva } from 'class-variance-authority'
 import { InputSize, type InputStatus } from '.'
 
 export const baseInputWrapperVariants = cva(
-  'w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer  [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:pt-600 data-[has-value=true]:pt-600',
+  'w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer  [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600',
   {
     variants: {
       variant: {
