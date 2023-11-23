@@ -5,7 +5,7 @@ import MockTab from './mocks/example'
 import { Tab } from '.'
 
 const meta = {
-  title: 'Components/tabs',
+  title: 'Components/Tabs',
   component: MockTab,
   parameters: {
     layout: 'centered',
