@@ -1,3 +1,19 @@
+# [1.2.0](https://github.com/deriv-com/quill-design/compare/v1.1.17...v1.2.0) (2023-11-24)
+
+
+### ✨ 	 Features
+
+* changed the tab naming ([b0100c2](https://github.com/deriv-com/quill-design/commit/b0100c27583e90a6241cbe53c0d4d39f4912f515))
+* tab component ([3f2bd3a](https://github.com/deriv-com/quill-design/commit/3f2bd3a4e65977570a4dcc7174d9cbf20f6fdeb1))
+* tab component css changes ([c713c8c](https://github.com/deriv-com/quill-design/commit/c713c8c81041382888d124d9faba6613aff366a5))
+
+
+### 🐛 	 Bug Fixes
+
+* added the description ([4adea1c](https://github.com/deriv-com/quill-design/commit/4adea1c4515ab30f085a14d8ddd713619e0fa73a))
+* code review comments ([1004f7e](https://github.com/deriv-com/quill-design/commit/1004f7eaf603fee54bf211c5f8a6ec4f1427f9fb))
+* removed the comments ([5b00012](https://github.com/deriv-com/quill-design/commit/5b000128c78265389588477fccd210eafb221798))
+
 ## [1.1.17](https://github.com/deriv-com/quill-design/compare/v1.1.16...v1.1.17) (2023-11-24)
 
 
