@@ -24,7 +24,7 @@ export const SelectableChip = forwardRef<
       icon: Icon,
       isDropdownOpen,
       dropdown = false,
-      selected = false,
+      selected,
       labelTag,
       onChipSelect,
       onDismiss,
@@ -35,11 +35,15 @@ export const SelectableChip = forwardRef<
   ) => {
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
       if (dismissible || dropdown) return
-      const target = event.currentTarget
-      const isSelected = target.getAttribute('data-state') === 'selected'
-      const selected_state = isSelected ? '' : 'selected'
-      target.setAttribute('data-state', selected_state)
-      onChipSelect?.(event, !isSelected)
+      if (selected === undefined) {
+        const target = event.currentTarget
+        const isSelected = target.getAttribute('data-state') === 'selected'
+        const selected_state = isSelected ? '' : 'selected'
+        target.setAttribute('data-state', selected_state)
+        onChipSelect?.(event, !isSelected)
+      } else {
+        onChipSelect?.(event, selected)
+      }
     }
 
     const handleDismiss = (
