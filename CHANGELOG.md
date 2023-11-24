@@ -1,3 +1,11 @@
+## [1.1.16](https://github.com/deriv-com/quill-design/compare/v1.1.15...v1.1.16) (2023-11-23)
+
+
+### ♻️ 	 Chores
+
+* added active satte of link component with small animation ([412520b](https://github.com/deriv-com/quill-design/commit/412520b8f6de4d9cdf1463ca101017bc8a27a4e8))
+* updated test snap ([346cebb](https://github.com/deriv-com/quill-design/commit/346cebbe8796f4e7a41c483372756fa5e2894bf2))
+
 ## [1.1.15](https://github.com/deriv-com/quill-design/compare/v1.1.14...v1.1.15) (2023-11-23)
 
 

@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
 import { LinkSize } from './types'
 
-export const linkCva = cva('inline-flex items-center gap-500', {
+export const linkCva = cva('inline-flex items-center gap-400 group', {
   variants: {
     colorStyle: {
       black: [
@@ -38,6 +38,17 @@ export const linkIconCva = cva('', {
     },
   },
 })
+export const linkRightIconCva = cva(
+  'group-active:translate-x-100 transition-all',
+  {
+    variants: {
+      colorStyle: {
+        black: 'fill-solid-slate-1400',
+        white: 'fill-solid-slate-50',
+      },
+    },
+  },
+)
 
 export const LinkIconStandaloneSizes: Record<
   LinkSize,
