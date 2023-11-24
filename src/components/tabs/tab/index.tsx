@@ -3,15 +3,16 @@ import qtMerge, { qtJoin } from 'qt-merge'
 import { IconSize, tabIconFillCVA, tabVariants } from '../tab.classnames'
 import { TabTriggerProps } from '../types'
 import { TabContext } from '../container'
+import { iconSize } from 'components/input/base/base.classnames'
 
 export const Tab = ({
   children,
   icon: Icon,
   className,
-  iconPosition,
   ...rest
 }: TabTriggerProps) => {
-  const { activeTab, handleToggle, id, size } = useContext(TabContext)
+  const { activeTab, handleToggle, id, size, iconPosition } =
+    useContext(TabContext)
 
   const onClickTab = (e: MouseEvent<HTMLButtonElement>) => {
     if (e.currentTarget.parentElement) {
@@ -49,8 +50,11 @@ export const Tab = ({
       ref={ref}
       {...rest}
     >
-      {Icon && size && (
-        <Icon {...IconSize[size]} className={qtJoin(tabIconFillCVA())} />
+      {Icon && size && iconPosition && (
+        <Icon
+          {...(IconSize[size], iconSize[iconPosition])}
+          className={qtJoin(tabIconFillCVA())}
+        />
       )}
       {children}
     </button>

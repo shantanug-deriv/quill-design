@@ -14,6 +14,7 @@ export const TabContainer = ({
   children,
   id,
   size = 'md',
+  iconPosition = 'left',
   className,
 }: TabProps) => {
   const [activeTab, setActiveTab] = useState(0)
@@ -23,7 +24,9 @@ export const TabContainer = ({
   }
 
   return (
-    <TabContext.Provider value={{ activeTab, handleToggle, id, size }}>
+    <TabContext.Provider
+      value={{ activeTab, handleToggle, id, size, iconPosition }}
+    >
       <div id={id} className={className}>
         {children}
       </div>
