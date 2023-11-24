@@ -1,6 +1,5 @@
 import { ComponentProps, useContext } from 'react'
 import { TabContext } from '../container'
-// import { cn } from 'Utils/cn';
 
 type PaneProps = ComponentProps<'div'>
 
