@@ -1,3 +1,10 @@
+## [1.1.17](https://github.com/deriv-com/quill-design/compare/v1.1.16...v1.1.17) (2023-11-24)
+
+
+### ♻️ 	 Chores
+
+* Improve chip component controlled selection behaviour ([f278b91](https://github.com/deriv-com/quill-design/commit/f278b918b3eaaddbb4db50c4d8f81e808dc05d2a))
+
 ## [1.1.16](https://github.com/deriv-com/quill-design/compare/v1.1.15...v1.1.16) (2023-11-23)
 
 
