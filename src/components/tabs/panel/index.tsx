@@ -12,6 +12,7 @@ export const TabPanel = ({ children, className, id }: PaneProps) => {
       role="tabpanel"
       id={`${id}-panel`}
       aria-labelledby={`${id}-trigger-${activeTab}`}
+      className={className}
     >
       {children}
     </div>

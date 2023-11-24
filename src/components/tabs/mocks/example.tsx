@@ -3,15 +3,15 @@ import { Tab } from '../tab'
 import { TabContainer } from '../container'
 import { TabContent, TabList, TabPanel } from '..'
 
-const MockTab = ({ disabled, ...props }: ComponentProps<typeof Tab>) => {
+const MockTab = ({ disabled, size, ...props }: ComponentProps<typeof Tab>) => {
   return (
-    <TabContainer id="test">
+    <TabContainer id="test" size={size}>
       <TabList>
         <Tab {...props}>Forex</Tab>
+        <Tab {...props}>Derived Indices</Tab>
         <Tab disabled={true} {...props}>
-          Derived Indices
+          Stocks
         </Tab>
-        <Tab {...props}>Stocks</Tab>
       </TabList>
       <TabContent>
         <TabPanel>Forex Tab</TabPanel>
