@@ -4,9 +4,33 @@ import { cva } from 'class-variance-authority'
 export const chipBaseVariant = cva('', {
   variants: {
     size: {
-      sm: ['max-h-1200', 'gap-x-400', 'px-600', 'py-[3px]', 'text-50'],
-      md: ['max-h-1600', 'gap-x-400', 'px-800', 'py-[5px]', 'text-75'],
-      lg: ['max-h-2400', 'gap-x-400', 'px-1200', 'py-[7px]', 'text-100'],
+      sm: [
+        'max-h-1200',
+        'w-max',
+        'min-w-[56px]',
+        'gap-x-400',
+        'px-600',
+        'py-[3px]',
+        'text-50',
+      ],
+      md: [
+        'max-h-1600',
+        'w-max',
+        'min-w-[72px]',
+        'gap-x-400',
+        'px-800',
+        'py-[5px]',
+        'text-75',
+      ],
+      lg: [
+        'max-h-2400',
+        'w-max',
+        'min-w-[96px]',
+        'gap-x-400',
+        'px-1200',
+        'py-[7px]',
+        'text-100',
+      ],
     },
     dismissible: {
       true: ['cursor-default'],
