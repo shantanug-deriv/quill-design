@@ -9,3 +9,5 @@ export type TabProps = ComponentProps<'button'> &
 export type TabTriggerProps = TabProps & {
   icon?: QuillIconComponent
 }
+
+export type TabSize = NonNullable<TabProps['size']>

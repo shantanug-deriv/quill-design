@@ -1,11 +1,10 @@
 import { useContext, useEffect, MouseEvent, useRef } from 'react'
-import qtMerge, { qtJoin } from 'qt-merge'
-import { IconSize, tabIconFillCVA, tabVariants } from '../tab.classnames'
+import qtMerge from 'qt-merge'
+import { IconSize, tabVariants } from '../tab.classnames'
 import { TabTriggerProps } from '../types'
 import { TabContext } from '../container'
-import { iconSize } from 'components/input/base/base.classnames'
 
-export const Tab = ({
+export const TabTrigger = ({
   children,
   icon: Icon,
   className,
@@ -52,8 +51,9 @@ export const Tab = ({
     >
       {Icon && size && iconPosition && (
         <Icon
-          {...(IconSize[size], iconSize[iconPosition])}
-          className={qtJoin(tabIconFillCVA())}
+          data-testid="dt-tab-trigger-icon"
+          {...IconSize[size]}
+          className="group-active:fill-opacity-black-600 group-disabled:fill-opacity-black-300 group-aria-selected:fill-solid-slate-1400"
         />
       )}
       {children}
@@ -61,4 +61,4 @@ export const Tab = ({
   )
 }
 
-Tab.displayName = 'Tab'
+TabTrigger.displayName = 'TabTrigger'
