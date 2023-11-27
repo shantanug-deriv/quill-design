@@ -39,21 +39,6 @@ export const tabVariants = cva(
   },
 )
 
-export const tabIconFillCVA = cva(
-  'group-disabled:fill-opacity-black-300 group-aria-selected:fill-solid-slate-1400 group-active:fill-opacity-black-600',
-  {
-    variants: {
-      size: {
-        sm: '',
-        md: '',
-      },
-      iconPosition: {
-        left: '',
-        top: '',
-      },
-    },
-  },
-)
 export const IconSize: Record<TabSize, { width: number; height: number }> = {
   sm: {
     width: 24,
