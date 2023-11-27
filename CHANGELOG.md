@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/deriv-com/quill-design/compare/v1.2.0...v1.2.1) (2023-11-27)
+
+
+### ♻️ 	 Chores
+
+* fixed some types issue, write test cases and added dot notation ([d45d0ae](https://github.com/deriv-com/quill-design/commit/d45d0aecacc85b43175e6ea14afcc5e905f06547))
+* moved icon classes ([e599aab](https://github.com/deriv-com/quill-design/commit/e599aab6aee8969c8e801f3da693da12e80aa94c))
+
 # [1.2.0](https://github.com/deriv-com/quill-design/compare/v1.1.17...v1.2.0) (2023-11-24)
 
 
