@@ -1,9 +1,9 @@
 import { createContext, useState } from 'react'
 import { TabProps } from '../types'
 
-type TabContextType = TabProps & {
+export type TabContextType = TabProps & {
   handleToggle?: (idx: number) => void
-  activeTab: number
+  activeTab?: number
 }
 
 export const TabContext = createContext<TabContextType>({

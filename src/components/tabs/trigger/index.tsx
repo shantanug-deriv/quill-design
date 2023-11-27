@@ -3,9 +3,8 @@ import qtMerge, { qtJoin } from 'qt-merge'
 import { IconSize, tabIconFillCVA, tabVariants } from '../tab.classnames'
 import { TabTriggerProps } from '../types'
 import { TabContext } from '../container'
-import { iconSize } from 'components/input/base/base.classnames'
 
-export const Tab = ({
+export const TabTrigger = ({
   children,
   icon: Icon,
   className,
@@ -52,7 +51,8 @@ export const Tab = ({
     >
       {Icon && size && iconPosition && (
         <Icon
-          {...(IconSize[size], iconSize[iconPosition])}
+          data-testid="dt-tab-trigger-icon"
+          {...IconSize[size]}
           className={qtJoin(tabIconFillCVA())}
         />
       )}
@@ -61,4 +61,4 @@ export const Tab = ({
   )
 }
 
-Tab.displayName = 'Tab'
+TabTrigger.displayName = 'TabTrigger'
