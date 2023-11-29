@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/deriv-com/quill-design/compare/v1.2.2...v1.2.3) (2023-11-29)
+
+
+### ♻️ 	 Chores
+
+* fix tab and action sheet export ([bf0ddc9](https://github.com/deriv-com/quill-design/commit/bf0ddc9511c7f9df2f5205e47fbcd68c9464571a))
+
 ## [1.2.2](https://github.com/deriv-com/quill-design/compare/v1.2.1...v1.2.2) (2023-11-29)
 
 
