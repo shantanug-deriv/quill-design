@@ -23,7 +23,7 @@ import { PaginationProps } from './pagination.types'
  * contentLength={100} variant="number" onPagination={handlePagination}>
  * />
  */
-const Pagination = ({
+export const Pagination = ({
   className,
   contentPerPage,
   contentLength,
