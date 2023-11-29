@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/deriv-com/quill-design/compare/v1.2.3...v1.2.4) (2023-11-29)
+
+
+### ♻️ 	 Chores
+
+* fix pagination export ([a49b1f2](https://github.com/deriv-com/quill-design/commit/a49b1f25c7f9257ac9e3f3ff014022a4bad3d1e9))
+
 ## [1.2.3](https://github.com/deriv-com/quill-design/compare/v1.2.2...v1.2.3) (2023-11-29)
 
 
