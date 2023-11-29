@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/deriv-com/quill-design/compare/v1.2.1...v1.2.2) (2023-11-29)
+
+
+### ♻️ 	 Chores
+
+* updated quill tokens fonts, requested by designers ([bd207d6](https://github.com/deriv-com/quill-design/commit/bd207d6acb3df9af2b43c0cc11b1a2f9d2af3454))
+
 ## [1.2.1](https://github.com/deriv-com/quill-design/compare/v1.2.0...v1.2.1) (2023-11-27)
 
 
