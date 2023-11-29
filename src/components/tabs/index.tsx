@@ -13,7 +13,7 @@ type TabType = {
   Panel: typeof TabPanel
 }
 
-const Tab: TabType = ({ children }: { children: ReactNode }) => {
+export const Tab: TabType = ({ children }: { children: ReactNode }) => {
   return <>{children}</>
 }
 
