@@ -12,7 +12,7 @@ export const TabContext = createContext<TabContextType>({
 
 export const TabContainer = ({
   children,
-  id,
+  id = 'tab-default-id',
   size = 'md',
   iconPosition = 'left',
   className,

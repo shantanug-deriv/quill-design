@@ -5,7 +5,8 @@ const MockTab = ({
   size,
   iconPosition,
   ...props
-}: ComponentProps<typeof Tab.Container>) => {
+}: ComponentProps<typeof Tab.Container> &
+  ComponentProps<typeof Tab.Trigger>) => {
   return (
     <Tab.Container id="test" size={size} iconPosition={iconPosition}>
       <Tab.List>
