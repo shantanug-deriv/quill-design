@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/deriv-com/quill-design/compare/v1.2.5...v1.2.6) (2023-12-04)
+
+
+### 🐛 	 Bug Fixes
+
+* fluid container padding issue ([adfb0fa](https://github.com/deriv-com/quill-design/commit/adfb0faf2aea3e030d9faf8ea3bda12092913088))
+
 ## [1.2.5](https://github.com/deriv-com/quill-design/compare/v1.2.4...v1.2.5) (2023-12-04)
 
 
