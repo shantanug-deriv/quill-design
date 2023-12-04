@@ -3,8 +3,8 @@ import { TabContext } from '../container'
 
 type PaneProps = ComponentProps<'div'>
 
-export const TabPanel = ({ children, className, id }: PaneProps) => {
-  const { activeTab } = useContext(TabContext)
+export const TabPanel = ({ children, className }: PaneProps) => {
+  const { activeTab, id } = useContext(TabContext)
 
   return (
     <div
