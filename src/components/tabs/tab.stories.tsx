@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { FlagAndorraIcon } from '@deriv/quill-icons'
 import {
   LabelPairedAndroidIcon,
   LabelPairedAppleIcon,
@@ -7,7 +6,6 @@ import {
   LabelPairedPlaceholderRegularIcon,
 } from '@deriv/quill-icons/LabelPaired'
 import MockTab from './mocks/example'
-import { Tab } from '.'
 import { QuillIconComponent } from 'types'
 
 const icons: Record<string, QuillIconComponent | undefined> = {
@@ -44,7 +42,7 @@ const meta = {
       description: 'Icon position is displayed either on the top or left',
     },
   },
-} satisfies Meta<typeof Tab>
+} satisfies Meta<typeof MockTab>
 
 export default meta
 type Story = StoryObj<typeof meta>
