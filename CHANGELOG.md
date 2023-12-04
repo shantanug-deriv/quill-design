@@ -1,3 +1,15 @@
+## [1.2.5](https://github.com/deriv-com/quill-design/compare/v1.2.4...v1.2.5) (2023-12-04)
+
+
+### ♻️ 	 Chores
+
+* storybook tab type issue and tab scrolling issue ([1bba0a6](https://github.com/deriv-com/quill-design/commit/1bba0a697ee7b37ba84b462ab926d0fd34c297da))
+
+
+### 🐛 	 Bug Fixes
+
+* tailwind custom css ([df41df2](https://github.com/deriv-com/quill-design/commit/df41df2e4a0765d56f0a2b39aa22c7abc7d86d63))
+
 ## [1.2.4](https://github.com/deriv-com/quill-design/compare/v1.2.3...v1.2.4) (2023-11-29)
 
 
