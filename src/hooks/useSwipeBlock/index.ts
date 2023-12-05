@@ -76,7 +76,7 @@ export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
           ) {
             setHeight('50vh')
           } else {
-            setHeight('70vh')
+            setHeight('90vh')
           }
         } else {
           if (draggingPoint <= windowHeight * 0.3) {
