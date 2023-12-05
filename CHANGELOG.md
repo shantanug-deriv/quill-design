@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/deriv-com/quill-design/compare/v1.2.6...v1.2.7) (2023-12-05)
+
+
+### ♻️ 	 Chores
+
+* fixed tab panel id ([207aad3](https://github.com/deriv-com/quill-design/commit/207aad3a463a69739759f01fdfa7301924018a3f))
+
 ## [1.2.6](https://github.com/deriv-com/quill-design/compare/v1.2.5...v1.2.6) (2023-12-04)
 
 
