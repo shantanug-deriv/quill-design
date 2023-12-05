@@ -21,7 +21,6 @@ const Root = ({
 
   const handleOpen = () => {
     setShow(true)
-    console.log(document.body)
     document.body.style.overflow = 'hidden'
   }
 
