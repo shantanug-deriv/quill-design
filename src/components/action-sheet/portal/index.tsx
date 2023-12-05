@@ -1,10 +1,11 @@
+import { ComponentProps, useContext } from 'react'
 import { createPortal } from 'react-dom'
 import qtMerge from 'qtMerge'
 import HandleBar from '../handle-bar'
 import { actionSheetRootCVA } from '../action-sheet.classnames'
 import { useSwipeBlock } from 'hooks'
 import { ActionSheetContext } from '../root'
-import { ComponentProps, useContext } from 'react'
+import { useSsr } from 'usehooks-ts'
 
 type PortalProps = ComponentProps<'div'>
 
@@ -15,8 +16,10 @@ const Portal = ({ children, ...restProps }: PortalProps) => {
     show,
     onClose: handleToggle,
   })
+  const { isServer } = useSsr()
 
-  //  TODO: need to update the transition classes
+  if (isServer) return null
+
   return (
     <>
       {createPortal(
