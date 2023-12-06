@@ -1,3 +1,10 @@
+## [1.2.9-beta.2](https://github.com/deriv-com/quill-design/compare/v1.2.9-beta.1...v1.2.9-beta.2) (2023-12-06)
+
+
+### ♻️ 	 Chores
+
+* updated readme file and added reference to wiki pages ([a31b90e](https://github.com/deriv-com/quill-design/commit/a31b90e942d17a97029533859be177fe19b3e970))
+
 ## [1.2.9-beta.1](https://github.com/deriv-com/quill-design/compare/v1.2.8...v1.2.9-beta.1) (2023-12-06)
 
 
