@@ -1,3 +1,102 @@
+## [1.2.7](https://github.com/deriv-com/quill-design/compare/v1.2.6...v1.2.7) (2023-12-05)
+
+
+### ♻️ 	 Chores
+
+* fixed tab panel id ([207aad3](https://github.com/deriv-com/quill-design/commit/207aad3a463a69739759f01fdfa7301924018a3f))
+
+## [1.2.6](https://github.com/deriv-com/quill-design/compare/v1.2.5...v1.2.6) (2023-12-04)
+
+
+### 🐛 	 Bug Fixes
+
+* fluid container padding issue ([adfb0fa](https://github.com/deriv-com/quill-design/commit/adfb0faf2aea3e030d9faf8ea3bda12092913088))
+
+## [1.2.5](https://github.com/deriv-com/quill-design/compare/v1.2.4...v1.2.5) (2023-12-04)
+
+
+### ♻️ 	 Chores
+
+* storybook tab type issue and tab scrolling issue ([1bba0a6](https://github.com/deriv-com/quill-design/commit/1bba0a697ee7b37ba84b462ab926d0fd34c297da))
+
+
+### 🐛 	 Bug Fixes
+
+* tailwind custom css ([df41df2](https://github.com/deriv-com/quill-design/commit/df41df2e4a0765d56f0a2b39aa22c7abc7d86d63))
+
+## [1.2.4](https://github.com/deriv-com/quill-design/compare/v1.2.3...v1.2.4) (2023-11-29)
+
+
+### ♻️ 	 Chores
+
+* fix pagination export ([a49b1f2](https://github.com/deriv-com/quill-design/commit/a49b1f25c7f9257ac9e3f3ff014022a4bad3d1e9))
+
+## [1.2.3](https://github.com/deriv-com/quill-design/compare/v1.2.2...v1.2.3) (2023-11-29)
+
+
+### ♻️ 	 Chores
+
+* fix tab and action sheet export ([bf0ddc9](https://github.com/deriv-com/quill-design/commit/bf0ddc9511c7f9df2f5205e47fbcd68c9464571a))
+
+## [1.2.2](https://github.com/deriv-com/quill-design/compare/v1.2.1...v1.2.2) (2023-11-29)
+
+
+### ♻️ 	 Chores
+
+* updated quill tokens fonts, requested by designers ([bd207d6](https://github.com/deriv-com/quill-design/commit/bd207d6acb3df9af2b43c0cc11b1a2f9d2af3454))
+
+## [1.2.1](https://github.com/deriv-com/quill-design/compare/v1.2.0...v1.2.1) (2023-11-27)
+
+
+### ♻️ 	 Chores
+
+* fixed some types issue, write test cases and added dot notation ([d45d0ae](https://github.com/deriv-com/quill-design/commit/d45d0aecacc85b43175e6ea14afcc5e905f06547))
+* moved icon classes ([e599aab](https://github.com/deriv-com/quill-design/commit/e599aab6aee8969c8e801f3da693da12e80aa94c))
+
+# [1.2.0](https://github.com/deriv-com/quill-design/compare/v1.1.17...v1.2.0) (2023-11-24)
+
+
+### ✨ 	 Features
+
+* changed the tab naming ([b0100c2](https://github.com/deriv-com/quill-design/commit/b0100c27583e90a6241cbe53c0d4d39f4912f515))
+* tab component ([3f2bd3a](https://github.com/deriv-com/quill-design/commit/3f2bd3a4e65977570a4dcc7174d9cbf20f6fdeb1))
+* tab component css changes ([c713c8c](https://github.com/deriv-com/quill-design/commit/c713c8c81041382888d124d9faba6613aff366a5))
+
+
+### 🐛 	 Bug Fixes
+
+* added the description ([4adea1c](https://github.com/deriv-com/quill-design/commit/4adea1c4515ab30f085a14d8ddd713619e0fa73a))
+* code review comments ([1004f7e](https://github.com/deriv-com/quill-design/commit/1004f7eaf603fee54bf211c5f8a6ec4f1427f9fb))
+* removed the comments ([5b00012](https://github.com/deriv-com/quill-design/commit/5b000128c78265389588477fccd210eafb221798))
+
+## [1.1.17](https://github.com/deriv-com/quill-design/compare/v1.1.16...v1.1.17) (2023-11-24)
+
+
+### ♻️ 	 Chores
+
+* Improve chip component controlled selection behaviour ([f278b91](https://github.com/deriv-com/quill-design/commit/f278b918b3eaaddbb4db50c4d8f81e808dc05d2a))
+
+## [1.1.16](https://github.com/deriv-com/quill-design/compare/v1.1.15...v1.1.16) (2023-11-23)
+
+
+### ♻️ 	 Chores
+
+* added active satte of link component with small animation ([412520b](https://github.com/deriv-com/quill-design/commit/412520b8f6de4d9cdf1463ca101017bc8a27a4e8))
+* updated test snap ([346cebb](https://github.com/deriv-com/quill-design/commit/346cebbe8796f4e7a41c483372756fa5e2894bf2))
+
+## [1.1.15](https://github.com/deriv-com/quill-design/compare/v1.1.14...v1.1.15) (2023-11-23)
+
+
+### ♻️ 	 Chores
+
+* add animation to all statuses ([989b131](https://github.com/deriv-com/quill-design/commit/989b1318ac43263d03a50247d762f74bb6019184))
+* add status message animations ([4665137](https://github.com/deriv-com/quill-design/commit/4665137d554ae56bf7a7fda0ad323842792aafc6))
+* add updated snapshots ([d5ab305](https://github.com/deriv-com/quill-design/commit/d5ab305a252a223e3c514f3aae42f04ea3376727))
+* adjust padding for input with label and value ([6939324](https://github.com/deriv-com/quill-design/commit/6939324d0c4205260d8a2ab18a97332aca4a2f59))
+* remove unnecessary w-full ([d763c8f](https://github.com/deriv-com/quill-design/commit/d763c8fd4d2f5526147a71bfe1a5c846ee9f4657))
+* scope margin to input with label ([51ed663](https://github.com/deriv-com/quill-design/commit/51ed663ea4514be4281359977390ea7d64c6e330))
+* set default with to w-full set border transition on hover remove default placeholder ([988ac49](https://github.com/deriv-com/quill-design/commit/988ac49dec8224292d35f14b537d32f16fac123a))
+
 ## [1.1.14](https://github.com/deriv-com/quill-design/compare/v1.1.13...v1.1.14) (2023-11-17)
 
 

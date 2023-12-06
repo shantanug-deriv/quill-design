@@ -40,7 +40,12 @@ const meta = {
         type: 'select',
       },
     },
-    onChipSelect: { action: 'onChipSelect' },
+    selected: {
+      name: 'selected',
+      control: 'boolean',
+      description:
+        'A boolean flag indicating whether the chip is in a selected/active state. If `selected` is set to `true` or `false`, the chip will act as a controlled component, allowing external control over its state. If no value is passed (undefined), the chip will be uncontrolled, and its state will be managed internally.',
+    },
   },
   tags: ['autodocs'],
 } satisfies Meta<typeof Chip>

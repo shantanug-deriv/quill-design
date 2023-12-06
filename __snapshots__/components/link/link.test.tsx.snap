@@ -3,7 +3,7 @@
 exports[`Link should render correctly with caption size and color black 1`] = `
 <div>
   <a
-    class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-400 text-50"
+    class="inline-flex items-center gap-400 group text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-400 text-50"
   >
     Click me - 
     caption
@@ -14,7 +14,7 @@ exports[`Link should render correctly with caption size and color black 1`] = `
 exports[`Link should render correctly with caption size and color white 1`] = `
 <div>
   <a
-    class="inline-flex items-center gap-500 text-solid-slate-50 hover:underline hover:cursor-pointer active:underline p-400 text-50"
+    class="inline-flex items-center gap-400 group text-solid-slate-50 hover:underline hover:cursor-pointer active:underline p-400 text-50"
   >
     Click me - 
     caption
@@ -24,7 +24,7 @@ exports[`Link should render correctly with caption size and color white 1`] = `
 
 exports[`Link should render correctly with disabled false 1`] = `
 <a
-  class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-400 text-50"
+  class="inline-flex items-center gap-400 group text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-400 text-50"
 >
   Click me disabled
 </a>
@@ -32,7 +32,7 @@ exports[`Link should render correctly with disabled false 1`] = `
 
 exports[`Link should render correctly with disabled true 1`] = `
 <a
-  class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-400 text-50 opacity-300 cursor-none pointer-events-none"
+  class="inline-flex items-center gap-400 group text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-400 text-50 opacity-300 cursor-none pointer-events-none"
 >
   Click me disabled
 </a>
@@ -41,7 +41,7 @@ exports[`Link should render correctly with disabled true 1`] = `
 exports[`Link should render correctly with lg size and color black 1`] = `
 <div>
   <a
-    class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-800 text-100"
+    class="inline-flex items-center gap-400 group text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-800 text-100"
   >
     Click me - 
     lg
@@ -52,7 +52,7 @@ exports[`Link should render correctly with lg size and color black 1`] = `
 exports[`Link should render correctly with lg size and color white 1`] = `
 <div>
   <a
-    class="inline-flex items-center gap-500 text-solid-slate-50 hover:underline hover:cursor-pointer active:underline p-800 text-100"
+    class="inline-flex items-center gap-400 group text-solid-slate-50 hover:underline hover:cursor-pointer active:underline p-800 text-100"
   >
     Click me - 
     lg
@@ -63,7 +63,7 @@ exports[`Link should render correctly with lg size and color white 1`] = `
 exports[`Link should render correctly with md size and color black 1`] = `
 <div>
   <a
-    class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-600 text-75"
+    class="inline-flex items-center gap-400 group text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-600 text-75"
   >
     Click me - 
     md
@@ -74,7 +74,7 @@ exports[`Link should render correctly with md size and color black 1`] = `
 exports[`Link should render correctly with md size and color white 1`] = `
 <div>
   <a
-    class="inline-flex items-center gap-500 text-solid-slate-50 hover:underline hover:cursor-pointer active:underline p-600 text-75"
+    class="inline-flex items-center gap-400 group text-solid-slate-50 hover:underline hover:cursor-pointer active:underline p-600 text-75"
   >
     Click me - 
     md
@@ -85,7 +85,7 @@ exports[`Link should render correctly with md size and color white 1`] = `
 exports[`Link should render correctly with sm size and color black 1`] = `
 <div>
   <a
-    class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-400 text-50"
+    class="inline-flex items-center gap-400 group text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-400 text-50"
   >
     Click me - 
     sm
@@ -96,7 +96,7 @@ exports[`Link should render correctly with sm size and color black 1`] = `
 exports[`Link should render correctly with sm size and color white 1`] = `
 <div>
   <a
-    class="inline-flex items-center gap-500 text-solid-slate-50 hover:underline hover:cursor-pointer active:underline p-400 text-50"
+    class="inline-flex items-center gap-400 group text-solid-slate-50 hover:underline hover:cursor-pointer active:underline p-400 text-50"
   >
     Click me - 
     sm
@@ -107,7 +107,7 @@ exports[`Link should render correctly with sm size and color white 1`] = `
 exports[`Link should render correctly with xl size and color black 1`] = `
 <div>
   <a
-    class="inline-flex items-center gap-500 text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-1200 text-300"
+    class="inline-flex items-center gap-400 group text-solid-slate-1400 hover:underline hover:cursor-pointer active:underline p-1200 text-300"
   >
     Click me - 
     xl
@@ -118,7 +118,7 @@ exports[`Link should render correctly with xl size and color black 1`] = `
 exports[`Link should render correctly with xl size and color white 1`] = `
 <div>
   <a
-    class="inline-flex items-center gap-500 text-solid-slate-50 hover:underline hover:cursor-pointer active:underline p-1200 text-300"
+    class="inline-flex items-center gap-400 group text-solid-slate-50 hover:underline hover:cursor-pointer active:underline p-1200 text-300"
   >
     Click me - 
     xl

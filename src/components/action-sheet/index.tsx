@@ -19,7 +19,7 @@ type ActionSheetType = {
   Close: typeof ActionSheetClose
 }
 
-const ActionSheet: ActionSheetType = ({
+export const ActionSheet: ActionSheetType = ({
   children,
 }: {
   children: ReactNode
