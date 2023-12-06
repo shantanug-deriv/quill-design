@@ -12,17 +12,17 @@ const Footer = ({
   className,
   ...restProps
 }: FooterProps) => {
-  const { handleOpen } = useContext(ActionSheetContext)
+  const { handleClose } = useContext(ActionSheetContext)
   if (!primaryAction && !secondaryAction) return null
 
   const primaryActionHandler = () => {
     primaryAction?.onAction()
-    handleOpen?.()
+    handleClose?.()
   }
 
   const secondaryActionHandler = () => {
     secondaryAction?.onAction()
-    handleOpen?.()
+    handleClose?.()
   }
 
   return (
