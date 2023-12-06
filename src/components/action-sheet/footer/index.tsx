@@ -2,6 +2,8 @@ import qtMerge from 'qtMerge'
 import { actionSheetFooterCVA } from '../action-sheet.classnames'
 import { FooterProps } from '../types'
 import Button from '../../button/basic'
+import { useContext } from 'react'
+import { ActionSheetContext } from '../root'
 
 const Footer = ({
   primaryAction,
@@ -10,7 +12,19 @@ const Footer = ({
   className,
   ...restProps
 }: FooterProps) => {
+  const { handleClose } = useContext(ActionSheetContext)
   if (!primaryAction && !secondaryAction) return null
+
+  const primaryActionHandler = () => {
+    primaryAction?.onAction()
+    handleClose?.()
+  }
+
+  const secondaryActionHandler = () => {
+    secondaryAction?.onAction()
+    handleClose?.()
+  }
+
   return (
     <div
       className={qtMerge(actionSheetFooterCVA({ alignment, className }))}
@@ -18,7 +32,7 @@ const Footer = ({
     >
       {primaryAction && (
         <Button
-          onClick={primaryAction.onAction}
+          onClick={primaryActionHandler}
           colorStyle="black"
           size="lg"
           fullWidth
@@ -28,7 +42,7 @@ const Footer = ({
       )}
       {secondaryAction && (
         <Button
-          onClick={secondaryAction.onAction}
+          onClick={secondaryActionHandler}
           variant="secondary"
           colorStyle="black"
           size="lg"

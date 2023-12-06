@@ -2,7 +2,8 @@ import { useState, createContext } from 'react'
 import { RootProps } from '../types'
 
 type ActionSheetContextType = RootProps & {
-  handleToggle?: () => void
+  handleOpen?: () => void
+  handleClose?: () => void
 }
 
 export const ActionSheetContext = createContext<ActionSheetContextType>({
@@ -17,13 +18,28 @@ const Root = ({
   expandable = true,
 }: RootProps) => {
   const [show, setShow] = useState(false)
-  const handleToggle = () => {
-    setShow((prev) => !prev)
+
+  const handleOpen = () => {
+    setShow(true)
+    document.body.style.overflow = 'hidden'
+  }
+
+  const handleClose = () => {
+    setShow(false)
+    document.body.style.overflow = 'auto'
   }
 
   return (
     <ActionSheetContext.Provider
-      value={{ show, handleToggle, position, type, expandable, className }}
+      value={{
+        show,
+        handleOpen,
+        handleClose,
+        position,
+        type,
+        expandable,
+        className,
+      }}
     >
       {children}
     </ActionSheetContext.Provider>
