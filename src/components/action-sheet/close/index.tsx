@@ -9,7 +9,7 @@ const Close = ({ className, ...restProps }: CloseProps) => {
   return (
     <button
       className={qtMerge(
-        'pointer-events-auto absolute right-50 top-800 z-20 hidden cursor-pointer lg:block',
+        'pointer-events-auto sticky top-800 z-20 ml-auto hidden cursor-pointer lg:block',
         className,
       )}
       onClick={handleClose}
