@@ -21,3 +21,13 @@ export const accordionBaseVariant = cva(accordionBaseClassNames, {
     divider: 'both',
   },
 })
+
+export const AccordionSizeCVA = cva('', {
+  variants: {
+    size: {
+      sm: 'md',
+      md: 'lg',
+      lg: 'xs',
+    },
+  },
+})

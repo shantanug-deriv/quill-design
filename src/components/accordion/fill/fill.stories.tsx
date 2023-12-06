@@ -4,7 +4,7 @@ import {
   StandaloneAndroidIcon,
   StandaloneAppStoreIcon,
   StandaloneAppStoreIosIcon,
-  StandaloneArrowDownAZBoldIcon,
+  IllustrativeAdvertiseIcon,
 } from '@deriv/quill-icons/Standalone'
 import { Heading } from 'components/typography'
 
@@ -15,9 +15,9 @@ const meta = {
     icon: {
       options: ['Android', 'App Store', 'IOS'],
       mapping: {
-        Android: <StandaloneAndroidIcon />,
-        'App Store': <StandaloneAppStoreIcon />,
-        IOS: <StandaloneAppStoreIosIcon />,
+        Android: StandaloneAndroidIcon,
+        'App Store': StandaloneAppStoreIcon,
+        IOS: StandaloneAppStoreIosIcon,
       },
     },
   },
@@ -48,7 +48,7 @@ export const NoIcon: Story = {
 
 export const ShortContent: Story = {
   args: {
-    icon: <StandaloneArrowDownAZBoldIcon />,
+    icon: IllustrativeAdvertiseIcon,
     title: 'Accordion Fill',
     subtitle: 'This is a test subtitle',
     divider: 'both',
@@ -65,7 +65,7 @@ export const ShortContent: Story = {
 
 export const LongSubtitle: Story = {
   args: {
-    icon: <StandaloneArrowDownAZBoldIcon />,
+    icon: IllustrativeAdvertiseIcon,
     title: 'Accordion Fill (Long Subtitle)',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
@@ -83,7 +83,7 @@ export const LongSubtitle: Story = {
 
 export const LongContent: Story = {
   args: {
-    icon: <StandaloneAndroidIcon />,
+    icon: IllustrativeAdvertiseIcon,
     title: 'Accordion Fill (Long content)',
     subtitle: 'This is a test subtitle',
     content: () => (

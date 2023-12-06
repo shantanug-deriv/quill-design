@@ -4,7 +4,7 @@ import {
   StandaloneAndroidIcon,
   StandaloneAppStoreIcon,
   StandaloneAppStoreIosIcon,
-  StandaloneArrowDownAZBoldIcon,
+  IllustrativeAdvertiseIcon,
 } from '@deriv/quill-icons/Standalone'
 import { Heading } from 'components/typography'
 
@@ -15,9 +15,9 @@ const meta = {
     icon: {
       options: ['Android', 'App Store', 'IOS'],
       mapping: {
-        Android: <StandaloneAndroidIcon />,
-        'App Store': <StandaloneAppStoreIcon />,
-        IOS: <StandaloneAppStoreIosIcon />,
+        Android: StandaloneAndroidIcon,
+        'App Store': StandaloneAppStoreIcon,
+        IOS: StandaloneAppStoreIosIcon,
       },
     },
   },
@@ -49,7 +49,7 @@ export const NoIcon: Story = {
 
 export const ShortContent: Story = {
   args: {
-    icon: <StandaloneArrowDownAZBoldIcon />,
+    icon: IllustrativeAdvertiseIcon,
     title: 'Accordion Flush',
     subtitle: 'This is a subtitle',
     divider: 'both',
@@ -65,7 +65,7 @@ export const ShortContent: Story = {
 
 export const LongSubtitle: Story = {
   args: {
-    icon: <StandaloneArrowDownAZBoldIcon />,
+    icon: IllustrativeAdvertiseIcon,
     title: 'Accordion Flush (Long Subtitle)',
     divider: 'bottom',
     subtitle:
@@ -83,7 +83,7 @@ export const LongSubtitle: Story = {
 
 export const LongContent: Story = {
   args: {
-    icon: <StandaloneAndroidIcon />,
+    icon: StandaloneAndroidIcon,
     title: 'Accordion Flush (Long Content)',
     subtitle: 'This is a test subtitle',
     divider: 'both',
@@ -99,7 +99,7 @@ export const LongContent: Story = {
 
 export const OnlyBottom: Story = {
   args: {
-    icon: <StandaloneAndroidIcon />,
+    icon: StandaloneAndroidIcon,
     title: 'Accordion Flush',
     subtitle: 'Only bottom has border',
     content: () => (

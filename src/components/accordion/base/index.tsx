@@ -1,8 +1,8 @@
-import { AccordionProps } from '../types'
+import { AccordionProps, sizeVariant } from '../types'
 import { StandaloneChevronDownRegularIcon } from '@deriv/quill-icons/Standalone'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import qtMerge from 'qtMerge'
-import { Heading, Text } from 'components/typography'
+import { Text } from 'components/typography'
 import {
   accordionBaseVariant,
   accordionStateClassNames,
@@ -16,7 +16,9 @@ export const Base = ({
   subtitle,
   content: Content,
   expanded = false,
-  icon,
+  icon: Icon,
+  iconSize = 'sm',
+  size = 'sm',
   divider = 'none',
   customContent: CustomContent,
   contentClassname,
@@ -109,11 +111,14 @@ export const Base = ({
           <CustomContent />
         ) : (
           <>
-            {icon && <div className="flex">{icon}</div>}
-            <div className="flex w-full flex-col gap-general-xs">
-              <Heading.H6 className="overflow-hidden text-center">
+            {Icon && <div className="flex">{<Icon iconSize={iconSize} />}</div>}
+            <div className="flex w-full flex-col items-start gap-general-xs">
+              <Text
+                size={sizeVariant[size]}
+                className="overflow-hidden text-center"
+              >
                 {title}
-              </Heading.H6>
+              </Text>
               {subtitle && (
                 <Text
                   size="sm"
