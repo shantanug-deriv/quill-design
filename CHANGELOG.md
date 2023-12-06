@@ -1,3 +1,10 @@
+## [1.2.9-beta.1](https://github.com/deriv-com/quill-design/compare/v1.2.8...v1.2.9-beta.1) (2023-12-06)
+
+
+### ♻️ 	 Chores
+
+* removed tailwind base ( css reset ) ([bdba02f](https://github.com/deriv-com/quill-design/commit/bdba02fc0086c4efab69df90ee11772991fc5973))
+
 ## [1.2.8](https://github.com/deriv-com/quill-design/compare/v1.2.7...v1.2.8) (2023-12-06)
 
 
