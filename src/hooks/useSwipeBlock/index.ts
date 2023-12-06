@@ -38,10 +38,8 @@ export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
     }
 
     if (element) {
-      // Attach the scroll event listener when the component mounts
       element.addEventListener('scroll', handleScroll)
 
-      // Clean up the event listener when the component unmounts
       return () => {
         element.removeEventListener('scroll', handleScroll)
       }
