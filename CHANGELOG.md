@@ -1,3 +1,19 @@
+## [1.2.8](https://github.com/deriv-com/quill-design/compare/v1.2.7...v1.2.8) (2023-12-06)
+
+
+### ♻️ 	 Chores
+
+* added is server condition ([2262f01](https://github.com/deriv-com/quill-design/commit/2262f0191a77d1a1adcd18e5caa7ce5173d42f61))
+* fixed body dragging in lg ([e53048a](https://github.com/deriv-com/quill-design/commit/e53048aae4be905dcf68762aa097fe74d4c0c318))
+* fixed close button position ([7984d0b](https://github.com/deriv-com/quill-design/commit/7984d0b129e1f1ae9d778284ec9b1d953acdb84f))
+* fixed footer buttons action ([2dcb9f4](https://github.com/deriv-com/quill-design/commit/2dcb9f4b51ff73cf7c11f3211308548b25c71b6e))
+* improve acction sheet ([056e3db](https://github.com/deriv-com/quill-design/commit/056e3db82e87f8f4fd05f926a42170b804391e48))
+* improve acction sheet v2 ([5e7b29b](https://github.com/deriv-com/quill-design/commit/5e7b29b6f791adf33e1801087b5a719cf012dab6))
+* udpated portal test for use ssr hook ([0e1d1a0](https://github.com/deriv-com/quill-design/commit/0e1d1a083a21f730e00e156b53e9dffccc41ff60))
+* updated max height form 70vh to 90vh ([9b7825e](https://github.com/deriv-com/quill-design/commit/9b7825eb1cd4e75406f3248df4b8a0fcdabc6b2f))
+* updated toggle function ([d04063b](https://github.com/deriv-com/quill-design/commit/d04063bc1c184cf29f154b1981ea96dd0f92b9c8))
+* updated useSwipeBlock hooks test ([71ce4b9](https://github.com/deriv-com/quill-design/commit/71ce4b967a54e07fe0c108c9f75a1b0167a84848))
+
 ## [1.2.7](https://github.com/deriv-com/quill-design/compare/v1.2.6...v1.2.7) (2023-12-05)
 
 
