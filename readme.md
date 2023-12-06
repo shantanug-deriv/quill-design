@@ -6,4 +6,4 @@ Deriv Quill Design UI Components
 
 ## Installation
 
-For installation please checkout [Prjoect Wiki Pages](https://github.com/deriv-com/quill-design/wiki)
+For installation please checkout [project Wiki Pages](https://github.com/deriv-com/quill-design/wiki)
