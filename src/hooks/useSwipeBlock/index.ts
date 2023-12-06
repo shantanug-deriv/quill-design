@@ -92,5 +92,5 @@ export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
     },
     { filterTaps: true },
   )
-  return { height, containerRef, bindHandle, isScrolled }
+  return { height, containerRef, bindHandle, isScrolled, isLg }
 }

@@ -12,7 +12,7 @@ type PortalProps = ComponentProps<'div'>
 const Portal = ({ children, ...restProps }: PortalProps) => {
   const { show, handleClose, className, position, type, expandable } =
     useContext(ActionSheetContext)
-  const { height, containerRef, bindHandle, isScrolled } = useSwipeBlock({
+  const { height, containerRef, bindHandle, isScrolled, isLg } = useSwipeBlock({
     show,
     onClose: handleClose,
   })
@@ -43,7 +43,7 @@ const Portal = ({ children, ...restProps }: PortalProps) => {
               )}
               ref={containerRef}
               style={{ height }}
-              {...(!isScrolled && expandable ? bindHandle() : {})}
+              {...(!isScrolled && !isLg && expandable ? bindHandle() : {})}
             >
               {expandable && <HandleBar {...bindHandle()} />}
               {children}
