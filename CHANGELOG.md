@@ -1,3 +1,10 @@
+## [1.2.9-beta.4](https://github.com/deriv-com/quill-design/compare/v1.2.9-beta.3...v1.2.9-beta.4) (2023-12-07)
+
+
+### ♻️ 	 Chores
+
+* updated storybook configs for tailwind css ([d2adb92](https://github.com/deriv-com/quill-design/commit/d2adb92f857b54d3a4517d428af1e6bc33725fff))
+
 ## [1.2.9-beta.3](https://github.com/deriv-com/quill-design/compare/v1.2.9-beta.2...v1.2.9-beta.3) (2023-12-06)
 
 
