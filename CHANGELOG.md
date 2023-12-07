@@ -1,3 +1,31 @@
+## [1.2.9-beta.4](https://github.com/deriv-com/quill-design/compare/v1.2.9-beta.3...v1.2.9-beta.4) (2023-12-07)
+
+
+### ♻️ 	 Chores
+
+* updated storybook configs for tailwind css ([d2adb92](https://github.com/deriv-com/quill-design/commit/d2adb92f857b54d3a4517d428af1e6bc33725fff))
+
+## [1.2.9-beta.3](https://github.com/deriv-com/quill-design/compare/v1.2.9-beta.2...v1.2.9-beta.3) (2023-12-06)
+
+
+### ♻️ 	 Chores
+
+* updated readme file ([cc33dc5](https://github.com/deriv-com/quill-design/commit/cc33dc514ea6cfb6f98d18955a1b2865b93c0c5b))
+
+## [1.2.9-beta.2](https://github.com/deriv-com/quill-design/compare/v1.2.9-beta.1...v1.2.9-beta.2) (2023-12-06)
+
+
+### ♻️ 	 Chores
+
+* updated readme file and added reference to wiki pages ([a31b90e](https://github.com/deriv-com/quill-design/commit/a31b90e942d17a97029533859be177fe19b3e970))
+
+## [1.2.9-beta.1](https://github.com/deriv-com/quill-design/compare/v1.2.8...v1.2.9-beta.1) (2023-12-06)
+
+
+### ♻️ 	 Chores
+
+* removed tailwind base ( css reset ) ([bdba02f](https://github.com/deriv-com/quill-design/commit/bdba02fc0086c4efab69df90ee11772991fc5973))
+
 ## [1.2.8](https://github.com/deriv-com/quill-design/compare/v1.2.7...v1.2.8) (2023-12-06)
 
 

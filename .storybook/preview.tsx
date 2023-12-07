@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import type { Preview } from '@storybook/react'
 import { withThemeByClassName } from '@storybook/addon-styling'
-
 import '../src/styles.scss'
 import '../quill-tailwind/styles.css'
 import '../quill-tailwind/fonts.css'
+import './tailwind.scss'
 
 const preview: Preview = {
   parameters: {
