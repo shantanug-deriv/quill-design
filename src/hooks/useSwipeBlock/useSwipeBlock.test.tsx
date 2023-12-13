@@ -40,4 +40,10 @@ describe('useSwipeBlock', () => {
 
     expect(result.current.height).toBe('auto')
   })
+
+  it('should initialize isScrolled to false', () => {
+    const { result } = renderHook(() => useSwipeBlock({}))
+
+    expect(result.current.isScrolled).toBe(false)
+  })
 })

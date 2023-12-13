@@ -24,6 +24,13 @@ const render = (
   })
 }
 
+jest.mock('usehooks-ts', () => ({
+  ...jest.requireActual('usehooks-ts'),
+  useSsr: jest.fn().mockImplementation(() => ({
+    isServer: false,
+  })),
+}))
+
 describe('<ActionSheet.Portal/>', () => {
   it('should set the data-state attribute to "open" when the show is true', async () => {
     render(

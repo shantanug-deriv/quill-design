@@ -3,7 +3,7 @@
 exports[`<ActionSheet.Footer/> should render correctly with horizontal 1`] = `
 <div
   aria-label="horizontal footer"
-  class="flex gap-400 pt-800 lg:mt-auto flex-row"
+  class="flex gap-400 pt-800 mt-auto flex-row"
 >
   <button
     class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer w-full bg-solid-slate-1400 text-solid-slate-50 enabled:hover:bg-opacity-black-700 enabled:active::bg-opacity-black-800 rounded-800 text-body-md leading-body-md h-[48px] min-w-[96px] px-800 py-600 gap-400"
@@ -20,7 +20,7 @@ exports[`<ActionSheet.Footer/> should render correctly with horizontal 1`] = `
 exports[`<ActionSheet.Footer/> should render correctly with vertical 1`] = `
 <div
   aria-label="vertical footer"
-  class="flex gap-400 pt-800 lg:mt-auto flex-col"
+  class="flex gap-400 pt-800 mt-auto flex-col"
 >
   <button
     class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer w-full bg-solid-slate-1400 text-solid-slate-50 enabled:hover:bg-opacity-black-700 enabled:active::bg-opacity-black-800 rounded-800 text-body-md leading-body-md h-[48px] min-w-[96px] px-800 py-600 gap-400"
