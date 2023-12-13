@@ -1,3 +1,10 @@
+## [1.2.10](https://github.com/deriv-com/quill-design/compare/v1.2.9...v1.2.10) (2023-12-13)
+
+
+### ♻️ 	 Chores
+
+* updated chips dot notation exports ([d6da388](https://github.com/deriv-com/quill-design/commit/d6da38840781889ac6215c5fbf57f4c3430c67ac))
+
 ## [1.2.9](https://github.com/deriv-com/quill-design/compare/v1.2.8...v1.2.9) (2023-12-07)
 
 
