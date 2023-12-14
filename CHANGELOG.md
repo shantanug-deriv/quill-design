@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/deriv-com/quill-design/compare/v1.2.10...v1.2.11) (2023-12-14)
+
+
+### 🐛 	 Bug Fixes
+
+* grey line tab issue ([d963862](https://github.com/deriv-com/quill-design/commit/d9638628e5f435356e38142cac0724e462cbf3fa))
+
 ## [1.2.10](https://github.com/deriv-com/quill-design/compare/v1.2.9...v1.2.10) (2023-12-13)
 
 
