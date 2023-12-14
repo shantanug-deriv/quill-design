@@ -1,3 +1,10 @@
+## [1.2.12](https://github.com/deriv-com/quill-design/compare/v1.2.11...v1.2.12) (2023-12-14)
+
+
+### ♻️ 	 Chores
+
+* added use mounted hook for action sheet ([9584473](https://github.com/deriv-com/quill-design/commit/95844731b587b60a0345fc3c7ca61473d7da8e48))
+
 ## [1.2.11](https://github.com/deriv-com/quill-design/compare/v1.2.10...v1.2.11) (2023-12-14)
 
 
