@@ -1,22 +1,25 @@
+import { ComponentProps, useContext } from 'react'
 import { createPortal } from 'react-dom'
 import qtMerge from 'qtMerge'
 import HandleBar from '../handle-bar'
 import { actionSheetRootCVA } from '../action-sheet.classnames'
 import { useSwipeBlock } from 'hooks'
 import { ActionSheetContext } from '../root'
-import { ComponentProps, useContext } from 'react'
+import { useSsr } from 'usehooks-ts'
 
 type PortalProps = ComponentProps<'div'>
 
 const Portal = ({ children, ...restProps }: PortalProps) => {
-  const { show, handleToggle, className, position, type, expandable } =
+  const { show, handleClose, className, position, type, expandable } =
     useContext(ActionSheetContext)
-  const { height, containerRef, bindHandle } = useSwipeBlock({
+  const { height, containerRef, bindHandle, isScrolled, isLg } = useSwipeBlock({
     show,
-    onClose: handleToggle,
+    onClose: handleClose,
   })
+  const { isServer } = useSsr()
 
-  //  TODO: need to update the transition classes
+  if (isServer) return null
+
   return (
     <>
       {createPortal(
@@ -30,7 +33,7 @@ const Portal = ({ children, ...restProps }: PortalProps) => {
             {type === 'modal' && (
               <div
                 data-testid="dt-actionsheet-overlay"
-                onClick={handleToggle}
+                onClick={handleClose}
                 className="pointer-events-auto fixed inset-50 -z-10 bg-opacity-black-500 transition-opacity duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
               ></div>
             )}
@@ -40,6 +43,7 @@ const Portal = ({ children, ...restProps }: PortalProps) => {
               )}
               ref={containerRef}
               style={{ height }}
+              {...(!isScrolled && !isLg && expandable ? bindHandle() : {})}
             >
               {expandable && <HandleBar {...bindHandle()} />}
               {children}
