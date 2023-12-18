@@ -1,34 +1,59 @@
-import { StandaloneChevronDownRegularIcon } from '@deriv/quill-icons'
-
-import { baseInputWrapperVariants } from 'components/input/base/base.classnames'
-import { forwardRef } from 'react'
-
+import { StandaloneChevronDownRegularIcon } from '@deriv/quill-icons/Standalone'
 import {
-  baseInputLabelVariants,
+  ButtonHTMLAttributes,
+  ForwardRefExoticComponent,
+  forwardRef,
+} from 'react'
+import qtMerge, { qtJoin } from 'qtMerge'
+import { QuillSvgProps } from '@deriv/quill-icons'
+import {
+  InputSize,
+  InputStatus,
+  InputTextAlignment,
+  InputVariant,
+} from 'components/input/base'
+import {
+  baseInputWrapperVariants,
+  baseLabelVariant,
+  baseStatusMessageVariants,
   iconSize,
   statusIconColours,
 } from './base.classnames'
-import qtMerge, { qtJoin } from 'qtMerge'
-import { BaseSelectDropdownProps } from '../types'
 
-const InputSelectDropdown = forwardRef<
-  HTMLButtonElement,
-  BaseSelectDropdownProps
->(
+export interface InputProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  icon?: ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
+  statusIcon?: ForwardRefExoticComponent<Omit<QuillSvgProps, 'ref'>>
+  inputSize?: InputSize
+  status?: InputStatus
+  disabled?: boolean
+  variant?: InputVariant
+  leftStatusMessage?: string
+  textAlignment?: InputTextAlignment
+  labelTag?: string
+  value?: string
+  selected?: boolean
+  onInputSelect?: (
+    event: React.MouseEvent<HTMLButtonElement>,
+    value: boolean,
+  ) => void
+  isDropdownOpen?: boolean
+}
+export const InputDropdownBase = forwardRef<HTMLButtonElement, InputProps>(
   (
     {
-      inputSize = 'md',
       className,
       children,
-      status = 'neutral',
-      variant = 'outline',
       icon: Icon,
-      selected,
       isDropdownOpen,
-      //textAlignment = 'left',
-      label,
-      onInputSelect,
+      selected,
+      textAlignment = 'left',
+      leftStatusMessage,
+      variant = 'outline',
+      labelTag,
+      status = 'neutral',
       statusIcon: StatusIcon,
+      onInputSelect,
+      inputSize = 'md',
       ...rest
     },
     ref,
@@ -44,42 +69,38 @@ const InputSelectDropdown = forwardRef<
         onInputSelect?.(event, selected)
       }
     }
-    return (
-      <button
-        {...rest}
-        data-state={selected ? 'selected' : ''}
-        ref={ref}
-        className={qtMerge(
-          baseInputWrapperVariants({
-            size: inputSize,
-            status: status,
-            className,
-            variant,
-          }),
-        )}
-        onClick={handleClick}
-      >
-        <div className="flex w-full flex-row gap-x-400">
-          {Icon && (
-            <div>
-              <Icon {...iconSize[inputSize]} />
-            </div>
-          )}
 
-          <div className="transition-transform duration-1000 ease-in-out">
-            {children}
-          </div>
-          {label && inputSize === 'md' && (
-            <label
-              className={qtJoin(
-                baseInputLabelVariants({
-                  status,
-                }),
-              )}
-            >
-              {label}
-            </label>
+    return (
+      <>
+        <button
+          {...rest}
+          className={qtMerge(
+            baseInputWrapperVariants({
+              size: inputSize,
+              status: status,
+              alignment: textAlignment,
+              className,
+              variant,
+            }),
           )}
+          data-state={selected ? 'selected' : ''}
+          ref={ref}
+          onClick={handleClick}
+        >
+          <div>{Icon && <Icon {...iconSize[inputSize]} />}</div>
+
+          <div className="relative grow transition-transform duration-1000 ease-in-out">
+            {labelTag && inputSize === 'md' && (
+              <label
+                className={qtJoin(
+                  baseLabelVariant({ status, alignment: textAlignment }),
+                )}
+              >
+                {labelTag} <p className="text-typography-link"> *</p>
+              </label>
+            )}
+            <div> {children}</div>
+          </div>
           {StatusIcon && (
             <div>
               <StatusIcon
@@ -88,15 +109,30 @@ const InputSelectDropdown = forwardRef<
               />
             </div>
           )}
-          <StandaloneChevronDownRegularIcon
-            data-state={isDropdownOpen ? 'open' : 'close'}
-            className="transition-transform duration-300 data-[state=open]:rotate-180"
-            {...iconSize[inputSize]}
-          />
-        </div>
-      </button>
+          <div>
+            <StandaloneChevronDownRegularIcon
+              data-state={isDropdownOpen ? 'open' : 'close'}
+              className="transition-transform duration-300 data-[state=open]:rotate-180"
+              {...iconSize[inputSize]}
+            />
+          </div>
+        </button>
+
+        {leftStatusMessage && !isDropdownOpen && (
+          <div className="flex justify-between pt-200">
+            <p
+              key={leftStatusMessage}
+              className={qtJoin(baseStatusMessageVariants({ status }))}
+            >
+              {leftStatusMessage}
+            </p>
+          </div>
+        )}
+      </>
     )
   },
 )
-InputSelectDropdown.displayName = 'InputSelectDropdown'
-export default InputSelectDropdown
+
+InputDropdownBase.displayName = 'InputDropdownBase'
+
+export default InputDropdownBase
