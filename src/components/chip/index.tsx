@@ -16,8 +16,8 @@ export const Chip: ChipVariants = ({ children }: { children: ReactNode }) => {
 }
 
 Chip.Selectable = SelectableChip
-Chip.Dismissible = SelectableChip
-Chip.SingleSelectDropdown = SelectableChip
-Chip.MultiSelectDropdown = SelectableChip
+Chip.Dismissible = DismissibleChip
+Chip.SingleSelectDropdown = DropdownChipSingleSelect
+Chip.MultiSelectDropdown = DropdownChipMultiSelect
 
 export default Chip
