@@ -1,3 +1,11 @@
+## [1.2.15](https://github.com/deriv-com/quill-design/compare/v1.2.14...v1.2.15) (2023-12-19)
+
+
+### ♻️ 	 Chores
+
+* add device variable flags ([41cbcbf](https://github.com/deriv-com/quill-design/commit/41cbcbfd22e4d9ff0e07e40a71307bd2a92cb2ab))
+* init ([4a39e61](https://github.com/deriv-com/quill-design/commit/4a39e61448c030a76fcc71e2ca82fcc9a6030471))
+
 ## [1.2.14](https://github.com/deriv-com/quill-design/compare/v1.2.13...v1.2.14) (2023-12-19)
 
 
