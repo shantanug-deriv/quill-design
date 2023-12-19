@@ -1,3 +1,10 @@
+## [1.2.13](https://github.com/deriv-com/quill-design/compare/v1.2.12...v1.2.13) (2023-12-19)
+
+
+### 🐛 	 Bug Fixes
+
+* alignment issues for chip single select and multi-select ([55661f1](https://github.com/deriv-com/quill-design/commit/55661f183405e581fa7f8606923c10d72a769204))
+
 ## [1.2.12](https://github.com/deriv-com/quill-design/compare/v1.2.11...v1.2.12) (2023-12-14)
 
 
