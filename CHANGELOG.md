@@ -1,3 +1,10 @@
+## [1.2.14](https://github.com/deriv-com/quill-design/compare/v1.2.13...v1.2.14) (2023-12-19)
+
+
+### 🐛 	 Bug Fixes
+
+* adding missing export for link component ([0432b26](https://github.com/deriv-com/quill-design/commit/0432b26f98f2728b33c230e863a9032f25042385))
+
 ## [1.2.13](https://github.com/deriv-com/quill-design/compare/v1.2.12...v1.2.13) (2023-12-19)
 
 
