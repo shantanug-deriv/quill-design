@@ -95,11 +95,22 @@ export const LongContent: Story = {
 
 export const CustomContent: Story = {
   args: {
-    customContent: () => (
-      <>
-        <Heading.H1>This is a custom content</Heading.H1>
-      </>
+    customContent: () => <Heading.H1>This is a custom content</Heading.H1>,
+    content: () => (
+      <img
+        className="flex w-full flex-1"
+        src="https://placehold.co/800x400"
+        alt="Placeholder"
+      />
     ),
+  },
+}
+
+export const Disabled: Story = {
+  args: {
+    title: 'Accordion Elevate (Disabled)',
+    expanded: true,
+    disabled: true,
     content: () => (
       <img
         className="flex w-full flex-1"

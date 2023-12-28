@@ -5,6 +5,7 @@ import qtMerge from 'qtMerge'
 import { Text } from 'components/typography'
 import {
   accordionBaseVariant,
+  accordionDisabledClassNames,
   accordionStateClassNames,
   accordionTransitionClassNames,
 } from '../accordion.classnames'
@@ -20,6 +21,7 @@ export const Base = ({
   iconSize = 'sm',
   size = 'sm',
   divider = 'none',
+  disabled = false,
   customContent: CustomContent,
   contentClassname,
   onExpand,
@@ -96,6 +98,7 @@ export const Base = ({
       className={accordionBaseVariant({
         divider,
         className: className,
+        disabled,
       })}
     >
       <div
@@ -103,6 +106,7 @@ export const Base = ({
           'flex cursor-pointer items-center justify-between',
           'gap-general-lg p-general-lg',
           accordionStateClassNames,
+          disabled && accordionDisabledClassNames,
           contentClassname,
         )}
         onClick={() => toggleCollapse()}

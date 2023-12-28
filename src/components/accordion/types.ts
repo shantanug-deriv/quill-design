@@ -18,6 +18,7 @@ export interface AccordionProps extends AccordionPropsExcludingNull {
   size?: StandardSizes
   expanded?: boolean
   divider?: AccordionDivider
+  disabled?: boolean
   contentClassname?: string
   content?: () => ReactNode
   customContent?: () => ReactNode
