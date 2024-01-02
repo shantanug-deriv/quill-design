@@ -44,7 +44,7 @@ export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
         element.removeEventListener('scroll', handleScroll)
       }
     }
-  }, [])
+  }, [show])
 
   const bindHandle = useDrag(
     ({ dragging, distance, initial, xy }) => {
