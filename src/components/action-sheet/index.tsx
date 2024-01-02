@@ -1,5 +1,5 @@
-import { ReactNode } from 'react'
-import ActionSheetRoot from './root'
+import { ReactNode, useContext } from 'react'
+import ActionSheetRoot, { ActionSheetContext } from './root'
 import ActionSheetHeader from './header'
 import ActionSheetContent from './content'
 import ActionSheetFooter from './footer'
@@ -35,5 +35,9 @@ ActionSheet.HandleBar = ActionSheetHandleBar
 ActionSheet.Trigger = ActionSheetTrigger
 ActionSheet.Portal = ActionSheetPortal
 ActionSheet.Close = ActionSheetClose
+
+// Action Sheet Context Consumer hooks
+
+export const useActionSheet = () => useContext(ActionSheetContext)
 
 export default ActionSheet
