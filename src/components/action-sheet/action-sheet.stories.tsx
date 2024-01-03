@@ -7,12 +7,13 @@ const meta: Meta = {
   component: ActionSheetExample,
   tags: ['autodocs'],
   argTypes: {
-    show: {
+    handleClose: {
       description:
-        'This is the value that the developer will provide to `ActionSheet.Root` in order to toggle the component.',
+        'Call this function within the `useActionSheet` hook to initiate the closing event.',
     },
-    onClose: {
-      description: 'Function for invoking the `onClose` action.',
+    handleOpen: {
+      description:
+        'Call this function within the `useActionSheet` hook to initiate the opening event.',
     },
     expandable: {
       control: { type: 'boolean' },

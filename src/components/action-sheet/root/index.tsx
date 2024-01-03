@@ -1,12 +1,14 @@
 import { useState, createContext } from 'react'
 import { RootProps } from '../types'
 
-type ActionSheetContextType = RootProps & {
+export type ActionSheetContextType = {
   handleOpen?: () => void
   handleClose?: () => void
 }
 
-export const ActionSheetContext = createContext<ActionSheetContextType>({
+export const ActionSheetContext = createContext<
+  ActionSheetContextType & RootProps
+>({
   show: false,
 })
 

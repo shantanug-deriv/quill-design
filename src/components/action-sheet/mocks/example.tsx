@@ -1,15 +1,19 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { ComponentProps, useState } from 'react'
+import { ComponentProps } from 'react'
 import { StandaloneXmarkRegularIcon } from '@deriv/quill-icons/Standalone'
 import ActionSheet from '..'
+import { ActionSheetContextType } from '../root'
+
+type ExampleProps = ActionSheetContextType &
+  ComponentProps<typeof ActionSheet.Root> &
+  ComponentProps<typeof ActionSheet.Footer>
 
 const ActionSheetExample = ({
   primaryAction,
   secondaryAction,
   alignment,
   ...props
-}: ComponentProps<typeof ActionSheet.Root> &
-  ComponentProps<typeof ActionSheet.Footer>) => {
+}: ExampleProps) => {
   return (
     <>
       <ActionSheet.Root {...props}>
