@@ -7,13 +7,17 @@ const meta: Meta = {
   component: ActionSheetExample,
   tags: ['autodocs'],
   argTypes: {
-    handleClose: {
+    isOpen: {
       description:
-        'Call this function within the `useActionSheet` hook to initiate the closing event.',
+        'If you wish to manage the opening and closing states, transmit the `open` state from your component. Set the initial value to `false` when passing it.',
     },
-    handleOpen: {
+    onOpen: {
       description:
-        'Call this function within the `useActionSheet` hook to initiate the opening event.',
+        'Pass your callback function using this method. It will be triggered on the open function. If you are passing the `isOpen` state, provide your `open` `setState` function like this: `onOpen={() => setIsOpen(true)}`.',
+    },
+    onClose: {
+      description:
+        'Pass your callback function using this method. It will be triggered on the open function.',
     },
     expandable: {
       control: { type: 'boolean' },

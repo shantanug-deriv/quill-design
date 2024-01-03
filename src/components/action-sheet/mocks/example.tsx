@@ -14,14 +14,9 @@ const ActionSheetExample = ({
   alignment,
   ...props
 }: ExampleProps) => {
-  const [isOpen, setIsOpen] = useState<boolean>()
   return (
     <>
-      <ActionSheet.Root
-        isOpen={isOpen}
-        onOpen={() => setIsOpen(true)}
-        {...props}
-      >
+      <ActionSheet.Root {...props}>
         <ActionSheet.Trigger>Click Here</ActionSheet.Trigger>
         <ActionSheet.Portal>
           <ActionSheet.Close aria-label="close">
@@ -32,7 +27,6 @@ const ActionSheetExample = ({
               <h3 className="ml-auto">Title</h3>
             </div>
             <p>Description</p>
-            <button onClick={() => setIsOpen(false)}>close</button>
           </ActionSheet.Header>
           <ActionSheet.Content className="flex flex-col gap-500 py-800">
             <p>
