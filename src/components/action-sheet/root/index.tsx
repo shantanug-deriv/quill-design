@@ -1,4 +1,4 @@
-import { useState, createContext } from 'react'
+import { useState, createContext, useEffect, useCallback } from 'react'
 import { RootProps } from '../types'
 
 export type ActionSheetContextType = {
@@ -13,23 +13,34 @@ export const ActionSheetContext = createContext<
 })
 
 const Root = ({
+  isOpen,
   children,
   className,
   position,
   type = 'modal',
   expandable = true,
+  onOpen,
+  onClose,
 }: RootProps) => {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(isOpen)
 
   const handleOpen = () => {
     setShow(true)
+    onOpen?.()
     document.body.style.overflow = 'hidden'
   }
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setShow(false)
+    onClose?.()
     document.body.style.overflow = 'auto'
-  }
+  }, [onClose])
+
+  useEffect(() => {
+    if (!isOpen) {
+      handleClose()
+    }
+  }, [isOpen, handleClose])
 
   return (
     <ActionSheetContext.Provider

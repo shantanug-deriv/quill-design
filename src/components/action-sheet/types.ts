@@ -8,9 +8,11 @@ import { ExcludeAllNull } from 'types'
 
 export type RootProps = ComponentPropsWithoutRef<'div'> &
   ExcludeAllNull<VariantProps<typeof actionSheetRootCVA>> & {
+    onOpen?: () => void
     onClose?: () => void
     type?: 'modal' | 'non-modal'
     expandable?: boolean
+    isOpen?: boolean
   }
 
 export type RootPosition = RootProps['position']
