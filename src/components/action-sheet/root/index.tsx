@@ -7,7 +7,7 @@ export type ActionSheetContextType = {
 }
 
 export const ActionSheetContext = createContext<
-  ActionSheetContextType & RootProps
+  ActionSheetContextType & Omit<RootProps, 'onOpen'>
 >({
   show: false,
 })
@@ -25,14 +25,14 @@ const Root = ({
   const [show, setShow] = useState(isOpen)
 
   const handleOpen = () => {
-    setShow(true)
     onOpen?.()
+    setShow(true)
     document.body.style.overflow = 'hidden'
   }
 
   const handleClose = useCallback(() => {
-    setShow(false)
     onClose?.()
+    setShow(false)
     document.body.style.overflow = 'auto'
   }, [onClose])
 

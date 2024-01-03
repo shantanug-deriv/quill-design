@@ -1,19 +1,23 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import ActionSheetExample from './mocks/example'
+import { ActionSheetExample } from './mocks/example'
 
 const meta: Meta = {
-  title: 'Action Sheet',
+  title: 'Action Sheet/Uncontrolled',
   component: ActionSheetExample,
   tags: ['autodocs'],
+  parameters: {
+    controls: { hideNoControlsWarning: true },
+  },
   argTypes: {
-    isOpen: {
-      description:
-        'If you wish to manage the opening and closing states, transmit the `open` state from your component. Set the initial value to `false` when passing it.',
-    },
+    isOpen: { table: { disable: true } },
+    show: { table: { disable: true } },
+    defaultVariants: { table: { disable: true } },
+    handleOpen: { table: { disable: true } },
+    handleClose: { table: { disable: true } },
     onOpen: {
       description:
-        'Pass your callback function using this method. It will be triggered on the open function. If you are passing the `isOpen` state, provide your `open` `setState` function like this: `onOpen={() => setIsOpen(true)}`.',
+        'Pass your callback function using this method. It will be triggered on the open function.',
     },
     onClose: {
       description:
@@ -60,7 +64,7 @@ const meta: Meta = {
 export default meta
 type Story = StoryObj<typeof ActionSheetExample>
 
-export const Primary: Story = {
+export const Uncontrolled: Story = {
   args: {
     expandable: true,
     type: 'modal',
