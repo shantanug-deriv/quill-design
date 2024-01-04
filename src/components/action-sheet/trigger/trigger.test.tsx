@@ -18,7 +18,7 @@ describe('<ActionSheet.Trigger/>', () => {
   })
 
   it('should render icon when icon prop is passed', async () => {
-    render(<Trigger iconComponent={LabelPairedAndroidIcon}>click here</Trigger>)
+    render(<Trigger iconComponent={LabelPairedAndroidIcon} />)
     const triggerIcon = screen.getByTestId('dt-actionsheet-icon-button')
     expect(triggerIcon).toBeInTheDocument()
   })

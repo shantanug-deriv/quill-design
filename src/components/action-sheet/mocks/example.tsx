@@ -121,7 +121,11 @@ export const ActionSheetExampleWithIconTrigger = ({
   return (
     <>
       <ActionSheet.Root {...props}>
-        <ActionSheet.Trigger iconComponent={LabelPairedBarsBoldIcon} />
+        <ActionSheet.Trigger
+          iconComponent={LabelPairedBarsBoldIcon}
+          iconClassName="fill-solid-red-500"
+          iconSize="sm"
+        />
         <ActionSheet.Portal>
           <ActionSheet.Close aria-label="close">
             <StandaloneXmarkRegularIcon />
