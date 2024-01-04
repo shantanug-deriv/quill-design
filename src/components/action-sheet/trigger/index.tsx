@@ -1,12 +1,22 @@
 import { ComponentProps, useContext } from 'react'
 import { Button } from '../../button'
 import { ActionSheetContext } from '../root'
+import { QuillIconComponent } from 'types'
 
-type TriggerProps = ComponentProps<typeof Button>
+type TriggerProps = ComponentProps<typeof Button> & {
+  iconComponent?: QuillIconComponent
+}
 
-const Trigger = (props: TriggerProps) => {
+const Trigger = ({ iconComponent: Icon, ...restProps }: TriggerProps) => {
   const { handleOpen } = useContext(ActionSheetContext)
-  return <Button onClick={handleOpen} {...props} />
+  if (Icon) {
+    return (
+      <button onClick={handleOpen} {...restProps}>
+        <Icon data-testid="dt-actionsheet-icon-button" />
+      </button>
+    )
+  }
+  return <Button onClick={handleOpen} {...restProps} />
 }
 
 Trigger.displayName = 'Trigger'
