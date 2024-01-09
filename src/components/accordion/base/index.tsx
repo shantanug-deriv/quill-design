@@ -150,6 +150,7 @@ export const Base = ({
         className={qtMerge(
           'max-h-[0px] overflow-hidden',
           accordionTransitionClassNames,
+          expandedColor && 'bg-opacity-black-75',
           (isAutoExpand || isExpanded) && 'max-h-[9999px]',
         )}
       >
