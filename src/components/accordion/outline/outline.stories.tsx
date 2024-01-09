@@ -5,7 +5,6 @@ import {
   StandaloneAppStoreIcon,
   StandaloneAppStoreIosIcon,
 } from '@deriv/quill-icons/Standalone'
-import { IllustrativeAdvertiseIcon } from '@deriv/quill-icons/Illustrative'
 import { Heading } from 'components/typography'
 
 const meta = {
@@ -47,7 +46,7 @@ export const NoIcon: Story = {
 
 export const ShortContent: Story = {
   args: {
-    icon: IllustrativeAdvertiseIcon,
+    icon: StandaloneAppStoreIosIcon,
     title: 'Accordion Outline',
     subtitle: 'This is a test subtitle',
     content: () => (
@@ -62,7 +61,7 @@ export const ShortContent: Story = {
 
 export const LongSubtitle: Story = {
   args: {
-    icon: IllustrativeAdvertiseIcon,
+    icon: StandaloneAppStoreIosIcon,
     title: 'Accordion Outline (Long Subtitle)',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
