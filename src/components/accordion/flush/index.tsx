@@ -9,6 +9,7 @@ export const Flush = ({ className, ...otherProps }: AccordionProps) => {
       divider="bottom"
       className={qtMerge('border-x-none', className)}
       contentClassname="rounded-50"
+      expandedColor
       {...otherProps}
     />
   )

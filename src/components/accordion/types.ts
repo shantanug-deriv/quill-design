@@ -7,6 +7,7 @@ import {
   LargeSizes,
   StandardSizes,
 } from 'types/generics'
+import { AccordionVariants } from '.'
 
 export interface AccordionProps extends AccordionPropsExcludingNull {
   id?: string
@@ -20,14 +21,37 @@ export interface AccordionProps extends AccordionPropsExcludingNull {
   divider?: AccordionDivider
   disabled?: boolean
   contentClassname?: string
+  expandedColor?: boolean
   content?: () => ReactNode
   customContent?: () => ReactNode
   onExpand?: (e: boolean, i: string) => void
+}
+export interface AccordionTabProps extends Omit<AccordionProps, 'content'> {
+  tab?: Tab
+  className?: string
+  variant?: keyof AccordionVariants
+  content: {
+    className?: string
+    data: AccordionProps[][]
+  }
+  multiCollapse?: boolean
 }
 
 export type TBaseAccordionVariant = VariantProps<typeof accordionBaseVariant>
 
 type AccordionPropsExcludingNull = ExcludeNull<TBaseAccordionVariant, 'divider'>
+
+export type Tab = {
+  align?: TabAlign
+  data: TabData[]
+}
+
+export type TabData = {
+  id: number
+  title: string
+}
+
+export type TabAlign = 'center' | 'end'
 
 export type AccordionDivider = 'none' | 'both' | 'bottom'
 

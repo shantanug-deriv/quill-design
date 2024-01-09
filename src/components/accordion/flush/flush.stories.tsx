@@ -5,7 +5,7 @@ import {
   StandaloneAppStoreIcon,
   StandaloneAppStoreIosIcon,
   IllustrativeAdvertiseIcon,
-} from '@deriv/quill-icons/Standalone'
+} from '@deriv/quill-icons'
 import { Heading } from 'components/typography'
 
 const meta = {
@@ -49,7 +49,7 @@ export const NoIcon: Story = {
 
 export const ShortContent: Story = {
   args: {
-    icon: IllustrativeAdvertiseIcon,
+    icon: <IllustrativeAdvertiseIcon />,
     title: 'Accordion Flush',
     subtitle: 'This is a subtitle',
     divider: 'both',

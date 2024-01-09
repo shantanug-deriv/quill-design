@@ -1,13 +1,16 @@
+import Base from '../base'
 import { AccordionProps } from '../types'
 
-import Fill from '../fill'
 import qtMerge from 'qtMerge'
 
 export const Elevate = ({ className, ...otherProps }: AccordionProps) => {
   return (
-    <Fill
+    <Base
       {...otherProps}
-      className={qtMerge('shadow-330', className)}
+      className={qtMerge(
+        'rounded-1200 bg-opacity-white-800 shadow-330',
+        className,
+      )}
       divider="none"
     />
   )

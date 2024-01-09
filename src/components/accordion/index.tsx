@@ -11,18 +11,15 @@ export type AccordionVariants = {
   Elevate: typeof Elevate
 }
 
-export const Accordion: AccordionVariants = ({
-  children,
-}: {
-  children: ReactNode
-}) => {
+const Base: AccordionVariants = ({ children }: { children: ReactNode }) => {
   return children
 }
 
-Accordion.Flush = Flush
-Accordion.Fill = Fill
-Accordion.Outline = Outline
-Accordion.Elevate = Elevate
+Base.Flush = Flush
+Base.Fill = Fill
+Base.Outline = Outline
+Base.Elevate = Elevate
 
-export default Accordion
+export default Base
+export * from './tab'
 export * from './types'

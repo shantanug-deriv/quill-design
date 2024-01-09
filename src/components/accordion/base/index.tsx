@@ -24,6 +24,7 @@ export const Base = ({
   disabled = false,
   customContent: CustomContent,
   contentClassname,
+  expandedColor = false,
   onExpand,
 }: AccordionProps) => {
   const [isExpanded, setExpanded] = useState(expanded)
@@ -105,6 +106,7 @@ export const Base = ({
         className={qtMerge(
           'flex cursor-pointer items-center justify-between',
           'gap-general-lg p-general-lg',
+          expandedColor && isExpanded && 'bg-opacity-black-75',
           accordionStateClassNames,
           disabled && accordionDisabledClassNames,
           contentClassname,
