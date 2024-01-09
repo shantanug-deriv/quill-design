@@ -47,7 +47,7 @@ export const NoIcon: Story = {
 
 export const ShortContent: Story = {
   args: {
-    icon: <IllustrativeAdvertiseIcon />,
+    icon: IllustrativeAdvertiseIcon,
     title: 'Accordion Outline',
     subtitle: 'This is a test subtitle',
     content: () => (
@@ -62,7 +62,7 @@ export const ShortContent: Story = {
 
 export const LongSubtitle: Story = {
   args: {
-    icon: <IllustrativeAdvertiseIcon />,
+    icon: IllustrativeAdvertiseIcon,
     title: 'Accordion Outline (Long Subtitle)',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
@@ -79,7 +79,7 @@ export const LongSubtitle: Story = {
 
 export const LongContent: Story = {
   args: {
-    icon: <StandaloneAndroidIcon />,
+    icon: StandaloneAndroidIcon,
     title: 'Accordion Outline (Long Content)',
     subtitle: 'This is a test subtitle',
     content: () => (
