@@ -37,7 +37,7 @@ const Trigger = ({
       </button>
     )
   }
-  if (!Icon) return <Button onClick={handleOpen} {...restProps} />
+ return <Button onClick={handleOpen} {...restProps} />
 }
 
 Trigger.displayName = 'Trigger'
