@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Accordion } from '.'
-import { StandaloneAndroidIcon } from '@deriv/quill-icons'
+import { StandaloneAndroidIcon } from '@deriv/quill-icons/Standalone'
 import { AccordionProps, TabData } from '../types'
 
 const tabsCount = 5
