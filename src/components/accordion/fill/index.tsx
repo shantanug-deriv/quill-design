@@ -7,7 +7,7 @@ export const Fill = ({ className, ...otherProps }: AccordionProps) => {
   return (
     <Base
       {...otherProps}
-      className={qtMerge('rounded-1200 bg-opacity-white-800', className)}
+      className={qtMerge('rounded-1200 bg-solid-slate-50', className)}
       divider="none"
       expandedColor
     />

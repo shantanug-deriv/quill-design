@@ -16,7 +16,6 @@ const tabsData: AccordionProps[][] = Array.from({ length: tabsCount }).map(
       icon: StandaloneAndroidIcon,
       title: `Title ${i + 1} - Label ${count + 1}`,
       subtitle: `Subtitle ${i + 1}`,
-      className: 'border-opacity-black-100 border-x-none',
       content: () => (
         <img
           className="flex w-full flex-1"

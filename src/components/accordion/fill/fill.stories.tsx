@@ -5,7 +5,6 @@ import {
   StandaloneAppStoreIcon,
   StandaloneAppStoreIosIcon,
 } from '@deriv/quill-icons/Standalone'
-// import { StandaloneAppStoreIosIcon } from '@deriv/quill-icons/Illustrative'
 import { Heading } from 'components/typography'
 
 const meta = {

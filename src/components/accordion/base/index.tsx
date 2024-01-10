@@ -1,7 +1,7 @@
 import { AccordionProps, sizeVariant } from '../types'
 import { StandaloneChevronDownRegularIcon } from '@deriv/quill-icons/Standalone'
 import { useCallback, useEffect, useRef, useState } from 'react'
-import qtMerge from 'qtMerge'
+import qtMerge, { qtJoin } from 'qtMerge'
 import { Text } from 'components/typography'
 import {
   accordionBaseVariant,
@@ -22,9 +22,9 @@ export const Base = ({
   size = 'sm',
   divider = 'none',
   disabled = false,
+  expandedColor,
   customContent: CustomContent,
   contentClassname,
-  expandedColor = false,
   onExpand,
 }: AccordionProps) => {
   const [isExpanded, setExpanded] = useState(expanded)
@@ -100,13 +100,13 @@ export const Base = ({
         divider,
         className: className,
         disabled,
+        expandedColor: expandedColor && isExpanded,
       })}
     >
       <div
         className={qtMerge(
           'flex cursor-pointer items-center justify-between',
           'gap-general-lg p-general-lg',
-          expandedColor && isExpanded && 'bg-opacity-black-75',
           accordionStateClassNames,
           disabled && accordionDisabledClassNames,
           contentClassname,
@@ -118,17 +118,23 @@ export const Base = ({
         ) : (
           <>
             {Icon && <div className="flex">{<Icon iconSize={iconSize} />}</div>}
-            <div className="flex w-full flex-col items-start gap-general-xs">
+            <div className={'flex w-full flex-col items-start gap-general-xs'}>
               <Text
                 size={sizeVariant[size]}
-                className="overflow-hidden text-center"
+                className={qtJoin(
+                  'overflow-hidden text-center',
+                  disabled && 'text-opacity-black-300',
+                )}
               >
                 {title}
               </Text>
               {subtitle && (
                 <Text
                   size="sm"
-                  className="overflow-hidden text-typography-subtle"
+                  className={qtJoin(
+                    'overflow-hidden text-typography-subtle',
+                    disabled && 'text-opacity-black-300',
+                  )}
                 >
                   {subtitle}
                 </Text>
@@ -143,14 +149,14 @@ export const Base = ({
             (isAutoExpand || isExpanded) && 'rotate-180 ',
           )}
         >
-          <StandaloneChevronDownRegularIcon fill="black" iconSize="sm" />
+          <StandaloneChevronDownRegularIcon iconSize="sm" />
         </div>
       </div>
       <div
         className={qtMerge(
           'max-h-[0px] overflow-hidden',
           accordionTransitionClassNames,
-          expandedColor && 'bg-opacity-black-75',
+          disabled && 'opacity-300',
           (isAutoExpand || isExpanded) && 'max-h-[9999px]',
         )}
       >

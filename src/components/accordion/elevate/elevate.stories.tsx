@@ -7,7 +7,6 @@ import {
   StandaloneAppStoreIcon,
   StandaloneAppStoreIosIcon,
 } from '@deriv/quill-icons/Standalone'
-// import { StandaloneAppStoreIosIcon } from '@deriv/quill-icons/Illustrative'
 
 const meta = {
   title: 'Components/Accordion/Elevate',

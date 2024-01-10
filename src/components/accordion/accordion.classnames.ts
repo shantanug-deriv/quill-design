@@ -9,8 +9,7 @@ export const accordionStateClassNames =
 export const accordionTransitionClassNames =
   'transition-all duration-[160ms] ease-in'
 
-export const accordionDisabledClassNames =
-  'bg-opacity-black-75  pointer-events-none'
+export const accordionDisabledClassNames = 'pointer-events-none'
 
 export const accordionBaseVariant = cva(accordionBaseClassNames, {
   variants: {
@@ -20,11 +19,15 @@ export const accordionBaseVariant = cva(accordionBaseClassNames, {
       none: '',
     },
     disabled: {
-      true: 'bg-opacity-black-75  pointer-events-none',
+      true: 'pointer-events-none fill-opacity-black-300',
+    },
+    expandedColor: {
+      true: '!bg-opacity-black-75',
     },
   },
   defaultVariants: {
     divider: 'both',
+    expandedColor: false,
   },
 })
 
