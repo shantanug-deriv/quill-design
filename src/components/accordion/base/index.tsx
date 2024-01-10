@@ -117,7 +117,11 @@ export const Base = ({
           <CustomContent />
         ) : (
           <>
-            {Icon && <div className="flex">{<Icon iconSize={iconSize} />}</div>}
+            {Icon && (
+              <div className="flex" data-testid="icon">
+                {<Icon iconSize={iconSize} />}
+              </div>
+            )}
             <div className={'flex w-full flex-col items-start gap-general-xs'}>
               <Text
                 size={sizeVariant[size]}
@@ -148,6 +152,7 @@ export const Base = ({
             accordionTransitionClassNames,
             (isAutoExpand || isExpanded) && 'rotate-180 ',
           )}
+          data-testid="chevron"
         >
           <StandaloneChevronDownRegularIcon iconSize="sm" />
         </div>
@@ -159,6 +164,7 @@ export const Base = ({
           disabled && 'opacity-300',
           (isAutoExpand || isExpanded) && 'max-h-[9999px]',
         )}
+        data-testid="expanded-content"
       >
         <div
           className={qtMerge(

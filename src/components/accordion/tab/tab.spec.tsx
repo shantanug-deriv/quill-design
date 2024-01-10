@@ -30,7 +30,7 @@ describe('Accordion', () => {
     const title = 'Title goes here'
     const subtitle = 'Subtitle goes here'
 
-    const { getByText } = render(
+    const { getByText, getByAltText } = render(
       <Accordion
         title={title}
         subtitle={subtitle}
@@ -45,5 +45,7 @@ describe('Accordion', () => {
     expect(getByText(title)).toBeInTheDocument()
 
     expect(getByText(subTitle)).toBeInTheDocument()
+
+    expect(getByAltText('Placeholder')).toBeInTheDocument()
   })
 })
