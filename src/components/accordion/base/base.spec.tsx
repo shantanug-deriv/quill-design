@@ -34,6 +34,10 @@ describe('Accordion - Base', () => {
     expect(screen.getByTestId('chevron')).toBeInTheDocument()
   })
 
+  it('should be in a collapsed state initially', () => {
+    expect(screen.getByTestId('expanded-content')).toHaveClass('max-h-[0px]')
+  })
+
   it('should expand the accordion on click', () => {
     const chevron = screen.getByTestId('chevron')
 

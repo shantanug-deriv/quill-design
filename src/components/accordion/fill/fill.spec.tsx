@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 
 import { Fill } from './index'
 
@@ -33,13 +33,5 @@ describe('Accordion - Fill', () => {
   it('should render icon correctly', () => {
     expect(screen.getByTestId('icon')).toBeInTheDocument()
     expect(screen.getByTestId('chevron')).toBeInTheDocument()
-  })
-
-  it('should expand the accordion on click', () => {
-    const chevron = screen.getByTestId('chevron')
-
-    fireEvent.click(chevron)
-
-    expect(screen.getByTestId('expanded-content')).toHaveClass('max-h-[9999px]')
   })
 })
