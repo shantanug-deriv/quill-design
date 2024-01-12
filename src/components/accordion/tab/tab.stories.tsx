@@ -60,6 +60,9 @@ const meta = {
       options: ['sm', 'md', 'lg'],
       control: { type: 'radio' },
     },
+    multiCollapse: {
+      control: { type: 'boolean' },
+    },
     className: { table: { disable: true } },
   },
   tags: ['autodocs'],

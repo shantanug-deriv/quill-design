@@ -4,6 +4,7 @@ import { Fill } from './index'
 
 import Heading from 'components/typography/heading'
 import { StandaloneAndroidIcon } from '@deriv/quill-icons/Standalone'
+import userEvent from '@testing-library/user-event'
 
 const title = 'Accordion Title'
 const subtitle = 'Accordion Subtitle'
@@ -33,5 +34,13 @@ describe('Accordion - Fill', () => {
   it('should render icon correctly', () => {
     expect(screen.getByTestId('icon')).toBeInTheDocument()
     expect(screen.getByTestId('chevron')).toBeInTheDocument()
+  })
+
+  it('should expand the accordion on click', async () => {
+    const click = screen.getByTestId('toggle-expand')
+
+    await userEvent.click(click)
+
+    expect(screen.getByTestId('expanded-content')).toHaveClass('max-h-[9999px]')
   })
 })

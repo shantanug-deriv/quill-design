@@ -1,8 +1,9 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 
 import Base from './index'
 import Heading from 'components/typography/heading'
 import { StandaloneAndroidIcon } from '@deriv/quill-icons/Standalone'
+import userEvent from '@testing-library/user-event'
 
 const title = 'Accordion Title'
 const subtitle = 'Accordion Subtitle'
@@ -38,10 +39,10 @@ describe('Accordion - Base', () => {
     expect(screen.getByTestId('expanded-content')).toHaveClass('max-h-[0px]')
   })
 
-  it('should expand the accordion on click', () => {
-    const chevron = screen.getByTestId('chevron')
+  it('should expand the accordion on click', async () => {
+    const click = screen.getByTestId('toggle-expand')
 
-    fireEvent.click(chevron)
+    await userEvent.click(click)
 
     expect(screen.getByTestId('expanded-content')).toHaveClass('max-h-[9999px]')
   })

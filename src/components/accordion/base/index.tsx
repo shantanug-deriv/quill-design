@@ -112,6 +112,7 @@ export const Base = ({
           contentClassname,
         )}
         onClick={() => toggleCollapse()}
+        data-testid="toggle-expand"
       >
         {CustomContent ? (
           <CustomContent />

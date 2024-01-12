@@ -3,9 +3,18 @@ import '@testing-library/jest-dom'
 import Accordion from '.'
 import { StandaloneAndroidIcon } from '@deriv/quill-icons/Standalone'
 import { AccordionProps } from '../types'
+import { AccordionVariants } from '..'
+
+const Variants: (keyof AccordionVariants)[] = [
+  'Flush',
+  'Fill',
+  'Outline',
+  'Elevate',
+]
 
 const childTitle = 'This is the title'
 const subTitle = 'Subtitle goes here'
+const title = 'Title goes here'
 
 const data: AccordionProps[][] = [
   [
@@ -27,13 +36,10 @@ const data: AccordionProps[][] = [
 
 describe('Accordion', () => {
   it('renders with correct class names and content', () => {
-    const title = 'Title goes here'
-    const subtitle = 'Subtitle goes here'
-
     const { getByText, getByAltText } = render(
       <Accordion
         title={title}
-        subtitle={subtitle}
+        subtitle={subTitle}
         variant="Flush"
         content={{
           data,
@@ -47,5 +53,22 @@ describe('Accordion', () => {
     expect(getByText(subTitle)).toBeInTheDocument()
 
     expect(getByAltText('Placeholder')).toBeInTheDocument()
+  })
+
+  Variants.forEach((variant) => {
+    it(`should render ${variant} correctly`, () => {
+      const { container } = render(
+        <Accordion
+          title={title}
+          subtitle={subTitle}
+          variant={variant}
+          content={{
+            data,
+          }}
+        />,
+      )
+
+      expect(container).toMatchSnapshot()
+    })
   })
 })
