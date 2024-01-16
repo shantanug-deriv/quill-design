@@ -6,7 +6,7 @@ exports[`Accordion should render Elevate correctly 1`] = `
     class="flex flex-col"
   >
     <div
-      class="flex w-full flex-col"
+      class="flex w-full flex-col gap-gap-md"
     >
       <div
         class="flex flex-col w-full overflow-hidden focus-visible:outline-1 focus-visible:outline-opacity-red-100  rounded-1200 bg-opacity-white-800 shadow-330 border-opacity-black-100 border-x-none"
@@ -49,7 +49,7 @@ exports[`Accordion should render Elevate correctly 1`] = `
             </p>
           </div>
           <div
-            class="cursor-pointer transition-all duration-[160ms] ease-in"
+            class="cursor-pointer transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
             data-testid="chevron"
           >
             <svg
@@ -67,7 +67,7 @@ exports[`Accordion should render Elevate correctly 1`] = `
           </div>
         </div>
         <div
-          class="max-h-[0px] overflow-hidden transition-all duration-[160ms] ease-in"
+          class="max-h-[0px] overflow-hidden transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
           data-testid="expanded-content"
         >
           <div
@@ -92,7 +92,7 @@ exports[`Accordion should render Fill correctly 1`] = `
     class="flex flex-col"
   >
     <div
-      class="flex w-full flex-col"
+      class="flex w-full flex-col gap-gap-md"
     >
       <div
         class="flex flex-col w-full overflow-hidden focus-visible:outline-1 focus-visible:outline-opacity-red-100  rounded-1200 bg-solid-slate-50 border-opacity-black-100 border-x-none"
@@ -135,7 +135,7 @@ exports[`Accordion should render Fill correctly 1`] = `
             </p>
           </div>
           <div
-            class="cursor-pointer transition-all duration-[160ms] ease-in"
+            class="cursor-pointer transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
             data-testid="chevron"
           >
             <svg
@@ -153,7 +153,7 @@ exports[`Accordion should render Fill correctly 1`] = `
           </div>
         </div>
         <div
-          class="max-h-[0px] overflow-hidden transition-all duration-[160ms] ease-in"
+          class="max-h-[0px] overflow-hidden transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
           data-testid="expanded-content"
         >
           <div
@@ -178,7 +178,7 @@ exports[`Accordion should render Flush correctly 1`] = `
     class="flex flex-col"
   >
     <div
-      class="flex w-full flex-col"
+      class="flex w-full flex-col gap-gap-md"
     >
       <div
         class="flex flex-col w-full overflow-hidden focus-visible:outline-1 focus-visible:outline-opacity-red-100  border-100 border-b-opacity-black-100 !border-t-none border-opacity-black-100 border-x-none"
@@ -221,7 +221,7 @@ exports[`Accordion should render Flush correctly 1`] = `
             </p>
           </div>
           <div
-            class="cursor-pointer transition-all duration-[160ms] ease-in"
+            class="cursor-pointer transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
             data-testid="chevron"
           >
             <svg
@@ -239,7 +239,7 @@ exports[`Accordion should render Flush correctly 1`] = `
           </div>
         </div>
         <div
-          class="max-h-[0px] overflow-hidden transition-all duration-[160ms] ease-in"
+          class="max-h-[0px] overflow-hidden transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
           data-testid="expanded-content"
         >
           <div
@@ -264,10 +264,10 @@ exports[`Accordion should render Outline correctly 1`] = `
     class="flex flex-col"
   >
     <div
-      class="flex w-full flex-col"
+      class="flex w-full flex-col gap-gap-md"
     >
       <div
-        class="flex flex-col w-full overflow-hidden focus-visible:outline-1 focus-visible:outline-opacity-red-100  rounded-1200 border-xs border-opacity-black-100 border-x-none"
+        class="flex flex-col w-full overflow-hidden focus-visible:outline-1 focus-visible:outline-opacity-red-100  rounded-1200 border-sm border-opacity-black-100 border-x-none"
         data-id="this-is-the-title"
         tabindex="0"
       >
@@ -307,7 +307,7 @@ exports[`Accordion should render Outline correctly 1`] = `
             </p>
           </div>
           <div
-            class="cursor-pointer transition-all duration-[160ms] ease-in"
+            class="cursor-pointer transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
             data-testid="chevron"
           >
             <svg
@@ -325,7 +325,7 @@ exports[`Accordion should render Outline correctly 1`] = `
           </div>
         </div>
         <div
-          class="max-h-[0px] overflow-hidden transition-all duration-[160ms] ease-in"
+          class="max-h-[0px] overflow-hidden transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]"
           data-testid="expanded-content"
         >
           <div
