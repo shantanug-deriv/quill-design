@@ -67,7 +67,12 @@ export const Accordion = ({
         </div>
       )}
 
-      <div className={qtMerge('flex w-full flex-col', content?.className)}>
+      <div
+        className={qtMerge(
+          'flex w-full flex-col gap-gap-md',
+          content?.className,
+        )}
+      >
         {content &&
           content.data[selectedChip].map((accData) => {
             const { title: accTitle } = accData

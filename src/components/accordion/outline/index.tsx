@@ -8,7 +8,7 @@ export const Outline = ({ className, ...otherProps }: AccordionProps) => {
     <Base
       {...otherProps}
       className={qtMerge(
-        'rounded-1200 border-xs border-opacity-black-100',
+        'rounded-1200 border-sm border-opacity-black-100',
         className,
       )}
     />

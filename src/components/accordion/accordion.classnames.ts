@@ -7,7 +7,7 @@ export const accordionStateClassNames =
   'hover:bg-opacity-black-75 active:bg-opacity-black-100 border-opacity-black-100'
 
 export const accordionTransitionClassNames =
-  'transition-all duration-[160ms] ease-in'
+  'transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)]'
 
 export const accordionDisabledClassNames = 'pointer-events-none'
 

@@ -135,7 +135,7 @@ export const Base = ({
               </Text>
               {subtitle && (
                 <Text
-                  size="sm"
+                  size={size}
                   className={qtJoin(
                     'overflow-hidden text-typography-subtle',
                     disabled && 'text-opacity-black-300',
