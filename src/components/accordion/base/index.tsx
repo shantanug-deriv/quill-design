@@ -127,7 +127,7 @@ export const Base = ({
               <Text
                 size={sizeVariant[size]}
                 className={qtJoin(
-                  'overflow-hidden text-center',
+                  'overflow-hidden',
                   disabled && 'text-opacity-black-300',
                 )}
               >
