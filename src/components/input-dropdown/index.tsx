@@ -21,11 +21,12 @@ export interface InputSelectProps extends InputProps {
 const Options = ({ item }: { item: TSingleSelectItem }) => {
   return (
     <Listbox.Option value={item} as={Fragment}>
-      {({ disabled, selected }) => (
+      {({ disabled, selected, active }) => (
         <li
           className={qtMerge(
             inputDropdownSingleClassnames,
             disabled && 'opacity-600',
+            active && ' bg-opacity-black-100 text-opacity-black-600',
             selected &&
               'bg-solid-slate-1400 fill-solid-slate-50 text-solid-slate-50 hover:bg-solid-slate-1400 hover:fill-solid-slate-50 hover:text-solid-slate-50',
           )}
