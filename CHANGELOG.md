@@ -1,3 +1,16 @@
+## [1.2.18](https://github.com/deriv-com/quill-design/compare/v1.2.17...v1.2.18) (2024-02-07)
+
+
+### ♻️ 	 Chores
+
+* input dropdown ([3cff7c6](https://github.com/deriv-com/quill-design/commit/3cff7c68e7424334d34ca7a7fb5eefda92b6d647))
+* updated storybook and fixed lableless dropdown ([21254ff](https://github.com/deriv-com/quill-design/commit/21254ff6adb47822c8d4e530041e247ac1176347))
+
+
+### 🐛 	 Bug Fixes
+
+* added active state for keyboard hover ([523a16a](https://github.com/deriv-com/quill-design/commit/523a16abdb41ab91fd9eb626977ff3a28c580a4b))
+
 ## [1.2.17](https://github.com/deriv-com/quill-design/compare/v1.2.16...v1.2.17) (2024-02-07)
 
 
