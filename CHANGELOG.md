@@ -1,3 +1,10 @@
+## [1.2.20](https://github.com/deriv-com/quill-design/compare/v1.2.19...v1.2.20) (2024-03-18)
+
+
+### ♻️ 	 Chores
+
+* implmented new information component ([3f43e6c](https://github.com/deriv-com/quill-design/commit/3f43e6cacd887a200e2dfe5774bce5abe7a56ee7))
+
 ## [1.2.19](https://github.com/deriv-com/quill-design/compare/v1.2.18...v1.2.19) (2024-03-18)
 
 
