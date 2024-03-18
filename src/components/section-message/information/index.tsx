@@ -96,5 +96,3 @@ export const Information = forwardRef<HTMLDivElement, InformationProps>(
 )
 
 Information.displayName = 'Information'
-
-export default Information
