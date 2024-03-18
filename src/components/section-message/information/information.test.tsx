@@ -1,5 +1,5 @@
 import { render, screen } from 'test-utils'
-import Information from '.'
+import { Information } from '.'
 
 describe('Information', () => {
   it('should render title', () => {
