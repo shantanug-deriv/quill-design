@@ -38,6 +38,29 @@ exports[`BasicButton Should render BasicButton with Icon and IconPosition end 1`
     >
       Label
     </span>
+    <svg
+      class="fill-solid-slate-50"
+      height="22"
+      role="img"
+      viewBox="0 0 16 22"
+      width="14"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g>
+        <path
+          d="M11.61 12.008a.65.65 0 0 0 .656-.656c0-.356-.301-.657-.657-.657-.355 0-.656.301-.656.657 0 .382.3.656.656.656m-7.247 0a.65.65 0 0 0 .657-.656c0-.356-.301-.657-.657-.657-.355 0-.656.301-.656.657 0 .382.3.656.656.656m7.492-3.938c2.243 1.23 3.774 3.5 4.02 6.18H.125a7.72 7.72 0 0 1 3.992-6.18L2.805 5.8a.25.25 0 0 1 0-.273q.081-.164.246-.164c.11 0 .191.082.246.164l1.312 2.297a8.3 8.3 0 0 1 6.754 0l1.313-2.297c.054-.082.136-.164.246-.164q.164 0 .246.164a.25.25 0 0 1 0 .274z"
+        />
+      </g>
+      <defs>
+        <clippath
+          id="c605cdbc85d4b7087c793ef3a21b2fb9__a"
+        >
+          <path
+            d="M0 0h16v22H0z"
+          />
+        </clippath>
+      </defs>
+    </svg>
   </button>
 </div>
 `;
@@ -52,6 +75,29 @@ exports[`BasicButton Should render BasicButton with Icon and IconPosition end an
     >
       Label
     </span>
+    <svg
+      class="fill-solid-slate-50"
+      height="22"
+      role="img"
+      viewBox="0 0 16 22"
+      width="14"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g>
+        <path
+          d="M11.61 12.008a.65.65 0 0 0 .656-.656c0-.356-.301-.657-.657-.657-.355 0-.656.301-.656.657 0 .382.3.656.656.656m-7.247 0a.65.65 0 0 0 .657-.656c0-.356-.301-.657-.657-.657-.355 0-.656.301-.656.657 0 .382.3.656.656.656m7.492-3.938c2.243 1.23 3.774 3.5 4.02 6.18H.125a7.72 7.72 0 0 1 3.992-6.18L2.805 5.8a.25.25 0 0 1 0-.273q.081-.164.246-.164c.11 0 .191.082.246.164l1.312 2.297a8.3 8.3 0 0 1 6.754 0l1.313-2.297c.054-.082.136-.164.246-.164q.164 0 .246.164a.25.25 0 0 1 0 .274z"
+        />
+      </g>
+      <defs>
+        <clippath
+          id="c605cdbc85d4b7087c793ef3a21b2fb9__a"
+        >
+          <path
+            d="M0 0h16v22H0z"
+          />
+        </clippath>
+      </defs>
+    </svg>
   </button>
 </div>
 `;
@@ -66,6 +112,29 @@ exports[`BasicButton Should render BasicButton with Icon and IconPosition end an
     >
       Label
     </span>
+    <svg
+      class="fill-solid-slate-50"
+      height="22"
+      role="img"
+      viewBox="0 0 16 22"
+      width="14"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g>
+        <path
+          d="M11.61 12.008a.65.65 0 0 0 .656-.656c0-.356-.301-.657-.657-.657-.355 0-.656.301-.656.657 0 .382.3.656.656.656m-7.247 0a.65.65 0 0 0 .657-.656c0-.356-.301-.657-.657-.657-.355 0-.656.301-.656.657 0 .382.3.656.656.656m7.492-3.938c2.243 1.23 3.774 3.5 4.02 6.18H.125a7.72 7.72 0 0 1 3.992-6.18L2.805 5.8a.25.25 0 0 1 0-.273q.081-.164.246-.164c.11 0 .191.082.246.164l1.312 2.297a8.3 8.3 0 0 1 6.754 0l1.313-2.297c.054-.082.136-.164.246-.164q.164 0 .246.164a.25.25 0 0 1 0 .274z"
+        />
+      </g>
+      <defs>
+        <clippath
+          id="c605cdbc85d4b7087c793ef3a21b2fb9__a"
+        >
+          <path
+            d="M0 0h16v22H0z"
+          />
+        </clippath>
+      </defs>
+    </svg>
   </button>
 </div>
 `;
@@ -80,6 +149,29 @@ exports[`BasicButton Should render BasicButton with Icon and IconPosition end an
     >
       Label
     </span>
+    <svg
+      class="fill-solid-slate-50"
+      height="22"
+      role="img"
+      viewBox="0 0 16 22"
+      width="14"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g>
+        <path
+          d="M11.61 12.008a.65.65 0 0 0 .656-.656c0-.356-.301-.657-.657-.657-.355 0-.656.301-.656.657 0 .382.3.656.656.656m-7.247 0a.65.65 0 0 0 .657-.656c0-.356-.301-.657-.657-.657-.355 0-.656.301-.656.657 0 .382.3.656.656.656m7.492-3.938c2.243 1.23 3.774 3.5 4.02 6.18H.125a7.72 7.72 0 0 1 3.992-6.18L2.805 5.8a.25.25 0 0 1 0-.273q.081-.164.246-.164c.11 0 .191.082.246.164l1.312 2.297a8.3 8.3 0 0 1 6.754 0l1.313-2.297c.054-.082.136-.164.246-.164q.164 0 .246.164a.25.25 0 0 1 0 .274z"
+        />
+      </g>
+      <defs>
+        <clippath
+          id="c605cdbc85d4b7087c793ef3a21b2fb9__a"
+        >
+          <path
+            d="M0 0h16v22H0z"
+          />
+        </clippath>
+      </defs>
+    </svg>
   </button>
 </div>
 `;
@@ -89,6 +181,29 @@ exports[`BasicButton Should render BasicButton with Icon and IconPosition start 
   <button
     class="transition-colors duration-150 ease-in-out font-bold disabled:opacity-600 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer bg-solid-coral-700 text-solid-slate-50 enabled:hover:bg-solid-coral-800 enabled:active:bg-solid-coral-900 rounded-600 text-body-sm leading-body-sm h-[32px] min-w-[64px] px-600 py-300 gap-300"
   >
+    <svg
+      class="fill-solid-slate-50"
+      height="22"
+      role="img"
+      viewBox="0 0 16 22"
+      width="14"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g>
+        <path
+          d="M11.61 12.008a.65.65 0 0 0 .656-.656c0-.356-.301-.657-.657-.657-.355 0-.656.301-.656.657 0 .382.3.656.656.656m-7.247 0a.65.65 0 0 0 .657-.656c0-.356-.301-.657-.657-.657-.355 0-.656.301-.656.657 0 .382.3.656.656.656m7.492-3.938c2.243 1.23 3.774 3.5 4.02 6.18H.125a7.72 7.72 0 0 1 3.992-6.18L2.805 5.8a.25.25 0 0 1 0-.273q.081-.164.246-.164c.11 0 .191.082.246.164l1.312 2.297a8.3 8.3 0 0 1 6.754 0l1.313-2.297c.054-.082.136-.164.246-.164q.164 0 .246.164a.25.25 0 0 1 0 .274z"
+        />
+      </g>
+      <defs>
+        <clippath
+          id="c605cdbc85d4b7087c793ef3a21b2fb9__a"
+        >
+          <path
+            d="M0 0h16v22H0z"
+          />
+        </clippath>
+      </defs>
+    </svg>
     <span
       class="flex-1"
     >
