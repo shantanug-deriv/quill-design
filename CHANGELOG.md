@@ -1,3 +1,11 @@
+## [1.2.23](https://github.com/deriv-com/quill-design/compare/v1.2.22...v1.2.23) (2024-03-19)
+
+
+### ♻️ 	 Chores
+
+* fixed tests and removed sizes ([e86d9df](https://github.com/deriv-com/quill-design/commit/e86d9dfeb0c2cfc1f37935c034e7a97a973b215d))
+* updated basic button icon name ([0889708](https://github.com/deriv-com/quill-design/commit/0889708cd1ffecbf3d2a4cbe1470be5ff77ee15a))
+
 ## [1.2.22](https://github.com/deriv-com/quill-design/compare/v1.2.21...v1.2.22) (2024-03-19)
 
 
