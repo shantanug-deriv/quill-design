@@ -13,7 +13,7 @@ import { Text } from 'components/typography'
 import Link from 'components/link'
 import { ExcludeNull } from 'types'
 
-export interface InformationProps
+export interface InformationBoxProps
   extends Omit<HTMLAttributes<HTMLDivElement>, 'children' | 'title'>,
     VariantProps<typeof SectionMessageBaseCVA>,
     ExcludeNull<VariantProps<typeof SectionMessageTitleSizeCVA>, 'size'> {
@@ -23,7 +23,7 @@ export interface InformationProps
   link2?: ComponentProps<typeof Link>
 }
 
-export const Information = forwardRef<HTMLDivElement, InformationProps>(
+export const InformationBox = forwardRef<HTMLDivElement, InformationBoxProps>(
   (
     { description, title, size, className, colorStyle, link1, link2, ...rest },
     ref,
@@ -95,4 +95,4 @@ export const Information = forwardRef<HTMLDivElement, InformationProps>(
   },
 )
 
-Information.displayName = 'Information'
+InformationBox.displayName = 'InformationBox'
