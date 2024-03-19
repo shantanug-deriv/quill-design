@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { ComponentProps, useState } from 'react'
 import { StandaloneXmarkRegularIcon } from '@deriv/quill-icons/Standalone'
-import { LabelPairedBarsBoldIcon } from '@deriv/quill-icons/LabelPaired'
+import { LabelPairedBarsMdBoldIcon } from '@deriv/quill-icons/LabelPaired'
 import ActionSheet from '..'
 import { ActionSheetContextType } from '../root'
 
@@ -122,7 +122,7 @@ export const ActionSheetExampleWithIconTrigger = ({
     <>
       <ActionSheet.Root {...props}>
         <ActionSheet.Trigger
-          iconComponent={LabelPairedBarsBoldIcon}
+          iconComponent={LabelPairedBarsMdBoldIcon}
           iconClassName="fill-solid-red-500"
           iconSize="sm"
         />

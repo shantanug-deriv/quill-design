@@ -1,5 +1,5 @@
 import { ComponentProps, HTMLAttributes, ReactNode, forwardRef } from 'react'
-import { LabelPairedCircleInfoBoldIcon } from '@deriv/quill-icons/LabelPaired'
+import { LabelPairedCircleInfoMdBoldIcon } from '@deriv/quill-icons/LabelPaired'
 
 import qtMerge, { qtJoin } from 'qtMerge'
 import {
@@ -41,8 +41,7 @@ export const InformationBox = forwardRef<HTMLDivElement, InformationBoxProps>(
         {...rest}
         data-testid="dt-info-component"
       >
-        <LabelPairedCircleInfoBoldIcon
-          iconSize="sm"
+        <LabelPairedCircleInfoMdBoldIcon
           className="fill-status-info"
           data-testid="dt-info-icon"
         />
