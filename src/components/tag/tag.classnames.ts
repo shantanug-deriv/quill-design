@@ -1,13 +1,13 @@
 import { VariantProps, cva } from 'class-variance-authority'
 import {
-  LabelPairedTriangleExclamationBoldIcon,
-  LabelPairedCircleExclamationBoldIcon,
-  LabelPairedCircleCheckBoldIcon,
-  LabelPairedCircleInfoBoldIcon,
-  LabelPairedTriangleExclamationRegularIcon,
-  LabelPairedCircleExclamationRegularIcon,
-  LabelPairedCircleCheckRegularIcon,
-  LabelPairedCircleInfoRegularIcon,
+  LabelPairedTriangleExclamationSmBoldIcon,
+  LabelPairedCircleExclamationSmBoldIcon,
+  LabelPairedCircleCheckSmBoldIcon,
+  LabelPairedCircleInfoSmBoldIcon,
+  LabelPairedTriangleExclamationSmRegularIcon,
+  LabelPairedCircleExclamationSmRegularIcon,
+  LabelPairedCircleCheckSmRegularIcon,
+  LabelPairedCircleInfoSmRegularIcon,
 } from '@deriv/quill-icons/LabelPaired'
 import { ExcludeAllNull, QuillIconComponent } from 'types'
 
@@ -117,20 +117,20 @@ export const TagIcons: Record<
   }
 > = {
   error: {
-    bold: LabelPairedTriangleExclamationBoldIcon,
-    regular: LabelPairedTriangleExclamationRegularIcon,
+    bold: LabelPairedTriangleExclamationSmBoldIcon,
+    regular: LabelPairedTriangleExclamationSmRegularIcon,
   },
   warning: {
-    bold: LabelPairedCircleExclamationBoldIcon,
-    regular: LabelPairedCircleExclamationRegularIcon,
+    bold: LabelPairedCircleExclamationSmBoldIcon,
+    regular: LabelPairedCircleExclamationSmRegularIcon,
   },
   success: {
-    bold: LabelPairedCircleCheckBoldIcon,
-    regular: LabelPairedCircleCheckRegularIcon,
+    bold: LabelPairedCircleCheckSmBoldIcon,
+    regular: LabelPairedCircleCheckSmRegularIcon,
   },
   info: {
-    bold: LabelPairedCircleInfoBoldIcon,
-    regular: LabelPairedCircleInfoRegularIcon,
+    bold: LabelPairedCircleInfoSmBoldIcon,
+    regular: LabelPairedCircleInfoSmRegularIcon,
   },
 }
 

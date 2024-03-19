@@ -1,6 +1,6 @@
 import { screen, render } from 'test-utils'
 import userEvent from '@testing-library/user-event'
-import { LabelPairedAndroidIcon } from '@deriv/quill-icons/LabelPaired'
+import { LabelPairedAndroidSmIcon } from '@deriv/quill-icons/LabelPaired'
 import Trigger from '.'
 
 describe('<ActionSheet.Trigger/>', () => {
@@ -18,7 +18,7 @@ describe('<ActionSheet.Trigger/>', () => {
   })
 
   it('should render icon when icon prop is passed', async () => {
-    render(<Trigger iconComponent={LabelPairedAndroidIcon} />)
+    render(<Trigger iconComponent={LabelPairedAndroidSmIcon} />)
     const triggerIcon = screen.getByTestId('dt-actionsheet-icon-button')
     expect(triggerIcon).toBeInTheDocument()
   })
