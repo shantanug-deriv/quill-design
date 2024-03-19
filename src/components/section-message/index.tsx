@@ -1,8 +1,8 @@
 import { ReactNode } from 'react'
-import { Information } from './information'
+import { InformationBox } from './information'
 
 type SectionMessageVariants = {
-  Information: typeof Information
+  Information: typeof InformationBox
 }
 
 export const SectionMessage: SectionMessageVariants = ({
@@ -13,6 +13,6 @@ export const SectionMessage: SectionMessageVariants = ({
   return <>{children}</>
 }
 
-SectionMessage.Information = Information
+SectionMessage.Information = InformationBox
 
 export default SectionMessage
