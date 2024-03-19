@@ -1,3 +1,10 @@
+## [1.2.22](https://github.com/deriv-com/quill-design/compare/v1.2.21...v1.2.22) (2024-03-19)
+
+
+### ♻️ 	 Chores
+
+* updated information component name ([9c3f987](https://github.com/deriv-com/quill-design/commit/9c3f98781533f8aadc8faf933ada55173eca64b2))
+
 ## [1.2.21](https://github.com/deriv-com/quill-design/compare/v1.2.20...v1.2.21) (2024-03-18)
 
 
