@@ -61,33 +61,35 @@ export const InformationBox = forwardRef<HTMLDivElement, InformationBoxProps>(
               {description}
             </Text>
           )}
-          <div
-            className={qtJoin(
-              (title || description) && 'mt-800',
-              'flex items-start justify-start gap-gap-md',
-            )}
-          >
-            {link1 && (
-              <Link
-                {...link1}
-                className={qtJoin(
-                  SectionMessageLinkSizeCVA({ size }),
-                  'p-50 text-solid-slate-1400',
-                )}
-                size={size}
-              />
-            )}
-            {link2 && (
-              <Link
-                {...link2}
-                className={qtJoin(
-                  SectionMessageLinkSizeCVA({ size }),
-                  'p-50 text-solid-slate-1400',
-                )}
-                size={size}
-              />
-            )}
-          </div>
+          {(link1 || link2) && (
+            <div
+              className={qtJoin(
+                (title || description) && 'mt-800',
+                'flex items-start justify-start gap-gap-md',
+              )}
+            >
+              {link1 && (
+                <Link
+                  {...link1}
+                  className={qtJoin(
+                    SectionMessageLinkSizeCVA({ size }),
+                    'p-50 text-solid-slate-1400',
+                  )}
+                  size={size}
+                />
+              )}
+              {link2 && (
+                <Link
+                  {...link2}
+                  className={qtJoin(
+                    SectionMessageLinkSizeCVA({ size }),
+                    'p-50 text-solid-slate-1400',
+                  )}
+                  size={size}
+                />
+              )}
+            </div>
+          )}
         </div>
       </div>
     )
