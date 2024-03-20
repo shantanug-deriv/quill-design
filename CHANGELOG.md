@@ -1,3 +1,10 @@
+## [1.2.24](https://github.com/deriv-com/quill-design/compare/v1.2.23...v1.2.24) (2024-03-20)
+
+
+### ♻️ 	 Chores
+
+* fixed links top spacing issue ([8c5f4de](https://github.com/deriv-com/quill-design/commit/8c5f4de7332275973065f2ad56b63c81c172bb06))
+
 ## [1.2.23](https://github.com/deriv-com/quill-design/compare/v1.2.22...v1.2.23) (2024-03-19)
 
 
