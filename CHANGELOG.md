@@ -1,3 +1,10 @@
+## [1.2.26](https://github.com/deriv-com/quill-design/compare/v1.2.25...v1.2.26) (2024-05-01)
+
+
+### ♻️ 	 Chores
+
+* **deps:** bump ansi-regex ([#156](https://github.com/deriv-com/quill-design/issues/156)) ([303988e](https://github.com/deriv-com/quill-design/commit/303988e06ff0913cfe958fe7cc4a1db945ce8705))
+
 ## [1.2.25](https://github.com/deriv-com/quill-design/compare/v1.2.24...v1.2.25) (2024-04-30)
 
 
