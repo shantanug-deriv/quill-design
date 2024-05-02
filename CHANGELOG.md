@@ -1,3 +1,10 @@
+## [1.2.27](https://github.com/deriv-com/quill-design/compare/v1.2.26...v1.2.27) (2024-05-02)
+
+
+### ♻️ 	 Chores
+
+* **deps-dev:** bump ejs in the npm_and_yarn group across 1 directory ([#158](https://github.com/deriv-com/quill-design/issues/158)) ([a3fcb4e](https://github.com/deriv-com/quill-design/commit/a3fcb4eab87b70fb8f68150e87819bf49a747cb0))
+
 ## [1.2.26](https://github.com/deriv-com/quill-design/compare/v1.2.25...v1.2.26) (2024-05-01)
 
 
